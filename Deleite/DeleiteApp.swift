@@ -11,7 +11,7 @@ import SwiftUI
 struct DeleiteApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Homescreen()
         }
     }
 }
