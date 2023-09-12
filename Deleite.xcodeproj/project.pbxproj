@@ -20,6 +20,7 @@
 		49727BE82AB0A43E00C6417A /* SchedulingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BE72AB0A43E00C6417A /* SchedulingView.swift */; };
 		49727BEA2AB0A54900C6417A /* MilkbankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BE92AB0A54900C6417A /* MilkbankView.swift */; };
 		49727BEC2AB0A88A00C6417A /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BEB2AB0A88A00C6417A /* QuestionsView.swift */; };
+		49EE82A92AB0EC80007D0AE5 /* MapBancosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE82A82AB0EC80007D0AE5 /* MapBancosView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		49727BE72AB0A43E00C6417A /* SchedulingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingView.swift; sourceTree = "<group>"; };
 		49727BE92AB0A54900C6417A /* MilkbankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkbankView.swift; sourceTree = "<group>"; };
 		49727BEB2AB0A88A00C6417A /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
+		49EE82A82AB0EC80007D0AE5 /* MapBancosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBancosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +122,8 @@
 				49727BEB2AB0A88A00C6417A /* QuestionsView.swift */,
 				49727BE92AB0A54900C6417A /* MilkbankView.swift */,
 				49727BE72AB0A43E00C6417A /* SchedulingView.swift */,
-				49507FED2AAF49480002CB6A /* Assets.xcassets */,
 				0DDD5FB02AAF5D3000450176 /* TutorialView.swift */,
+				49EE82A82AB0EC80007D0AE5 /* MapBancosView.swift */,
 				0DDD5FB42AB092BA00450176 /* Components */,
 				49507FEF2AAF49480002CB6A /* Preview Content */,
 			);
@@ -285,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DDD5FB32AB07FD300450176 /* MenuButtonView.swift in Sources */,
+				49EE82A92AB0EC80007D0AE5 /* MapBancosView.swift in Sources */,
 				49507FEC2AAF49470002CB6A /* ContentView.swift in Sources */,
 				49727BE82AB0A43E00C6417A /* SchedulingView.swift in Sources */,
 				49727BEC2AB0A88A00C6417A /* QuestionsView.swift in Sources */,
