@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DDD5FB12AAF5D3000450176 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDD5FB02AAF5D3000450176 /* TutorialView.swift */; };
+		0DDD5FB32AB07FD300450176 /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */; };
 		49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FE92AAF49470002CB6A /* DeleiteApp.swift */; };
 		49507FEC2AAF49470002CB6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FEB2AAF49470002CB6A /* ContentView.swift */; };
 		49507FEE2AAF49480002CB6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49507FED2AAF49480002CB6A /* Assets.xcassets */; };
@@ -14,6 +16,11 @@
 		49507FFB2AAF49480002CB6A /* DeleiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FFA2AAF49480002CB6A /* DeleiteTests.swift */; };
 		495080052AAF49480002CB6A /* DeleiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495080042AAF49480002CB6A /* DeleiteUITests.swift */; };
 		495080072AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495080062AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift */; };
+		49727BE42AAF513F00C6417A /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BE32AAF513F00C6417A /* Homescreen.swift */; };
+		49727BE82AB0A43E00C6417A /* SchedulingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BE72AB0A43E00C6417A /* SchedulingView.swift */; };
+		49727BEA2AB0A54900C6417A /* MilkbankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BE92AB0A54900C6417A /* MilkbankView.swift */; };
+		49727BEC2AB0A88A00C6417A /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BEB2AB0A88A00C6417A /* QuestionsView.swift */; };
+		49EE82A92AB0EC80007D0AE5 /* MapBancosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE82A82AB0EC80007D0AE5 /* MapBancosView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DDD5FB02AAF5D3000450176 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
 		49507FE62AAF49470002CB6A /* Deleite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deleite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49507FE92AAF49470002CB6A /* DeleiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteApp.swift; sourceTree = "<group>"; };
 		49507FEB2AAF49470002CB6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +53,11 @@
 		495080002AAF49480002CB6A /* DeleiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeleiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		495080042AAF49480002CB6A /* DeleiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteUITests.swift; sourceTree = "<group>"; };
 		495080062AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49727BE32AAF513F00C6417A /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
+		49727BE72AB0A43E00C6417A /* SchedulingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingView.swift; sourceTree = "<group>"; };
+		49727BE92AB0A54900C6417A /* MilkbankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkbankView.swift; sourceTree = "<group>"; };
+		49727BEB2AB0A88A00C6417A /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
+		49EE82A82AB0EC80007D0AE5 /* MapBancosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBancosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DDD5FB42AB092BA00450176 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		49507FDD2AAF49470002CB6A = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +118,13 @@
 			children = (
 				49507FE92AAF49470002CB6A /* DeleiteApp.swift */,
 				49507FEB2AAF49470002CB6A /* ContentView.swift */,
-				49507FED2AAF49480002CB6A /* Assets.xcassets */,
+				49727BE32AAF513F00C6417A /* Homescreen.swift */,
+				49727BEB2AB0A88A00C6417A /* QuestionsView.swift */,
+				49727BE92AB0A54900C6417A /* MilkbankView.swift */,
+				49727BE72AB0A43E00C6417A /* SchedulingView.swift */,
+				0DDD5FB02AAF5D3000450176 /* TutorialView.swift */,
+				49EE82A82AB0EC80007D0AE5 /* MapBancosView.swift */,
+				0DDD5FB42AB092BA00450176 /* Components */,
 				49507FEF2AAF49480002CB6A /* Preview Content */,
 			);
 			path = Deleite;
@@ -123,6 +151,7 @@
 			children = (
 				495080042AAF49480002CB6A /* DeleiteUITests.swift */,
 				495080062AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift */,
+				49507FED2AAF49480002CB6A /* Assets.xcassets */,
 			);
 			path = DeleiteUITests;
 			sourceTree = "<group>";
@@ -257,8 +286,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DDD5FB32AB07FD300450176 /* MenuButtonView.swift in Sources */,
+				49EE82A92AB0EC80007D0AE5 /* MapBancosView.swift in Sources */,
 				49507FEC2AAF49470002CB6A /* ContentView.swift in Sources */,
+				49727BE82AB0A43E00C6417A /* SchedulingView.swift in Sources */,
+				49727BEC2AB0A88A00C6417A /* QuestionsView.swift in Sources */,
+				49727BE42AAF513F00C6417A /* Homescreen.swift in Sources */,
 				49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */,
+				49727BEA2AB0A54900C6417A /* MilkbankView.swift in Sources */,
+				0DDD5FB12AAF5D3000450176 /* TutorialView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +461,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +491,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,7 +514,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3S22856DS9;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.DeleiteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,7 +534,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3S22856DS9;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.DeleiteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -515,6 +553,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3S22856DS9;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.DeleiteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,6 +572,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3S22856DS9;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.DeleiteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
