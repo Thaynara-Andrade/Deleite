@@ -35,7 +35,7 @@ struct MapBancosView: View {
                     }
                 }
             }
-            .navigationTitle("Banco de Leite")
+            .navigationTitle("teste")
         }
 
     }
