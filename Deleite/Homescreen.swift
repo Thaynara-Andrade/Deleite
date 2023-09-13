@@ -40,7 +40,7 @@ struct Homescreen: View {
                         
                         Button(action: {
                         }) {
-                            NavigationLink(destination: MilkbankView()) {
+                            NavigationLink(destination: MilkBanckView()) {
                                 Text("Banco de \n Leite (MEAC)")
                                     .frame(width: 150, height: 150)
                                     .background(Color.gray)
