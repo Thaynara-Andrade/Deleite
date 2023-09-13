@@ -9,9 +9,9 @@ import SwiftUI
 
 struct MenuButton: View {
     
-    let titleButton: String;
-    let colorButton: Color;
-    let titleColor: Color;
+    let titleButton: String
+    let colorButton: Color
+    let titleColor: Color
     let image: String
     
     init(titleButton: String, colorButton: Color, titleColor: Color, image: String) {
@@ -23,16 +23,15 @@ struct MenuButton: View {
     
     var body: some View {
         
-        ZStack {
-            RoundedRectangle(cornerRadius: 15)
-                .fill(.gray)
-            Button {
+            Button(action: {
                 
-            } label: {
+            }) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .fill(.gray)
                 Text(titleButton).bold()
                     .foregroundColor(titleColor)
                 Image(image)
-                
             }
         }
     }

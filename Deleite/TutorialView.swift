@@ -15,7 +15,7 @@ struct TutorialView: View {
             VStack {
 //                Text("")
 //                .toolbar {
-//                    
+//
 //                    ToolbarItem(placement: .navigationBarLeading) {
 //                        Button {
 //                            print("")
@@ -29,13 +29,16 @@ struct TutorialView: View {
 //                }
                 
                 Group {
-                    MenuButton(titleButton: "Amamentação", colorButton: Color.gray, titleColor: Color.black, image: "person.fill.questionmark")
+                    MenuButton(titleButton: "Amamentação",
+                            colorButton: Color.gray,
+                            titleColor: Color.black,
+                            image:"person.fill.questionmark")
                     
                     MenuButton(titleButton: "Ordenha", colorButton: Color.gray, titleColor: Color.black, image: "person.fill.questionmark")
                     
                     MenuButton(titleButton: "Higienização", colorButton: Color.gray, titleColor: Color.black, image: "person.fill.questionmark")
                 }
-                .frame(width: 200, height: 200)
+                .frame(width: 300, height: 200)
             }
             .navigationTitle("Tutorial")
         }
