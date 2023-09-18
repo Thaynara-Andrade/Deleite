@@ -28,17 +28,37 @@ struct TutorialView: View {
 //                    }
 //                }
                 
-                Group {
-                    MenuButton(titleButton: "Amamentação",
-                            colorButton: Color.gray,
-                            titleColor: Color.black,
-                            image:"person.fill.questionmark")
-                    
-                    MenuButton(titleButton: "Ordenha", colorButton: Color.gray, titleColor: Color.black, image: "person.fill.questionmark")
-                    
-                    MenuButton(titleButton: "Higienização", colorButton: Color.gray, titleColor: Color.black, image: "person.fill.questionmark")
-                }
-                .frame(width: 300, height: 200)
+                
+//                    ImageCard()
+//                        .padding()
+//                        .frame(width: 100, height: 200 )
+//                    ImageCard()
+//                        .padding()
+//                        .frame(width: 100, height: 200)
+//                    ImageCard()
+//                        .padding()
+                    Group {
+                        MenuButton(titleButton: "Amamentação",
+                                   colorButton: Color.gray,
+                                   titleColor: Color.black,
+                                   image: Image("mama"))
+                            
+//                        MenuButton(
+//                                titleButton: "Ordenha",
+//                                colorButton: Color.gray,
+//                                titleColor: Color.black,
+//                                image: Image("mama"))
+//
+//                        MenuButton(
+//                                titleButton: "Higienização",
+//                                colorButton: Color.gray,
+//                                titleColor: Color.black,
+//                                image: Image("mama"))
+                        
+    
+                    }
+                    .padding()
+                    .frame(width: 370, height: 190)
             }
             .navigationTitle("Tutorial")
         }
