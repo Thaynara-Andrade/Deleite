@@ -17,35 +17,46 @@ struct Homescreen: View {
         NavigationView {
             VStack(alignment: .leading) {
                 Text("Seja bem vinda, ao Deleite!")
+                    .font(.title3)
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.leading)
                     .padding(.leading, 20)
                 
-                Spacer(minLength: 50)
+                //Spacer(minLength: 50)
                 ScrollView(.vertical) {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: gridSpacing), count: columnCount), spacing: gridSpacing ) {
                         
                         Button(action: {
                             
                         }) {
-                            NavigationLink(destination: DonationView()) {
-                                Text("Tutoriais")
-                                    .frame(width: 150, height: 150)
-                                    .background(Color.gray)
+                            NavigationLink(destination: TutorialView()) {
+                                Text("Banco de \nleite")
+                                    .font(.title3)
+                                    .fontWeight(.heavy)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(width: 150, height: 207)
+                                    .background(Color("Button-Color"))
                                     .foregroundColor(.white)
-                                    .cornerRadius(10)
+                                    .cornerRadius(15)
                                     .padding()
+                                    .shadow(radius: 2, x: 2, y:2)
+                                    
+                
                             }
                         }
                         
                         Button(action: {
                         }) {
                             NavigationLink(destination: MilkBanckView()) {
-                                Text("Banco de \n Leite (MEAC)")
-                                    .frame(width: 150, height: 150)
-                                    .background(Color.gray)
-                                    .foregroundColor(.white)
-                                    .cornerRadius(10)
+                                Text("Tutorial")
+                                    .font(.title3)
+                                    .fontWeight(.heavy)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(width: 150, height: 207)
+                                    .background(Color("Buttonvariable-Color"))
+                                    .foregroundColor(Color("Text-Color"))
+                                    .cornerRadius(15)
+                                    .shadow(radius: 2, x: 2, y:2)
                     
                             }
                         }
@@ -53,11 +64,14 @@ struct Homescreen: View {
                         Button(action: {
                         }) {
                             NavigationLink(destination: SchedulingView()) {
-                                Text("Agendamento")
-                                    .frame(width: 150, height: 150)
-                                    .background(Color.gray)
-                                    .foregroundColor(.white)
-                                    .cornerRadius(10)
+                                Text("Perguntas frequentes")
+                                    .font(.title3)
+                                    .fontWeight(.heavy)
+                                    .frame(width: 150, height: 207)
+                                    .background(Color("Buttonvariable-Color"))
+                                    .foregroundColor(Color("Text-Color"))
+                                    .cornerRadius(15)
+                                    .shadow(radius: 2, x: 2, y:2)
                                    
                             }
                         }
@@ -65,11 +79,16 @@ struct Homescreen: View {
                         Button(action: {
                         }) {
                             NavigationLink(destination: QuestionsView()) {
-                                Text("Perguntas frequentes")
-                                    .frame(width: 150, height: 150)
-                                    .background(Color.gray)
+                                Text("Agendar \nColeta")
+                                    .font(.title3)
+                                    .fontWeight(.heavy)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(width: 150, height: 207)
+                                    .background(Color("Button-Color"))
                                     .foregroundColor(.white)
-                                    .cornerRadius(10)
+                                    .cornerRadius(15)
+                                    .shadow(radius: 2, x: 2, y:2)
+                                
                                     
                             }
                         }
@@ -78,13 +97,16 @@ struct Homescreen: View {
                     
                     NavigationLink(destination: DonationView()) {
                         Text("Doe Aqui")
-                            .frame(width: 310, height: 50)
-                            .background(Color.black)
+                            .font(.title)
+                            .fontWeight(.heavy)
+                            .frame(width: 316, height: 140)
+                            .background(Color("Button-Color"))
                             .foregroundColor(.white)
-                            .cornerRadius(10)
+                            .cornerRadius(15)
+                            .shadow(radius: 2, x: 2, y:2)
                         
                     }
-                    .padding(5)
+                    .padding(-8)
                 }
             }
             .navigationTitle("Menu inicial")
