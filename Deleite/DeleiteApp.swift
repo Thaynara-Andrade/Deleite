@@ -10,7 +10,7 @@ import SwiftUI
  @main
 struct DeleiteApp: App {
     var body: some Scene {
-        WindowGroup {
+        WindowGroup {            
             HomescreenView()
         }
     }
