@@ -7,6 +7,9 @@
 import SwiftUI
 
 struct HomescreenView: View {
+    @StateObject private var vm = LocationsViewModel()
+    
+    
     let gridSpacingh: CGFloat = 13
     let gridSpacingv: CGFloat = -10
     let columnCount: Int = 2
@@ -24,7 +27,8 @@ struct HomescreenView: View {
                 ScrollView(.vertical) {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: gridSpacingv), count: columnCount), spacing: gridSpacingh ) {
                         Group {
-                            NavigationLink(destination: MilkBanckView()) {
+                            NavigationLink(destination: LocationsView()
+                                .environmentObject(vm)) {
                                 HomeButton(HometitleButton: "Banco \nde leite",
                                            HomecolorButton: Color("Button-Color"),
                                            HometitleColor: Color.white)

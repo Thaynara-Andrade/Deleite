@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Homescreen: View {
+    @StateObject private var vm = LocationsViewModel()
+    
     //@State private var userName = "Thaynara"
     let gridSpacingh: CGFloat = 13
     let gridSpacingv: CGFloat = -10
@@ -32,7 +34,8 @@ struct Homescreen: View {
                         Button(action: {
                             
                         }) {
-                            NavigationLink(destination: MilkBanckView()) {
+                            NavigationLink(destination: LocationsView()
+                                .environmentObject(vm)) {
                                 ZStack{
                                 Text("Banco de \nleite")
                                     .font(.title3)

@@ -9,6 +9,8 @@ import SwiftUI
 
  @main
 struct DeleiteApp: App {
+    @StateObject private var vm = LocationsViewModel()
+    
     var body: some Scene {
         WindowGroup {            
             HomescreenView()
