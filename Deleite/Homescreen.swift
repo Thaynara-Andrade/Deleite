@@ -9,8 +9,11 @@ import SwiftUI
 
 struct Homescreen: View {
     //@State private var userName = "Thaynara"
-    let gridSpacing: CGFloat = -30
+    let gridSpacingh: CGFloat = 13
+    let gridSpacingv: CGFloat = -10
     let columnCount: Int = 2
+    @State private var showWebView = false
+
     
     
     var body: some View {
@@ -20,26 +23,33 @@ struct Homescreen: View {
                     .font(.title3)
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.leading)
-                    .padding(.leading, 20)
+                    .padding(.leading, 15)
                 
-                //Spacer(minLength: 50)
                 ScrollView(.vertical) {
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: gridSpacing), count: columnCount), spacing: gridSpacing ) {
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: gridSpacingv), count: columnCount), spacing: gridSpacingh ) {
+                        
                         
                         Button(action: {
                             
                         }) {
-                            NavigationLink(destination: TutorialView()) {
+                            NavigationLink(destination: MilkBanckView()) {
+                                ZStack{
                                 Text("Banco de \nleite")
                                     .font(.title3)
                                     .fontWeight(.heavy)
                                     .multilineTextAlignment(.leading)
-                                    .frame(width: 150, height: 207)
+                                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                    .padding(.leading, 20)
+                                    .padding(.top, -80)
+                                    .frame(width: 160, height: 210)
                                     .background(Color("Button-Color"))
                                     .foregroundColor(.white)
                                     .cornerRadius(15)
-                                    .padding()
-                                    .shadow(radius: 2, x: 2, y:2)
+                                    
+                                    
+                                    Image("Hospital")
+                                        .padding(.top, 133.4)
+                                }
                                     
                 
                             }
@@ -47,67 +57,83 @@ struct Homescreen: View {
                         
                         Button(action: {
                         }) {
-                            NavigationLink(destination: MilkBanckView()) {
+                            NavigationLink(destination: TutorialView()) {
                                 Text("Tutorial")
                                     .font(.title3)
                                     .fontWeight(.heavy)
                                     .multilineTextAlignment(.leading)
-                                    .frame(width: 150, height: 207)
+                                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                    .padding(.leading, 20)
+                                    .padding(.top, -80)
+                                    .frame(width: 160, height: 210)
                                     .background(Color("Buttonvariable-Color"))
                                     .foregroundColor(Color("Text-Color"))
                                     .cornerRadius(15)
-                                    .shadow(radius: 2, x: 2, y:2)
                     
-                            }
-                        }
-                        
-                        Button(action: {
-                        }) {
-                            NavigationLink(destination: SchedulingView()) {
-                                Text("Perguntas frequentes")
-                                    .font(.title3)
-                                    .fontWeight(.heavy)
-                                    .frame(width: 150, height: 207)
-                                    .background(Color("Buttonvariable-Color"))
-                                    .foregroundColor(Color("Text-Color"))
-                                    .cornerRadius(15)
-                                    .shadow(radius: 2, x: 2, y:2)
-                                   
                             }
                         }
                         
                         Button(action: {
                         }) {
                             NavigationLink(destination: QuestionsView()) {
+                                Text("Perguntas frequentes")
+                                    .font(.title3)
+                                    .fontWeight(.heavy)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                    .padding(.leading, 20)
+                                    .padding(.top, -80)
+                                    .frame(width: 160, height: 210)
+                                    .background(Color("Buttonvariable-Color"))
+                                    .foregroundColor(Color("Text-Color"))
+                                    .cornerRadius(15)
+                                   
+                            }
+                        }
+                        
+                        Button(action: {
+                        }) {
+                            NavigationLink(destination: SchedulingView()) {
                                 Text("Agendar \nColeta")
                                     .font(.title3)
                                     .fontWeight(.heavy)
                                     .multilineTextAlignment(.leading)
-                                    .frame(width: 150, height: 207)
+                                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                    .padding(.leading, 20)
+                                    .padding(.top, -80)
+                                    .frame(width: 160, height: 210)
                                     .background(Color("Button-Color"))
                                     .foregroundColor(.white)
                                     .cornerRadius(15)
-                                    .shadow(radius: 2, x: 2, y:2)
-                                
                                     
                             }
                         }
                     }
                     .padding()
                     
-                    NavigationLink(destination: DonationView()) {
-                        Text("Doe Aqui")
-                            .font(.title)
-                            .fontWeight(.heavy)
-                            .frame(width: 316, height: 140)
-                            .background(Color("Button-Color"))
-                            .foregroundColor(.white)
-                            .cornerRadius(15)
-                            .shadow(radius: 2, x: 2, y:2)
+                    NavigationLink("", destination: WebView(urlString: "https://wa.me/message/O2WSGGAHTPI7G1"), isActive: $showWebView)
+
+                    Button(action: {
+                                showWebView = true
+                            }) {
+                                VStack(alignment: .leading) {
+                                    Text("Doe Aqui")
+                                        .font(.largeTitle)
+                                        .fontWeight(.heavy)
+                                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                        .frame(width: 320, height: 140)
+                                        .padding(.leading, 20)
+                                        .background(Color("Text-Color"))
+                                        .foregroundColor(.white)
+                                        .cornerRadius(15)
+                                    
+                                }
                         
                     }
-                    .padding(-8)
+                    .padding(-17)
+                    
                 }
+                
             }
             .navigationTitle("Menu inicial")
         }
