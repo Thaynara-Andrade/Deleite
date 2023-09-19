@@ -10,8 +10,8 @@ import SwiftUI
  @main
 struct DeleiteApp: App {
     var body: some Scene {
-        WindowGroup {
-            MilkBanckView()
+        WindowGroup {            
+            HomescreenView()
         }
     }
 }

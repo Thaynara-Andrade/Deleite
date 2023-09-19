@@ -12,34 +12,35 @@ struct TutorialView: View {
         
         NavigationView {
  
-            VStack {
-//                Text("")
-//                .toolbar {
-//
-//                    ToolbarItem(placement: .navigationBarLeading) {
-//                        Button {
-//                            print("")
-//                        } label: {
-//                            HStack {
-//                                Image(systemName: "chevron.backward")
-//                                Text("Voltar")
-//                            }
-//                        }
+            VStack (spacing: 20){
+
+//                    Group {
+                        MenuButton(
+                            titleButton: "Higienização",
+                            description: "Como fazer a limpeza correta antes da retiradado leite",
+                            colorButton: Color("Button-Color"),
+                            titleColor: Color.white,
+                            image: Image("mama"))
+                            
+                       MenuButton(
+                            titleButton: "Coleta manual",
+                            description: "Aprenda a coletar o leite da maneira correta, sem rezíduos",
+                            colorButton: Color("Button-Color"),
+                            titleColor: Color.white,
+                            image: Image("mama"))
+                        
+                        MenuButton(
+                            titleButton: "Guardando",
+                            description: "Text-Color",
+                            colorButton: Color("Button-Color"),
+                            titleColor: Color.white,
+                            image: Image("mama"))
+    
 //                    }
-//                }
-                
-                Group {
-                    MenuButton(titleButton: "Amamentação",
-                            colorButton: Color.gray,
-                            titleColor: Color.black,
-                            image:"person.fill.questionmark")
-                    
-                    MenuButton(titleButton: "Ordenha", colorButton: Color.gray, titleColor: Color.black, image: "person.fill.questionmark")
-                    
-                    MenuButton(titleButton: "Higienização", colorButton: Color.gray, titleColor: Color.black, image: "person.fill.questionmark")
-                }
-                .frame(width: 300, height: 200)
-            }
+//                    .frame(width: 370, height: 190)
+                Spacer()
+                   
+            }  .padding(.top, 35)
             .navigationTitle("Tutorial")
         }
     }

@@ -9,56 +9,67 @@ import SwiftUI
 
 struct Homescreen: View {
     //@State private var userName = "Thaynara"
-    let gridSpacing: CGFloat = -30
+    let gridSpacingh: CGFloat = 13
+    let gridSpacingv: CGFloat = -10
     let columnCount: Int = 2
+    @State private var showWebView = false
+
     
     
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
                 Text("Seja bem vinda, ao Deleite!")
+                    .font(.title3)
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.leading)
-                    .padding(.leading, 20)
+                    .padding(.leading, 15)
                 
-                Spacer(minLength: 50)
                 ScrollView(.vertical) {
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: gridSpacing), count: columnCount), spacing: gridSpacing ) {
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: gridSpacingv), count: columnCount), spacing: gridSpacingh ) {
+                        
                         
                         Button(action: {
                             
                         }) {
-                            NavigationLink(destination: DonationView()) {
-                                Text("Tutoriais")
-                                    .frame(width: 150, height: 150)
-                                    .background(Color.gray)
-                                    .foregroundColor(.white)
-                                    .cornerRadius(10)
-                                    .padding()
-                            }
-                        }
-                        
-                        Button(action: {
-                        }) {
                             NavigationLink(destination: MilkBanckView()) {
-                                Text("Banco de \n Leite (MEAC)")
-                                    .frame(width: 150, height: 150)
-                                    .background(Color.gray)
+                                ZStack{
+                                Text("Banco de \nleite")
+                                    .font(.title3)
+                                    .fontWeight(.heavy)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                    .padding(.leading, 20)
+                                    .padding(.top, -80)
+                                    .frame(width: 160, height: 210)
+                                    .background(Color("Button-Color"))
                                     .foregroundColor(.white)
-                                    .cornerRadius(10)
-                    
+                                    .cornerRadius(15)
+                                    
+                                    
+                                    Image("Hospital")
+                                        .padding(.top, 133.4)
+                                }
+                                    
+                
                             }
                         }
                         
                         Button(action: {
                         }) {
-                            NavigationLink(destination: SchedulingView()) {
-                                Text("Agendamento")
-                                    .frame(width: 150, height: 150)
-                                    .background(Color.gray)
-                                    .foregroundColor(.white)
-                                    .cornerRadius(10)
-                                   
+                            NavigationLink(destination: TutorialView()) {
+                                Text("Tutorial")
+                                    .font(.title3)
+                                    .fontWeight(.heavy)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                    .padding(.leading, 20)
+                                    .padding(.top, -80)
+                                    .frame(width: 160, height: 210)
+                                    .background(Color("Buttonvariable-Color"))
+                                    .foregroundColor(Color("Text-Color"))
+                                    .cornerRadius(15)
+                    
                             }
                         }
                         
@@ -66,26 +77,63 @@ struct Homescreen: View {
                         }) {
                             NavigationLink(destination: QuestionsView()) {
                                 Text("Perguntas frequentes")
-                                    .frame(width: 150, height: 150)
-                                    .background(Color.gray)
+                                    .font(.title3)
+                                    .fontWeight(.heavy)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                    .padding(.leading, 20)
+                                    .padding(.top, -80)
+                                    .frame(width: 160, height: 210)
+                                    .background(Color("Buttonvariable-Color"))
+                                    .foregroundColor(Color("Text-Color"))
+                                    .cornerRadius(15)
+                                   
+                            }
+                        }
+                        
+                        Button(action: {
+                        }) {
+                            NavigationLink(destination: SchedulingView()) {
+                                Text("Agendar \nColeta")
+                                    .font(.title3)
+                                    .fontWeight(.heavy)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                    .padding(.leading, 20)
+                                    .padding(.top, -80)
+                                    .frame(width: 160, height: 210)
+                                    .background(Color("Button-Color"))
                                     .foregroundColor(.white)
-                                    .cornerRadius(10)
+                                    .cornerRadius(15)
                                     
                             }
                         }
                     }
                     .padding()
                     
-                    NavigationLink(destination: DonationView()) {
-                        Text("Doe Aqui")
-                            .frame(width: 310, height: 50)
-                            .background(Color.black)
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
+                    NavigationLink("", destination: WebView(urlString: "https://wa.me/message/O2WSGGAHTPI7G1"), isActive: $showWebView)
+
+                    Button(action: {
+                                showWebView = true
+                            }) {
+                                VStack(alignment: .leading) {
+                                    Text("Doe Aqui")
+                                        .font(.largeTitle)
+                                        .fontWeight(.heavy)
+                                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                        .frame(width: 320, height: 140)
+                                        .padding(.leading, 20)
+                                        .background(Color("Text-Color"))
+                                        .foregroundColor(.white)
+                                        .cornerRadius(15)
+                                    
+                                }
                         
                     }
-                    .padding(5)
+                    .padding(-17)
+                    
                 }
+                
             }
             .navigationTitle("Menu inicial")
         }
