@@ -21,6 +21,9 @@
 		49727BE82AB0A43E00C6417A /* SchedulingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BE72AB0A43E00C6417A /* SchedulingView.swift */; };
 		49727BEA2AB0A54900C6417A /* MilkbankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BE92AB0A54900C6417A /* MilkbankView.swift */; };
 		49727BEC2AB0A88A00C6417A /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BEB2AB0A88A00C6417A /* QuestionsView.swift */; };
+		49F5CB2A2AB88F4A00A35878 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F5CB292AB88F4A00A35878 /* WebView.swift */; };
+		49F5CB2C2AB8C90E00A35878 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F5CB2B2AB8C90E00A35878 /* HomeButton.swift */; };
+		49F5CB2E2AB8CAF800A35878 /* HomescreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F5CB2D2AB8CAF800A35878 /* HomescreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		49727BE72AB0A43E00C6417A /* SchedulingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingView.swift; sourceTree = "<group>"; };
 		49727BE92AB0A54900C6417A /* MilkbankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkbankView.swift; sourceTree = "<group>"; };
 		49727BEB2AB0A88A00C6417A /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
+		49F5CB292AB88F4A00A35878 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		49F5CB2B2AB8C90E00A35878 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
+		49F5CB2D2AB8CAF800A35878 /* HomescreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */,
+<<<<<<< Updated upstream
+=======
+				0D0C30D92AB1FF8C00578893 /* MenuButtons.swift */,
+				0D0C30DB2AB2072900578893 /* ImageCard.swift */,
+				49F5CB2B2AB8C90E00A35878 /* HomeButton.swift */,
+>>>>>>> Stashed changes
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -119,10 +131,12 @@
 				49507FE92AAF49470002CB6A /* DeleiteApp.swift */,
 				49507FEB2AAF49470002CB6A /* ContentView.swift */,
 				49727BE32AAF513F00C6417A /* Homescreen.swift */,
+				49F5CB2D2AB8CAF800A35878 /* HomescreenView.swift */,
 				49727BEB2AB0A88A00C6417A /* QuestionsView.swift */,
 				49727BE92AB0A54900C6417A /* MilkbankView.swift */,
 				49727BE72AB0A43E00C6417A /* SchedulingView.swift */,
 				0DDD5FB02AAF5D3000450176 /* TutorialView.swift */,
+				49F5CB292AB88F4A00A35878 /* WebView.swift */,
 				0DDD5FB42AB092BA00450176 /* Components */,
 				49507FEF2AAF49480002CB6A /* Preview Content */,
 				0D0C30DF2AB2456C00578893 /* CarouselTutorial.swift */,
@@ -293,8 +307,11 @@
 				49727BE42AAF513F00C6417A /* Homescreen.swift in Sources */,
 				49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */,
 				49727BEA2AB0A54900C6417A /* MilkbankView.swift in Sources */,
+				49F5CB2A2AB88F4A00A35878 /* WebView.swift in Sources */,
 				0DDD5FB12AAF5D3000450176 /* TutorialView.swift in Sources */,
 				0D0C30E02AB2456C00578893 /* CarouselTutorial.swift in Sources */,
+				49F5CB2C2AB8C90E00A35878 /* HomeButton.swift in Sources */,
+				49F5CB2E2AB8CAF800A35878 /* HomescreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
