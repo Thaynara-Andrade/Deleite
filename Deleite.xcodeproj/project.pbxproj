@@ -95,12 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */,
-<<<<<<< Updated upstream
-=======
-				0D0C30D92AB1FF8C00578893 /* MenuButtons.swift */,
-				0D0C30DB2AB2072900578893 /* ImageCard.swift */,
 				49F5CB2B2AB8C90E00A35878 /* HomeButton.swift */,
->>>>>>> Stashed changes
 			);
 			path = Components;
 			sourceTree = "<group>";
