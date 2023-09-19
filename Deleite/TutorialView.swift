@@ -12,54 +12,35 @@ struct TutorialView: View {
         
         NavigationView {
  
-            VStack {
-//                Text("")
-//                .toolbar {
-//
-//                    ToolbarItem(placement: .navigationBarLeading) {
-//                        Button {
-//                            print("")
-//                        } label: {
-//                            HStack {
-//                                Image(systemName: "chevron.backward")
-//                                Text("Voltar")
-//                            }
-//                        }
-//                    }
-//                }
-                
-                
-//                    ImageCard()
-//                        .padding()
-//                        .frame(width: 100, height: 200 )
-//                    ImageCard()
-//                        .padding()
-//                        .frame(width: 100, height: 200)
-//                    ImageCard()
-//                        .padding()
-                    Group {
-                        MenuButton(titleButton: "Amamentação",
-                                   colorButton: Color.gray,
-                                   titleColor: Color.black,
-                                   image: Image("mama"))
+            VStack (spacing: 20){
+
+//                    Group {
+                        MenuButton(
+                            titleButton: "Higienização",
+                            description: "Como fazer a limpeza correta antes da retiradado leite",
+                            colorButton: Color("Button-Color"),
+                            titleColor: Color.white,
+                            image: Image("mama"))
                             
-//                        MenuButton(
-//                                titleButton: "Ordenha",
-//                                colorButton: Color.gray,
-//                                titleColor: Color.black,
-//                                image: Image("mama"))
-//
-//                        MenuButton(
-//                                titleButton: "Higienização",
-//                                colorButton: Color.gray,
-//                                titleColor: Color.black,
-//                                image: Image("mama"))
+                       MenuButton(
+                            titleButton: "Coleta manual",
+                            description: "Aprenda a coletar o leite da maneira correta, sem rezíduos",
+                            colorButton: Color("Button-Color"),
+                            titleColor: Color.white,
+                            image: Image("mama"))
                         
+                        MenuButton(
+                            titleButton: "Guardando",
+                            description: "Text-Color",
+                            colorButton: Color("Button-Color"),
+                            titleColor: Color.white,
+                            image: Image("mama"))
     
-                    }
-                    .padding()
-                    .frame(width: 370, height: 190)
-            }
+//                    }
+//                    .frame(width: 370, height: 190)
+                Spacer()
+                   
+            }  .padding(.top, 35)
             .navigationTitle("Tutorial")
         }
     }
