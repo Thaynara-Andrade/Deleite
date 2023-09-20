@@ -15,10 +15,12 @@ struct LocationsView: View {
     
     var body: some View {
         ZStack{
-//            Map(coordinateRegion: $vm.mapRegion)
-//                .ignoresSafeArea()
-            Map(coordinateRegion: $vm.mapRegion, annotationItems: vm.locations, annotationContent: {location  in MapMarker(coordinate:location.coordinates, tint:.blue)
-            }).ignoresSafeArea()
+            Map(coordinateRegion: $vm.mapRegion, annotationItems: vm.locations, annotationContent: { location  in MapAnnotation(coordinate:location.coordinates){
+                LocationMapAnnotionView()
+//                    .scaleEffect(vm.mapLocation == location ? 1:0)
+                }
+            })
+            .ignoresSafeArea()
         }
     }
 }
