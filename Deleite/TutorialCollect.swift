@@ -1,29 +1,20 @@
 //
-//  TutorialScroll.swift
+//  CarouselTutorialColeta.swift
 //  Deleite
 //
-//  Created by Marília de Sousa on 20/09/23.
+//  Created by Marília de Sousa on 21/09/23.
 //
 
 import SwiftUI
 
-struct TutorialScroll: View {
+struct TutorialCollect: View {
     
     @State var currentIndex: Int = 0
     
     @State var posts:[Post] = []
     var body: some View {
         
-        VStack(spacing: 15) {
-            VStack(alignment: .leading, spacing: 12) {
-                
-                Text("Higienização")
-                    .font(.largeTitle)
-                    .fontWeight(.black)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding()
-            
+        VStack(spacing: 15 ){
            
             SnapCarousel(index: $currentIndex, items: posts){
                 post in
@@ -31,7 +22,7 @@ struct TutorialScroll: View {
                     let size = proxy.size
                     Image(post.postImagem)
                         .resizable()
-                        .aspectRatio(contentMode: .fill)
+                        .aspectRatio(contentMode: .fit)
                         .frame(width: size.width)
                         .cornerRadius(12)
                 }
@@ -49,13 +40,15 @@ struct TutorialScroll: View {
                 }
             }
         }
+        .navigationTitle("Coleta")
         .frame(maxHeight: .infinity, alignment: .top)
+        .font(.largeTitle)
         .padding()
         
     }
 }
-struct TutorialScroll_Previews: PreviewProvider {
+struct TutorialCollect_Previews: PreviewProvider {
     static var previews: some View {
-        TutorialScroll()
+        TutorialCollect()
     }
 }
