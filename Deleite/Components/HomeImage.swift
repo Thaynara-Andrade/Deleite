@@ -1,12 +1,12 @@
 //
-//  HomeButton.swift
+//  HomeImage.swift
 //  Deleite
 //
-//  Created by Thaynara da Silva Andrade on 18/09/23.
+//  Created by Thaynara da Silva Andrade on 19/09/23.
 //
 import SwiftUI
 
-struct HomeButton: View {
+struct HomeImage: View {
 
     let HometitleButton: String
     let HomecolorButton: Color
@@ -41,7 +41,7 @@ struct HomeButton: View {
     }
 
 
-struct HomeButtonView_Previews: PreviewProvider {
+struct HomeImageView_Previews: PreviewProvider {
     static var previews: some View {
         HomeButton(HometitleButton: "Banco de \nleite", HomecolorButton: Color("Button-Color"), HometitleColor: Color.white
             )
