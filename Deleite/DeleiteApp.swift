@@ -9,14 +9,8 @@ import SwiftUI
 
 @main
 struct DeleiteApp: App {
-<<<<<<< Updated upstream
+    
     @StateObject private var vm = LocationsViewModel()
-    
-    var body: some Scene {
-        WindowGroup {            
-            HomescreenView()
-=======
-    
     @State var tutorialIndex = 0
     
     let tutorialImages: [Post] = [
@@ -29,9 +23,8 @@ struct DeleiteApp: App {
     
     var body: some Scene {
         WindowGroup {
+            //HomescreenView()
             TutorialScroll(currentIndex: tutorialIndex, posts: tutorialImages)
-            
->>>>>>> Stashed changes
         }
     }
 }
