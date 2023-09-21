@@ -22,9 +22,13 @@ struct DeleiteApp: App {
     ]
     
     var body: some Scene {
-        WindowGroup {
-            //HomescreenView()
-            TutorialScroll(currentIndex: tutorialIndex, posts: tutorialImages)
+        WindowGroup {            
+            HomescreenView()
+                .environmentObject(vm)
+//            LocationDetailView(location: LocationsDataService.locations.first!)
+//                .padding()
+
+            //TutorialScroll(currentIndex: tutorialIndex, posts: tutorialImages)
         }
     }
 }
