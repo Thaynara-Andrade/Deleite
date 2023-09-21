@@ -27,16 +27,8 @@ struct HomescreenView: View {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: gridSpacingv), count: columnCount), spacing: gridSpacingh ) {
                         
                         Group {
-<<<<<<< Updated upstream
-                            NavigationLink(destination: LocationsView()
-                                .environmentObject(vm)) {
-                                HomeButton(HometitleButton: "Banco \nde leite",
-                                           HomecolorButton: Color("Button-Color"),
-                                           HometitleColor: Color.white)
-                            }
-=======
                                 NavigationLink(destination:
-                                                MilkBanckView()) {
+                                                LocationsView()) {
                                     ZStack{
                                         HomeButton(HometitleButton: "Banco \nde leite",
                                                    HomecolorButton: Color("Button-Color"),
@@ -48,7 +40,6 @@ struct HomescreenView: View {
                                             .position(x:94.5, y:162.5)
                                     }
                                 }
->>>>>>> Stashed changes
                             NavigationLink(destination: TutorialView()) {
                                 ZStack{
 
