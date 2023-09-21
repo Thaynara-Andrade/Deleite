@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct Location: Identifiable{
+struct Location: Identifiable, Equatable{
     let name: String
     let cityName: String
     let coordinates: CLLocationCoordinate2D
@@ -24,4 +24,19 @@ struct Location: Identifiable{
     var id: String {
         name + cityName
     }
+    
+    static func == (lhs: Location, rhs: Location) -> Bool {
+           return lhs.id == rhs.id &&
+                  lhs.name == rhs.name &&
+                  lhs.cityName == rhs.cityName &&
+                  lhs.coordinates.latitude == rhs.coordinates.latitude &&
+                  lhs.coordinates.longitude == rhs.coordinates.longitude &&
+                  lhs.locationAddress == rhs.locationAddress &&
+                  lhs.telephone1 == rhs.telephone1 &&
+                  lhs.telephone2 == rhs.telephone2 &&
+                  lhs.description == rhs.description &&
+                  lhs.email == rhs.email &&
+                  lhs.imageNames == rhs.imageNames &&
+                  lhs.link == rhs.link
+       }
 }
