@@ -29,6 +29,7 @@
 		B214DCB42ABA4DB20091ABED /* LocationMapAnnotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214DCB32ABA4DB20091ABED /* LocationMapAnnotionView.swift */; };
 		B214DCB72ABA4E010091ABED /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214DCB62ABA4E000091ABED /* LocationsViewModel.swift */; };
 		B214DCBA2ABA4E2D0091ABED /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214DCB92ABA4E2D0091ABED /* Location.swift */; };
+		B2C568472ABB330B00473232 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C568462ABB330B00473232 /* LocationPreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		B214DCB32ABA4DB20091ABED /* LocationMapAnnotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotionView.swift; sourceTree = "<group>"; };
 		B214DCB62ABA4E000091ABED /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		B214DCB92ABA4E2D0091ABED /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B2C568462ABB330B00473232 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			children = (
 				B214DCB12ABA4D9A0091ABED /* LocationsView.swift */,
 				B214DCB32ABA4DB20091ABED /* LocationMapAnnotionView.swift */,
+				B2C568462ABB330B00473232 /* LocationPreviewView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				49507FEC2AAF49470002CB6A /* ContentView.swift in Sources */,
 				49727BE82AB0A43E00C6417A /* SchedulingView.swift in Sources */,
 				49727BEC2AB0A88A00C6417A /* QuestionsView.swift in Sources */,
+				B2C568472ABB330B00473232 /* LocationPreviewView.swift in Sources */,
 				49727BE42AAF513F00C6417A /* Homescreen.swift in Sources */,
 				B214DCBA2ABA4E2D0091ABED /* Location.swift in Sources */,
 				49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */,

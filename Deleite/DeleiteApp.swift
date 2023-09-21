@@ -14,6 +14,7 @@ struct DeleiteApp: App {
     var body: some Scene {
         WindowGroup {            
             HomescreenView()
+                .environmentObject(vm)
         }
     }
 }
