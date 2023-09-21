@@ -7,9 +7,19 @@
 
 import SwiftUI
 
- @main
+@main
 struct DeleiteApp: App {
+    
     @StateObject private var vm = LocationsViewModel()
+    @State var tutorialIndex = 0
+    
+    let tutorialImages: [Post] = [
+        Post(postImagem: "mama"),
+        Post(postImagem: "mama"),
+        Post(postImagem: "mama"),
+        Post(postImagem: "mama"),
+        Post(postImagem: "mama")
+    ]
     
     var body: some Scene {
         WindowGroup {            
@@ -17,6 +27,8 @@ struct DeleiteApp: App {
                 .environmentObject(vm)
 //            LocationDetailView(location: LocationsDataService.locations.first!)
 //                .padding()
+
+            //TutorialScroll(currentIndex: tutorialIndex, posts: tutorialImages)
         }
     }
 }
