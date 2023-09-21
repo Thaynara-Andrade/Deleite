@@ -105,6 +105,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DDBAD052ABC6D8300C1EFFD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		0DDD5FB42AB092BA00450176 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +126,7 @@
 		49507FDD2AAF49470002CB6A = {
 			isa = PBXGroup;
 			children = (
+				0DDBAD052ABC6D8300C1EFFD /* New Group */,
 				49507FE82AAF49470002CB6A /* Deleite */,
 				49507FF92AAF49480002CB6A /* DeleiteTests */,
 				495080032AAF49480002CB6A /* DeleiteUITests */,
