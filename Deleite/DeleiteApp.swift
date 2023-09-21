@@ -7,13 +7,24 @@
 
 import SwiftUI
 
- @main
+@main
 struct DeleiteApp: App {
+    
     @StateObject private var vm = LocationsViewModel()
+    @State var tutorialIndex = 0
+    
+    let tutorialImages: [Post] = [
+        Post(postImagem: "mama"),
+        Post(postImagem: "mama"),
+        Post(postImagem: "mama"),
+        Post(postImagem: "mama"),
+        Post(postImagem: "mama")
+    ]
     
     var body: some Scene {
-        WindowGroup {            
-            HomescreenView()
+        WindowGroup {
+            //HomescreenView()
+            TutorialScroll(currentIndex: tutorialIndex, posts: tutorialImages)
         }
     }
 }

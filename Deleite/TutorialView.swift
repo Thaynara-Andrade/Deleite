@@ -14,7 +14,6 @@ struct TutorialView: View {
  
             VStack (spacing: 20){
 
-//                    Group {
                         MenuButton(
                             titleButton: "Higienização",
                             description: "Como fazer a limpeza correta antes da retiradado leite",
@@ -36,8 +35,6 @@ struct TutorialView: View {
                             titleColor: Color.white,
                             image: Image("mama"))
     
-//                    }
-//                    .frame(width: 370, height: 190)
                 Spacer()
                    
             }  .padding(.top, 35)

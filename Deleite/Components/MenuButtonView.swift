@@ -25,24 +25,10 @@ struct MenuButton: View {
 
     var body: some View {
 
-//            Button(action: {
-//
-//            }) {
-//                ZStack {
-//                    RoundedRectangle(cornerRadius: 30)
-//                        .fill(.gray)
-//                Text(titleButton).bold()
-//                    .foregroundColor(titleColor)
-//                Image(image)
-//            }
-//        }
         Button(action: {
 
         }) {
             ZStack {
-//                RoundedRectangle(cornerRadius: 1)
-//                Color("Button-Color")
-//                    .fill(.background(Color("Button-Color")))
                
                 HStack {
                     image
@@ -85,5 +71,3 @@ struct MenuButtonView_Previews: PreviewProvider {
 //
     }
 }
-
-//MenuButton(titleButton: "Amamentação", description: "hoje", colorButton: Color.gray, titleColor: Color.black, image:Image("mama")
