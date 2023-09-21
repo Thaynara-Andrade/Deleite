@@ -12,9 +12,6 @@ struct ContentView: View {
     var body: some View {
         VStack{
             TabView(selection: $index) {
-                ForEach((0..<3), id: \.self) {
-                    index in CarouselTutorial()
-                }
 
                 HStack(spacing: 2) {
                     ForEach((0..<3), id: \.self) {

@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D0C30E02AB2456C00578893 /* CarouselTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C30DF2AB2456C00578893 /* CarouselTutorial.swift */; };
+		0D0C30E42ABB214300578893 /* TutorialScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C30E32ABB214300578893 /* TutorialScroll.swift */; };
+		0D0C30E62ABB28C400578893 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C30E52ABB28C400578893 /* SnapCarousel.swift */; };
+		0D0C30E82ABB2F7E00578893 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C30E72ABB2F7E00578893 /* Post.swift */; };
 		0DDD5FB12AAF5D3000450176 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDD5FB02AAF5D3000450176 /* TutorialView.swift */; };
 		0DDD5FB32AB07FD300450176 /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */; };
 		49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FE92AAF49470002CB6A /* DeleiteApp.swift */; };
 		49507FEC2AAF49470002CB6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FEB2AAF49470002CB6A /* ContentView.swift */; };
-		49507FEE2AAF49480002CB6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49507FED2AAF49480002CB6A /* Assets.xcassets */; };
-		49507FF12AAF49480002CB6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49507FF02AAF49480002CB6A /* Preview Assets.xcassets */; };
+		49507FEE2AAF49480002CB6A /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 49507FED2AAF49480002CB6A /* Assets */; };
 		49507FFB2AAF49480002CB6A /* DeleiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FFA2AAF49480002CB6A /* DeleiteTests.swift */; };
 		495080052AAF49480002CB6A /* DeleiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495080042AAF49480002CB6A /* DeleiteUITests.swift */; };
 		495080072AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495080062AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift */; };
@@ -50,14 +51,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D0C30DF2AB2456C00578893 /* CarouselTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTutorial.swift; sourceTree = "<group>"; };
+		0D0C30E32ABB214300578893 /* TutorialScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialScroll.swift; sourceTree = "<group>"; };
+		0D0C30E52ABB28C400578893 /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
+		0D0C30E72ABB2F7E00578893 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0DDD5FB02AAF5D3000450176 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
 		49507FE62AAF49470002CB6A /* Deleite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deleite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49507FE92AAF49470002CB6A /* DeleiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteApp.swift; sourceTree = "<group>"; };
 		49507FEB2AAF49470002CB6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		49507FED2AAF49480002CB6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		49507FF02AAF49480002CB6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49507FED2AAF49480002CB6A /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		49507FF62AAF49480002CB6A /* DeleiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeleiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49507FFA2AAF49480002CB6A /* DeleiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteTests.swift; sourceTree = "<group>"; };
 		495080002AAF49480002CB6A /* DeleiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeleiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */,
 				49F5CB2B2AB8C90E00A35878 /* HomeButton.swift */,
 				495A1BC42AB9E8F90042CF93 /* HomeImage.swift */,
+				0D0C30E72ABB2F7E00578893 /* Post.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -149,9 +152,10 @@
 				49727BE72AB0A43E00C6417A /* SchedulingView.swift */,
 				0DDD5FB02AAF5D3000450176 /* TutorialView.swift */,
 				49F5CB292AB88F4A00A35878 /* WebView.swift */,
+				0D0C30E32ABB214300578893 /* TutorialScroll.swift */,
+				0D0C30E52ABB28C400578893 /* SnapCarousel.swift */,
 				0DDD5FB42AB092BA00450176 /* Components */,
 				49507FEF2AAF49480002CB6A /* Preview Content */,
-				0D0C30DF2AB2456C00578893 /* CarouselTutorial.swift */,
 			);
 			path = Deleite;
 			sourceTree = "<group>";
@@ -159,7 +163,6 @@
 		49507FEF2AAF49480002CB6A /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				49507FF02AAF49480002CB6A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -177,7 +180,7 @@
 			children = (
 				495080042AAF49480002CB6A /* DeleiteUITests.swift */,
 				495080062AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift */,
-				49507FED2AAF49480002CB6A /* Assets.xcassets */,
+				49507FED2AAF49480002CB6A /* Assets */,
 			);
 			path = DeleiteUITests;
 			sourceTree = "<group>";
@@ -319,8 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49507FF12AAF49480002CB6A /* Preview Assets.xcassets in Resources */,
-				49507FEE2AAF49480002CB6A /* Assets.xcassets in Resources */,
+				49507FEE2AAF49480002CB6A /* Assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +351,8 @@
 				49507FEC2AAF49470002CB6A /* ContentView.swift in Sources */,
 				49727BE82AB0A43E00C6417A /* SchedulingView.swift in Sources */,
 				49727BEC2AB0A88A00C6417A /* QuestionsView.swift in Sources */,
+				0D0C30E82ABB2F7E00578893 /* Post.swift in Sources */,
+				0D0C30E42ABB214300578893 /* TutorialScroll.swift in Sources */,
 				49727BE42AAF513F00C6417A /* Homescreen.swift in Sources */,
 				B214DCBA2ABA4E2D0091ABED /* Location.swift in Sources */,
 				49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */,
@@ -358,11 +362,11 @@
 				49F5CB2A2AB88F4A00A35878 /* WebView.swift in Sources */,
 				0DDD5FB12AAF5D3000450176 /* TutorialView.swift in Sources */,
 				B214DCB72ABA4E010091ABED /* LocationsViewModel.swift in Sources */,
-				0D0C30E02AB2456C00578893 /* CarouselTutorial.swift in Sources */,
 				495A1BC52AB9E8F90042CF93 /* HomeImage.swift in Sources */,
 				49F5CB2C2AB8C90E00A35878 /* HomeButton.swift in Sources */,
 				49F5CB2E2AB8CAF800A35878 /* HomescreenView.swift in Sources */,
 				B214DCB22ABA4D9A0091ABED /* LocationsView.swift in Sources */,
+				0D0C30E62ABB28C400578893 /* SnapCarousel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
