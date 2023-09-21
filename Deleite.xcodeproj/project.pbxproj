@@ -17,6 +17,7 @@
 		49507FFB2AAF49480002CB6A /* DeleiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FFA2AAF49480002CB6A /* DeleiteTests.swift */; };
 		495080052AAF49480002CB6A /* DeleiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495080042AAF49480002CB6A /* DeleiteUITests.swift */; };
 		495080072AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495080062AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift */; };
+		495A1BC52AB9E8F90042CF93 /* HomeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A1BC42AB9E8F90042CF93 /* HomeImage.swift */; };
 		49727BE42AAF513F00C6417A /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BE32AAF513F00C6417A /* Homescreen.swift */; };
 		49727BE82AB0A43E00C6417A /* SchedulingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BE72AB0A43E00C6417A /* SchedulingView.swift */; };
 		49727BEA2AB0A54900C6417A /* MilkbankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BE92AB0A54900C6417A /* MilkbankView.swift */; };
@@ -62,6 +63,7 @@
 		495080002AAF49480002CB6A /* DeleiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeleiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		495080042AAF49480002CB6A /* DeleiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteUITests.swift; sourceTree = "<group>"; };
 		495080062AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		495A1BC42AB9E8F90042CF93 /* HomeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeImage.swift; sourceTree = "<group>"; };
 		49727BE32AAF513F00C6417A /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
 		49727BE72AB0A43E00C6417A /* SchedulingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingView.swift; sourceTree = "<group>"; };
 		49727BE92AB0A54900C6417A /* MilkbankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkbankView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */,
 				49F5CB2B2AB8C90E00A35878 /* HomeButton.swift */,
+				495A1BC42AB9E8F90042CF93 /* HomeImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				0DDD5FB12AAF5D3000450176 /* TutorialView.swift in Sources */,
 				B214DCB72ABA4E010091ABED /* LocationsViewModel.swift in Sources */,
 				0D0C30E02AB2456C00578893 /* CarouselTutorial.swift in Sources */,
+				495A1BC52AB9E8F90042CF93 /* HomeImage.swift in Sources */,
 				49F5CB2C2AB8C90E00A35878 /* HomeButton.swift in Sources */,
 				49F5CB2E2AB8CAF800A35878 /* HomescreenView.swift in Sources */,
 				B214DCB22ABA4D9A0091ABED /* LocationsView.swift in Sources */,
