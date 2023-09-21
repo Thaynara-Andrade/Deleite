@@ -15,6 +15,8 @@ struct DeleiteApp: App {
         WindowGroup {            
             HomescreenView()
                 .environmentObject(vm)
+//            LocationDetailView(location: LocationsDataService.locations.first!)
+//                .padding()
         }
     }
 }

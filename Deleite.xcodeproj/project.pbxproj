@@ -30,6 +30,7 @@
 		B214DCB72ABA4E010091ABED /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214DCB62ABA4E000091ABED /* LocationsViewModel.swift */; };
 		B214DCBA2ABA4E2D0091ABED /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214DCB92ABA4E2D0091ABED /* Location.swift */; };
 		B2C568472ABB330B00473232 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C568462ABB330B00473232 /* LocationPreviewView.swift */; };
+		B2C568522ABC75EE00473232 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C568512ABC75EE00473232 /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		B214DCB62ABA4E000091ABED /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		B214DCB92ABA4E2D0091ABED /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B2C568462ABB330B00473232 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		B2C568512ABC75EE00473232 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				B214DCB12ABA4D9A0091ABED /* LocationsView.swift */,
 				B214DCB32ABA4DB20091ABED /* LocationMapAnnotionView.swift */,
 				B2C568462ABB330B00473232 /* LocationPreviewView.swift */,
+				B2C568512ABC75EE00473232 /* LocationDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				B214DCB72ABA4E010091ABED /* LocationsViewModel.swift in Sources */,
 				0D0C30E02AB2456C00578893 /* CarouselTutorial.swift in Sources */,
 				49F5CB2C2AB8C90E00A35878 /* HomeButton.swift in Sources */,
+				B2C568522ABC75EE00473232 /* LocationDetailView.swift in Sources */,
 				49F5CB2E2AB8CAF800A35878 /* HomescreenView.swift in Sources */,
 				B214DCB22ABA4D9A0091ABED /* LocationsView.swift in Sources */,
 			);
