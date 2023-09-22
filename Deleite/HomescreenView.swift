@@ -31,9 +31,9 @@ struct HomescreenView: View {
                                 .environmentObject(vm)) {
                                     ZStack{
                                         HomeButton(HometitleButton: "Banco \nde leite",
-                                                   HomecolorButton: Color("Button-Color"),
+                                                   HomecolorButton: Color("Text-Color"),
                                                    HometitleColor: Color.white)
-                                        Image("Image 2")
+                                        Image("Banco de leite")
                                             .resizable()
                                             .aspectRatio(contentMode: .fit)
                                             .frame(width: 128)
@@ -44,9 +44,9 @@ struct HomescreenView: View {
                                 ZStack{
 
                                     HomeButton(HometitleButton: "Tutorial",
-                                               HomecolorButton: Color("Button-Color"),
+                                               HomecolorButton: Color("Text-Color"),
                                                HometitleColor: Color.white)
-                                    Image("Image 1")
+                                    Image("Tutorial")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 104)
@@ -56,9 +56,9 @@ struct HomescreenView: View {
                             NavigationLink(destination: QuestionsView()) {
                                 ZStack{
                                     HomeButton(HometitleButton: "Perguntas \nfrequentes",
-                                               HomecolorButton: Color("Button-Color"),
+                                               HomecolorButton: Color("Text-Color"),
                                                HometitleColor: Color.white)
-                                    Image("Image 4")
+                                    Image("Perguntas frequentes")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 90)
@@ -69,9 +69,9 @@ struct HomescreenView: View {
                                 NavigationLink(destination: QuestionsView()) {
                                     ZStack{
                                     HomeButton(HometitleButton: "Agendar \ncoleta",
-                                               HomecolorButton: Color("Button-Color"),
+                                               HomecolorButton: Color("Text-Color"),
                                                HometitleColor: Color.white)
-                                    Image("Image 3")
+                                    Image("Agendar coleta")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 110)
@@ -101,7 +101,7 @@ struct HomescreenView: View {
                                     .foregroundColor(.white)
                                     .cornerRadius(15)
                                 
-                                Image("Image 5")
+                                Image("Fazer doação")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 130)
