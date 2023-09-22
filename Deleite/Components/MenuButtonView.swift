@@ -24,10 +24,7 @@ struct MenuButton: View {
     }
 
     var body: some View {
-
-        Button(action: {
-
-        }) {
+            
             ZStack {
                
                 HStack {
@@ -62,7 +59,7 @@ struct MenuButton: View {
         }
     }
 
-}
+
 
 struct MenuButtonView_Previews: PreviewProvider {
     static var previews: some View {

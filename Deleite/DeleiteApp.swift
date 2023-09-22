@@ -24,7 +24,7 @@ struct DeleiteApp: App {
     var body: some Scene {
         WindowGroup {
             HomescreenView()
-            //TutorialScroll(currentIndex: tutorialIndex, posts: tutorialImages)
+                .environmentObject(vm)
         }
     }
 }
