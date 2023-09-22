@@ -20,7 +20,7 @@ struct LocationsView: View {
             
             VStack(spacing: 0){
                 Spacer()
-                locationPreviewStack
+                    locationPreviewStack
             }
         }
         .sheet(item: $vm.sheetLocation,onDismiss: nil){ location in
