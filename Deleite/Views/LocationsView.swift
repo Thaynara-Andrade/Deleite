@@ -30,14 +30,16 @@ struct LocationsView: View {
     
     private var mapLayer: some View{
 
-        Map(coordinateRegion: $vm.mapRegion, annotationItems: vm.locations, annotationContent: { location  in MapAnnotation(coordinate:location.coordinates){
-            LocationMapAnnotionView()
+        Map(coordinateRegion: $vm.mapRegion,
+            annotationItems: vm.locations,
+            annotationContent: { location  in MapAnnotation(coordinate:location.coordinates){
+                    LocationMapAnnotionView()
                 .scaleEffect(vm.mapLocation == location ? 1: 0.7)
                 .shadow(radius: 10)
                     .onTapGesture {
-//                        vm.showNextLocation(location: location)
+                        vm.showNextLocation(location: location)
                     }
-            }
+                }
         })
         .ignoresSafeArea()
     }
