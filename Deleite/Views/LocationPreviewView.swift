@@ -30,7 +30,6 @@ struct LocationPreviewView: View {
             .offset(y: 65)
         )
         .cornerRadius(10)
-//       .clipped()
     }
     
 }
@@ -43,6 +42,7 @@ struct LocationPreviewView_Previews: PreviewProvider {
             LocationPreviewView(location: LocationsDataService.locations.first!)
                 .padding()
         }
+        .environmentObject(LocationsViewModel())
     }
 }
 
@@ -70,7 +70,7 @@ extension LocationPreviewView{
             Text(location.cityName)
                 .font(.subheadline)
         }
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
     
     
@@ -88,7 +88,7 @@ extension LocationPreviewView{
     
     private var showNextLocation: some View{
         Button{
-            //vm.sheetLocation = location
+            vm.nextButtonPressed(location: location)
         }label :{
             Text("Próximo")
                 .font(.headline)

@@ -60,4 +60,23 @@ class LocationsViewModel: ObservableObject{
             showLocationList = false
         }
     }
+    
+    func nextButtonPressed(location: Location){
+    //obter o índice atual
+       guard let currentIndex = locations.firstIndex(where: {$0 == mapLocation}) else {
+            print("Não foi possível identificar o índice atual na matriz de localização. ")
+            return
+        }
+        
+        let nextIndex = currentIndex + 1
+        guard locations.indices.contains(nextIndex) else {
+            
+            guard let firstLocation = locations.first else { return }
+            showNextLocation(location: firstLocation)
+            return
+        }
+        
+        let nextLocation = locations[nextIndex]
+        showNextLocation(location: nextLocation)
+    }
 }
