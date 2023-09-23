@@ -71,16 +71,45 @@ extension LocationDetailView{
     
     private var DescriptionSection: some View{
         VStack(alignment: .leading, spacing: 8){
+            
+            Text("Endereço")
+            Text(location.locationAddress)
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+            
+            Text("Atendimento")
             Text(location.description)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
             
+            
+            
+            Text("Telefone")
+            HStack{
+                Text(location.telephone1 + " /")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                
+                Text(location.telephone2)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+            
+            Text("Email")
+            Text(location.email)
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+            
+            
+            
             if let url = URL(string: location.link){
-                Link("Read more on wikipedia", destination: url)
+                Link("Saiba mais em www.gov.br", destination: url)
                     .font(.headline)
                     .tint(.blue)
             }
         }
+        .padding(5)
+
     }
     
     private var mapLayer: some View{
@@ -97,7 +126,7 @@ extension LocationDetailView{
             .aspectRatio(1, contentMode: .fit)
             .cornerRadius(30)
     }
-
+    
     private var backButton: some View{
         Button{
             vm.sheetLocation = nil
