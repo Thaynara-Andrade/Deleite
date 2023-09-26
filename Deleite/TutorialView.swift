@@ -30,7 +30,7 @@ struct TutorialView: View {
                             description: "Como fazer a limpeza correta antes da retiradado leite",
                             colorButton: Color("Button-Color"),
                             titleColor: Color.white,
-                            image: Image("higiene"))}
+                            image: Image("Higiene"))}
                             
                 NavigationLink(destination: TutorialCollect()) {
                     MenuButton(
