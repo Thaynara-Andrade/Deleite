@@ -21,9 +21,9 @@ class LocationsDataService {
             description: "24 horas por dia, todos os dias da semana",
             email: "bancodeleite@hgcc.ce.gov.br",
             imageNames: [
-                "rome-colosseum-1",
-                "rome-colosseum-2",
-                "rome-colosseum-3",
+                "cesarcals-banco-1",
+                "cesarcals-banco-1",
+                "cesarcals-banco-1",
             ],
             link: "https://www.gov.br/saude/pt-br/acesso-a-informacao/acoes-e-programas/banco-de-leite-humano"),
         
@@ -37,9 +37,9 @@ class LocationsDataService {
             description: "segunda a sexta-feira, das 7 às 17h",
             email: "blh@hias.ce.gov.br",
             imageNames: [
-                "rome-colosseum-1",
-                "rome-colosseum-2",
-                "rome-colosseum-3",
+                "albertsabin-banco-1",
+                "albertsabin-banco-2",
+                "albertsabin-banco-3",
             ],
             link: "https://www.gov.br/saude/pt-br/acesso-a-informacao/acoes-e-programas/banco-de-leite-humano"),
         
@@ -54,9 +54,9 @@ class LocationsDataService {
             description: "segunda a sexta-feira, das 8 às 16",
             email: "email@.ce.gov.br",
             imageNames: [
-                "rome-colosseum-1",
-                "rome-colosseum-2",
-                "rome-colosseum-3",
+                "hospitalgeral-banco-1",
+                "hospitalgeral-banco-2",
+                "hospitalgeral-banco-3",
             ],
             link: "https://www.gov.br/saude/pt-br/acesso-a-informacao/acoes-e-programas/banco-de-leite-humano"),
         
@@ -70,9 +70,9 @@ class LocationsDataService {
             description: "segunda a sexta-feira, das 8 às 15",
             email: "blhmeac@gmail.com",
             imageNames: [
-                "rome-colosseum-1",
-                "rome-colosseum-2",
-                "rome-colosseum-3",
+                "meac-banco-1",
+                "meac-banco-2",
+                "meac-banco-3",
             ],
             link: "https://www.gov.br/saude/pt-br/acesso-a-informacao/acoes-e-programas/banco-de-leite-humano"),
     ]

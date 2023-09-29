@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+  @main
 struct DeleiteApp: App {
     
     @StateObject private var vm = LocationsViewModel()
