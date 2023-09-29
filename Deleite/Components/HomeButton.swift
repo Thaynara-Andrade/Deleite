@@ -19,33 +19,26 @@ struct HomeButton: View {
     }
 
     var body: some View {
-       
-            ZStack {
-                VStack{
-                    Text(HometitleButton)
-                        .font(.title3)
-                        .fontWeight(.heavy)
-                        .multilineTextAlignment(.leading)
-                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                        .padding(.leading, 20)
-                        .padding(.top, -80)
-                        .frame(width: 160, height: 210)
-                        .background(HomecolorButton)
-                        .foregroundColor(HometitleColor)
-                        .cornerRadius(24)
-                        
-                }
-                    
-                }
+        ZStack {
+            VStack {
+                Text(HometitleButton)
+                    .font(.title3)
+                    .fontWeight(.heavy)
+                    .multilineTextAlignment(.leading)
+                    .padding(.leading, 20)
+                    .padding(.top, 20)
+                    .frame(width: 160, height: 210, alignment: .topLeading)
+                    .background(HomecolorButton)
+                    .foregroundColor(HometitleColor)
+                    .cornerRadius(24)
+            }
         }
-    }
-
-
-struct HomeButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeButton(HometitleButton: "Banco de \nleite", HomecolorButton: Color("Button-Color"), HometitleColor: Color.white
-            )
-           .frame(width: 160, height: 210, alignment: .center)
     }
 }
 
+struct HomeButtonView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeButton(HometitleButton: "Banco\nde leite", HomecolorButton: Color("Button-Color"), HometitleColor: Color.white)
+            
+    }
+}

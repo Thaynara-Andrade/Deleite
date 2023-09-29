@@ -63,7 +63,7 @@ struct MenuButton: View {
 
 struct MenuButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuButton(titleButton: "Ama", description: "hoje", colorButton: Color.gray, titleColor: Color.black, image:Image("mama")
+        MenuButton(titleButton: "Ama", description: "hoje", colorButton: Color.gray, titleColor: Color.black, image:Image("Higiene")
             )
 //
     }

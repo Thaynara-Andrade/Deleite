@@ -21,7 +21,7 @@
 		49507FFB2AAF49480002CB6A /* DeleiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FFA2AAF49480002CB6A /* DeleiteTests.swift */; };
 		495080052AAF49480002CB6A /* DeleiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495080042AAF49480002CB6A /* DeleiteUITests.swift */; };
 		495080072AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495080062AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift */; };
-		495A1BC52AB9E8F90042CF93 /* HomeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A1BC42AB9E8F90042CF93 /* HomeImage.swift */; };
+		496D7CD02ABDD87100F6FE75 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D7CCF2ABDD87100F6FE75 /* AlertView.swift */; };
 		49727BE82AB0A43E00C6417A /* SchedulingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BE72AB0A43E00C6417A /* SchedulingView.swift */; };
 		49727BEC2AB0A88A00C6417A /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BEB2AB0A88A00C6417A /* QuestionsView.swift */; };
 		49F5CB2A2AB88F4A00A35878 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F5CB292AB88F4A00A35878 /* WebView.swift */; };
@@ -71,7 +71,7 @@
 		495080002AAF49480002CB6A /* DeleiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeleiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		495080042AAF49480002CB6A /* DeleiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteUITests.swift; sourceTree = "<group>"; };
 		495080062AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		495A1BC42AB9E8F90042CF93 /* HomeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeImage.swift; sourceTree = "<group>"; };
+		496D7CCF2ABDD87100F6FE75 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = ../AlertView.swift; sourceTree = "<group>"; };
 		49727BE72AB0A43E00C6417A /* SchedulingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingView.swift; sourceTree = "<group>"; };
 		49727BEB2AB0A88A00C6417A /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 		49F5CB292AB88F4A00A35878 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -124,7 +124,6 @@
 			children = (
 				0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */,
 				49F5CB2B2AB8C90E00A35878 /* HomeButton.swift */,
-				495A1BC42AB9E8F90042CF93 /* HomeImage.swift */,
 				0D0C30E72ABB2F7E00578893 /* Post.swift */,
 			);
 			path = Components;
@@ -164,6 +163,7 @@
 				49727BEB2AB0A88A00C6417A /* QuestionsView.swift */,
 				49727BE72AB0A43E00C6417A /* SchedulingView.swift */,
 				49F5CB292AB88F4A00A35878 /* WebView.swift */,
+				496D7CCF2ABDD87100F6FE75 /* AlertView.swift */,
 				0DDD5FB02AAF5D3000450176 /* TutorialView.swift */,
 				0D0C30E32ABB214300578893 /* TutorialSanitation.swift */,
 				0DDBAD0E2ABC84C800C1EFFD /* TutorialCollect.swift */,
@@ -291,7 +291,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					49507FE52AAF49470002CB6A = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -372,9 +372,9 @@
 				49F5CB2A2AB88F4A00A35878 /* WebView.swift in Sources */,
 				0DDD5FB12AAF5D3000450176 /* TutorialView.swift in Sources */,
 				B214DCB72ABA4E010091ABED /* LocationsViewModel.swift in Sources */,
-				495A1BC52AB9E8F90042CF93 /* HomeImage.swift in Sources */,
 				0DDBAD112ABC883000C1EFFD /* TutorialStorege.swift in Sources */,
 				49F5CB2C2AB8C90E00A35878 /* HomeButton.swift in Sources */,
+				496D7CD02ABDD87100F6FE75 /* AlertView.swift in Sources */,
 				B2C568522ABC75EE00473232 /* LocationDetailView.swift in Sources */,
 				49F5CB2E2AB8CAF800A35878 /* HomescreenView.swift in Sources */,
 				B214DCB22ABA4D9A0091ABED /* LocationsView.swift in Sources */,
@@ -451,6 +451,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -511,6 +512,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
