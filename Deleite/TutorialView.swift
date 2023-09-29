@@ -11,11 +11,11 @@ struct TutorialView: View {
     @State var tutorialIndex = 0
 
     let tutorialHigiene: [Post] = [
-        Post(postImagem: "higiene1"),
-        Post(postImagem: "higiene2"),
-        Post(postImagem: "higiene3"),
-        Post(postImagem: "higiene4"),
-        Post(postImagem: "higiene5")
+        Post(postImagem: "Higiene-1"),
+        Post(postImagem: "Higiene-2"),
+        Post(postImagem: "Higiene-3"),
+        Post(postImagem: "Higiene-4"),
+        Post(postImagem: "Higiene-5")
     ]
     
     let tutorialColeta:[Post] = [
@@ -41,9 +41,8 @@ struct TutorialView: View {
             VStack (spacing: 20){
                 NavigationLink(destination: TutorialSanitation(currentIndex: tutorialIndex, posts: tutorialHigiene)) {
                     
-                        MenuButton(
+                        MenuButtonHigiene(
                             titleButton: "Higienização",
-
                             description: "Como se preparar para o momento da retirada do leite materno",
                             colorButton: Color("Buttonvariable-Color"),
                             titleColor: Color("Text-Color"),
@@ -51,7 +50,7 @@ struct TutorialView: View {
                             
                 NavigationLink(destination:
                     TutorialCollect(currentIndex: tutorialIndex, posts: tutorialColeta)) {
-                    MenuButton(
+                    MenuButtonColeta(
                         titleButton: "Coleta",
                         description: "Como coletar o leite de maneira simples e com baixo risco de resíduos",
                         colorButton: Color("Buttonvariable-Color"),
@@ -60,7 +59,7 @@ struct TutorialView: View {
                         
                 NavigationLink(destination:
                     TutorialStorege(currentIndex: tutorialIndex, posts: tutorialColeta)) {
-                    MenuButton(
+                    MenuButtonArmazenamento(
                         titleButton: "Guardando",
                         description: "Como armazenar o leite coletado de maneira segura",
                         colorButton: Color("Buttonvariable-Color"),

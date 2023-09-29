@@ -1,13 +1,13 @@
 //
-//  ComponentsView.swift
+//  MenuButtonArmazenamento.swift
 //  Deleite
 //
-//  Created by Marília de Sousa on 12/09/23.
+//  Created by Marília de Sousa on 29/09/23.
 //
 
 import SwiftUI
 
-struct MenuButton: View {
+struct MenuButtonArmazenamento: View {
 
     let titleButton: String
     let description: String
@@ -30,8 +30,8 @@ struct MenuButton: View {
                 HStack {
                     image
                         .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 110, height: 110)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width:110, height: 110)
                         .cornerRadius(10)
                         .multilineTextAlignment(.leading)
                     VStack (alignment: .leading){
@@ -45,8 +45,7 @@ struct MenuButton: View {
                         .fontWeight(.semibold)
                         .foregroundColor(titleColor)
                         .multilineTextAlignment(.leading)
-//                        .padding(.bottom, 16)
-                    } .padding(.leading, 4)
+                    }   .padding(.leading, 4)
                 Spacer()
                     
                 }
@@ -60,11 +59,3 @@ struct MenuButton: View {
     }
 
 
-
-struct MenuButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        MenuButton(titleButton: "Ama", description: "hoje", colorButton: Color.gray, titleColor: Color.black, image:Image("Higiene")
-            )
-//
-    }
-}
