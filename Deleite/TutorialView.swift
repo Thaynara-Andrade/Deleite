@@ -60,7 +60,7 @@ struct TutorialView: View {
                 NavigationLink(destination:
                     TutorialStorege(currentIndex: tutorialIndex, posts: tutorialArmazenamento)) {
                     MenuButtonArmazenamento(
-                        titleButton: "Guardando",
+                        titleButton: "Armazenar",
                         description: "Como armazenar o leite coletado de maneira segura",
                         colorButton: Color("Buttonvariable-Color"),
                         titleColor: Color("Text-Color"),
