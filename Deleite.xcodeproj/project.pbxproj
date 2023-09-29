@@ -14,8 +14,10 @@
 		0DDBAD0D2ABC776200C1EFFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */; };
 		0DDBAD0F2ABC84C800C1EFFD /* TutorialCollect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBAD0E2ABC84C800C1EFFD /* TutorialCollect.swift */; };
 		0DDBAD112ABC883000C1EFFD /* TutorialStorege.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBAD102ABC883000C1EFFD /* TutorialStorege.swift */; };
+		0DDBAD132AC704B000C1EFFD /* MenuButtonColeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBAD122AC704B000C1EFFD /* MenuButtonColeta.swift */; };
+		0DDBAD152AC704CB00C1EFFD /* MenuButtonArmazenamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBAD142AC704CB00C1EFFD /* MenuButtonArmazenamento.swift */; };
 		0DDD5FB12AAF5D3000450176 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDD5FB02AAF5D3000450176 /* TutorialView.swift */; };
-		0DDD5FB32AB07FD300450176 /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */; };
+		0DDD5FB32AB07FD300450176 /* MenuButtonHigieneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDD5FB22AB07FD300450176 /* MenuButtonHigieneView.swift */; };
 		49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FE92AAF49470002CB6A /* DeleiteApp.swift */; };
 		49507FEC2AAF49470002CB6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FEB2AAF49470002CB6A /* ContentView.swift */; };
 		49507FFB2AAF49480002CB6A /* DeleiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FFA2AAF49480002CB6A /* DeleiteTests.swift */; };
@@ -61,8 +63,10 @@
 		0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DDBAD0E2ABC84C800C1EFFD /* TutorialCollect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollect.swift; sourceTree = "<group>"; };
 		0DDBAD102ABC883000C1EFFD /* TutorialStorege.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStorege.swift; sourceTree = "<group>"; };
+		0DDBAD122AC704B000C1EFFD /* MenuButtonColeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonColeta.swift; sourceTree = "<group>"; };
+		0DDBAD142AC704CB00C1EFFD /* MenuButtonArmazenamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonArmazenamento.swift; sourceTree = "<group>"; };
 		0DDD5FB02AAF5D3000450176 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
-		0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
+		0DDD5FB22AB07FD300450176 /* MenuButtonHigieneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonHigieneView.swift; sourceTree = "<group>"; };
 		49507FE62AAF49470002CB6A /* Deleite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deleite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49507FE92AAF49470002CB6A /* DeleiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteApp.swift; sourceTree = "<group>"; };
 		49507FEB2AAF49470002CB6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,7 +126,9 @@
 		0DDD5FB42AB092BA00450176 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				0DDD5FB22AB07FD300450176 /* MenuButtonView.swift */,
+				0DDD5FB22AB07FD300450176 /* MenuButtonHigieneView.swift */,
+				0DDBAD122AC704B000C1EFFD /* MenuButtonColeta.swift */,
+				0DDBAD142AC704CB00C1EFFD /* MenuButtonArmazenamento.swift */,
 				49F5CB2B2AB8C90E00A35878 /* HomeButton.swift */,
 				0D0C30E72ABB2F7E00578893 /* Post.swift */,
 			);
@@ -357,7 +363,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DDD5FB32AB07FD300450176 /* MenuButtonView.swift in Sources */,
+				0DDD5FB32AB07FD300450176 /* MenuButtonHigieneView.swift in Sources */,
+				0DDBAD132AC704B000C1EFFD /* MenuButtonColeta.swift in Sources */,
 				49507FEC2AAF49470002CB6A /* ContentView.swift in Sources */,
 				49727BE82AB0A43E00C6417A /* SchedulingView.swift in Sources */,
 				49727BEC2AB0A88A00C6417A /* QuestionsView.swift in Sources */,
@@ -375,6 +382,7 @@
 				0DDBAD112ABC883000C1EFFD /* TutorialStorege.swift in Sources */,
 				49F5CB2C2AB8C90E00A35878 /* HomeButton.swift in Sources */,
 				496D7CD02ABDD87100F6FE75 /* AlertView.swift in Sources */,
+				0DDBAD152AC704CB00C1EFFD /* MenuButtonArmazenamento.swift in Sources */,
 				B2C568522ABC75EE00473232 /* LocationDetailView.swift in Sources */,
 				49F5CB2E2AB8CAF800A35878 /* HomescreenView.swift in Sources */,
 				B214DCB22ABA4D9A0091ABED /* LocationsView.swift in Sources */,

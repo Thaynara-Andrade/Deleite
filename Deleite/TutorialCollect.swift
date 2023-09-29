@@ -44,6 +44,7 @@ struct TutorialCollect: View {
         .frame(maxHeight: .infinity, alignment: .top)
         .font(.largeTitle)
         .padding()
+        .clipped()
         
     }
 }

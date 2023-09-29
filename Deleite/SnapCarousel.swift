@@ -63,6 +63,8 @@ struct SnapCarousel<Content: View, Model: Identifiable>: View {
             )
             
         }
+            
+        
         .animation(.easeInOut, value: offset == 0)
     }
 }
