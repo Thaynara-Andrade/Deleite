@@ -19,19 +19,19 @@ struct TutorialView: View {
     ]
     
     let tutorialColeta:[Post] = [
-        Post(postImagem: "Coleta1"),
-        Post(postImagem: "Coleta2"),
-        Post(postImagem: "Coleta3"),
-        Post(postImagem: "Coleta4"),
-        Post(postImagem: "Coleta5"),
+        Post(postImagem: "Retirarleite-1"),
+        Post(postImagem: "Retirarleite-2"),
+        Post(postImagem: "Retirarleite-3"),
+        Post(postImagem: "Retirarleite-4"),
+        Post(postImagem: "Retirarleite-5"),
     ]
     
     let tutorialArmazenamento:[Post] = [
-        Post(postImagem: "Armazenamento1"),
-        Post(postImagem: "Armazenamento2"),
-        Post(postImagem: "Armazenamento3"),
-        Post(postImagem: "Armazenamento4"),
-        Post(postImagem: "Armazenamento5"),
+        Post(postImagem: "Armazenar-1"),
+        Post(postImagem: "Armazenar-2"),
+        Post(postImagem: "Armazenar-3"),
+        Post(postImagem: "Armazenar-4"),
+        Post(postImagem: "Armazenar-5"),
     ]
     
     var body: some View {
@@ -58,7 +58,7 @@ struct TutorialView: View {
                         image: Image("ColetaCapa"))}
                         
                 NavigationLink(destination:
-                    TutorialStorege(currentIndex: tutorialIndex, posts: tutorialColeta)) {
+                    TutorialStorege(currentIndex: tutorialIndex, posts: tutorialArmazenamento)) {
                     MenuButtonArmazenamento(
                         titleButton: "Guardando",
                         description: "Como armazenar o leite coletado de maneira segura",
