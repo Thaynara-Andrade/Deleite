@@ -40,7 +40,7 @@ struct TutorialStorege: View {
                         }
                     }
                 }
-                .navigationTitle("Estoque")
+                .navigationTitle("Armazenar")
                 .frame(maxHeight: .infinity, alignment: .top)
                 .font(.largeTitle)
                 .padding()
