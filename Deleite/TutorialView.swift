@@ -11,11 +11,11 @@ struct TutorialView: View {
     @State var tutorialIndex = 0
 
     let tutorialImages: [Post] = [
-        Post(postImagem: "TESTE-CARD"),
-        Post(postImagem: "TESTE-CARD"),
-        Post(postImagem: "TESTE-CARD"),
-        Post(postImagem: "TESTE-CARD"),
-        Post(postImagem: "TESTE-CARD")
+        Post(postImagem: "Group 32"),
+        Post(postImagem: "Group 32"),
+        Post(postImagem: "Group 32"),
+        Post(postImagem: "Group 32"),
+        Post(postImagem: "Group 32")
     ]
     
     var body: some View {
@@ -27,25 +27,25 @@ struct TutorialView: View {
                     
                         MenuButton(
                             titleButton: "Higienização",
-                            description: "Como fazer a limpeza correta antes da retiradado leite",
-                            colorButton: Color("Button-Color"),
-                            titleColor: Color.white,
+                            description: "Como se preparar para o momento da retirada do leite materno",
+                            colorButton: Color("Buttonvariable-Color"),
+                            titleColor: Color("Text-Color"),
                             image: Image("higiene"))}
                             
                 NavigationLink(destination: TutorialCollect()) {
                     MenuButton(
                         titleButton: "Coleta",
-                        description: "Aprenda a coletar o leite da maneira correta, sem rezíduos",
-                        colorButton: Color("Button-Color"),
-                        titleColor: Color.white,
+                        description: "Como coletar o leite de maneira simples e com baixo risco de resíduos",
+                        colorButton: Color("Buttonvariable-Color"),
+                        titleColor: Color("Text-Color"),
                         image: Image("mama"))}
                         
                 NavigationLink(destination: TutorialStorege()) {
                     MenuButton(
                         titleButton: "Guardando",
-                        description: "Text-Color",
-                        colorButton: Color("Button-Color"),
-                        titleColor: Color.white,
+                        description: "Como armazenar o leite coletado de maneira segura",
+                        colorButton: Color("Buttonvariable-Color"),
+                        titleColor: Color("Text-Color"),
                         image: Image("mama"))}
     
                 Spacer()
