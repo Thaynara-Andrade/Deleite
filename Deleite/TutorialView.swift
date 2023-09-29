@@ -27,10 +27,11 @@ struct TutorialView: View {
                     
                         MenuButton(
                             titleButton: "Higienização",
+
                             description: "Como se preparar para o momento da retirada do leite materno",
                             colorButton: Color("Buttonvariable-Color"),
                             titleColor: Color("Text-Color"),
-                            image: Image("higiene"))}
+                            image: Image("Higiene"))}
                             
                 NavigationLink(destination: TutorialCollect()) {
                     MenuButton(
@@ -59,5 +60,5 @@ struct TutorialView: View {
 struct TutorialView_Previews: PreviewProvider {
     static var previews: some View {
         TutorialView()
+        }
     }
-}

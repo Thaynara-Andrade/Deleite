@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+  @main
 struct DeleiteApp: App {
     
     @StateObject private var vm = LocationsViewModel()
@@ -24,6 +24,7 @@ struct DeleiteApp: App {
     var body: some Scene {
         WindowGroup {
             HomescreenView()
+                .environmentObject(vm)
         }
     }
 }

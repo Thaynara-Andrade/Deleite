@@ -8,13 +8,14 @@ import SwiftUI
 
 struct HomescreenView: View {
     @StateObject private var vm = LocationsViewModel()
+    @State private var showAlert = false
     
     
     let gridSpacingh: CGFloat = 13
     let gridSpacingv: CGFloat = -10
     let columnCount: Int = 2
     @State private var showWebView = false
-
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
@@ -31,9 +32,9 @@ struct HomescreenView: View {
                                 .environmentObject(vm)) {
                                     ZStack{
                                         HomeButton(HometitleButton: "Banco \nde leite",
-                                                   HomecolorButton: Color("Button-Color"),
+                                                   HomecolorButton: Color("Text-Color"),
                                                    HometitleColor: Color.white)
-                                        Image("Image 2")
+                                        Image("Banco de leite")
                                             .resizable()
                                             .aspectRatio(contentMode: .fit)
                                             .frame(width: 128)
@@ -42,11 +43,11 @@ struct HomescreenView: View {
                                 }
                             NavigationLink(destination: TutorialView()) {
                                 ZStack{
-
+                                    
                                     HomeButton(HometitleButton: "Tutorial",
-                                               HomecolorButton: Color("Button-Color"),
+                                               HomecolorButton: Color("Text-Color"),
                                                HometitleColor: Color.white)
-                                    Image("Image 1")
+                                    Image("Tutorial")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 104)
@@ -56,9 +57,9 @@ struct HomescreenView: View {
                             NavigationLink(destination: QuestionsView()) {
                                 ZStack{
                                     HomeButton(HometitleButton: "Perguntas \nfrequentes",
-                                               HomecolorButton: Color("Button-Color"),
+                                               HomecolorButton: Color("Text-Color"),
                                                HometitleColor: Color.white)
-                                    Image("Image 4")
+                                    Image("Perguntas frequentes")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 90)
@@ -66,21 +67,36 @@ struct HomescreenView: View {
                                 }
                             }
                             
-                                NavigationLink(destination: QuestionsView()) {
-                                    ZStack{
-                                    HomeButton(HometitleButton: "Agendar \ncoleta",
-                                               HomecolorButton: Color("Button-Color"),
-                                               HometitleColor: Color.white)
-                                    Image("Image 3")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 110)
-                                        .position(x:93, y:134)
+
+                                VStack{
+                                    Button(action: {
+                                        showAlert = true
+                                    }) {
+                                        ZStack {
+                                            
+                                            HomeButton(HometitleButton: "Agendar \ncoleta",
+                                                       HomecolorButton:Color("Text-Color"),
+                                                       HometitleColor: Color.white)
+                                            
+                                            Image("Agendar coleta")
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                                .frame(width: 110)
+                                                .position(x:93, y:134)
+                                        }
+                                    }.alert(isPresented: $showAlert) {
+                                        Alert(
+                                            title: Text("Em construção"),
+                                            message: Text("Esta tela ainda está em desenvolvimento."),
+                                            dismissButton: .default(Text("OK"))
+                                            
+                                        )
+                                    }
                                 }
-                            }
+                            
                         }
                     } .padding()
-                        
+                    
                     
                     NavigationLink("", destination: WebView(urlString: "https://wa.me/message/O2WSGGAHTPI7G1"), isActive: $showWebView)
                     
@@ -101,7 +117,7 @@ struct HomescreenView: View {
                                     .foregroundColor(.white)
                                     .cornerRadius(15)
                                 
-                                Image("Image 5")
+                                Image("Fazer doação")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 130)

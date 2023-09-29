@@ -5,6 +5,7 @@
 //  Created by Raina Rodrigues de Lima on 19/09/23.
 //
 
+import SwiftUI
 import MapKit
 
 class LocationsViewModel: ObservableObject{
@@ -26,6 +27,8 @@ class LocationsViewModel: ObservableObject{
     //mostrar detalhes da localização via sheet
     @Published var sheetLocation:  Location? = nil
     
+    @Published var showLocationList: Bool = false
+    
     init(){
         let locations = LocationsDataService.locations
         self.locations = locations
@@ -33,13 +36,47 @@ class LocationsViewModel: ObservableObject{
         self.updateMapRegiaon(location: locations.first!)
     }
     
+    
 //    private func updateMapRegiaon(location: Location){
-//        withAnimation(.easeInOut){
-//            mapRegion = MKCoordinateRegion(center: location[].coordinates, span: mapSpan)
-//        }
+//        mapRegion = MKCoordinateRegion(center: location.coordinates, span: mapSpan)
 //    }
     
     private func updateMapRegiaon(location: Location){
-        mapRegion = MKCoordinateRegion(center: location.coordinates, span: mapSpan)
+        withAnimation(.easeOut){
+            mapRegion = MKCoordinateRegion(center: location.coordinates, span: mapSpan)
+        }
+    }
+
+    func toggleLocationList(location: Location){
+        withAnimation(.easeOut){
+//            showLocationList = showLocationList.toggle()
+            showLocationList = !showLocationList
+        }
+    }
+
+    func showNextLocation(location: Location){
+        withAnimation(.easeOut){
+            mapLocation = location
+            showLocationList = false
+        }
+    }
+    
+    func nextButtonPressed(location: Location){
+    //obter o índice atual
+       guard let currentIndex = locations.firstIndex(where: {$0 == mapLocation}) else {
+            print("Não foi possível identificar o índice atual na matriz de localização. ")
+            return
+        }
+        
+        let nextIndex = currentIndex + 1
+        guard locations.indices.contains(nextIndex) else {
+            
+            guard let firstLocation = locations.first else { return }
+            showNextLocation(location: firstLocation)
+            return
+        }
+        
+        let nextLocation = locations[nextIndex]
+        showNextLocation(location: nextLocation)
     }
 }
