@@ -19,7 +19,7 @@ struct HomescreenView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                Text("Seja bem vinda, ao Deleite!")
+                Text("Seja bem vinda ao Deleite!")
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.leading)
                     .padding(.leading, 17)
@@ -98,10 +98,12 @@ struct HomescreenView: View {
                     } .padding()
                     
                     
-                    NavigationLink("", destination: WebView(urlString: "https://wa.me/message/O2WSGGAHTPI7G1"), isActive: $showWebView)
+//                    NavigationLink("", destination: WebView(urlString: "https://tinyurl.com/DOAR-LEITE-MEAC-BLH-UFC"), isActive: $showWebView)
                     
                     Button(action: {
-                        showWebView = true
+                        if let whatsappURL = URL(string: "https://tinyurl.com/DOAR-LEITE-MEAC-BLH-UFC") {
+                            UIApplication.shared.open(whatsappURL)
+                        }
                     }) {
                         
                         VStack(alignment: .leading) {
@@ -121,8 +123,8 @@ struct HomescreenView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 130)
-                                    .position(x:313.5, y:75)
-                            }
+                                    .position(x:306, y:75)
+                            } .padding(9)
                             
                         }
                     }
