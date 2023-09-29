@@ -12,6 +12,22 @@ class LocationsDataService {
     
     static let locations: [Location] = [
         Location(
+            name: "Banco de Leite Humano da Maternidade Escola Assis Chateaubriand - MEAC",
+            cityName: "Fortaleza",
+            coordinates: CLLocationCoordinate2D(latitude: -3.7478391105048385, longitude: -38.55353543915446),
+            locationAddress: "Rua Coronel Nunes de Melo, s/n, Rodolfo Teófilo, Fortaleza",
+            telephone1 : "(85) 3366-8509",
+            telephone2 : "00000-0000",
+            description: "segunda a sexta-feira, das 8 às 15",
+            email: "blhmeac@gmail.com",
+            imageNames: [
+                "meac-banco-1",
+                "meac-banco-2",
+                "meac-banco-3",
+            ],
+            link: "https://www.gov.br/saude/pt-br/acesso-a-informacao/acoes-e-programas/banco-de-leite-humano"),
+        
+        Location(
             name: "Banco de Leite do Hospital Geral Dr. César Cals",
             cityName: "Fortaleza",
             coordinates: CLLocationCoordinate2D(latitude: -3.725466331034799, longitude: -38.53356606948943),
@@ -60,21 +76,6 @@ class LocationsDataService {
             ],
             link: "https://www.gov.br/saude/pt-br/acesso-a-informacao/acoes-e-programas/banco-de-leite-humano"),
         
-        Location(
-            name: "Banco de Leite Humano da Maternidade Escola Assis Chateaubriand - MEAC",
-            cityName: "Fortaleza",
-            coordinates: CLLocationCoordinate2D(latitude: -3.7478391105048385, longitude: -38.55353543915446),
-            locationAddress: "Rua Coronel Nunes de Melo, s/n, Rodolfo Teófilo, Fortaleza",
-            telephone1 : "(85) 3366-8509",
-            telephone2 : "00000-0000",
-            description: "segunda a sexta-feira, das 8 às 15",
-            email: "blhmeac@gmail.com",
-            imageNames: [
-                "meac-banco-1",
-                "meac-banco-2",
-                "meac-banco-3",
-            ],
-            link: "https://www.gov.br/saude/pt-br/acesso-a-informacao/acoes-e-programas/banco-de-leite-humano"),
     ]
     
 }
