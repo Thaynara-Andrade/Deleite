@@ -18,6 +18,10 @@
 		0DDBAD152AC704CB00C1EFFD /* MenuButtonArmazenamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBAD142AC704CB00C1EFFD /* MenuButtonArmazenamento.swift */; };
 		0DDD5FB12AAF5D3000450176 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDD5FB02AAF5D3000450176 /* TutorialView.swift */; };
 		0DDD5FB32AB07FD300450176 /* MenuButtonHigieneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDD5FB22AB07FD300450176 /* MenuButtonHigieneView.swift */; };
+		491854E52AD429A600319702 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491854E42AD429A600319702 /* LottieView.swift */; };
+		491854E82AD42E6F00319702 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 491854E72AD42E6F00319702 /* Lottie */; };
+		491854EC2AD43D0100319702 /* ConstructionLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491854EB2AD43D0100319702 /* ConstructionLottieView.swift */; };
+		491854EE2AD43DD300319702 /* Coleta.json in Resources */ = {isa = PBXBuildFile; fileRef = 491854ED2AD43DD300319702 /* Coleta.json */; };
 		49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FE92AAF49470002CB6A /* DeleiteApp.swift */; };
 		49507FEC2AAF49470002CB6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FEB2AAF49470002CB6A /* ContentView.swift */; };
 		49507FFB2AAF49480002CB6A /* DeleiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FFA2AAF49480002CB6A /* DeleiteTests.swift */; };
@@ -67,6 +71,9 @@
 		0DDBAD142AC704CB00C1EFFD /* MenuButtonArmazenamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonArmazenamento.swift; sourceTree = "<group>"; };
 		0DDD5FB02AAF5D3000450176 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		0DDD5FB22AB07FD300450176 /* MenuButtonHigieneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonHigieneView.swift; sourceTree = "<group>"; };
+		491854E42AD429A600319702 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		491854EB2AD43D0100319702 /* ConstructionLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructionLottieView.swift; sourceTree = "<group>"; };
+		491854ED2AD43DD300319702 /* Coleta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Coleta.json; sourceTree = "<group>"; };
 		49507FE62AAF49470002CB6A /* Deleite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deleite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49507FE92AAF49470002CB6A /* DeleiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteApp.swift; sourceTree = "<group>"; };
 		49507FEB2AAF49470002CB6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491854E82AD42E6F00319702 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,11 +172,14 @@
 				B214DCB52ABA4DD40091ABED /* ViewModels */,
 				B214DCB02ABA4D790091ABED /* Views */,
 				49507FE92AAF49470002CB6A /* DeleiteApp.swift */,
+				491854EB2AD43D0100319702 /* ConstructionLottieView.swift */,
 				49507FEB2AAF49470002CB6A /* ContentView.swift */,
 				49F5CB2D2AB8CAF800A35878 /* HomescreenView.swift */,
 				49727BEB2AB0A88A00C6417A /* QuestionsView.swift */,
 				49727BE72AB0A43E00C6417A /* SchedulingView.swift */,
+				491854E42AD429A600319702 /* LottieView.swift */,
 				49F5CB292AB88F4A00A35878 /* WebView.swift */,
+				491854ED2AD43DD300319702 /* Coleta.json */,
 				496D7CCF2ABDD87100F6FE75 /* AlertView.swift */,
 				0DDD5FB02AAF5D3000450176 /* TutorialView.swift */,
 				0D0C30E32ABB214300578893 /* TutorialSanitation.swift */,
@@ -249,6 +260,9 @@
 			dependencies = (
 			);
 			name = Deleite;
+			packageProductDependencies = (
+				491854E72AD42E6F00319702 /* Lottie */,
+			);
 			productName = Deleite;
 			productReference = 49507FE62AAF49470002CB6A /* Deleite.app */;
 			productType = "com.apple.product-type.application";
@@ -321,6 +335,9 @@
 				Base,
 			);
 			mainGroup = 49507FDD2AAF49470002CB6A;
+			packageReferences = (
+				491854E62AD42E6F00319702 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 49507FE72AAF49470002CB6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +356,7 @@
 			files = (
 				0DDBAD0D2ABC776200C1EFFD /* Assets.xcassets in Resources */,
 				0DDBAD0A2ABC753B00C1EFFD /* Preview Assets.xcassets in Resources */,
+				491854EE2AD43DD300319702 /* Coleta.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,8 +399,10 @@
 				B214DCB72ABA4E010091ABED /* LocationsViewModel.swift in Sources */,
 				0DDBAD112ABC883000C1EFFD /* TutorialStorege.swift in Sources */,
 				49F5CB2C2AB8C90E00A35878 /* HomeButton.swift in Sources */,
+				491854EC2AD43D0100319702 /* ConstructionLottieView.swift in Sources */,
 				496D7CD02ABDD87100F6FE75 /* AlertView.swift in Sources */,
 				0DDBAD152AC704CB00C1EFFD /* MenuButtonArmazenamento.swift in Sources */,
+				491854E52AD429A600319702 /* LottieView.swift in Sources */,
 				B2C568522ABC75EE00473232 /* LocationDetailView.swift in Sources */,
 				49F5CB2E2AB8CAF800A35878 /* HomescreenView.swift in Sources */,
 				B214DCB22ABA4D9A0091ABED /* LocationsView.swift in Sources */,
@@ -544,29 +564,35 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Deleite/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Deleite;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.Deleite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -575,29 +601,35 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Deleite/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Deleite;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.Deleite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -614,9 +646,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.DeleiteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deleite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deleite";
 			};
 			name = Debug;
@@ -634,9 +669,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.DeleiteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deleite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deleite";
 			};
 			name = Release;
@@ -653,9 +691,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.DeleiteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = Deleite;
 			};
 			name = Debug;
@@ -672,9 +713,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.DeleiteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = Deleite;
 			};
 			name = Release;
@@ -719,6 +763,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		491854E62AD42E6F00319702 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		491854E72AD42E6F00319702 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 491854E62AD42E6F00319702 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 49507FDE2AAF49470002CB6A /* Project object */;
 }
