@@ -54,16 +54,17 @@ struct QuestionsView: View {
                     }
                 }) {
                     VStack{
-                        Text("Ainda ficou com dúvidas?")
+                        Text("Fale agora com o banco de leite")
                             .foregroundColor(Color.gray)
                         
-                        Text("Entrar em contato")
+                        Text("Tirar dúvidas")
                             .font(.title3)
                             .fontWeight(.heavy)
                             .padding()
                             .background(Color("Text-Color"))
                             .foregroundColor(.white)
                             .cornerRadius(10)
+                        
                     }
                 }
                 .padding()
