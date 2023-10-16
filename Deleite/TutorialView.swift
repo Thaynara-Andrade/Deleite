@@ -69,7 +69,7 @@ struct TutorialView: View {
                 Spacer()
                    
             }  .padding(.top, 32)
-            .navigationTitle("Tutorial")
+            .navigationBarTitle("Tutorial", displayMode: .inline)
         
     }
 }

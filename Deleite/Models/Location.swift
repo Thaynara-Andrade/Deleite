@@ -14,7 +14,7 @@ struct Location: Identifiable, Equatable{
     let coordinates: CLLocationCoordinate2D
     let locationAddress: String
     let telephone1 : String
-    let telephone2 : String
+    let telephone2 : String?
     let description: String
     let email: String
     let imageNames: [String]

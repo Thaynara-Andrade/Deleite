@@ -86,16 +86,15 @@ extension LocationDetailView{
             
             Text("Telefone")
             HStack{
-                Text(location.telephone1 + " /")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+                let telephones = [location.telephone1, location.telephone2].compactMap({ $0 })
                 
-                Text(location.telephone2)
+                Text(telephones.joined(separator: " / "))
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+                    .textSelection(.enabled)
             }
             
-            Text("Email")
+            Text("E-mail")
             Text(location.email)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
@@ -109,7 +108,7 @@ extension LocationDetailView{
             }
         }
         .padding(5)
-
+        
     }
     
     private var mapLayer: some View{

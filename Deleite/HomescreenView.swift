@@ -18,106 +18,99 @@ struct HomescreenView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
-                Text("Seja bem vinda ao Deleite!")
-                    .foregroundColor(Color.gray)
-                    .multilineTextAlignment(.leading)
-                    .padding(.leading, 17)
-                
-                ScrollView(.vertical) {
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: gridSpacingv), count: columnCount), spacing: gridSpacingh ) {
-                        
-                        Group {
-                            NavigationLink(destination: LocationsView()
-                                .environmentObject(vm)) {
-                                    ZStack{
-                                        HomeButton(HometitleButton: "Banco \nde leite",
-                                                   HomecolorButton: Color("Text-Color"),
-                                                   HometitleColor: Color.white)
-                                        Image("Banco de leite")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: 128)
-                                            .position(x:94.5, y:162.5)
-                                    }
-                                }
-                            NavigationLink(destination: TutorialView()) {
+            ScrollView(.vertical) {
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: gridSpacingv), count: columnCount), spacing: gridSpacingh ) {
+                    
+                    Group {
+                        NavigationLink(destination: LocationsView()
+                            .environmentObject(vm)) {
                                 ZStack{
-                                    
-                                    HomeButton(HometitleButton: "Tutorial",
+                                    HomeButton(HometitleButton: "Banco \nde leite",
                                                HomecolorButton: Color("Text-Color"),
                                                HometitleColor: Color.white)
-                                    Image("Tutorial")
+                                    Image("Banco de leite")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
-                                        .frame(width: 104)
-                                        .position(x:122, y:105)
+                                        .frame(width: 128)
+                                        .position(x:94.5, y:162.5)
                                 }
                             }
-                            NavigationLink(destination: QuestionsView()) {
-                                ZStack{
-                                    HomeButton(HometitleButton: "Perguntas \nfrequentes",
-                                               HomecolorButton: Color("Text-Color"),
-                                               HometitleColor: Color.white)
-                                    Image("Perguntas frequentes")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 90)
-                                        .position(x:120, y:145)
-                                }
-                            }
-                            NavigationLink(destination: ConstructionLottieView()) {
-                                    ZStack {
-                                        
-                                        HomeButton(HometitleButton: "Agendar \ncoleta",
-                                                   HomecolorButton:Color("Text-Color"),
-                                                   HometitleColor: Color.white)
-                                        
-                                        Image("Agendar coleta")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: 110)
-                                            .position(x:93, y:134)
-                                    }
-                                }
-                        }
-                    } .padding()
-                    
-                    
-//                    NavigationLink("", destination: WebView(urlString: "https://tinyurl.com/DOAR-LEITE-MEAC-BLH-UFC"), isActive: $showWebView)
-                    
-                    Button(action: {
-                        if let whatsappURL = URL(string: "https://tinyurl.com/DOAR-LEITE-MEAC-BLH-UFC") {
-                            UIApplication.shared.open(whatsappURL)
-                        }
-                    }) {
-                        
-                        VStack(alignment: .leading) {
-                            ZStack {
-                                Text("Fazer\nDoação")
-                                    .font(.largeTitle)
-                                    .fontWeight(.heavy)
-                                    .padding(.leading, 25)
-                                    .multilineTextAlignment(.leading)
-                                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                                    .frame(width: 335, height: 140)
-                                    .background(Color("Text-Color"))
-                                    .foregroundColor(.white)
-                                    .cornerRadius(15)
+                        NavigationLink(destination: TutorialView()) {
+                            ZStack{
                                 
-                                Image("Fazer doação")
+                                HomeButton(HometitleButton: "Tutorial",
+                                           HomecolorButton: Color("Text-Color"),
+                                           HometitleColor: Color.white)
+                                Image("Tutorial")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 130)
-                                    .position(x:305, y:75)
-                            } .padding(9)
-                            
+                                    .frame(width: 104)
+                                    .position(x:122, y:105)
+                            }
                         }
+                        NavigationLink(destination: QuestionsView()) {
+                            ZStack{
+                                HomeButton(HometitleButton: "Perguntas \nfrequentes",
+                                           HomecolorButton: Color("Text-Color"),
+                                           HometitleColor: Color.white)
+                                Image("Perguntas frequentes")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 90)
+                                    .position(x:120, y:145)
+                            }
+                        }
+                        NavigationLink(destination: ConstructionLottieView()) {
+                                ZStack {
+                                    
+                                    HomeButton(HometitleButton: "Agendar \ncoleta",
+                                               HomecolorButton:Color("Text-Color"),
+                                               HometitleColor: Color.white)
+                                    
+                                    Image("Agendar coleta")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 110)
+                                        .position(x:93, y:134)
+                                }
+                            }
                     }
-                    .padding(-16)
+                } .padding()
+                
+                
+//                    NavigationLink("", destination: WebView(urlString: "https://tinyurl.com/DOAR-LEITE-MEAC-BLH-UFC"), isActive: $showWebView)
+                
+                Button(action: {
+                    if let whatsappURL = URL(string: "https://tinyurl.com/DOAR-LEITE-MEAC-BLH-UFC") {
+                        UIApplication.shared.open(whatsappURL)
+                    }
+                }) {
+                    
+                    VStack(alignment: .leading) {
+                        ZStack {
+                            Text("Fazer\nDoação")
+                                .font(.largeTitle)
+                                .fontWeight(.heavy)
+                                .padding(.leading, 25)
+                                .multilineTextAlignment(.leading)
+                                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                .frame(width: 335, height: 140)
+                                .background(Color("Text-Color"))
+                                .foregroundColor(.white)
+                                .cornerRadius(15)
+                            
+                            Image("Fazer doação")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 130)
+                                .position(x:305, y:75)
+                        } .padding(9)
+                        
+                    }
                 }
+                .padding(-16)
             }
-            .navigationTitle("Menu inicial")
+            .navigationTitle("Deleite")
         }
     }
 }
