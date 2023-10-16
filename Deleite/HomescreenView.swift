@@ -66,7 +66,13 @@ struct HomescreenView: View {
                                         .position(x:120, y:145)
                                 }
                             }
-                            NavigationLink(destination: ConstructionLottieView()) {
+                            
+//                            NavigationLink(destination: ConstructionLottieView()) {
+                            Button(action: {
+                                if let whatsappURL = URL(string: "https://tinyurl.com/DOAR-LEITE-MEAC-BLH-UFC") {
+                                    UIApplication.shared.open(whatsappURL)
+                                }
+                            }) {
                                     ZStack {
                                         
                                         HomeButton(HometitleButton: "Agendar \ncoleta",
