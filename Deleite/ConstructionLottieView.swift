@@ -27,6 +27,4 @@ struct ConstructionLottieView: View {
     }
 }
 
-#Preview {
-    ConstructionLottieView()
-}
+
