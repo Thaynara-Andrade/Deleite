@@ -66,34 +66,20 @@ struct HomescreenView: View {
                                         .position(x:120, y:145)
                                 }
                             }
-                            
-
-                                VStack{
-                                    Button(action: {
-                                        showAlert = true
-                                    }) {
-                                        ZStack {
-                                            
-                                            HomeButton(HometitleButton: "Agendar \ncoleta",
-                                                       HomecolorButton:Color("Text-Color"),
-                                                       HometitleColor: Color.white)
-                                            
-                                            Image("Agendar coleta")
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fit)
-                                                .frame(width: 110)
-                                                .position(x:93, y:134)
-                                        }
-                                    }.alert(isPresented: $showAlert) {
-                                        Alert(
-                                            title: Text("Em construção"),
-                                            message: Text("Esta tela ainda está em desenvolvimento."),
-                                            dismissButton: .default(Text("OK"))
-                                            
-                                        )
+                            NavigationLink(destination: ConstructionLottieView()) {
+                                    ZStack {
+                                        
+                                        HomeButton(HometitleButton: "Agendar \ncoleta",
+                                                   HomecolorButton:Color("Text-Color"),
+                                                   HometitleColor: Color.white)
+                                        
+                                        Image("Agendar coleta")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 110)
+                                            .position(x:93, y:134)
                                     }
                                 }
-                            
                         }
                     } .padding()
                     
@@ -123,7 +109,7 @@ struct HomescreenView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 130)
-                                    .position(x:306, y:75)
+                                    .position(x:305, y:75)
                             } .padding(9)
                             
                         }
