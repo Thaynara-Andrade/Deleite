@@ -36,8 +36,7 @@ struct HomescreenView: View {
                                 }
                             }
                         NavigationLink(destination: TutorialView()) {
-                            ZStack{
-                                
+                        ZStack{
                                 HomeButton(HometitleButton: "Tutorial",
                                            HomecolorButton: Color("Text-Color"),
                                            HometitleColor: Color.white)
@@ -60,7 +59,11 @@ struct HomescreenView: View {
                                     .position(x:120, y:145)
                             }
                         }
-                        NavigationLink(destination: ConstructionLottieView()) {
+                        Button(action: {
+                            if let whatsappURL = URL(string: "https://tinyurl.com/DOAR-LEITE-MEAC-BLH-UFC") {
+                                UIApplication.shared.open(whatsappURL)
+                            }
+                        }) {
                                 ZStack {
                                     
                                     HomeButton(HometitleButton: "Agendar \ncoleta",
@@ -76,9 +79,6 @@ struct HomescreenView: View {
                             }
                     }
                 } .padding()
-                
-                
-//                    NavigationLink("", destination: WebView(urlString: "https://tinyurl.com/DOAR-LEITE-MEAC-BLH-UFC"), isActive: $showWebView)
                 
                 Button(action: {
                     if let whatsappURL = URL(string: "https://tinyurl.com/DOAR-LEITE-MEAC-BLH-UFC") {
