@@ -46,7 +46,7 @@ struct QuestionsView: View {
                         }
                     }
                 }
-                .navigationTitle("Dúvidas frequentes")
+                .navigationBarTitle("Dúvidas frequentes", displayMode: .inline)
                 
                 Button(action: {
                     if let whatsappURL = URL(string: "https://tinyurl.com/DOAR-LEITE-MEAC-BLH-UFC") {
