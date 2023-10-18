@@ -38,8 +38,8 @@ class LocationsDataService {
             email: "bancodeleite@hgcc.ce.gov.br",
             imageNames: [
                 "cesarcals-banco-1",
-                "cesarcals-banco-1",
-                "cesarcals-banco-1",
+                "cesarcals-banco-2",
+                "cesarcals-banco-3",
             ],
             link: "https://www.gov.br/saude/pt-br/acesso-a-informacao/acoes-e-programas/banco-de-leite-humano"),
         
