@@ -20,7 +20,6 @@ struct Location: Identifiable, Equatable{
     let imageNames: [String]
     let link: String
     
-    //variavél computada - identifiable
     var id: String {
         name + cityName
     }
