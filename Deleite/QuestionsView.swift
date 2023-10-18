@@ -54,7 +54,7 @@ struct QuestionsView: View {
                     }
                 }) {
                     VStack{
-                        Text("Fale agora com o banco de leite")
+                        Text("Fale agora com o Banco de Leite")
                             .foregroundColor(Color.gray)
                         
                         Text("Tirar dúvidas")
