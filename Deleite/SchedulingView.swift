@@ -8,9 +8,38 @@
 import SwiftUI
 
 struct SchedulingView: View {
+    @State private var selectedDayIndex = Date()
+    @State private var selecteddaysOfWeek = Bool()
+    
+    
+    let daysOfWeek = ["Regional I", "Regional II", "Regional III", "Regional IV", "Regional V"]
+    
+    
     var body: some View {
-        Text("Faça uma tela de\nagendamento aqui")
-            .font(.title)
+        NavigationView {
+            VStack(alignment: .trailing) {
+                
+                Picker("",
+                       selection: $selecteddaysOfWeek) {
+                    ForEach(daysOfWeek, id: \.self) { daysOfWeek in
+                        Text(daysOfWeek)
+                    }
+                }
+                .pickerStyle(MenuPickerStyle())
+                
+                DatePicker(selection: $selectedDayIndex,
+                           in: ...Date(),
+                           displayedComponents: .date,
+                           label: {
+                    Text("Escolha a data")
+                        .font(.title2)
+                }
+                )
+
+                
+            } .navigationTitle("Agendar coleta")
+                .padding()
+        }
     }
 }
 
