@@ -30,6 +30,7 @@
 		496D7CD02ABDD87100F6FE75 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D7CCF2ABDD87100F6FE75 /* AlertView.swift */; };
 		49727BE82AB0A43E00C6417A /* SchedulingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BE72AB0A43E00C6417A /* SchedulingView.swift */; };
 		49727BEC2AB0A88A00C6417A /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49727BEB2AB0A88A00C6417A /* QuestionsView.swift */; };
+		49BE7BCD2AE2C33D00C7BE91 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 49BE7BCC2AE2C33D00C7BE91 /* Mixpanel */; };
 		49F5CB2A2AB88F4A00A35878 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F5CB292AB88F4A00A35878 /* WebView.swift */; };
 		49F5CB2C2AB8C90E00A35878 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F5CB2B2AB8C90E00A35878 /* HomeButton.swift */; };
 		49F5CB2E2AB8CAF800A35878 /* HomescreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F5CB2D2AB8CAF800A35878 /* HomescreenView.swift */; };
@@ -102,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BE7BCD2AE2C33D00C7BE91 /* Mixpanel in Frameworks */,
 				491854E82AD42E6F00319702 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +264,7 @@
 			name = Deleite;
 			packageProductDependencies = (
 				491854E72AD42E6F00319702 /* Lottie */,
+				49BE7BCC2AE2C33D00C7BE91 /* Mixpanel */,
 			);
 			productName = Deleite;
 			productReference = 49507FE62AAF49470002CB6A /* Deleite.app */;
@@ -337,6 +340,7 @@
 			mainGroup = 49507FDD2AAF49470002CB6A;
 			packageReferences = (
 				491854E62AD42E6F00319702 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				49BE7BCB2AE2C33D00C7BE91 /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
 			);
 			productRefGroup = 49507FE72AAF49470002CB6A /* Products */;
 			projectDirPath = "";
@@ -566,7 +570,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.3;
+				CURRENT_PROJECT_VERSION = 1.2.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Deleite/Preview Content\"";
 				DEVELOPMENT_TEAM = 3S22856DS9;
 				ENABLE_PREVIEWS = YES;
@@ -584,7 +588,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.Deleite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -603,7 +607,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.3;
+				CURRENT_PROJECT_VERSION = 1.2.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Deleite/Preview Content\"";
 				DEVELOPMENT_TEAM = 3S22856DS9;
 				ENABLE_PREVIEWS = YES;
@@ -621,7 +625,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.Deleite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -773,6 +777,14 @@
 				minimumVersion = 4.3.3;
 			};
 		};
+		49BE7BCB2AE2C33D00C7BE91 /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -780,6 +792,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 491854E62AD42E6F00319702 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		49BE7BCC2AE2C33D00C7BE91 /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49BE7BCB2AE2C33D00C7BE91 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
