@@ -35,9 +35,7 @@ struct TutorialView: View {
     ]
     
     var body: some View {
-        
-       
- 
+    
             VStack (spacing: 20){
                 NavigationLink(destination: TutorialSanitation(currentIndex: tutorialIndex, posts: tutorialHigiene)) {
                     
