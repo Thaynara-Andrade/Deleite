@@ -111,6 +111,7 @@ struct HomescreenView: View {
                 .padding(-16)
             }
             .navigationTitle("Deleite")
+        
         }
     }
 }
