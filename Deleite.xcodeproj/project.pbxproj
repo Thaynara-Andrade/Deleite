@@ -124,7 +124,7 @@
 		495080042AAF49480002CB6A /* DeleiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteUITests.swift; sourceTree = "<group>"; };
 		495080062AAF49480002CB6A /* DeleiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		49518BE32AE69A6A00BDFFA0 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SF-Pro-Rounded-Regular.ttf"; sourceTree = "<group>"; };
-		49518BE52AE69AC000BDFFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		49518BE52AE69AC000BDFFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49518BE62AE69DC400BDFFA0 /* Fredoka-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
 		49518BEA2AE6A3B600BDFFA0 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
 		49518BEB2AE6A3B600BDFFA0 /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
@@ -242,7 +242,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0D4155C72AE2BEF100FA074B /* VersionOne */ = {
+		0D4155C72AE2BEF100FA074B /* V1 */ = {
 			isa = PBXGroup;
 			children = (
 				0D25C6852AE7FDF400B7977C /* Components */,
@@ -251,10 +251,10 @@
 				0D25C68E2AE7FDF400B7977C /* ViewModels */,
 				0D25C6932AE7FDF500B7977C /* Views */,
 			);
-			path = VersionOne;
+			path = V1;
 			sourceTree = "<group>";
 		};
-		0D4155C82AE2BF4D00FA074B /* VersionTwo */ = {
+		0D4155C82AE2BF4D00FA074B /* V2 */ = {
 			isa = PBXGroup;
 			children = (
 				0D25C6802AE6E26900B7977C /* Components */,
@@ -263,7 +263,7 @@
 				0D4155CA2AE2BFE900FA074B /* View */,
 				0D4155C92AE2BFDA00FA074B /* ViewModel */,
 			);
-			path = VersionTwo;
+			path = V2;
 			sourceTree = "<group>";
 		};
 		0D4155C92AE2BFDA00FA074B /* ViewModel */ = {
@@ -318,12 +318,12 @@
 		49507FE82AAF49470002CB6A /* Deleite */ = {
 			isa = PBXGroup;
 			children = (
-				0D4155C72AE2BEF100FA074B /* VersionOne */,
-				0D4155C82AE2BF4D00FA074B /* VersionTwo */,
-				49518BE52AE69AC000BDFFA0 /* Info.plist */,
 				0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */,
-				49518BE22AE6990B00BDFFA0 /* Resource */,
+				49518BE52AE69AC000BDFFA0 /* Info.plist */,
 				49507FE92AAF49470002CB6A /* DeleiteApp.swift */,
+				0D4155C72AE2BEF100FA074B /* V1 */,
+				0D4155C82AE2BF4D00FA074B /* V2 */,
+				49518BE22AE6990B00BDFFA0 /* Resource */,
 				49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */,
 				49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */,
 				49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */,
