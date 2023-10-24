@@ -147,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49BE7BCD2AE2C33D00C7BE91 /* Mixpanel in Frameworks */,
+				49BE7BCD2AE2C33D00C7BE91 /* Mixpanel in Frameworks */,
 				491854E82AD42E6F00319702 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +319,7 @@
 		49507FE82AAF49470002CB6A /* Deleite */ = {
 			isa = PBXGroup;
 			children = (
+				49518BE52AE69AC000BDFFA0 /* Info.plist */,
 				0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */,
 				49518BE52AE69AC000BDFFA0 /* Info.plist */,
 				49507FE92AAF49470002CB6A /* DeleiteApp.swift */,
@@ -385,6 +387,7 @@
 			name = Deleite;
 			packageProductDependencies = (
 				491854E72AD42E6F00319702 /* Lottie */,
+				49BE7BCC2AE2C33D00C7BE91 /* Mixpanel */,
 				49BE7BCC2AE2C33D00C7BE91 /* Mixpanel */,
 			);
 			productName = Deleite;
@@ -461,6 +464,7 @@
 			mainGroup = 49507FDD2AAF49470002CB6A;
 			packageReferences = (
 				491854E62AD42E6F00319702 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				49BE7BCB2AE2C33D00C7BE91 /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
 				49BE7BCB2AE2C33D00C7BE91 /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
 			);
 			productRefGroup = 49507FE72AAF49470002CB6A /* Products */;
@@ -717,6 +721,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Deleite/Info.plist;
+				INFOPLIST_FILE = Deleite/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Deleite;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -754,6 +759,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Deleite/Info.plist;
+				INFOPLIST_FILE = Deleite/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Deleite;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -767,6 +773,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.Deleite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -927,6 +934,14 @@
 				kind = branch;
 			};
 		};
+		49BE7BCB2AE2C33D00C7BE91 /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -934,6 +949,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 491854E62AD42E6F00319702 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		49BE7BCC2AE2C33D00C7BE91 /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49BE7BCB2AE2C33D00C7BE91 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
 		};
 		49BE7BCC2AE2C33D00C7BE91 /* Mixpanel */ = {
 			isa = XCSwiftPackageProductDependency;
