@@ -23,8 +23,8 @@ struct DeleiteApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomescreenView()
-                .environmentObject(vm)
+            NavigationLink(destination: Text("Destination")) { ContainerOptionView() }
+                //.environmentObject(vm)
         }
     }
 }

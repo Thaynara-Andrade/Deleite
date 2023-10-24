@@ -40,6 +40,8 @@
 		B214DCBA2ABA4E2D0091ABED /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214DCB92ABA4E2D0091ABED /* Location.swift */; };
 		B2C568472ABB330B00473232 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C568462ABB330B00473232 /* LocationPreviewView.swift */; };
 		B2C568522ABC75EE00473232 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C568512ABC75EE00473232 /* LocationDetailView.swift */; };
+		B7E63ED02AE6B20F00BBC55E /* ContainerOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E63ECF2AE6B20F00BBC55E /* ContainerOptionView.swift */; };
+		B7E63ED22AE72C8900BBC55E /* TesteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E63ED12AE72C8900BBC55E /* TesteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		B214DCB92ABA4E2D0091ABED /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B2C568462ABB330B00473232 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		B2C568512ABC75EE00473232 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		B7E63ECF2AE6B20F00BBC55E /* ContainerOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOptionView.swift; sourceTree = "<group>"; };
+		B7E63ED12AE72C8900BBC55E /* TesteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,8 @@
 				49507FE92AAF49470002CB6A /* DeleiteApp.swift */,
 				491854EB2AD43D0100319702 /* ConstructionLottieView.swift */,
 				49507FEB2AAF49470002CB6A /* ContentView.swift */,
+				B7E63ECF2AE6B20F00BBC55E /* ContainerOptionView.swift */,
+				B7E63ED12AE72C8900BBC55E /* TesteView.swift */,
 				49F5CB2D2AB8CAF800A35878 /* HomescreenView.swift */,
 				49727BEB2AB0A88A00C6417A /* QuestionsView.swift */,
 				49727BE72AB0A43E00C6417A /* SchedulingView.swift */,
@@ -391,6 +397,7 @@
 				0D0C30E42ABB214300578893 /* TutorialSanitation.swift in Sources */,
 				B214DCBA2ABA4E2D0091ABED /* Location.swift in Sources */,
 				49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */,
+				B7E63ED22AE72C8900BBC55E /* TesteView.swift in Sources */,
 				0DDBAD0F2ABC84C800C1EFFD /* TutorialCollect.swift in Sources */,
 				B214DCB42ABA4DB20091ABED /* LocationMapAnnotionView.swift in Sources */,
 				B214DCAE2ABA4D3B0091ABED /* LocationsDataService.swift in Sources */,
@@ -407,6 +414,7 @@
 				49F5CB2E2AB8CAF800A35878 /* HomescreenView.swift in Sources */,
 				B214DCB22ABA4D9A0091ABED /* LocationsView.swift in Sources */,
 				0D0C30E62ABB28C400578893 /* SnapCarousel.swift in Sources */,
+				B7E63ED02AE6B20F00BBC55E /* ContainerOptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
