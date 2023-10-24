@@ -319,7 +319,6 @@
 		49507FE82AAF49470002CB6A /* Deleite */ = {
 			isa = PBXGroup;
 			children = (
-				49518BE52AE69AC000BDFFA0 /* Info.plist */,
 				0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */,
 				49518BE52AE69AC000BDFFA0 /* Info.plist */,
 				49507FE92AAF49470002CB6A /* DeleiteApp.swift */,
