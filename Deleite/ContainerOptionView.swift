@@ -9,49 +9,56 @@ import SwiftUI
 
 
 struct ContainerOptionView: View {
+    
+    @State var isShowTesteView: Bool = false
+    
     var body: some View {
-        
+        NavigationView{
             ZStack{
                 Color("Text-Color")
                     .ignoresSafeArea(.all)
-               
-                
                 VStack{
-                    Button(action: {
-                        TesteView()
-                    }) {
-                        Text("Red thin text")
-                            .font(.title)
+                    HStack(alignment: .center, spacing: 10) {
+                        NavigationLink(destination: TesteView()) {
+                            Text("Já tenho fraco de vidro")
+                            .font(
+                            Font.custom("SF Pro Text", size: 17)
+                            .weight(.semibold)
+                            )
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color("Text-Color"))
+                        }
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 13)
+                    .frame(width: 326, alignment: .center)
+                    .background(Color(red: 0.95, green: 0.87, blue: 0.62))
+                    .cornerRadius(15)
+                    
+                    HStack(alignment: .center, spacing: 10) {
+                        NavigationLink(destination: TesteView()) {
+                            Text("Não tenho frasco")
+                            .font(
+                            Font.custom("SF Pro Text", size: 17)
+                            .weight(.semibold)
+                            )
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color("Text-Color"))
+                        }
                         
-                            
                     }
-                    .foregroundColor(Color("Text-Color"))
-                    .frame(width: 297, height: 102)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 13)
+                    .frame(width: 326, alignment: .center)
                     .background(Color(red: 0.95, green: 0.87, blue: 0.62))
-                    .cornerRadius(19)
-                    
-                    Button {
-                    } label: {
-                        Text("Não tenho frasco.")
-                            .font(.title)
-                    }
-                    .foregroundColor(Color("Text-Color"))
-                    .frame(width: 297, height: 102)
-                    .background(Color(red: 0.95, green: 0.87, blue: 0.62))
-                    .cornerRadius(19)
-                    
+                    .cornerRadius(15)
                 }
-                .padding(.bottom, -200)
+                
             }
+            .padding(.bottom, -307)
         }
-    
+    }
 }
-
-
-struct greeting{
-    
-}
-
 #Preview {
     ContainerOptionView()
 }
