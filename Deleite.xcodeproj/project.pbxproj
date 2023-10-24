@@ -258,11 +258,12 @@
 		0D4155C82AE2BF4D00FA074B /* V2 */ = {
 			isa = PBXGroup;
 			children = (
-				0D25C6802AE6E26900B7977C /* Components */,
+				0D4155C92AE2BFDA00FA074B /* ViewModel */,
 				0D4155CC2AE2C00200FA074B /* DataServices */,
 				0D4155CB2AE2BFFB00FA074B /* Model */,
 				0D4155CA2AE2BFE900FA074B /* View */,
-				0D4155C92AE2BFDA00FA074B /* ViewModel */,
+				0D25C6802AE6E26900B7977C /* Components */,
+				49518BE22AE6990B00BDFFA0 /* Resource */,
 			);
 			path = V2;
 			sourceTree = "<group>";
@@ -278,6 +279,10 @@
 			isa = PBXGroup;
 			children = (
 				0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */,
+				49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */,
+				49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */,
+				49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */,
+				49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,14 +291,16 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			name = Model;
+			path = DataServices/Model;
 			sourceTree = "<group>";
 		};
 		0D4155CC2AE2C00200FA074B /* DataServices */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = DataServices;
+			name = DataServices;
+			path = DataServices/Model/DataServices;
 			sourceTree = "<group>";
 		};
 		49507FDD2AAF49470002CB6A = {
@@ -324,11 +331,6 @@
 				49507FE92AAF49470002CB6A /* DeleiteApp.swift */,
 				0D4155C72AE2BEF100FA074B /* V1 */,
 				0D4155C82AE2BF4D00FA074B /* V2 */,
-				49518BE22AE6990B00BDFFA0 /* Resource */,
-				49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */,
-				49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */,
-				49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */,
-				49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */,
 			);
 			path = Deleite;
 			sourceTree = "<group>";
@@ -720,7 +722,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Deleite/Info.plist;
-				INFOPLIST_FILE = Deleite/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Deleite;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -758,7 +759,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Deleite/Info.plist;
-				INFOPLIST_FILE = Deleite/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Deleite;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -772,7 +772,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
 				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.Deleite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -933,14 +932,6 @@
 				kind = branch;
 			};
 		};
-		49BE7BCB2AE2C33D00C7BE91 /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mixpanel/mixpanel-swift.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -948,11 +939,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 491854E62AD42E6F00319702 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
-		};
-		49BE7BCC2AE2C33D00C7BE91 /* Mixpanel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 49BE7BCB2AE2C33D00C7BE91 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
-			productName = Mixpanel;
 		};
 		49BE7BCC2AE2C33D00C7BE91 /* Mixpanel */ = {
 			isa = XCSwiftPackageProductDependency;
