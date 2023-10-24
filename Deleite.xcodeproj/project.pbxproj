@@ -62,6 +62,7 @@
 		49518C012AE721A300BDFFA0 /* ComponentDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */; };
 		49BE7BCD2AE2C33D00C7BE91 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 49BE7BCC2AE2C33D00C7BE91 /* Mixpanel */; };
 		49BE7BCF2AE2DBD200C7BE91 /* PostloginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */; };
+		B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757D5002AE855BF003F984D /* ContainerOptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingsUserView.swift; sourceTree = "<group>"; };
 		49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentDonationView.swift; sourceTree = "<group>"; };
 		49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostloginView.swift; sourceTree = "<group>"; };
+		B757D5002AE855BF003F984D /* ContainerOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,21 +260,11 @@
 		0D4155C82AE2BF4D00FA074B /* V2 */ = {
 			isa = PBXGroup;
 			children = (
-				0D4155C92AE2BFDA00FA074B /* ViewModel */,
-				0D4155CC2AE2C00200FA074B /* DataServices */,
-				0D4155CB2AE2BFFB00FA074B /* Model */,
 				0D4155CA2AE2BFE900FA074B /* View */,
 				0D25C6802AE6E26900B7977C /* Components */,
 				49518BE22AE6990B00BDFFA0 /* Resource */,
 			);
 			path = V2;
-			sourceTree = "<group>";
-		};
-		0D4155C92AE2BFDA00FA074B /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		0D4155CA2AE2BFE900FA074B /* View */ = {
@@ -283,24 +275,9 @@
 				49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */,
 				49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */,
 				49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */,
+				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		0D4155CB2AE2BFFB00FA074B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			path = DataServices/Model;
-			sourceTree = "<group>";
-		};
-		0D4155CC2AE2C00200FA074B /* DataServices */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = DataServices;
-			path = DataServices/Model/DataServices;
 			sourceTree = "<group>";
 		};
 		49507FDD2AAF49470002CB6A = {
@@ -542,6 +519,7 @@
 				0D25C6AA2AE7FDF500B7977C /* MenuButtonHigieneView.swift in Sources */,
 				0D25C6C02AE7FDF500B7977C /* LottieView.swift in Sources */,
 				0D25C6822AE6E48300B7977C /* MenuButtonLogin.swift in Sources */,
+				B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */,
 				49BE7BCF2AE2DBD200C7BE91 /* PostloginView.swift in Sources */,
 				0D25C6C32AE7FDF500B7977C /* TutorialView.swift in Sources */,
 				0D40B7182AE69F2A00BE5034 /* NoLoginView.swift in Sources */,
