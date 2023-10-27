@@ -11,6 +11,9 @@ import SwiftUI
 struct ContainerOptionView: View {
     
     @State var isShowTesteView: Bool = false
+
+    var yellowBackground: String = "yellow-background-image"
+    var bottleImage: String = "bottle-image"
     
     
     
@@ -36,10 +39,28 @@ struct ContainerOptionView: View {
                         .multilineTextAlignment(.center)
                     }
                     .border(Color.yellow)
-                    .padding(.bottom, 550)
+                    .padding(.bottom, 100)
                     .frame(width: 390, alignment: .topLeading)
                     .shadow(color: .black.opacity(0.3), radius: 0, x: 0, y: 0.5)
 
+                    HStack{
+                        Image(yellowBackground)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 183, height: 184)
+                            .overlay {
+                                Image(bottleImage)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 117.3016, height: 136.99992)
+                                    .opacity(0.9)
+                                    .offset(y: -9)
+                            }
+                    }
+                    
+                    VStack{
+                        StepByStepView()
+                    }
                     
                     HStack(alignment: .center, spacing: 10) {
                         NavigationLink(destination: PostloginView()) {
