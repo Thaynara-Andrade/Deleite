@@ -23,7 +23,7 @@ struct ComponentDonationView: View {
     var body: some View {
         ZStack (alignment: .center) {
             Rectangle()
-                .frame(width: 350, height: 180)
+                .frame(width: 356, height: 180)
                 .foregroundColor(Color("Rectangle-color"))
                 .cornerRadius(21.8898)
             VStack(alignment: .leading) {
@@ -34,10 +34,10 @@ struct ComponentDonationView: View {
                     )
                     .multilineTextAlignment(.leading)
                     .padding(.top, -5)
-                    .padding(.leading, -40)
+                    .padding(.leading, -60)
                     .foregroundColor(Color("icon-color"))
                 Text(Loginname)
-                    .padding(.leading, -40)
+                    .padding(.leading, -60)
                     .padding(.bottom, -5)
                     .font(
                         Font.custom("SFProRounded-Medium", size: 17)
@@ -47,7 +47,7 @@ struct ComponentDonationView: View {
             }
             LoginImage
                 .resizable()
-                .frame(width: 140, height: 110)
+                .frame(width: 146, height: 110)
                 .padding(.leading, 210)
             
         }
@@ -55,5 +55,5 @@ struct ComponentDonationView: View {
 }
 
 #Preview {
-    ComponentDonationView(Logintitle: "Fazer \ndoação", Loginname: "Agende o recebimento \ndo seu potinho ou escolha \na melhor data para fazer sua coleta", LoginImage: Image("Doar"))
+    ComponentDonationView(Logintitle: "Fazer \ndoação", Loginname: "Agende o recebimento \ndo seu potinho ou a melhor \ndata para fazer a coleta do leite", LoginImage: Image("Doar"))
 }
