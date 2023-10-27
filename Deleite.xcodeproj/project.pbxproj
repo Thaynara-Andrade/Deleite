@@ -174,6 +174,8 @@
 		0D25C6802AE6E26900B7977C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */,
+				49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */,
 				0D25C6812AE6E48300B7977C /* MenuButtonLogin.swift */,
 			);
 			path = Components;
@@ -271,9 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */,
-				49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */,
 				49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */,
-				49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */,
 				49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */,
 				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
 			);
