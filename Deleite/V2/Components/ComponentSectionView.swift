@@ -32,38 +32,41 @@ struct ComponentSectionView: View {
                 .frame(width: 350, height: 180)
                 .foregroundColor(Color("Buttonvariable-Color"))
                 .cornerRadius(21.8898)
-            VStack{
+            VStack(alignment: .leading) {
             
                 Text(Logintitle)
                     .font(
                         Font.custom("SFProRounded-Black", size: 30)
                     )
                     .multilineTextAlignment(.leading)
-                    .padding([.top], -2)
-                    .padding([.leading], -90)
+                    .padding([.top], 5)
+                    .padding([.leading], -80)
                     .foregroundColor(Color("Text-Color"))
+                
                 Text(Loginname)
-                    .padding(.leading, -117)
+                    .padding(.leading, -76)
                     .font(
-                        Font.custom("SFProRounded-Medium", size: 14)
+                        Font.custom("SFProRounded-Medium", size: 17)
                     )
                     .foregroundColor(Color("Text-Color"))
+                
                 Text(LoginDate)
-                    .padding(.leading, -145)
+                    .padding(.leading, -75)
                     .font(
-                        Font.custom("SFProRounded-Medium", size: 14)
+                        Font.custom("SFProRounded-Medium", size: 17)
                     )
                     .foregroundColor(Color("Text-Color"))
                 Text(LoginEndereco)
-                    .padding(.leading, -117)
+                    .padding(.leading, -75)
                     .font(
-                        Font.custom("SFProRounded-Medium", size: 14)
+                        Font.custom("SFProRounded-Medium", size: 17)
                     )
                     .foregroundColor(Color("Text-Color"))
                 Text(LoginRegional)
-                    .padding(.leading, -145)
+                    .padding(.leading, -75)
+                    .padding(.bottom, 5)
                     .font(
-                        Font.custom("SFProRounded-Medium", size: 14)
+                        Font.custom("SFProRounded-Medium", size: 17)
                     )
                     .foregroundColor(Color("Text-Color"))
             
@@ -91,5 +94,5 @@ struct ComponentSectionView: View {
 }
 
 #Preview {
-    ComponentSectionView(Logintitle: "Recebimento \nde pote", Loginname: "\nNome: Maria Cleide Resende", LoginDate: "Data: 27/02", LoginEndereco: "Endereço: Rua São José, 155", LoginRegional: "Regional III - Benfica", LoginImage: Image("pote"))
+    ComponentSectionView(Logintitle: "Recebimento \nde pote",  Loginname: "Nome: Maria Cleide", LoginDate: "Data: 27/02", LoginEndereco: "Endereço: Rua São José, 155", LoginRegional: "Regional III - Benfica", LoginImage: Image("pote"))
 }
