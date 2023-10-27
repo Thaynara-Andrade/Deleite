@@ -37,23 +37,23 @@ struct PostloginView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                     
+                    
                 }
                 VStack{
-                    ComponentDonationView(Logintitle: "Fazer \ndoação", Loginname: "Agende o recebimento \ndo seu potinho ou escolha \na melhor data para fazer sua coleta", LoginImage: Image("Doar"))
+                    ComponentDonationView(Logintitle: "Fazer \ndoação", Loginname: "Agende o recebimento \ndo seu potinho ou a melhor \ndata para fazer a coleta do leite", LoginImage: Image("Doar"))
                     
                     
                     Text("Agendamentos")
-                        .font(.largeTitle)
-                        .fontWeight(.heavy)
+                        .font(.system(size: 25))
+                        .fontWeight(.bold)
                         .foregroundColor(.white)
-                        .padding(.leading, -80)
+                        .padding(.leading, -160)
                         .padding(.top)
                         .padding(.bottom, 3)
                     
-                    ComponentSectionView(Logintitle: "Recebimento \nde pote", Loginname: "Nome: Maria Cleide", LoginDate: "Data: 27/02", LoginEndereco: "Endereço: Rua São José, 155", LoginRegional: "Regional III - Benfica", LoginImage: Image("pote")
-                    )
-                    
-                }
+                    ComponentSectionView(Logintitle: "Entrega do kit", LoginDate: "27 de fevereiro", LoginTurno: "Manhã", LoginImage: Image("pote"))
+                }.padding()
+                
             }
             
         }

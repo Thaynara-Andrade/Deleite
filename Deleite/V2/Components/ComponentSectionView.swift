@@ -9,82 +9,79 @@ import SwiftUI
 
 struct ComponentSectionView: View {
     
-    @State private var isToggled = false
     let Logintitle: String
-    let Loginname: String
     let LoginDate: String
-    let LoginEndereco: String
-    let LoginRegional: String
+    let LoginTurno: String
     let LoginImage: Image
     
-    init(Logintitle: String, Loginname: String, LoginDate: String, LoginEndereco: String, LoginRegional: String, LoginImage: Image) {
+    init(Logintitle: String, LoginDate: String, LoginTurno: String, LoginImage: Image) {
         self.Logintitle = Logintitle
-        self.Loginname = Loginname
         self.LoginDate = LoginDate
-        self.LoginEndereco = LoginEndereco
-        self.LoginRegional = LoginRegional
+        self.LoginTurno = LoginTurno
         self.LoginImage = LoginImage
     }
     
     var body: some View {
         ZStack {
             Rectangle()
-                .frame(width: 350, height: 180)
-                .foregroundColor(Color("Buttonvariable-Color"))
+                .frame(width: 356, height: 184)
+                .foregroundColor(Color("Rectangle-color"))
                 .cornerRadius(21.8898)
             VStack(alignment: .leading) {
             
                 Text(Logintitle)
                     .font(
-                        Font.custom("SFProRounded-Black", size: 30)
+                        Font.custom("SFProRounded-Black", size: 22)
                     )
                     .multilineTextAlignment(.leading)
-                    .padding([.top], 5)
-                    .padding([.leading], -80)
-                    .foregroundColor(Color("Text-Color"))
-                
-                Text(Loginname)
-                    .padding(.leading, -76)
-                    .font(
-                        Font.custom("SFProRounded-Medium", size: 17)
-                    )
-                    .foregroundColor(Color("Text-Color"))
+                    .padding(.top, -20)
+                    .padding(.leading, 10)
+                    .foregroundColor(Color("icon-color"))
                 
                 Text(LoginDate)
-                    .padding(.leading, -75)
+                    .padding(.leading, 10)
+                    .padding(.top, -15)
                     .font(
-                        Font.custom("SFProRounded-Medium", size: 17)
+                    Font.custom("SF Pro Rounded", size: 17)
+                    .weight(.bold)
                     )
-                    .foregroundColor(Color("Text-Color"))
-                Text(LoginEndereco)
-                    .padding(.leading, -75)
+                    .foregroundColor(Color("icon-color"))
+
+                Text(LoginTurno)
+                    .padding(.leading, 10)
+                    .padding(.top, -10)
                     .font(
-                        Font.custom("SFProRounded-Medium", size: 17)
+                    Font.custom("SF Pro Rounded", size: 17)
+                    .weight(.bold)
                     )
-                    .foregroundColor(Color("Text-Color"))
-                Text(LoginRegional)
-                    .padding(.leading, -75)
-                    .padding(.bottom, 5)
-                    .font(
-                        Font.custom("SFProRounded-Medium", size: 17)
-                    )
-                    .foregroundColor(Color("Text-Color"))
+                    .foregroundColor(Color("icon-color"))
+                
+                Button(action: {
+                    if let whatsappURL = URL(string: "https://tinyurl.com/DOAR-LEITE-MEAC-BLH-UFC") {
+                        UIApplication.shared.open(whatsappURL)
+                    }
+                }) {
+                        
+                    Text("Como foi a coleta?")
+                        .fontWeight(.semibold)
+                        .frame(width: 280, height: 14)
+                        .padding()
+                            .background(Color("yellow-color"))
+                            .foregroundColor(Color("icon-color"))
+                            .cornerRadius(15)
+    
+                } 
+                .padding(.top)
+                .padding(.bottom,-30)
             
                 }
             ZStack {
-                Text("Confirme seu\no recebimento")
-                    .font(
-                        Font.custom("SFProRounded-Heavy", size: 10)
-                    )
-                    .foregroundColor(.white)
-                    
-                    .padding(.top, -20)
-                    .padding(.leading, 224)
-                
-                Toggle("", isOn: $isToggled)
-                    
-                    .padding(.top, 60)
-                    .padding(.trailing, 60)
+                Image("pote")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 80)
+                    .padding(.leading, 230)
+                    .padding(.top, -50)
                 
                     
             }
@@ -94,5 +91,5 @@ struct ComponentSectionView: View {
 }
 
 #Preview {
-    ComponentSectionView(Logintitle: "Recebimento \nde pote",  Loginname: "Nome: Maria Cleide", LoginDate: "Data: 27/02", LoginEndereco: "Endereço: Rua São José, 155", LoginRegional: "Regional III - Benfica", LoginImage: Image("pote"))
+    ComponentSectionView(Logintitle: "Entrega do kit", LoginDate: "27 de fevereiro", LoginTurno: "Manhã", LoginImage: Image("pote"))
 }
