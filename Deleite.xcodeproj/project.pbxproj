@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D185AF62AEC3C6B00FF30AF /* ComponentNoLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D185AF52AEC3C6B00FF30AF /* ComponentNoLogin.swift */; };
+		0D185AF82AEC49B600FF30AF /* ComponentEmpytState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D185AF72AEC49B600FF30AF /* ComponentEmpytState.swift */; };
+		0D185AFA2AEFCBDF00FF30AF /* ComponentTextFiel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D185AF92AEFCBDF00FF30AF /* ComponentTextFiel.swift */; };
 		0D25C6822AE6E48300B7977C /* MenuButtonLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D25C6812AE6E48300B7977C /* MenuButtonLogin.swift */; };
 		0D25C6A72AE7FDF500B7977C /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D25C6842AE7FDF400B7977C /* LocationsDataService.swift */; };
 		0D25C6A82AE7FDF500B7977C /* MenuButtonColeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D25C6862AE7FDF400B7977C /* MenuButtonColeta.swift */; };
@@ -84,6 +87,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D185AF52AEC3C6B00FF30AF /* ComponentNoLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentNoLogin.swift; sourceTree = "<group>"; };
+		0D185AF72AEC49B600FF30AF /* ComponentEmpytState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentEmpytState.swift; sourceTree = "<group>"; };
+		0D185AF92AEFCBDF00FF30AF /* ComponentTextFiel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTextFiel.swift; sourceTree = "<group>"; };
 		0D25C6812AE6E48300B7977C /* MenuButtonLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonLogin.swift; sourceTree = "<group>"; };
 		0D25C6842AE7FDF400B7977C /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 		0D25C6862AE7FDF400B7977C /* MenuButtonColeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButtonColeta.swift; sourceTree = "<group>"; };
@@ -179,6 +185,9 @@
 				49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */,
 				49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */,
 				0D25C6812AE6E48300B7977C /* MenuButtonLogin.swift */,
+				0D185AF52AEC3C6B00FF30AF /* ComponentNoLogin.swift */,
+				0D185AF72AEC49B600FF30AF /* ComponentEmpytState.swift */,
+				0D185AF92AEFCBDF00FF30AF /* ComponentTextFiel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -513,6 +522,7 @@
 				0D25C6B12AE7FDF500B7977C /* MixPanel.swift in Sources */,
 				0D25C6BB2AE7FDF500B7977C /* TutorialSanitation.swift in Sources */,
 				0D25C6A92AE7FDF500B7977C /* ImageCards.swift in Sources */,
+				0D185AFA2AEFCBDF00FF30AF /* ComponentTextFiel.swift in Sources */,
 				0D25C6B72AE7FDF500B7977C /* ConstructionLottieView.swift in Sources */,
 				0D25C6BE2AE7FDF500B7977C /* LocationPreviewView.swift in Sources */,
 				0D25C6B92AE7FDF500B7977C /* LocationDetailView.swift in Sources */,
@@ -530,7 +540,9 @@
 				0D25C6C42AE7FDF500B7977C /* ContentView.swift in Sources */,
 				0D25C6B52AE7FDF500B7977C /* SchedulingView.swift in Sources */,
 				0D25C6A82AE7FDF500B7977C /* MenuButtonColeta.swift in Sources */,
+				0D185AF62AEC3C6B00FF30AF /* ComponentNoLogin.swift in Sources */,
 				0D25C6B02AE7FDF500B7977C /* LocationsViewModel.swift in Sources */,
+				0D185AF82AEC49B600FF30AF /* ComponentEmpytState.swift in Sources */,
 				0D25C6BA2AE7FDF500B7977C /* LocationMapAnnotionView.swift in Sources */,
 				0D25C6B22AE7FDF500B7977C /* Location.swift in Sources */,
 				0D25C6AD2AE7FDF500B7977C /* Post.swift in Sources */,
