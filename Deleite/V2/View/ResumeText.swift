@@ -46,6 +46,7 @@ struct ResumeText: View {
             .padding(.leading, -141)
         }
         .font(Font.custom("SF Pro Text", size: 17))
+        //teste
         
     }
 }

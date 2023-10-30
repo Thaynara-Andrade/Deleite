@@ -64,7 +64,6 @@
 		49BE7BCF2AE2DBD200C7BE91 /* PostloginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */; };
 		B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757D5002AE855BF003F984D /* ContainerOptionView.swift */; };
 		B7E3ACAA2AEC033C00ACBFD2 /* StepByStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3ACA92AEC033C00ACBFD2 /* StepByStepView.swift */; };
-		B7E3ACAC2AEC15F800ACBFD2 /* ResumeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3ACAB2AEC15F800ACBFD2 /* ResumeText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,7 +143,6 @@
 		49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostloginView.swift; sourceTree = "<group>"; };
 		B757D5002AE855BF003F984D /* ContainerOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOptionView.swift; sourceTree = "<group>"; };
 		B7E3ACA92AEC033C00ACBFD2 /* StepByStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepView.swift; sourceTree = "<group>"; };
-		B7E3ACAB2AEC15F800ACBFD2 /* ResumeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,7 +279,6 @@
 				49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */,
 				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
 				B7E3ACA92AEC033C00ACBFD2 /* StepByStepView.swift */,
-				B7E3ACAB2AEC15F800ACBFD2 /* ResumeText.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -537,7 +534,6 @@
 				0D25C6BA2AE7FDF500B7977C /* LocationMapAnnotionView.swift in Sources */,
 				0D25C6B22AE7FDF500B7977C /* Location.swift in Sources */,
 				0D25C6AD2AE7FDF500B7977C /* Post.swift in Sources */,
-				B7E3ACAC2AEC15F800ACBFD2 /* ResumeText.swift in Sources */,
 				49518C012AE721A300BDFFA0 /* ComponentDonationView.swift in Sources */,
 				0D25C6B62AE7FDF500B7977C /* TutorialCollect.swift in Sources */,
 				B7E3ACAA2AEC033C00ACBFD2 /* StepByStepView.swift in Sources */,
