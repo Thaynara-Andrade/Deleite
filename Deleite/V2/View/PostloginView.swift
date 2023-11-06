@@ -9,8 +9,6 @@ import SwiftUI
 
 struct PostloginView: View {
     
-    @State private var isToggled = false
-    
     var body: some View {
         ZStack(alignment: .topLeading) {
             Color("Text-Color")

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ComponentDonationView: View {
     
-    @State private var isToggled = false
     let Logintitle: String
     let Loginname: String
     let LoginImage: Image
