@@ -10,6 +10,7 @@
 		0D185AF62AEC3C6B00FF30AF /* ComponentNoLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D185AF52AEC3C6B00FF30AF /* ComponentNoLogin.swift */; };
 		0D185AF82AEC49B600FF30AF /* ComponentEmpytState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D185AF72AEC49B600FF30AF /* ComponentEmpytState.swift */; };
 		0D185AFA2AEFCBDF00FF30AF /* ComponentTextFiel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D185AF92AEFCBDF00FF30AF /* ComponentTextFiel.swift */; };
+		0D185AFC2AF11F6100FF30AF /* RegistrationWhatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D185AFB2AF11F6100FF30AF /* RegistrationWhatsView.swift */; };
 		0D25C6822AE6E48300B7977C /* MenuButtonLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D25C6812AE6E48300B7977C /* MenuButtonLogin.swift */; };
 		0D25C6A72AE7FDF500B7977C /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D25C6842AE7FDF400B7977C /* LocationsDataService.swift */; };
 		0D25C6A82AE7FDF500B7977C /* MenuButtonColeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D25C6862AE7FDF400B7977C /* MenuButtonColeta.swift */; };
@@ -90,6 +91,7 @@
 		0D185AF52AEC3C6B00FF30AF /* ComponentNoLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentNoLogin.swift; sourceTree = "<group>"; };
 		0D185AF72AEC49B600FF30AF /* ComponentEmpytState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentEmpytState.swift; sourceTree = "<group>"; };
 		0D185AF92AEFCBDF00FF30AF /* ComponentTextFiel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTextFiel.swift; sourceTree = "<group>"; };
+		0D185AFB2AF11F6100FF30AF /* RegistrationWhatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationWhatsView.swift; sourceTree = "<group>"; };
 		0D25C6812AE6E48300B7977C /* MenuButtonLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonLogin.swift; sourceTree = "<group>"; };
 		0D25C6842AE7FDF400B7977C /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 		0D25C6862AE7FDF400B7977C /* MenuButtonColeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButtonColeta.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */,
+				0D185AFB2AF11F6100FF30AF /* RegistrationWhatsView.swift */,
 				49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */,
 				49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */,
 				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
@@ -548,6 +551,7 @@
 				0D25C6AD2AE7FDF500B7977C /* Post.swift in Sources */,
 				49518C012AE721A300BDFFA0 /* ComponentDonationView.swift in Sources */,
 				0D25C6B62AE7FDF500B7977C /* TutorialCollect.swift in Sources */,
+				0D185AFC2AF11F6100FF30AF /* RegistrationWhatsView.swift in Sources */,
 				B7E3ACAA2AEC033C00ACBFD2 /* StepByStepView.swift in Sources */,
 				49518BFD2AE6A89D00BDFFA0 /* ComponentSectionView.swift in Sources */,
 				0D25C6A72AE7FDF500B7977C /* LocationsDataService.swift in Sources */,

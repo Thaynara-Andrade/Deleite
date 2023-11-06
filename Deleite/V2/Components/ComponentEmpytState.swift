@@ -24,7 +24,6 @@ struct ComponentEmpytState: View {
                 .foregroundColor(Color("Buttonvariable-Color"))
             
             Text(Loginname)
-               // .padding(.leading, -40)
                 .padding(.bottom, -5)
                 .font(
                     Font.custom("SFProRounded-Medium", size: 17)
