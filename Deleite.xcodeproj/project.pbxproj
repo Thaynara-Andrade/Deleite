@@ -46,6 +46,7 @@
 		0D40B7182AE69F2A00BE5034 /* NoLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */; };
 		0DDBAD0D2ABC776200C1EFFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */; };
 		491854E82AD42E6F00319702 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 491854E72AD42E6F00319702 /* Lottie */; };
+		4945AE002AF92B5A00021E54 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945ADFF2AF92B5A00021E54 /* ButtonView.swift */; };
 		49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FE92AAF49470002CB6A /* DeleiteApp.swift */; };
 		49507FFB2AAF49480002CB6A /* DeleiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FFA2AAF49480002CB6A /* DeleiteTests.swift */; };
 		495080052AAF49480002CB6A /* DeleiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495080042AAF49480002CB6A /* DeleiteUITests.swift */; };
@@ -128,6 +129,7 @@
 		0D25C6A62AE7FDF500B7977C /* Coleta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Coleta.json; sourceTree = "<group>"; };
 		0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginView.swift; sourceTree = "<group>"; };
 		0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4945ADFF2AF92B5A00021E54 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		49507FE62AAF49470002CB6A /* Deleite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deleite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49507FE92AAF49470002CB6A /* DeleiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteApp.swift; sourceTree = "<group>"; };
 		49507FF62AAF49480002CB6A /* DeleiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeleiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +197,7 @@
 				0D185AF52AEC3C6B00FF30AF /* ComponentNoLogin.swift */,
 				0D185AF72AEC49B600FF30AF /* ComponentEmpytState.swift */,
 				0D185AF92AEFCBDF00FF30AF /* ComponentTextFiel.swift */,
+				4945ADFF2AF92B5A00021E54 /* ButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -296,7 +299,6 @@
 				49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */,
 				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
 				B7E3ACA92AEC033C00ACBFD2 /* StepByStepView.swift */,
-				B7E3ACAB2AEC15F800ACBFD2 /* ResumeText.swift */,
 				497B43562AEC4F5C00B43467 /* ResumeView.swift */,
 			);
 			path = View;
@@ -526,6 +528,7 @@
 				0D25C6AE2AE7FDF500B7977C /* MenuButtonArmazenamento.swift in Sources */,
 				0D25C6BF2AE7FDF500B7977C /* HomescreenView.swift in Sources */,
 				0D25C6C22AE7FDF500B7977C /* QuestionsView.swift in Sources */,
+				4945AE002AF92B5A00021E54 /* ButtonView.swift in Sources */,
 				0D25C6C12AE7FDF500B7977C /* SwiftUIView.swift in Sources */,
 				0D25C6B42AE7FDF500B7977C /* TutorialStorege.swift in Sources */,
 				0D25C6B32AE7FDF500B7977C /* SnapCarousel.swift in Sources */,
@@ -558,7 +561,6 @@
 				0D25C6B22AE7FDF500B7977C /* Location.swift in Sources */,
 				0D25C6AD2AE7FDF500B7977C /* Post.swift in Sources */,
 				497B43572AEC4F5C00B43467 /* ResumeView.swift in Sources */,
-				B7E3ACAC2AEC15F800ACBFD2 /* ResumeText.swift in Sources */,
 				49518C012AE721A300BDFFA0 /* ComponentDonationView.swift in Sources */,
 				0D25C6B62AE7FDF500B7977C /* TutorialCollect.swift in Sources */,
 				0D185AFC2AF11F6100FF30AF /* RegistrationWhatsView.swift in Sources */,

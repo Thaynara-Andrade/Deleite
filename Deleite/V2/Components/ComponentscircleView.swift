@@ -19,12 +19,12 @@ struct ComponentscircleView: View {
         
         ZStack (alignment: .center) {
             Circle()
-                .frame(width: 60)
+                .frame(width: 70)
                 .foregroundColor(Color("yellow-color"))
             LoginImage
                 .resizable()
                 .scaledToFit()
-                .frame(width: 20)
+                .frame(width: 30)
         }
     }
 }
