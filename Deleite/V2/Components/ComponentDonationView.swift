@@ -30,14 +30,15 @@ struct ComponentDonationView: View {
             
                 Text(Logintitle)
                     .font(
-                        Font.custom("SFProRounded-Black", size: 35)
+                        Font.custom("SFProRounded-Black", size: 30)
                     )
                     .multilineTextAlignment(.leading)
                     .padding(.top, -5)
-                    .padding(.leading, -60)
+                    .padding(.bottom, 1)
+                    .padding(.leading, -75)
                     .foregroundColor(Color("icon-color"))
                 Text(Loginname)
-                    .padding(.leading, -60)
+                    .padding(.leading, -75)
                     .padding(.bottom, -5)
                     .font(
                         Font.custom("SFProRounded-Medium", size: 17)
