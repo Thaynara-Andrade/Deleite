@@ -10,6 +10,7 @@ import SwiftUI
 struct ButtonView: View {
     let Textbutton: String
     let Textbutton2: String
+    @State private var isPostLoginViewActive = false
     
     init(Textbutton: String, Textbutton2: String) {
         self.Textbutton = Textbutton
@@ -17,7 +18,7 @@ struct ButtonView: View {
     }
     var body: some View {
         
-        NavigationLink(destination: PostloginView()) {
+        NavigationLink(destination: TutorialClearView()) {
             HStack(alignment: .center, spacing: 10) {
                 Text(Textbutton)
                     .bold()
@@ -31,21 +32,25 @@ struct ButtonView: View {
             .cornerRadius(15)
         }.padding(.top, 65)
         
-        NavigationLink(destination: PostloginView()) {
+        Button(action: {
+                            isPostLoginViewActive = true
+        }) {
             HStack(alignment: .center, spacing: 10) {
                 Text(Textbutton2)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color("Text-Yellow"))
-                    
+                    .foregroundColor(Color("Text-Color"))
+                
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 13)
             .frame(width: 326, alignment: .center)
             .cornerRadius(15)
             .overlay(
-            RoundedRectangle(cornerRadius: 15)
-            .inset(by: 1.5)
-            .stroke(Color("Button-Yellow")))
+                RoundedRectangle(cornerRadius: 15)
+                    .inset(by: 1.5)
+                    .stroke(Color("Text-Color")))
+        } .fullScreenCover(isPresented: $isPostLoginViewActive) {
+            PostloginView()
         }
     }
 }
