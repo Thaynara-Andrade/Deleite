@@ -23,7 +23,7 @@ struct DeleiteApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RegisterDonationView()
+            ContainerOptionView()
                 .environmentObject(vm)
         }
     }

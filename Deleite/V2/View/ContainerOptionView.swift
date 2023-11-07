@@ -11,6 +11,8 @@ import SwiftUI
 struct ContainerOptionView: View {
     
     @State var isShowTesteView: Bool = false
+    @State var shownextPageRegister = false
+    @State var showSheet:Bool = false
 
     var yellowBackground: String = "yellow-background-image"
     var bottleImage: String = "bottle-image"
@@ -61,22 +63,26 @@ struct ContainerOptionView: View {
                         StepByStepView()
                     }.padding(.top, 35)
                     
-                    NavigationLink(destination: PostloginView()) {
-                        HStack(alignment: .center, spacing: 10) {
-                            Text("Já tenho frasco de vidro")
-                                .font(
-                                    Font.custom("SF Pro Text", size: 17)
-                                        .weight(.semibold)
-                                )
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color("Text-Color"))
-                        }
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 13)
-                        .frame(width: 326, alignment: .center)
-                        .background(Color(red: 0.95, green: 0.87, blue: 0.62))
-                        .cornerRadius(15)
-                    }.padding(.top, 65)
+                    Button {
+                        showSheet = true
+                    } label: {
+                        Text("Já tenho frasco de vidro")
+                            .font(
+                                Font.custom("SF Pro Text", size: 17)
+                                    .weight(.semibold)
+                            )
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color("Text-Color"))
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 13)
+                            .frame(width: 326, alignment: .center)
+                            .background(Color(red: 0.95, green: 0.87, blue: 0.62))
+                            .cornerRadius(15)
+                    }
+                    .sheet(isPresented: $showSheet, onDismiss: nil) {
+                        RegisterDonationView()
+                    }
+                    
                     
                     NavigationLink(destination: PostloginView()) {
                         HStack(alignment: .center, spacing: 10) {
