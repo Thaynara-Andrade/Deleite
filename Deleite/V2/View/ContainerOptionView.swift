@@ -63,7 +63,7 @@ struct ContainerOptionView: View {
                     
                     NavigationLink(destination: PostloginView()) {
                         HStack(alignment: .center, spacing: 10) {
-                            Text("Já tenho fraco de vidro")
+                            Text("Já tenho frasco de vidro")
                                 .font(
                                     Font.custom("SF Pro Text", size: 17)
                                         .weight(.semibold)

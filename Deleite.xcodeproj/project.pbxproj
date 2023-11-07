@@ -68,6 +68,7 @@
 		49BE7BCF2AE2DBD200C7BE91 /* PostloginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */; };
 		B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757D5002AE855BF003F984D /* ContainerOptionView.swift */; };
 		B7E3ACAA2AEC033C00ACBFD2 /* StepByStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3ACA92AEC033C00ACBFD2 /* StepByStepView.swift */; };
+		B7ED18DE2AF91F7A00AE5333 /* RegisterDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,7 @@
 		49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostloginView.swift; sourceTree = "<group>"; };
 		B757D5002AE855BF003F984D /* ContainerOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOptionView.swift; sourceTree = "<group>"; };
 		B7E3ACA92AEC033C00ACBFD2 /* StepByStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepView.swift; sourceTree = "<group>"; };
+		B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDonationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +291,7 @@
 				0D185AFB2AF11F6100FF30AF /* RegistrationWhatsView.swift */,
 				49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */,
 				49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */,
+				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
 				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
 				B7E3ACA92AEC033C00ACBFD2 /* StepByStepView.swift */,
 			);
@@ -554,6 +557,7 @@
 				0D185AFC2AF11F6100FF30AF /* RegistrationWhatsView.swift in Sources */,
 				B7E3ACAA2AEC033C00ACBFD2 /* StepByStepView.swift in Sources */,
 				49518BFD2AE6A89D00BDFFA0 /* ComponentSectionView.swift in Sources */,
+				B7ED18DE2AF91F7A00AE5333 /* RegisterDonationView.swift in Sources */,
 				0D25C6A72AE7FDF500B7977C /* LocationsDataService.swift in Sources */,
 				0D25C6BC2AE7FDF500B7977C /* WebView.swift in Sources */,
 			);
