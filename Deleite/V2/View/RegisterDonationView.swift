@@ -11,12 +11,10 @@ struct RegisterDonationView: View {
     
     @State var notifyMeAbout:Bool = false
     @State var NotifyMeAboutType:Bool = false
-    @State var vibrateOnRing:Bool = false
-    @State var vibrateOnSilent:Bool = false
     @State var name:String = ""
     @State var cep:String = ""
+    
     var body: some View {
-        
         NavigationView{
             Form{
                 Section(header: Text("Informações Pessoais")) {
@@ -31,13 +29,11 @@ struct RegisterDonationView: View {
                         Text("Regional 2").tag(NotifyMeAboutType)
                         Text("Regional 3").tag(NotifyMeAboutType)
                         Text("Regional 4").tag(NotifyMeAboutType)
-                        
                     }
                 }
             }
             .navigationTitle("Agendamento")
             .navigationBarTitleDisplayMode(.inline)
-            
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Cancelar") {
@@ -50,6 +46,10 @@ struct RegisterDonationView: View {
                     }
                 }
             }
+            .safeAreaInset(edge: .bottom, content: {
+                ButtonSavedView()
+                    .padding(.bottom, 54)
+            })
         }
     }
 }

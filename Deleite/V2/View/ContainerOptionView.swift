@@ -12,7 +12,7 @@ struct ContainerOptionView: View {
     
     @State var isShowTesteView: Bool = false
     @State var shownextPageRegister = false
-    @State var showSheet:Bool = false
+    @State var showSheet = false
 
     var yellowBackground: String = "yellow-background-image"
     var bottleImage: String = "bottle-image"
@@ -107,7 +107,8 @@ struct ContainerOptionView: View {
                 }
                 
             }
-        }.navigationViewStyle(.stack) 
+        }.navigationViewStyle(.stack)
+
     }
 }
 #Preview {
