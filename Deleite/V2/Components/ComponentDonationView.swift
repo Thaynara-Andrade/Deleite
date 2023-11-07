@@ -20,38 +20,41 @@ struct ComponentDonationView: View {
     }
     
     var body: some View {
-        ZStack (alignment: .center) {
-            Rectangle()
-                .frame(width: 356, height: 180)
-                .foregroundColor(Color("Rectangle-color"))
-                .cornerRadius(21.8898)
-            VStack(alignment: .leading) {
-            
-                Text(Logintitle)
-                    .font(
-                        Font.custom("SFProRounded-Black", size: 30)
-                    )
-                    .multilineTextAlignment(.leading)
-                    .padding(.top, -5)
-                    .padding(.bottom, 1)
-                    .padding(.leading, -75)
-                    .foregroundColor(Color("icon-color"))
-                Text(Loginname)
-                    .padding(.leading, -75)
-                    .padding(.bottom, -5)
-                    .font(
-                        Font.custom("SFProRounded-Medium", size: 17)
-                    )
-                    .foregroundColor(Color("icon-color"))
+        NavigationLink(destination: ResumeView()){
+        ZStack {
+                VStack(alignment: .leading) {
+                    
+                    Text(Logintitle)
+                        .font(
+                            Font.custom("SFProRounded-Black", size: 30)
+                        )
+                        .multilineTextAlignment(.leading)
+                        .padding(.top, -5)
+                        .padding(.bottom, 1)
+                        .padding(.leading, -75)
+                        .foregroundColor(Color("icon-color"))
+                    Text(Loginname)
+                        .multilineTextAlignment(.leading)
+                        .padding(.leading, -75)
+                        .padding(.bottom, -5)
+                        .font(
+                            Font.custom("SFProRounded-Medium", size: 17)
+                        )
+                        .foregroundColor(Color("icon-color"))
+                    
+                } .frame(width: 356, height: 180)
+                    .background(Color("Rectangle-color"))
+                    .cornerRadius(23)
+                
+                LoginImage
+                    .resizable()
+                    .frame(width: 146, height: 110)
+                    .padding(.leading, 210)
                 
             }
-            LoginImage
-                .resizable()
-                .frame(width: 146, height: 110)
-                .padding(.leading, 210)
-            
         }
     }
+        
 }
 
 #Preview {
