@@ -78,7 +78,7 @@
 		49BF71E82AF960CC00CEDBA9 /* ComponentTutorialClear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */; };
 		B74356AB2AFA962A00DB48F6 /* ComponentButtonSavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */; };
 		B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757D5002AE855BF003F984D /* ContainerOptionView.swift */; };
-		B7E3ACAA2AEC033C00ACBFD2 /* StepByStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3ACA92AEC033C00ACBFD2 /* StepByStepView.swift */; };
+		B7E3ACAA2AEC033C00ACBFD2 /* ComponentStepByStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */; };
 		B7ED18DE2AF91F7A00AE5333 /* RegisterDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */; };
 /* End PBXBuildFile section */
 
@@ -173,7 +173,7 @@
 		49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTutorialClear.swift; sourceTree = "<group>"; };
 		B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButtonSavedView.swift; sourceTree = "<group>"; };
 		B757D5002AE855BF003F984D /* ContainerOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOptionView.swift; sourceTree = "<group>"; };
-		B7E3ACA92AEC033C00ACBFD2 /* StepByStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepView.swift; sourceTree = "<group>"; };
+		B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentStepByStepView.swift; sourceTree = "<group>"; };
 		B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDonationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -320,7 +320,7 @@
 				49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */,
 				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
 				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
-				B7E3ACA92AEC033C00ACBFD2 /* StepByStepView.swift */,
+				B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */,
 				49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */,
 				B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */,
 				497B43562AEC4F5C00B43467 /* ResumeView.swift */,
@@ -598,7 +598,7 @@
 				49874B8E2AFA76AB0041DDA0 /* ComponentTextView.swift in Sources */,
 				0D25C6B62AE7FDF500B7977C /* TutorialCollect.swift in Sources */,
 				0D185AFC2AF11F6100FF30AF /* RegistrationWhatsView.swift in Sources */,
-				B7E3ACAA2AEC033C00ACBFD2 /* StepByStepView.swift in Sources */,
+				B7E3ACAA2AEC033C00ACBFD2 /* ComponentStepByStepView.swift in Sources */,
 				49518BFD2AE6A89D00BDFFA0 /* ComponentSectionView.swift in Sources */,
 				B7ED18DE2AF91F7A00AE5333 /* RegisterDonationView.swift in Sources */,
 				0D25C6A72AE7FDF500B7977C /* LocationsDataService.swift in Sources */,
