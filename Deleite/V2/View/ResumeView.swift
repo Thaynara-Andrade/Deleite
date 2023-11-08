@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Mixpanel
 
 struct ResumeView: View {
     @State private var isPostLoginViewActive = false

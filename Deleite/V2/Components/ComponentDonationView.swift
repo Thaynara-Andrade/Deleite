@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Mixpanel
 
 struct ComponentDonationView: View {
     
@@ -21,7 +22,7 @@ struct ComponentDonationView: View {
     
     var body: some View {
         NavigationLink(destination: ResumeView()){
-        ZStack {
+            ZStack {
                 VStack(alignment: .leading) {
                     
                     Text(Logintitle)
@@ -54,7 +55,7 @@ struct ComponentDonationView: View {
             }
         }
     }
-        
+    
 }
 
 #Preview {
