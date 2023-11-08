@@ -7,15 +7,20 @@
 
 import SwiftUI
 
-struct ComponentTextFiel: View {
-    @State private var text = ""
+struct ComponentTextField: View {
+    @State private var password: String = ""
+    @FocusState private var passwordIsFocused: Bool
+    @State private var isLogged: Bool = false
+    @State private var showErrorMessage = false
     
     var body: some View {
         
         HStack{
             
-            TextField("Senha", text: $text)
+            TextField("Senha", text: $password)
                 .textFieldStyle(PlainTextFieldStyle())
+                .foregroundColor(Color.black)
+                .focused($passwordIsFocused)
                 .background(
                     Rectangle()
                         .frame(width: 350, height: 55)
@@ -26,7 +31,12 @@ struct ComponentTextFiel: View {
                 .textFieldStyle(.roundedBorder)
                 .overlay(
                     Button(action: {
-                        print("Recebido")
+                        if (password == "001") {
+                            isLogged = true
+                        } else {
+                            showErrorMessage = true
+                        }
+                        passwordIsFocused = false
                     }) {
                         HStack {
                             VStack {
@@ -43,6 +53,12 @@ struct ComponentTextFiel: View {
                             }
                         }
                     }
+                        .alert(isPresented: $showErrorMessage) {
+                            Alert(title: Text("Erro"), message: Text("Por favor, tente novamente."), dismissButton: .default(Text("Ok")))
+                        }
+                        .fullScreenCover(isPresented: $isLogged) {
+                            PostloginView()
+                        }
                         .padding(.leading, 290)
                         .padding(.top, -8)
                         
@@ -55,5 +71,5 @@ struct ComponentTextFiel: View {
 }
 
 #Preview {
-    ComponentTextFiel()
+    ComponentTextField()
 }
