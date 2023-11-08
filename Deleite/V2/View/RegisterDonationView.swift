@@ -11,6 +11,7 @@ struct RegisterDonationView: View {
     
     @State var notifyMeAbout:Bool = false
     @State var NotifyMeAboutType:Bool = false
+    @State var shownextPageRegister:Bool = true
     @State var name:String = ""
     @State var cep:String = ""
     
@@ -38,6 +39,7 @@ struct RegisterDonationView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Cancelar") {
                         print("Cancelar tapped!")
+                        shownextPageRegister = false
                     }
                 }
                 ToolbarItem(placement: .navigationBarLeading){
