@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import Mixpanel
 
-  @main
+enum Environment {
+    static let string: String = "dev"
+}
+
+@main
 struct DeleiteApp: App {
     
     @StateObject private var vm = LocationsViewModel()
@@ -25,6 +30,16 @@ struct DeleiteApp: App {
         WindowGroup {
             PostloginView()
                 .environmentObject(vm)
+                .onAppear {
+                    Mixpanel.mainInstance().track(event: "Entrou no App", properties: ["ambiente": Environment.string])
+                }
         }
+    }
+    
+    init() {
+        Mixpanel.initialize(
+            token: "4a9af2116a86ee26043b2ad1b4a3cf0f",
+            trackAutomaticEvents: true
+        )
     }
 }
