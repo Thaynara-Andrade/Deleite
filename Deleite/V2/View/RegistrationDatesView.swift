@@ -9,33 +9,38 @@ import SwiftUI
 
 struct RegistrationDatesView: View {
     
-    @State private var date = Date()
+    @State private var collectionDate = Date()
     let dateRange: ClosedRange<Date> = {
         let calendar = Calendar.current
-        let startComponents = DateComponents(year: 2023, month: 11, day: 1)
-        let endComponents = DateComponents(year: 2023, month: 11, day: 30, hour: 23, minute: 59, second: 59)
-        return calendar.date(from:startComponents)!
-            ...
-            calendar.date(from:endComponents)!
+        let endDate = Date.now.advanced(by: (60 * 60 * 24) * 14)
+        return Date.now...endDate
+    }()
+    
+    @State private var milkPickupDate = Date()
+    let dateRangemilk: ClosedRange<Date> = {
+        let calendar = Calendar.current
+        let startDate = Date.now.advanced(by: -(60 * 60 * 24) * 14)
+        return startDate...Date.now
     }()
     
     @State var ShowRegistrationConfirmation:Bool = false
-    @State private var milkPickupDate = UserDefaults.standard.object(forKey: "milkPickupDate") as? Date ?? Date()
-    @State private var collectionDate = UserDefaults.standard.object(forKey: "collectionDate") as? Date ?? Date()
     
     var body: some View {
         NavigationView{
             Form{
                 Section(header: Text("Datas referente a doação")) {
                     DatePicker("Data da Retirada do Leite",
-                                        selection: $date,
-                                        in: dateRange,
-                                        displayedComponents: .date)
+                     selection: $milkPickupDate,
+                     in: dateRangemilk,
+                     displayedComponents: .date
+                    )
                     
-                    DatePicker("Data para Coleta", selection: $collectionDate, displayedComponents: .date)
+                    DatePicker("Data para Coleta", selection: $collectionDate,
+                               in: dateRange, displayedComponents: .date)
                 }
                 
                 Text("Texto explicando para a usuária o limite de dias que o leite pode ficar na geladeira.Texto explicando para a usuária.")
+                
             }
             .navigationTitle("Agendamento")
             .navigationBarTitleDisplayMode(.inline)
@@ -43,7 +48,7 @@ struct RegistrationDatesView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Cancelar") {
                         print("Cancelar tapped!")
-                        ShowRegistrationConfirmation = false
+                        ShowRegistrationConfirmation = true
                     }
                 }
                 ToolbarItem(placement: .navigationBarLeading){
