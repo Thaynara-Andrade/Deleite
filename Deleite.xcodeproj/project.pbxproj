@@ -78,6 +78,9 @@
 		49BF71E82AF960CC00CEDBA9 /* ComponentTutorialClear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */; };
 		B74356AB2AFA962A00DB48F6 /* ComponentButtonSavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */; };
 		B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757D5002AE855BF003F984D /* ContainerOptionView.swift */; };
+		B79ED6752AFBB79800BEAC1D /* RegistrationDatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */; };
+		B79ED6772AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */; };
+		B79ED6792AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79ED6782AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift */; };
 		B7E3ACAA2AEC033C00ACBFD2 /* ComponentStepByStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */; };
 		B7ED18DE2AF91F7A00AE5333 /* RegisterDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */; };
 /* End PBXBuildFile section */
@@ -173,6 +176,9 @@
 		49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTutorialClear.swift; sourceTree = "<group>"; };
 		B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButtonSavedView.swift; sourceTree = "<group>"; };
 		B757D5002AE855BF003F984D /* ContainerOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOptionView.swift; sourceTree = "<group>"; };
+		B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDatesView.swift; sourceTree = "<group>"; };
+		B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRegistrationConfirmationView.swift; sourceTree = "<group>"; };
+		B79ED6782AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponetButtonConfirmRegistreView.swift; sourceTree = "<group>"; };
 		B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentStepByStepView.swift; sourceTree = "<group>"; };
 		B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDonationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -318,15 +324,18 @@
 				0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */,
 				0D185AFB2AF11F6100FF30AF /* RegistrationWhatsView.swift */,
 				49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */,
-				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
-				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
-				B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */,
 				49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */,
-				B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */,
 				497B43562AEC4F5C00B43467 /* ResumeView.swift */,
 				49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */,
 				49874B8F2AFA87300041DDA0 /* TutorialMilkView.swift */,
 				49874B912AFA996A0041DDA0 /* TutorialStorageView.swift */,
+				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
+				B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */,
+				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
+				B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */,
+				B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */,
+				B79ED6782AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift */,
+				B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -560,6 +569,7 @@
 				0D25C6C12AE7FDF500B7977C /* SwiftUIView.swift in Sources */,
 				49BF71E62AF95EE000CEDBA9 /* TutorialClearView.swift in Sources */,
 				0D25C6B42AE7FDF500B7977C /* TutorialStorege.swift in Sources */,
+				B79ED6772AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift in Sources */,
 				0D25C6B32AE7FDF500B7977C /* SnapCarousel.swift in Sources */,
 				0D25C6B12AE7FDF500B7977C /* MixPanel.swift in Sources */,
 				0D25C6BB2AE7FDF500B7977C /* TutorialSanitation.swift in Sources */,
@@ -581,6 +591,7 @@
 				B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */,
 				497B43592AEC590A00B43467 /* ComponentscircleView.swift in Sources */,
 				49BE7BCF2AE2DBD200C7BE91 /* PostloginView.swift in Sources */,
+				B79ED6792AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift in Sources */,
 				0D25C6C32AE7FDF500B7977C /* TutorialView.swift in Sources */,
 				0D40B7182AE69F2A00BE5034 /* NoLoginView.swift in Sources */,
 				0D25C6AC2AE7FDF500B7977C /* ButtonBackView.swift in Sources */,
@@ -602,6 +613,7 @@
 				49518BFD2AE6A89D00BDFFA0 /* ComponentSectionView.swift in Sources */,
 				B7ED18DE2AF91F7A00AE5333 /* RegisterDonationView.swift in Sources */,
 				0D25C6A72AE7FDF500B7977C /* LocationsDataService.swift in Sources */,
+				B79ED6752AFBB79800BEAC1D /* RegistrationDatesView.swift in Sources */,
 				0D25C6BC2AE7FDF500B7977C /* WebView.swift in Sources */,
 				49874B902AFA87300041DDA0 /* TutorialMilkView.swift in Sources */,
 			);

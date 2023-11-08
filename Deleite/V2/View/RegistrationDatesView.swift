@@ -1,38 +1,28 @@
 //
-//  RegisterDonationView.swift
+//  RegistrationDatesView.swift
 //  Deleite
 //
-//  Created by Raina on 06/11/23.
+//  Created by Raina on 08/11/23.
 //
 
 import SwiftUI
 
-struct RegisterDonationView: View {
+struct RegistrationDatesView: View {
     
-    @State var notifyMeAbout:Bool = false
-    @State var NotifyMeAboutType:Bool = false
-    @State var shownextPageRegister:Bool = true
-    @State var showNextPageRegisterDate:Bool = false
+    @State var ShowRegistrationConfirmation:Bool = false
     @State var name:String = ""
     @State var cep:String = ""
     
     var body: some View {
         NavigationView{
             Form{
-                Section(header: Text("Informações Pessoais")) {
+                Section(header: Text("Datas referente a doação")) {
                     TextField("Nome", text: $name)
                     TextField("CEP", text: $cep)
                     
                 }
                 
-                Section(header: Text("Regional")) {
-                    Picker("Selecione a Regional", selection: $notifyMeAbout) {
-                        Text("Regional 1").tag(NotifyMeAboutType)
-                        Text("Regional 2").tag(NotifyMeAboutType)
-                        Text("Regional 3").tag(NotifyMeAboutType)
-                        Text("Regional 4").tag(NotifyMeAboutType)
-                    }
-                }
+                Text("Texto explicando para a usuária o limite de dias que o leite pode ficar na geladeira.Texto explicando para a usuária.")
             }
             .navigationTitle("Agendamento")
             .navigationBarTitleDisplayMode(.inline)
@@ -40,7 +30,7 @@ struct RegisterDonationView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Cancelar") {
                         print("Cancelar tapped!")
-                        shownextPageRegister = false
+                        ShowRegistrationConfirmation = false
                     }
                 }
                 ToolbarItem(placement: .navigationBarLeading){
@@ -50,7 +40,7 @@ struct RegisterDonationView: View {
                 }
             }
             .safeAreaInset(edge: .bottom, content: {
-                ComponentButtonSavedView()
+                ComponetButtonConfirmRegistreView()
                 .padding(.bottom, 54)
             })
         }
@@ -58,5 +48,5 @@ struct RegisterDonationView: View {
 }
 
 #Preview {
-    RegisterDonationView()
+    RegistrationDatesView()
 }
