@@ -11,8 +11,7 @@ import SwiftUI
 struct ContainerOptionView: View {
     
     @State var isShowTesteView: Bool = false
-    @State var shownextPageRegister = false
-    @State var showSheet = false
+    @State var showNextPageRegister = false
 
     var yellowBackground: String = "yellow-background-image"
     var bottleImage: String = "bottle-image"
@@ -64,7 +63,7 @@ struct ContainerOptionView: View {
                     }.padding(.top, 35)
                     
                     Button {
-                        showSheet = true
+                        showNextPageRegister = true
                     } label: {
                         Text("Já tenho frasco de vidro")
                             .font(
@@ -79,7 +78,7 @@ struct ContainerOptionView: View {
                             .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                             .cornerRadius(15)
                     }
-                    .sheet(isPresented: $showSheet, onDismiss: nil) {
+                    .sheet(isPresented: $showNextPageRegister, onDismiss: nil) {
                         RegisterDonationView()
                     }
                     
