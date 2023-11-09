@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D185AF62AEC3C6B00FF30AF /* ComponentNoLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D185AF52AEC3C6B00FF30AF /* ComponentNoLogin.swift */; };
 		0D185AF82AEC49B600FF30AF /* ComponentEmpytState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D185AF72AEC49B600FF30AF /* ComponentEmpytState.swift */; };
-		0D185AFA2AEFCBDF00FF30AF /* ComponentTextFiel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D185AF92AEFCBDF00FF30AF /* ComponentTextFiel.swift */; };
+		0D185AFA2AEFCBDF00FF30AF /* ComponentTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D185AF92AEFCBDF00FF30AF /* ComponentTextField.swift */; };
 		0D185AFC2AF11F6100FF30AF /* RegistrationWhatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D185AFB2AF11F6100FF30AF /* RegistrationWhatsView.swift */; };
 		0D25C6822AE6E48300B7977C /* MenuButtonLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D25C6812AE6E48300B7977C /* MenuButtonLogin.swift */; };
 		0D25C6A72AE7FDF500B7977C /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D25C6842AE7FDF400B7977C /* LocationsDataService.swift */; };
@@ -105,7 +105,7 @@
 /* Begin PBXFileReference section */
 		0D185AF52AEC3C6B00FF30AF /* ComponentNoLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentNoLogin.swift; sourceTree = "<group>"; };
 		0D185AF72AEC49B600FF30AF /* ComponentEmpytState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentEmpytState.swift; sourceTree = "<group>"; };
-		0D185AF92AEFCBDF00FF30AF /* ComponentTextFiel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTextFiel.swift; sourceTree = "<group>"; };
+		0D185AF92AEFCBDF00FF30AF /* ComponentTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTextField.swift; sourceTree = "<group>"; };
 		0D185AFB2AF11F6100FF30AF /* RegistrationWhatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationWhatsView.swift; sourceTree = "<group>"; };
 		0D25C6812AE6E48300B7977C /* MenuButtonLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonLogin.swift; sourceTree = "<group>"; };
 		0D25C6842AE7FDF400B7977C /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 				497B43582AEC590A00B43467 /* ComponentscircleView.swift */,
 				0D185AF52AEC3C6B00FF30AF /* ComponentNoLogin.swift */,
 				0D185AF72AEC49B600FF30AF /* ComponentEmpytState.swift */,
-				0D185AF92AEFCBDF00FF30AF /* ComponentTextFiel.swift */,
+				0D185AF92AEFCBDF00FF30AF /* ComponentTextField.swift */,
 				4945ADFF2AF92B5A00021E54 /* ButtonView.swift */,
 				49874B8B2AFA750E0041DDA0 /* ButtonNextView.swift */,
 				49874B932AFA9D970041DDA0 /* ComponentBottomless.swift */,
@@ -574,7 +574,7 @@
 				0D25C6B12AE7FDF500B7977C /* MixPanel.swift in Sources */,
 				0D25C6BB2AE7FDF500B7977C /* TutorialSanitation.swift in Sources */,
 				0D25C6A92AE7FDF500B7977C /* ImageCards.swift in Sources */,
-				0D185AFA2AEFCBDF00FF30AF /* ComponentTextFiel.swift in Sources */,
+				0D185AFA2AEFCBDF00FF30AF /* ComponentTextField.swift in Sources */,
 				B74356AB2AFA962A00DB48F6 /* ComponentButtonSavedView.swift in Sources */,
 				0D25C6B72AE7FDF500B7977C /* ConstructionLottieView.swift in Sources */,
 				0D25C6BE2AE7FDF500B7977C /* LocationPreviewView.swift in Sources */,
@@ -776,7 +776,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.2.0;
-				DEVELOPMENT_TEAM = 3S22856DS9;
+				DEVELOPMENT_TEAM = QXKC9DK2A8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Deleite/Info.plist;
@@ -813,7 +813,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.2.0;
-				DEVELOPMENT_TEAM = 3S22856DS9;
+				DEVELOPMENT_TEAM = QXKC9DK2A8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Deleite/Info.plist;
