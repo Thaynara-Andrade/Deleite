@@ -14,7 +14,7 @@ struct ComponetButtonConfirmRegistreView: View {
     var body: some View {
         HStack(){
             Button {
-                saveSchedule = true
+                ShowRegistrationConfirmationView()
             } label: {
                 HStack(alignment: .center, spacing: 10) {
                     Text("Confirmar agendamento")
@@ -30,9 +30,6 @@ struct ComponetButtonConfirmRegistreView: View {
                 .frame(width: 326, alignment: .center)
                 .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                 .cornerRadius(15)
-            }
-            .sheet(isPresented: $saveSchedule, onDismiss: nil) {
-                ShowRegistrationConfirmationView()
             }
         }
     }
