@@ -63,7 +63,6 @@
 		49518BFA2AE6A3B600BDFFA0 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49518BF12AE6A3B600BDFFA0 /* SF-Pro-Rounded-Regular.otf */; };
 		49518BFB2AE6A3B600BDFFA0 /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49518BF22AE6A3B600BDFFA0 /* SF-Pro-Rounded-Thin.otf */; };
 		49518BFD2AE6A89D00BDFFA0 /* ComponentSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */; };
-		49518BFF2AE70C9D00BDFFA0 /* SchedulingsUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */; };
 		49518C012AE721A300BDFFA0 /* ComponentDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */; };
 		497B43572AEC4F5C00B43467 /* ResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B43562AEC4F5C00B43467 /* ResumeView.swift */; };
 		497B43592AEC590A00B43467 /* ComponentscircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B43582AEC590A00B43467 /* ComponentscircleView.swift */; };
@@ -162,7 +161,6 @@
 		49518BF12AE6A3B600BDFFA0 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
 		49518BF22AE6A3B600BDFFA0 /* SF-Pro-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Thin.otf"; sourceTree = "<group>"; };
 		49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSectionView.swift; sourceTree = "<group>"; };
-		49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingsUserView.swift; sourceTree = "<group>"; };
 		49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentDonationView.swift; sourceTree = "<group>"; };
 		497B43562AEC4F5C00B43467 /* ResumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeView.swift; sourceTree = "<group>"; };
 		497B43582AEC590A00B43467 /* ComponentscircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentscircleView.swift; sourceTree = "<group>"; };
@@ -323,7 +321,6 @@
 			children = (
 				0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */,
 				0D185AFB2AF11F6100FF30AF /* RegistrationWhatsView.swift */,
-				49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */,
 				49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */,
 				497B43562AEC4F5C00B43467 /* ResumeView.swift */,
 				49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */,
@@ -560,7 +557,6 @@
 			files = (
 				0D25C6AF2AE7FDF500B7977C /* HomeButton.swift in Sources */,
 				0D25C6AB2AE7FDF500B7977C /* HomeImage.swift in Sources */,
-				49518BFF2AE70C9D00BDFFA0 /* SchedulingsUserView.swift in Sources */,
 				0D25C6AE2AE7FDF500B7977C /* MenuButtonArmazenamento.swift in Sources */,
 				0D25C6BF2AE7FDF500B7977C /* HomescreenView.swift in Sources */,
 				49BF71E82AF960CC00CEDBA9 /* ComponentTutorialClear.swift in Sources */,
