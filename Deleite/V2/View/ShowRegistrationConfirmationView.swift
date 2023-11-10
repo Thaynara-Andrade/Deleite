@@ -18,7 +18,6 @@ struct ShowRegistrationConfirmationView: View {
                     .scaledToFit()
                     .frame(width: 145, height: 145)
             }
-            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
             .padding(.top, -120)
             
             HStack{
@@ -29,8 +28,8 @@ struct ShowRegistrationConfirmationView: View {
                     )
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
-            }
-            .border(Color.red)
+            }        
+        //fazer uma animação que direciona para pagina inicial que vai mostrar o agendamento.
     }
 }
 #Preview {
