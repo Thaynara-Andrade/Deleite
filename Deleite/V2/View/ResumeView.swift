@@ -69,7 +69,8 @@ struct ResumeView: View {
                         
                         VStack (alignment: .center){
                             ButtonView(Textbutton: "Ver tutoriais", Textbutton2: "Ir para agendamentos")
-                        } .padding(.leading,30)
+                        }
+                            .padding(.leading,30)
                             .padding(.trailing,30)
                             .padding(.top, -60)
                     }
