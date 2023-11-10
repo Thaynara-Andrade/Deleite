@@ -19,7 +19,7 @@ struct ShowRegistrationConfirmationView: View {
                     .frame(width: 145, height: 145)
             }
             .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-            .padding(.top, -165)
+            .padding(.top, -120)
             
             HStack{
                 Text("Seu agendamento foi \n realizado com sucesso!")
