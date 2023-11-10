@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ComponetButtonConfirmRegistreView: View {
     
-    @State var saveSchedule:Bool = false
+    @State var confirmAppointment:Bool = false
     
     var body: some View {
         HStack(){
             Button {
-                ShowRegistrationConfirmationView()
+                confirmAppointment = true
             } label: {
                 HStack(alignment: .center, spacing: 10) {
                     Text("Confirmar agendamento")
@@ -30,6 +30,9 @@ struct ComponetButtonConfirmRegistreView: View {
                 .frame(width: 326, alignment: .center)
                 .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                 .cornerRadius(15)
+                .fullScreenCover(isPresented: $confirmAppointment) {
+                    ShowRegistrationConfirmationView()
+                }
             }
         }
     }
