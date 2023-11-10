@@ -30,17 +30,14 @@ struct RegistrationDatesView: View {
             Form{
                 Section(header: Text("Datas referente a doação")) {
                     DatePicker("Data da Retirada do Leite",
-                     selection: $milkPickupDate,
-                     in: dateRangemilk,
-                     displayedComponents: .date
+                               selection: $milkPickupDate,
+                               in: dateRangemilk,
+                               displayedComponents: .date
                     )
                     
                     DatePicker("Data para Coleta", selection: $collectionDate,
                                in: dateRange, displayedComponents: .date)
                 }
-                
-                Text("Texto explicando para a usuária o limite de dias que o leite pode ficar na geladeira.Texto explicando para a usuária.")
-                
             }
             .navigationTitle("Agendamento")
             .navigationBarTitleDisplayMode(.inline)
@@ -57,9 +54,17 @@ struct RegistrationDatesView: View {
                     }
                 }
             }
+            
+            .safeAreaInset(edge: .bottom, content: {
+                Text("Texto explicando para a usuária o limite de dias que o leite pode ficar na geladeira.Texto explicando para a usuária.")
+                    .font(Font.custom("SF Pro", size: 13))
+                    .foregroundColor(Color.gray)
+                    .frame(width: 303, alignment: .topLeading)
+                    .padding(.bottom, 410)
+            })
             .safeAreaInset(edge: .bottom, content: {
                 ComponetButtonConfirmRegistreView()
-                .padding(.bottom, 54)
+                    .padding(.bottom, 54)
             })
         }
     }
