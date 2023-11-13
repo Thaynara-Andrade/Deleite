@@ -28,7 +28,7 @@ struct TutorialStorageView: View {
                         ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Agora é necessário , escorrer o frasco e a tampa com a abertura voltada para baixo, sobre um pano limpo, até secar. Feche o frasco sem tocar na parte interna da tampa. ", TutorialImage: Image("Mao"))
                             .padding(.bottom, -20)
                         
-                        NavigationLink(destination: TutorialMilkView()){
+                        NavigationLink(destination: RegisterDonationView()){
                             ButtonNextView(ButtonNext: "Ir para agendamentos")
                                 .padding(.top, 40)
                             

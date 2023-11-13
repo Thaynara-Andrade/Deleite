@@ -58,7 +58,7 @@ struct ButtonView: View {
                 Mixpanel.mainInstance().track(event: "Ir para agendamento", properties:["ambiente": Environment.string]) }
             
         } .fullScreenCover(isPresented: $isPostLoginViewActive) {
-            PostloginView()
+            RegisterDonationView()
         }
     }
 }

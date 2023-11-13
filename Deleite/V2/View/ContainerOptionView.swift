@@ -62,24 +62,8 @@ struct ContainerOptionView: View {
                     StepByStepView()
                 }.padding(.top, 35)
                 
-                Button {
-                    showNextPageRegister = true
-                } label: {
-                    Text("Já tenho frasco de vidro")
-                        .font(
-                            Font.custom("SF Pro Text", size: 17)
-                                .weight(.semibold)
-                        )
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color("Text-Color"))
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 13)
-                        .frame(width: 326, alignment: .center)
-                        .background(Color(red: 0.95, green: 0.87, blue: 0.62))
-                        .cornerRadius(15)
-                }
-                .fullScreenCover(isPresented: $showNextPageRegister) {
-                    ResumeView()
+                NavigationLink(destination: ResumeView()){
+                    ButtonNextView(ButtonNext: "Já tenho frasco de vidro")
                 }
                 
                 
