@@ -212,6 +212,8 @@
 		0D25C6802AE6E26900B7977C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */,
+				B79ED6782AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift */,
 				B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */,
 				49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */,
 				49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */,
@@ -329,9 +331,7 @@
 				49874B912AFA996A0041DDA0 /* TutorialStorageView.swift */,
 				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
 				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
-				B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */,
 				B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */,
-				B79ED6782AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift */,
 				B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */,
 			);
 			path = View;
