@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RegistrationDatesView: View {
     
+    @Environment(\.dismiss) var dismiss
     @State private var collectionDate = Date()
     let dateRange: ClosedRange<Date> = {
         let calendar = Calendar.current
@@ -26,6 +27,7 @@ struct RegistrationDatesView: View {
     @State var ShowRegistrationConfirmation:Bool = false
     
     var body: some View {
+        NavigationView{
             Form{
                 Section(header: Text("Datas referente a doação")) {
                     DatePicker("Data da Retirada do Leite",
@@ -38,13 +40,10 @@ struct RegistrationDatesView: View {
                                in: dateRange, displayedComponents: .date)
                 }
             }
-            .navigationTitle("Agendamento")
-            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Cancelar") {
-                        print("Cancelar tapped!")
-                        ShowRegistrationConfirmation = true
+                        dismiss()
                     }
                 }
                 ToolbarItem(placement: .navigationBarLeading){
@@ -53,7 +52,8 @@ struct RegistrationDatesView: View {
                     }
                 }
             }
-            
+            .navigationTitle("Agendamento")
+            .navigationBarTitleDisplayMode(.inline)
             .safeAreaInset(edge: .bottom, content: {
                 Text("Texto explicando para a usuária o limite de dias que o leite pode ficar na geladeira.Texto explicando para a usuária.")
                     .font(Font.custom("SF Pro", size: 13))
@@ -66,8 +66,10 @@ struct RegistrationDatesView: View {
                     .padding(.bottom, 54)
             })
         }
+    }
 }
 
 #Preview {
     RegistrationDatesView()
+    
 }

@@ -83,5 +83,7 @@ struct ResumeView: View {
 }
 
 #Preview {
-    ResumeView()
+    NavigationView{
+        ResumeView()
+    }
 }
