@@ -77,6 +77,8 @@
 		49BE7BCF2AE2DBD200C7BE91 /* PostloginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */; };
 		49BF71E62AF95EE000CEDBA9 /* TutorialClearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */; };
 		49BF71E82AF960CC00CEDBA9 /* ComponentTutorialClear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */; };
+		B7135FE82B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7135FE72B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift */; };
+		B7135FEA2B04366400FAE522 /* RecipientRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7135FE92B04366400FAE522 /* RecipientRegistrationView.swift */; };
 		B74338B52B02C12C00D47F4B /* ComponentButoonScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */; };
 		B74356AB2AFA962A00DB48F6 /* ComponentButtonSavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */; };
 		B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757D5002AE855BF003F984D /* ContainerOptionView.swift */; };
@@ -177,6 +179,8 @@
 		49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostloginView.swift; sourceTree = "<group>"; };
 		49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialClearView.swift; sourceTree = "<group>"; };
 		49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTutorialClear.swift; sourceTree = "<group>"; };
+		B7135FE72B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientPersonalRegistrationView.swift; sourceTree = "<group>"; };
+		B7135FE92B04366400FAE522 /* RecipientRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientRegistrationView.swift; sourceTree = "<group>"; };
 		B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButoonScheduling.swift; sourceTree = "<group>"; };
 		B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButtonSavedView.swift; sourceTree = "<group>"; };
 		B757D5002AE855BF003F984D /* ContainerOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOptionView.swift; sourceTree = "<group>"; };
@@ -341,6 +345,8 @@
 				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
 				B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */,
 				B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */,
+				B7135FE72B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift */,
+				B7135FE92B04366400FAE522 /* RecipientRegistrationView.swift */,
 				0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */,
 			);
 			path = View;
@@ -567,6 +573,8 @@
 				0D25C6AF2AE7FDF500B7977C /* HomeButton.swift in Sources */,
 				0D25C6AB2AE7FDF500B7977C /* HomeImage.swift in Sources */,
 				0D25C6AE2AE7FDF500B7977C /* MenuButtonArmazenamento.swift in Sources */,
+				B7135FEA2B04366400FAE522 /* RecipientRegistrationView.swift in Sources */,
+				B7135FE82B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift in Sources */,
 				0D25C6BF2AE7FDF500B7977C /* HomescreenView.swift in Sources */,
 				49BF71E82AF960CC00CEDBA9 /* ComponentTutorialClear.swift in Sources */,
 				0D25C6C22AE7FDF500B7977C /* QuestionsView.swift in Sources */,
