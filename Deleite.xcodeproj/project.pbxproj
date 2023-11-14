@@ -77,6 +77,7 @@
 		49BE7BCF2AE2DBD200C7BE91 /* PostloginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */; };
 		49BF71E62AF95EE000CEDBA9 /* TutorialClearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */; };
 		49BF71E82AF960CC00CEDBA9 /* ComponentTutorialClear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */; };
+		B74338B52B02C12C00D47F4B /* ComponentButoonScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */; };
 		B74356AB2AFA962A00DB48F6 /* ComponentButtonSavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */; };
 		B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757D5002AE855BF003F984D /* ContainerOptionView.swift */; };
 		B79ED6752AFBB79800BEAC1D /* RegistrationDatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */; };
@@ -176,6 +177,7 @@
 		49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostloginView.swift; sourceTree = "<group>"; };
 		49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialClearView.swift; sourceTree = "<group>"; };
 		49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTutorialClear.swift; sourceTree = "<group>"; };
+		B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButoonScheduling.swift; sourceTree = "<group>"; };
 		B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButtonSavedView.swift; sourceTree = "<group>"; };
 		B757D5002AE855BF003F984D /* ContainerOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOptionView.swift; sourceTree = "<group>"; };
 		B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDatesView.swift; sourceTree = "<group>"; };
@@ -216,6 +218,9 @@
 		0D25C6802AE6E26900B7977C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */,
+				B79ED6782AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift */,
+				B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */,
 				49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */,
 				49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */,
 				49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */,
@@ -226,6 +231,7 @@
 				0D185AF92AEFCBDF00FF30AF /* ComponentTextField.swift */,
 				4945ADFF2AF92B5A00021E54 /* ButtonView.swift */,
 				49874B8B2AFA750E0041DDA0 /* ButtonNextView.swift */,
+				B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */,
 				49874B932AFA9D970041DDA0 /* ComponentBottomless.swift */,
 				49874B8D2AFA76AB0041DDA0 /* ComponentTextView.swift */,
 				0DE0AE292B0394AB006D3D93 /* History.swift */,
@@ -332,11 +338,8 @@
 				49874B8F2AFA87300041DDA0 /* TutorialMilkView.swift */,
 				49874B912AFA996A0041DDA0 /* TutorialStorageView.swift */,
 				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
-				B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */,
 				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
-				B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */,
 				B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */,
-				B79ED6782AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift */,
 				B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */,
 				0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */,
 			);
@@ -579,6 +582,7 @@
 				0D185AFA2AEFCBDF00FF30AF /* ComponentTextField.swift in Sources */,
 				B74356AB2AFA962A00DB48F6 /* ComponentButtonSavedView.swift in Sources */,
 				0D25C6B72AE7FDF500B7977C /* ConstructionLottieView.swift in Sources */,
+				B74338B52B02C12C00D47F4B /* ComponentButoonScheduling.swift in Sources */,
 				0D25C6BE2AE7FDF500B7977C /* LocationPreviewView.swift in Sources */,
 				0D25C6B92AE7FDF500B7977C /* LocationDetailView.swift in Sources */,
 				0D25C6B82AE7FDF500B7977C /* LocationsView.swift in Sources */,

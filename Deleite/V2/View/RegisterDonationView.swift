@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RegisterDonationView: View {
     
+    @Environment(\.dismiss) var dismiss
     @State var notifyMeAbout:Bool = false
     @State var NotifyMeAboutType:Bool = false
     @State var shownextPageRegister:Bool = true
@@ -39,13 +40,7 @@ struct RegisterDonationView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Cancelar") {
-                        print("Cancelar tapped!")
-                        shownextPageRegister = false
-                    }
-                }
-                ToolbarItem(placement: .navigationBarLeading){
-                    Button("Voltar") {
-                        print("Voltar tapped!")
+                        dismiss()
                     }
                 }
             }

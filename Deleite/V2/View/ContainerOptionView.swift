@@ -13,6 +13,7 @@ struct ContainerOptionView: View {
     @State var isShowTesteView: Bool = false
     @State var showNextPageRegister = false
     @State var NotHaveBottle = false
+    @State var iHaveBottle = false
     
     var yellowBackground: String = "yellow-background-image"
     var bottleImage: String = "bottle-image"
@@ -62,29 +63,13 @@ struct ContainerOptionView: View {
                     StepByStepView()
                 }.padding(.top, 35)
                 
-                Button {
-                    showNextPageRegister = true
-                } label: {
-                    Text("Já tenho frasco de vidro")
-                        .font(
-                            Font.custom("SF Pro Text", size: 17)
-                                .weight(.semibold)
-                        )
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color("Text-Color"))
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 13)
-                        .frame(width: 326, alignment: .center)
-                        .background(Color(red: 0.95, green: 0.87, blue: 0.62))
-                        .cornerRadius(15)
-                }
-                .fullScreenCover(isPresented: $showNextPageRegister) {
-                    ResumeView()
+                NavigationLink(destination: ResumeView()){
+                    ButtonNextView(ButtonNext: "Já tenho frasco de vidro")
                 }
                 
                 
                 Button {
-                    NotHaveBottle = true
+                    iHaveBottle = true
                 } label: {
                     Text("Não tenho frasco")
                         .font(
@@ -105,7 +90,7 @@ struct ContainerOptionView: View {
                 )
             }
             .sheet(isPresented: $NotHaveBottle, onDismiss: nil) {
-                RegisterDonationView()
+                PostloginView()
             }
         }
     }
