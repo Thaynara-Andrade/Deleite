@@ -45,6 +45,8 @@
 		0D25C6C52AE7FDF500B7977C /* Coleta.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D25C6A62AE7FDF500B7977C /* Coleta.json */; };
 		0D40B7182AE69F2A00BE5034 /* NoLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */; };
 		0DDBAD0D2ABC776200C1EFFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */; };
+		0DE0AE282B02555F006D3D93 /* DeliveryHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */; };
+		0DE0AE2A2B0394AB006D3D93 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE292B0394AB006D3D93 /* History.swift */; };
 		491854E82AD42E6F00319702 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 491854E72AD42E6F00319702 /* Lottie */; };
 		4945AE002AF92B5A00021E54 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945ADFF2AF92B5A00021E54 /* ButtonView.swift */; };
 		49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FE92AAF49470002CB6A /* DeleiteApp.swift */; };
@@ -141,6 +143,8 @@
 		0D25C6A62AE7FDF500B7977C /* Coleta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Coleta.json; sourceTree = "<group>"; };
 		0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginView.swift; sourceTree = "<group>"; };
 		0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryHistoryView.swift; sourceTree = "<group>"; };
+		0DE0AE292B0394AB006D3D93 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		4945ADFF2AF92B5A00021E54 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		49507FE62AAF49470002CB6A /* Deleite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deleite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49507FE92AAF49470002CB6A /* DeleiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteApp.swift; sourceTree = "<group>"; };
@@ -230,6 +234,7 @@
 				B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */,
 				49874B932AFA9D970041DDA0 /* ComponentBottomless.swift */,
 				49874B8D2AFA76AB0041DDA0 /* ComponentTextView.swift */,
+				0DE0AE292B0394AB006D3D93 /* History.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
 				B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */,
 				B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */,
+				0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -582,6 +588,7 @@
 				0D25C6B82AE7FDF500B7977C /* LocationsView.swift in Sources */,
 				49874B8C2AFA750E0041DDA0 /* ButtonNextView.swift in Sources */,
 				49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */,
+				0DE0AE2A2B0394AB006D3D93 /* History.swift in Sources */,
 				49874B942AFA9D970041DDA0 /* ComponentBottomless.swift in Sources */,
 				0D25C6BD2AE7FDF500B7977C /* AlertView.swift in Sources */,
 				0D25C6AA2AE7FDF500B7977C /* MenuButtonHigieneView.swift in Sources */,
@@ -596,6 +603,7 @@
 				0D40B7182AE69F2A00BE5034 /* NoLoginView.swift in Sources */,
 				0D25C6AC2AE7FDF500B7977C /* ButtonBackView.swift in Sources */,
 				0D25C6C42AE7FDF500B7977C /* ContentView.swift in Sources */,
+				0DE0AE282B02555F006D3D93 /* DeliveryHistoryView.swift in Sources */,
 				0D25C6B52AE7FDF500B7977C /* SchedulingView.swift in Sources */,
 				0D25C6A82AE7FDF500B7977C /* MenuButtonColeta.swift in Sources */,
 				0D185AF62AEC3C6B00FF30AF /* ComponentNoLogin.swift in Sources */,
