@@ -28,7 +28,7 @@ struct DeleiteApp: App {
     
     var body: some Scene {
         WindowGroup {
-            PostloginView()
+            NoLoginView()
                 .environmentObject(vm)
                 .onAppear {
                     Mixpanel.mainInstance().track(event: "Entrou no App", properties: ["ambiente": Environment.string])
