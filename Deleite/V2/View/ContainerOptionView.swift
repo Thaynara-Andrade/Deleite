@@ -13,7 +13,6 @@ struct ContainerOptionView: View {
     @State var isShowTesteView: Bool = false
     @State var showNextPageRegister = false
     @State var NotHaveBottle = false
-    @State var iHaveBottle = false
     
     var yellowBackground: String = "yellow-background-image"
     var bottleImage: String = "bottle-image"
@@ -69,7 +68,7 @@ struct ContainerOptionView: View {
                 
                 
                 Button {
-                    iHaveBottle = true
+                    NotHaveBottle = true
                 } label: {
                     Text("Não tenho frasco")
                         .font(
@@ -90,7 +89,7 @@ struct ContainerOptionView: View {
                 )
             }
             .sheet(isPresented: $NotHaveBottle, onDismiss: nil) {
-                PostloginView()
+                RecipientPersonalRegistrationView()
             }
         }
     }

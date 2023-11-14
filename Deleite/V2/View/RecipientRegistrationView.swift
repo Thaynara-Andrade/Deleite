@@ -1,41 +1,29 @@
 //
-//  RegistrationDatesView.swift
+//  RecipientRegistrationView.swift
 //  Deleite
 //
-//  Created by Raina on 08/11/23.
+//  Created by Raina on 14/11/23.
 //
 
 import SwiftUI
 
-struct RegistrationDatesView: View {
+struct RecipientRegistrationView: View {
     
     @Environment(\.dismiss) var dismiss
-    @State private var collectionDate = Date()
+    @State private var collectionDateRecipient = Date()
     let dateRange: ClosedRange<Date> = {
         let calendar = Calendar.current
         let endDate = Date.now.advanced(by: (60 * 60 * 24) * 14)
         return Date.now...endDate
     }()
-    
-    @State private var milkPickupDate = Date()
-    let dateRangemilk: ClosedRange<Date> = {
-        let calendar = Calendar.current
-        let startDate = Date.now.advanced(by: -(60 * 60 * 24) * 14)
-        return startDate...Date.now
-    }()
-    
-    @State var ShowRegistrationConfirmation:Bool = false
+    @State var confirmAppointmentRecipient:Bool = false
+
     
     var body: some View {
         NavigationView{
             Form{
                 Section {
-                    DatePicker("Data da Retirada do Leite",
-                               selection: $milkPickupDate,
-                               in: dateRangemilk,
-                               displayedComponents: .date
-                    )
-                    DatePicker("Data para Coleta", selection: $collectionDate,
+                    DatePicker("Data para coleta", selection: $collectionDateRecipient,
                                in: dateRange, displayedComponents: .date)
                 }
             }
@@ -77,17 +65,40 @@ struct RegistrationDatesView: View {
                     .font(Font.custom("SF Pro", size: 13))
                     .foregroundColor(Color.gray)
                     .frame(width: 303, alignment: .topLeading)
-                    .padding(.bottom, 140)
+                    .padding(.bottom, 200)
             })
             .safeAreaInset(edge: .bottom, content: {
-                ComponetButtonConfirmRegistreView()
-                    .padding(.bottom, 54)
+                HStack(){
+                    Button {
+                        confirmAppointmentRecipient = true
+                    } label: {
+                        HStack(alignment: .center, spacing: 10) {
+                            Text("Confirmar agendamento")
+                                .font(
+                                Font.custom("SF Pro Text", size: 17)
+                                .weight(.semibold)
+                                )
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
+                        }
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 13)
+                        .frame(width: 326, alignment: .center)
+                        .background(Color(red: 0.95, green: 0.87, blue: 0.62))
+                        .cornerRadius(15)
+                        .fullScreenCover(isPresented: $confirmAppointmentRecipient) {
+                            ShowRegistrationConfirmationView()
+                        }
+                    }
+                }
+                .padding(.bottom, 54)
             })
         }
     }
 }
 
 #Preview {
-    RegistrationDatesView()
-    
+    NavigationView{
+        RecipientRegistrationView()
+    }
 }
