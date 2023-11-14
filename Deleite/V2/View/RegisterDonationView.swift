@@ -22,8 +22,9 @@ struct RegisterDonationView: View {
             Form{
                 Section(header: Text("Informações Pessoais")) {
                     TextField("Nome", text: $name)
+                    /* Isso mudar a cor da caixa de texto
+                     .listRowBackground(Color.red) */
                     TextField("CEP", text: $cep)
-                    
                 }
                 
                 Section(header: Text("Regional")) {
@@ -35,6 +36,9 @@ struct RegisterDonationView: View {
                     }
                 }
             }
+            /* Isso mudar a cor dae fundo no iOS 16
+            .scrollContentBackground(.hidden)
+            .background(.red) */
             .navigationTitle("Agendamento")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -44,9 +48,28 @@ struct RegisterDonationView: View {
                     }
                 }
             }
+            .safeAreaInset(edge: .top, content: {
+                HStack{
+                    Text("Adicione seu \n endereço")
+                        .font(
+                            Font.custom("SFProRounded-Semibold", size: 34)
+                            .weight(.bold)
+                        )
+                        .multilineTextAlignment(.center)
+                }
+                .padding(.top, 12)
+            })
+            .safeAreaInset(edge: .top, content: {
+                HStack{
+                    Image("calendar-blue")
+                        .frame(width: 105, height: 105)
+                }
+                .padding(.top, 44)
+                .scaledToFit()
+            })
             .safeAreaInset(edge: .bottom, content: {
                 ComponentButtonSavedView()
-                .padding(.bottom, 54)
+                    .padding(.bottom, 62)
             })
         }
     }

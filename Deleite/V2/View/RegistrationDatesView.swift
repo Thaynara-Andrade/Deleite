@@ -29,17 +29,18 @@ struct RegistrationDatesView: View {
     var body: some View {
         NavigationView{
             Form{
-                Section(header: Text("Datas referente a doação")) {
+                Section {
                     DatePicker("Data da Retirada do Leite",
                                selection: $milkPickupDate,
                                in: dateRangemilk,
                                displayedComponents: .date
                     )
-                    
                     DatePicker("Data para Coleta", selection: $collectionDate,
                                in: dateRange, displayedComponents: .date)
                 }
             }
+            .navigationTitle("Agendamento")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Cancelar") {
@@ -52,14 +53,31 @@ struct RegistrationDatesView: View {
                     }
                 }
             }
-            .navigationTitle("Agendamento")
-            .navigationBarTitleDisplayMode(.inline)
+            .safeAreaInset(edge: .top, content: {
+                HStack{
+                    Text("Qual a data de\nretirada do leite?")
+                        .font(
+                            Font.custom("SFProRounded-Semibold", size: 34)
+                            .weight(.bold)
+                        )
+                        .multilineTextAlignment(.center)
+                }
+                .padding(.top, 1)
+            })
+            .safeAreaInset(edge: .top, content: {
+                HStack{
+                    Image("bottle-blue")
+                        .frame(width: 105, height: 105)
+                }
+                .padding(.top, 44)
+                .scaledToFit()
+            })
             .safeAreaInset(edge: .bottom, content: {
                 Text("Texto explicando para a usuária o limite de dias que o leite pode ficar na geladeira.Texto explicando para a usuária.")
                     .font(Font.custom("SF Pro", size: 13))
                     .foregroundColor(Color.gray)
                     .frame(width: 303, alignment: .topLeading)
-                    .padding(.bottom, 410)
+                    .padding(.bottom, 160)
             })
             .safeAreaInset(edge: .bottom, content: {
                 ComponetButtonConfirmRegistreView()
