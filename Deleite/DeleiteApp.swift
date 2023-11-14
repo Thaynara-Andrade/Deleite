@@ -8,7 +8,7 @@
 import SwiftUI
 import Mixpanel
 
-enum Environment {
+enum Env {
     static let string: String = "dev"
 }
 
@@ -31,7 +31,7 @@ struct DeleiteApp: App {
             NoLoginView()
                 .environmentObject(vm)
                 .onAppear {
-                    Mixpanel.mainInstance().track(event: "Entrou no App", properties: ["ambiente": Environment.string])
+                    Mixpanel.mainInstance().track(event: "Entrou no App", properties: ["ambiente": Env.string])
                 }
         }
     }

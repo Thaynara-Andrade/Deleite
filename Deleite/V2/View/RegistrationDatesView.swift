@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegistrationDatesView: View {
     
-    @SwiftUI.Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss
     @State private var collectionDate = Date()
     let dateRange: ClosedRange<Date> = {
         let calendar = Calendar.current

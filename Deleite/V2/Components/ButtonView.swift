@@ -26,7 +26,7 @@ struct ButtonView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color("Text-Color"))
                     .onAppear {
-                        Mixpanel.mainInstance().track(event: "Ver tutorial", properties:["ambiente": Environment.string])
+                        Mixpanel.mainInstance().track(event: "Ver tutorial", properties:["ambiente": Env.string])
                     }
                 
             }
@@ -55,7 +55,7 @@ struct ButtonView: View {
                     .inset(by: 1.5)
                     .stroke(Color("Text-Color")))
             .onAppear {
-                Mixpanel.mainInstance().track(event: "Ir para agendamento", properties:["ambiente": Environment.string]) }
+                Mixpanel.mainInstance().track(event: "Ir para agendamento", properties:["ambiente": Env.string]) }
             
         } .fullScreenCover(isPresented: $isPostLoginViewActive) {
             RegisterDonationView()

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegisterDonationView: View {
     
-    @SwiftUI.Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss
     @State var notifyMeAbout:Bool = false
     @State var NotifyMeAboutType:Bool = false
     @State var shownextPageRegister:Bool = true
