@@ -89,7 +89,7 @@ struct ContainerOptionView: View {
                 )
             }
             .sheet(isPresented: $NotHaveBottle, onDismiss: nil) {
-                RegisterDonationView()
+                PostloginView()
             }
         }
     }
