@@ -8,7 +8,9 @@ import SwiftUI
 import Lottie
 
 struct SucessLottieView: View {
+    
     @State private var isPresented: Bool = true
+    @Binding var openRegistrationSheet: Bool
 
     var body: some View {
         if isPresented {
@@ -37,5 +39,5 @@ struct SucessLottieView: View {
 }
 
 #Preview {
-    SucessLottieView()
+    SucessLottieView(openRegistrationSheet: .constant(true))
 }

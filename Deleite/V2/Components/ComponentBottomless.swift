@@ -10,37 +10,28 @@ import SwiftUI
 struct ComponentBottomless: View {
     let Buttomless: String
     @State private var isPostLoginViewActive = false
+    @Binding var openRegistrationSheet: Bool
     
-    init(Buttomless: String) {
-        self.Buttomless = Buttomless
-    }
     var body: some View {
         
-        
-        Button(action: {
-            isPostLoginViewActive = true
-        }) {
-            HStack(alignment: .center, spacing: 10) {
+        HStack{
+            NavigationLink(isActive: $isPostLoginViewActive) {
+                RegisterDonationView(openRegistrationSheet: $openRegistrationSheet)
+            } label: {
                 Text(Buttomless)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color("Text-Color"))
-                
+                    .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 13)
             .frame(width: 326, alignment: .center)
+            .background(Color(red: 0.95, green: 0.87, blue: 0.62))
             .cornerRadius(15)
-            .overlay(
-                RoundedRectangle(cornerRadius: 15)
-                    .inset(by: 1.5)
-                    .stroke(Color("Text-Color")))
-        } .fullScreenCover(isPresented: $isPostLoginViewActive) {
-            RegisterDonationView()
         }
     }
 }
 
 #Preview {
-    ComponentBottomless(Buttomless: "Ir para agendamentos")
+    ComponentBottomless(Buttomless: "IFazer agendamento", openRegistrationSheet: .constant(true))
 }
 
