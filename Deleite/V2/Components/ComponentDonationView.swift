@@ -10,6 +10,8 @@ import Mixpanel
 
 struct ComponentDonationView: View {
     
+    @State private var selectContainerOption: Bool = false
+    
     let Logintitle: String
     let Loginname: String
     let LoginImage: Image
@@ -21,10 +23,11 @@ struct ComponentDonationView: View {
     }
     
     var body: some View {
-        NavigationLink(destination: ContainerOptionView()){
-            ZStack {
+        Button {
+            selectContainerOption = true
+        } label: {
+            ZStack{
                 VStack(alignment: .leading) {
-                    
                     Text(Logintitle)
                         .font(
                             Font.custom("SFProRounded-Black", size: 30)
@@ -51,11 +54,12 @@ struct ComponentDonationView: View {
                     .resizable()
                     .frame(width: 146, height: 110)
                     .padding(.leading, 210)
-                
+            }
+            .sheet(isPresented: $selectContainerOption, onDismiss: nil) {
+                ContainerOptionView(openRegistrationSheet: .constant(true))
             }
         }
     }
-    
 }
 
 #Preview {

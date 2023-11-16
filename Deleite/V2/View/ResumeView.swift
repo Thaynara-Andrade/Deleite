@@ -10,6 +10,7 @@ import Mixpanel
 
 struct ResumeView: View {
     @State private var isPostLoginViewActive = false
+    @Binding var openRegistrationSheet: Bool
     
     var body: some View {
     
@@ -84,6 +85,6 @@ struct ResumeView: View {
 
 #Preview {
     NavigationView{
-        ResumeView()
+        ResumeView(openRegistrationSheet: .constant(true))
     }
 }
