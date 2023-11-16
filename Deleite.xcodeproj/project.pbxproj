@@ -80,7 +80,6 @@
 		B7135FE82B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7135FE72B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift */; };
 		B7135FEA2B04366400FAE522 /* RecipientRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7135FE92B04366400FAE522 /* RecipientRegistrationView.swift */; };
 		B74338B52B02C12C00D47F4B /* ComponentButoonScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */; };
-		B74356AB2AFA962A00DB48F6 /* ComponentButtonSavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */; };
 		B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757D5002AE855BF003F984D /* ContainerOptionView.swift */; };
 		B79ED6752AFBB79800BEAC1D /* RegistrationDatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */; };
 		B79ED6772AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */; };
@@ -182,7 +181,6 @@
 		B7135FE72B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientPersonalRegistrationView.swift; sourceTree = "<group>"; };
 		B7135FE92B04366400FAE522 /* RecipientRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientRegistrationView.swift; sourceTree = "<group>"; };
 		B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButoonScheduling.swift; sourceTree = "<group>"; };
-		B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButtonSavedView.swift; sourceTree = "<group>"; };
 		B757D5002AE855BF003F984D /* ContainerOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOptionView.swift; sourceTree = "<group>"; };
 		B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDatesView.swift; sourceTree = "<group>"; };
 		B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRegistrationConfirmationView.swift; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 		0D25C6802AE6E26900B7977C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */,
 				B79ED6782AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift */,
 				B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */,
 				49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */,
@@ -588,7 +585,6 @@
 				0D25C6BB2AE7FDF500B7977C /* TutorialSanitation.swift in Sources */,
 				0D25C6A92AE7FDF500B7977C /* ImageCards.swift in Sources */,
 				0D185AFA2AEFCBDF00FF30AF /* ComponentTextField.swift in Sources */,
-				B74356AB2AFA962A00DB48F6 /* ComponentButtonSavedView.swift in Sources */,
 				0D25C6B72AE7FDF500B7977C /* ConstructionLottieView.swift in Sources */,
 				B74338B52B02C12C00D47F4B /* ComponentButoonScheduling.swift in Sources */,
 				0D25C6BE2AE7FDF500B7977C /* LocationPreviewView.swift in Sources */,
