@@ -14,7 +14,8 @@ struct NoLoginView: View {
         NavigationView{
             
             ZStack(alignment: .topLeading) {
-                
+                Color("Background-color")
+                    .edgesIgnoringSafeArea(.all)
                 ScrollView {
                     VStack(alignment: .leading) {
                         HStack {

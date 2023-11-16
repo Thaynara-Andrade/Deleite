@@ -24,7 +24,7 @@ struct ComponentNoLoginView: View {
             ZStack {
                 Rectangle()
                     .frame(width: 350, height: 180)
-                    .foregroundColor(Color("icon-color"))
+                    .foregroundColor(Color("Text-Color"))
                     .cornerRadius(21.8898)
                 VStack(alignment: .leading) {
                     
