@@ -37,6 +37,8 @@ struct ComponentDonationView: View {
                         .padding(.bottom, 1)
                         .padding(.leading, -75)
                         .foregroundColor(Color.white)
+
+
                     Text(Loginname)
                         .multilineTextAlignment(.leading)
                         .padding(.leading, -75)
@@ -45,9 +47,12 @@ struct ComponentDonationView: View {
                             Font.custom("SFProRounded-Medium", size: 17)
                         )
                         .foregroundColor(Color.white)
+
+
+                        
                     
                 } .frame(width: 356, height: 180)
-                    .background(Color("icon-color"))
+                    .background(Color("Text-Color"))
                     .cornerRadius(23)
                 
                 LoginImage

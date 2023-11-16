@@ -17,6 +17,7 @@ struct TutorialClearView: View {
             ScrollView{
                 Group{
                     Text("Esta é a forma correta da higienização antes da coleta do leite")
+                        .multilineTextAlignment(.leading)
                         .padding(.bottom, -10)
                         .foregroundColor(.black)
                     VStack {

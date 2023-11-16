@@ -12,7 +12,8 @@ struct RegistrationWhatsView: View {
     var body: some View {
        
         ZStack{
-            
+            Color("Background-color")
+                .edgesIgnoringSafeArea(.all)
             
             VStack(alignment: .center) {
                 

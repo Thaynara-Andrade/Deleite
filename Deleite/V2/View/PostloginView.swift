@@ -70,7 +70,7 @@ struct PostloginView: View {
                                     .fontWeight(.bold)
                                     .foregroundColor(.black)
                                     .padding(.top)
-                                    .padding(.bottom, 3)
+                                    .padding(.bottom, 10)
                                 Text("Ver todos")
                                     .padding(.leading, 80)
                                     .padding(.bottom, -15)

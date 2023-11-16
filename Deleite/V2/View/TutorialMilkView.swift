@@ -18,6 +18,7 @@ struct TutorialMilkView: View {
             ScrollView{
                 Group{
                     Text("Esta é a forma correta para realizar a retirada de leite:")
+                        .multilineTextAlignment(.leading)
                         .padding(.bottom, -10)
                         .foregroundColor(.black)
                     
