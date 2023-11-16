@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RecipientRegistrationView: View {
     
+    @Binding var openRegistrationSheet: Bool
+    
     @Environment(\.dismiss) var dismiss
     @State private var collectionDateRecipient = Date()
     let dateRange: ClosedRange<Date> = {
@@ -17,15 +19,13 @@ struct RecipientRegistrationView: View {
         return Date.now...endDate
     }()
     @State var confirmAppointmentRecipient:Bool = false
-
+    
     
     var body: some View {
-        NavigationView{
-            Form{
-                Section {
-                    DatePicker("Data para coleta", selection: $collectionDateRecipient,
-                               in: dateRange, displayedComponents: .date)
-                }
+        Form{
+            Section {
+                DatePicker("Data para coleta", selection: $collectionDateRecipient,
+                           in: dateRange, displayedComponents: .date)
             }
             .navigationTitle("Agendamento")
             .navigationBarTitleDisplayMode(.inline)
@@ -35,18 +35,13 @@ struct RecipientRegistrationView: View {
                         dismiss()
                     }
                 }
-                ToolbarItem(placement: .navigationBarLeading){
-                    Button("Voltar") {
-                        print("Voltar tapped!")
-                    }
-                }
             }
             .safeAreaInset(edge: .top, content: {
                 HStack{
                     Text("Qual a data de\nretirada do leite?")
                         .font(
                             Font.custom("SFProRounded-Semibold", size: 34)
-                            .weight(.bold)
+                                .weight(.bold)
                         )
                         .multilineTextAlignment(.center)
                 }
@@ -76,8 +71,8 @@ struct RecipientRegistrationView: View {
                         HStack(alignment: .center, spacing: 10) {
                             Text("Confirmar agendamento")
                                 .font(
-                                Font.custom("SF Pro Text", size: 17)
-                                .weight(.semibold)
+                                    Font.custom("SF Pro Text", size: 17)
+                                        .weight(.semibold)
                                 )
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
@@ -88,7 +83,7 @@ struct RecipientRegistrationView: View {
                         .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                         .cornerRadius(15)
                         .fullScreenCover(isPresented: $confirmAppointmentRecipient) {
-                            ShowRegistrationConfirmationView()
+                            ShowRegistrationConfirmationView(openRegistrationSheet: $openRegistrationSheet)
                         }
                     }
                 }
@@ -100,6 +95,6 @@ struct RecipientRegistrationView: View {
 
 #Preview {
     NavigationView{
-        RecipientRegistrationView()
+        RecipientRegistrationView(openRegistrationSheet: .constant(true))
     }
 }

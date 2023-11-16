@@ -10,6 +10,8 @@ import SwiftUI
 struct ShowRegistrationConfirmationView: View {
     
     var imageCheck: String = "confimation"
+    @Binding var openRegistrationSheet: Bool
+
     
     var body: some View {
             HStack{
@@ -33,5 +35,5 @@ struct ShowRegistrationConfirmationView: View {
     }
 }
 #Preview {
-    ShowRegistrationConfirmationView()
+    ShowRegistrationConfirmationView(openRegistrationSheet: .constant(true))
 }

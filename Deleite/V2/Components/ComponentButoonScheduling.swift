@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ComponentButoonScheduling: View {
+    
     let scheduleDonation: String
+    @Binding var openRegistrationSheet: Bool
     @State private var isPostLoginViewActive = false
     
-    init(scheduleDonation: String) {
-        self.scheduleDonation = scheduleDonation
-    }
     var body: some View {
         
         Button(action: {
@@ -32,11 +31,11 @@ struct ComponentButoonScheduling: View {
             .background(Color(red: 0.95, green: 0.87, blue: 0.62))
             .cornerRadius(15)
         } .fullScreenCover(isPresented: $isPostLoginViewActive) {
-            RegisterDonationView()
+            RegisterDonationView(openRegistrationSheet: $openRegistrationSheet)
         }
     }
 }
 
 #Preview {
-    ComponentButoonScheduling(scheduleDonation: "Ir para agendamentos")
+    ComponentBottomless(Buttomless: "Teste", openRegistrationSheet: .constant(true))
 }
