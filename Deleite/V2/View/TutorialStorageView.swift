@@ -18,6 +18,7 @@ struct TutorialStorageView: View {
                 Group{
                     
                     Text("Esta é a forma correta de armazenamento do leite materno:")
+                        .multilineTextAlignment(.leading)
                         .padding(.bottom, -10)
                         .foregroundColor(.black)
                     
