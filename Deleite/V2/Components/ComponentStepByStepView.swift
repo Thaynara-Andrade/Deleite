@@ -15,10 +15,8 @@ struct StepByStepView: View {
         HStack{
             VStack {
                 Text("1")
-                    .font(
-                        Font.custom("SF Pro", size: 20)
-                            .weight(.bold)
-                    )
+                    .font(.body)
+                    .fontWeight(.bold)
                     .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
                     .frame(width: 12.79518, height: 19, alignment: .topLeading)
                 
@@ -29,21 +27,24 @@ struct StepByStepView: View {
             VStack{
                 VStack(alignment: .leading){
                     HStack{
-                        Text("Para armazenar o leite, use ")
-                            .foregroundColor(.white)
+                        Text("Para armazenar o leite, use")
+                            .foregroundColor(.black)
                         Text("frascos")
-                            .foregroundColor(Color("Text-Yellow"))
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("icon-color"))
                     }
                 }
                 
                 VStack(alignment: .leading){
                     HStack{
-                        Text("de vidro")
+                        Text("de vidro,")
+                            .font(.subheadline)
                             .fontWeight(.bold)
-                            .foregroundColor(Color("Text-Yellow"))
+                            .foregroundColor(Color("icon-color"))
                         
-                        Text(", como potes de café")
-                            .foregroundColor(.white)
+                        Text("como potes de café")
+                            .foregroundColor(.black)
                     }.padding(.leading, -49)
                 }
                 
@@ -51,7 +52,7 @@ struct StepByStepView: View {
                 VStack(alignment: .leading){
                     HStack{
                         Text("solúvel e maionese.")
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                     }
                 }.padding(.leading, -127)
             }
@@ -63,11 +64,9 @@ struct StepByStepView: View {
         HStack{
             VStack {
                 Text("2")
-                    .font(
-                        Font.custom("SF Pro", size: 20)
-                            .weight(.bold)
-                    )
-                    .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
+                    .font(.body)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color("icon-color"))
                     .frame(width: 12.79518, height: 19, alignment: .topLeading)
                 
             }
@@ -78,31 +77,34 @@ struct StepByStepView: View {
                 VStack(alignment: .leading){
                     HStack{
                         Text("Certifique-se de que a tampa seja")
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                         Text("de")
-                            .foregroundColor(Color("Text-Yellow"))
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("icon-color"))
                     }
                 }
                 
                 VStack(alignment: .leading){
                     HStack{
                         Text("plástico e de rosquear")
+                            .font(.subheadline)
                             .fontWeight(.bold)
-                            .foregroundColor(Color("Text-Yellow"))
+                            .foregroundColor(Color("icon-color"))
                             .font(
                                 Font.custom("SF Pro Text", size: 17)
                                     .weight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             )
                         
                         Text("para evitar")
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                     }
                 }
                 .padding(.leading, -26)
                 
                 HStack{
                     Text("vazamentos.")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                 }
                 .padding(.leading, -141)
             }
@@ -114,10 +116,8 @@ struct StepByStepView: View {
             VStack{
                 HStack{
                     Text("3")
-                        .font(
-                            Font.custom("SF Pro", size: 20)
-                                .weight(.bold)
-                        )
+                        .font(.body)
+                        .fontWeight(.bold)
                         .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
                         .frame(width: 12.79518, height: 19, alignment: .topLeading)
                 }
@@ -131,10 +131,12 @@ struct StepByStepView: View {
                 VStack(alignment: .leading){
                     HStack{
                         Text("O frasco deve estar limpo ")
-                            .foregroundColor(Color("Text-Yellow"))
-                            .foregroundColor(.white)
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("icon-color"))
+                            
                         Text(", porém")
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .padding(.leading, -13)
                     }
                 }
@@ -142,15 +144,16 @@ struct StepByStepView: View {
                 VStack(alignment: .leading){
                     HStack{
                         Text("ainda será necessário seguir as")
-                            .foregroundColor(.white)
-                    }.padding(.leading, -13)
+                            .foregroundColor(.black)
+                    }.padding(.leading, -1)
                 }
                 
                 VStack(alignment: .leading){
                     HStack{
                         Text("instruções de esterilização.")
-                            .foregroundColor(.white)
-                    }.padding(.leading, -48)
+                            .foregroundColor(.black)
+                            .multilineTextAlignment(.leading)
+                    }.padding(.leading, -35)
                 }
             }
             .font(Font.custom("SF Pro Text", size: 17))

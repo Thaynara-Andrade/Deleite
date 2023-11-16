@@ -19,7 +19,7 @@ struct ButtonNextView: View {
                 Text(ButtonNext)
                     .bold()
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color("Text-Color"))
+                    .foregroundColor(Color("icon-color"))
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 13)

@@ -14,6 +14,7 @@ struct ResumeView: View {
     var body: some View {
     
             ZStack(alignment: .leading) {
+
                
                 ScrollView (.vertical){
                     Group{
