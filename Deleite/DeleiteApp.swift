@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Mixpanel
+import CloudKit
+import Nuvem
 
 enum Env {
     static let string: String = "dev"
@@ -28,7 +30,8 @@ struct DeleiteApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NoLoginView()
+           // CloudKitCRUDIView()
+           NoLoginView()
                 .environmentObject(vm)
                 .onAppear {
                     Mixpanel.mainInstance().track(event: "Entrou no App", properties: ["ambiente": Env.string])

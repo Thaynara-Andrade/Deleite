@@ -26,7 +26,7 @@ struct ComponentTutorialClear: View {
                     .foregroundColor(Color("Button-Yellow"))
                 TutorialImage
                     .resizable()
-                    .frame(width: 25, height: 35)
+                    .frame(width: 25, height: 30)
                     
             }.padding(.top,-45)
             

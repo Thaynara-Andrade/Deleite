@@ -14,12 +14,14 @@ struct ResumeView: View {
     
     
     var body: some View {
-        ZStack(alignment: .leading) {
-            ScrollView (.vertical){
-                Group{
-                    VStack{
-                        Text("Confira abaixo as poucas etapas que você \ndeve seguir para realizar sua doação de \nleite humano:")
-                        
+
+            ZStack(alignment: .leading) {
+
+                ScrollView (.vertical){
+                    Group{
+                        VStack{
+                            Text("Confira abaixo as poucas etapas que você \ndeve seguir para realizar sua doação de \nleite humano:")
+                                
                     } .padding(.leading, -25)
                     Rectangle()
                         .frame(width: 5, height: 350)

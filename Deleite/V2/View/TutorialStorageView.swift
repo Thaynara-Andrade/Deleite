@@ -16,22 +16,19 @@ struct TutorialStorageView: View {
         ZStack {
             ScrollView{
                 Group{
+                    
                     Text("Esta é a forma correta de armazenamento do leite materno:")
                         .padding(.bottom, -10)
                         .foregroundColor(.black)
                     
                     VStack {
-                        ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Lave um frasco de vidro de boca larga com tampa de plástico (do tipo café solúvel), retirando o rótulo e o papel de dentro da tampa.kakakakakakkaakaka kkakaakakakkakaka", TutorialImage: Image("pote"))
+                        ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Após a retirada do leite materno, coloque o frasco no freezer ou congelador, garantindo que seja armazenado em recipientes adequados e devidamente etiquetado.", TutorialImage: Image("Rotulo"))
                             .padding(.bottom, -20)
                         
-                        ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "Após realizar o procedicmento, coloque o frasco e a tampa numa panela com água, cobrindo-os completamente. Ferva-os. Conte 15 minutos a partir do início da fervura.", TutorialImage: Image("Panela"))
+                        ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "O leite materno deve ser transportado a um Banco de Leite Humano antes do seu vencimento, Que é até 15 dias após a primeira coleta.", TutorialImage: Image("Telefone"))
                             .padding(.bottom, -20)
                         
-                        ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Agora é necessário , escorrer o frasco e a tampa com a abertura voltada para baixo, sobre um pano limpo, até secar. Feche o frasco sem tocar na parte interna da tampa. ", TutorialImage: Image("Mao"))
-                            .padding(.bottom, -20)
-                        
-                        ComponentButoonScheduling(scheduleDonation: "Fazer agendamento")
-                            .padding(.top, 40)
+                        ComponentBottomless(Buttomless: "Fazer agendamento", openRegistrationSheet: $openRegistrationSheet)
                         
                     }
                 }

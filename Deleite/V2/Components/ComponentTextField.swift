@@ -17,14 +17,15 @@ struct ComponentTextField: View {
         
         HStack{
             
-            TextField("Senha", text: $password)
+            TextField("Digite o código", text: $password)
                 .textFieldStyle(PlainTextFieldStyle())
+                .padding(.leading)
                 .foregroundColor(Color.black)
                 .focused($passwordIsFocused)
                 .background(
                     Rectangle()
                         .frame(width: 350, height: 55)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.gray.opacity(0.2))
                         .cornerRadius(14.0)
                 )
                 .padding()
@@ -41,13 +42,14 @@ struct ComponentTextField: View {
                         HStack {
                             VStack {
                                 Rectangle()
-                                Image(systemName: "greaterthan")
-                                    .font(.bold(.title3)())
-                            
+                                Image("seta")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 12)
                                     .frame(width: 60, height: 55)
                                     .padding([.leading, .bottom], 0.0)
                                     .foregroundColor((Color.white))
-                                    .background((Color(red: 0.95, green: 0.87, blue: 0.62)))
+                                    .background(Color("icon-color"))
                                     .cornerRadius(14.0)
                                 
                             }

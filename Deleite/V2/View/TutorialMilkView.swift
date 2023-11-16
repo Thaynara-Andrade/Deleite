@@ -22,13 +22,13 @@ struct TutorialMilkView: View {
                         .foregroundColor(.black)
                     
                     VStack {
-                        ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Lave um frasco de vidro de boca larga com tampa de plástico (do tipo café solúvel), retirando o rótulo e o papel de dentro da tampa.kakakakakakkaakaka kkakaakakakkakaka", TutorialImage: Image("Sofa"))
+                        ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Escolha um local tranquilo e limpo. Prepare uma mesa com um pano limpo e evite conversas durante a retirada do leite, proporcionando assim um ambiente sereno e concentrado.", TutorialImage: Image("Sofa"))
                             .padding(.bottom, -20)
                         
-                        ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "Após realizar o procedicmento, coloque o frasco e a tampa numa panela com água, cobrindo-os completamente. Ferva-os. Conte 15 minutos a partir do início da fervura.", TutorialImage: Image("Panela"))
+                        ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "Massageie a mama em círculos, do mamilo para o corpo, com o polegar acima da auréola, promovendo uma técnica suave para estimular a produção de leite de forma confortável.", TutorialImage: Image("peito1"))
                             .padding(.bottom, -20)
                         
-                        ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Agora é necessário , escorrer o frasco e a tampa com a abertura voltada para baixo, sobre um pano limpo, até secar. Feche o frasco sem tocar na parte interna da tampa. ", TutorialImage: Image("Mao"))
+                        ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Extraia o leite com a mão em C. Descarte os primeiros jatos  e despeje no frasco o leite retirado. Após isso feche, rotule com os dados e congele no freezer.", TutorialImage: Image("Rotulo"))
                             .padding(.bottom, -20)
                         
                         NavigationLink(destination: TutorialStorageView(openRegistrationSheet: openRegistrationSheet)){
