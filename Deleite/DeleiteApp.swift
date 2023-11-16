@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Mixpanel
+import CloudKit
+import Nuvem
 
 enum Environment {
     static let string: String = "dev"
@@ -28,10 +30,29 @@ struct DeleiteApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NoLoginView()
+           // CloudKitCRUDIView()
+           NoLoginView()
                 .environmentObject(vm)
                 .onAppear {
+                    
                     Mixpanel.mainInstance().track(event: "Entrou no App", properties: ["ambiente": Environment.string])
+                    
+                    var modelo = Modelo()
+                    modelo.nome = "Oi"
+                    
+                    let database = CKContainer.default().publicCloudDatabase
+                    
+                    Task {
+                        try await modelo.save(on: database)
+                        
+                        let modelos = try await Modelo.query(on: database).all()
+                        
+                        let modelo = try await Modelo.query(on: database).filter(\.$nome == "Joao").first()
+                                                
+                        
+                        
+                    }
+                    
                 }
         }
     }
