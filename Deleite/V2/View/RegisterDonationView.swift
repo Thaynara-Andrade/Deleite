@@ -69,9 +69,7 @@ struct RegisterDonationView: View {
         })
         .safeAreaInset(edge: .bottom, content: {
             HStack{
-                NavigationLink(isActive: $shownextPageRegister) {
-                    RegistrationDatesView(openRegistrationSheet: $openRegistrationSheet)
-                } label: {
+                NavigationLink(destination: RegistrationDatesView(openRegistrationSheet: $openRegistrationSheet)) {
                     HStack(alignment: .center, spacing: 10) {
                         Text("Salvar")
                             .font(
@@ -86,7 +84,8 @@ struct RegisterDonationView: View {
                     .frame(width: 326, alignment: .center)
                     .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                     .cornerRadius(15)
-                }
+                    }
+                
             }.padding(.top, 65)
         })
         .padding(.bottom, 62)
@@ -96,7 +95,5 @@ struct RegisterDonationView: View {
 
 
 #Preview {
-    NavigationView{
         RegisterDonationView(openRegistrationSheet: .constant(true))
-    }
 }

@@ -38,5 +38,5 @@ struct ComponentButoonScheduling: View {
 }
 
 #Preview {
-    ComponentButoonScheduling(scheduleDonation: "Ir para agendamentos")
+    ComponentButoonScheduling(scheduleDonation: "Fazer agendamento")
 }

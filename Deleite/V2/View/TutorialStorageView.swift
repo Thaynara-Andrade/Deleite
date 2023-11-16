@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct TutorialStorageView: View {
+    
+    @State var openRegistrationSheet: Bool
+    
     var body: some View {
         
         ZStack {
-          
             ScrollView{
                 Group{
                     Text("Esta é a forma correta de armazenamento do leite materno:")
@@ -28,17 +30,17 @@ struct TutorialStorageView: View {
                         ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Agora é necessário , escorrer o frasco e a tampa com a abertura voltada para baixo, sobre um pano limpo, até secar. Feche o frasco sem tocar na parte interna da tampa. ", TutorialImage: Image("Mao"))
                             .padding(.bottom, -20)
                         
-                        ComponentButoonScheduling(scheduleDonation: "Ir para agendamentos")
+                        ComponentButoonScheduling(scheduleDonation: "Fazer agendamento")
                             .padding(.top, 40)
                         
                     }
-                }.navigationTitle("Armazenamento")
+                }
             }
-        }
+        }.navigationTitle("Armazenamento")
     }
 }
 
 
 #Preview {
-    TutorialStorageView()
+    TutorialStorageView(openRegistrationSheet: .random())
 }

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TutorialMilkView: View {
+    
+    @State var openRegistrationSheet: Bool
+    
     var body: some View {
         
         ZStack {
@@ -28,12 +31,12 @@ struct TutorialMilkView: View {
                         ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Agora é necessário , escorrer o frasco e a tampa com a abertura voltada para baixo, sobre um pano limpo, até secar. Feche o frasco sem tocar na parte interna da tampa. ", TutorialImage: Image("Mao"))
                             .padding(.bottom, -20)
                         
-                        NavigationLink(destination: TutorialStorageView()){
+                        NavigationLink(destination: TutorialStorageView(openRegistrationSheet: openRegistrationSheet)){
                             ButtonNextView(ButtonNext: "Próximo tutorial")
                                 .padding(.top, 40)
                             
                         }
-                        ComponentBottomless(Buttomless: "Ir para agendamentos")
+                        ComponentBottomless(Buttomless: "Fazer agendamento", openRegistrationSheet: $openRegistrationSheet)
                         
                     }
                 }.navigationTitle("Retirada de Leite")
@@ -44,5 +47,5 @@ struct TutorialMilkView: View {
 
 
 #Preview {
-    TutorialMilkView()
+    TutorialMilkView(openRegistrationSheet: .random())
 }
