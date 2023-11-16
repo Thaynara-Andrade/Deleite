@@ -1,39 +1,36 @@
 //
-//  ComponentBottomless.swift
+//  ComponentButoonScheduling.swift
 //  Deleite
 //
-//  Created by Thaynara da Silva Andrade on 07/11/23.
+//  Created by Raina on 13/11/23.
 //
 
 import SwiftUI
 
-struct ComponentBottomless: View {
-    let Buttomless: String
+struct ComponentButoonScheduling: View {
+    let scheduleDonation: String
     @State private var isPostLoginViewActive = false
     
-    init(Buttomless: String) {
-        self.Buttomless = Buttomless
+    init(scheduleDonation: String) {
+        self.scheduleDonation = scheduleDonation
     }
     var body: some View {
-        
         
         Button(action: {
             isPostLoginViewActive = true
         }) {
+            
             HStack(alignment: .center, spacing: 10) {
-                Text(Buttomless)
+                Text(scheduleDonation)
+                    .bold()
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color("Text-Color"))
-                
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 13)
             .frame(width: 326, alignment: .center)
+            .background(Color(red: 0.95, green: 0.87, blue: 0.62))
             .cornerRadius(15)
-            .overlay(
-                RoundedRectangle(cornerRadius: 15)
-                    .inset(by: 1.5)
-                    .stroke(Color("Text-Color")))
         } .fullScreenCover(isPresented: $isPostLoginViewActive) {
             RegisterDonationView()
         }
@@ -41,6 +38,5 @@ struct ComponentBottomless: View {
 }
 
 #Preview {
-    ComponentBottomless(Buttomless: "Ir para agendamentos")
+    ComponentButoonScheduling(scheduleDonation: "Ir para agendamentos")
 }
-

@@ -45,6 +45,8 @@
 		0D25C6C52AE7FDF500B7977C /* Coleta.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D25C6A62AE7FDF500B7977C /* Coleta.json */; };
 		0D40B7182AE69F2A00BE5034 /* NoLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */; };
 		0DDBAD0D2ABC776200C1EFFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */; };
+		0DE0AE282B02555F006D3D93 /* DeliveryHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */; };
+		0DE0AE2A2B0394AB006D3D93 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE292B0394AB006D3D93 /* History.swift */; };
 		490800482AFD09D100D2FF4E /* Nuvem in Frameworks */ = {isa = PBXBuildFile; productRef = 490800472AFD09D100D2FF4E /* Nuvem */; };
 		4908004A2AFD09F000D2FF4E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490800492AFD09F000D2FF4E /* Model.swift */; };
 		4908004D2AFD1A5400D2FF4E /* CloudKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */; };
@@ -67,7 +69,6 @@
 		49518BFA2AE6A3B600BDFFA0 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49518BF12AE6A3B600BDFFA0 /* SF-Pro-Rounded-Regular.otf */; };
 		49518BFB2AE6A3B600BDFFA0 /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49518BF22AE6A3B600BDFFA0 /* SF-Pro-Rounded-Thin.otf */; };
 		49518BFD2AE6A89D00BDFFA0 /* ComponentSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */; };
-		49518BFF2AE70C9D00BDFFA0 /* SchedulingsUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */; };
 		49518C012AE721A300BDFFA0 /* ComponentDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */; };
 		497B43572AEC4F5C00B43467 /* ResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B43562AEC4F5C00B43467 /* ResumeView.swift */; };
 		497B43592AEC590A00B43467 /* ComponentscircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B43582AEC590A00B43467 /* ComponentscircleView.swift */; };
@@ -80,8 +81,14 @@
 		49BE7BCF2AE2DBD200C7BE91 /* PostloginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */; };
 		49BF71E62AF95EE000CEDBA9 /* TutorialClearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */; };
 		49BF71E82AF960CC00CEDBA9 /* ComponentTutorialClear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */; };
+		B7135FE82B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7135FE72B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift */; };
+		B7135FEA2B04366400FAE522 /* RecipientRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7135FE92B04366400FAE522 /* RecipientRegistrationView.swift */; };
+		B74338B52B02C12C00D47F4B /* ComponentButoonScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */; };
 		B74356AB2AFA962A00DB48F6 /* ComponentButtonSavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */; };
 		B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757D5002AE855BF003F984D /* ContainerOptionView.swift */; };
+		B79ED6752AFBB79800BEAC1D /* RegistrationDatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */; };
+		B79ED6772AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */; };
+		B79ED6792AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79ED6782AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift */; };
 		B7E3ACAA2AEC033C00ACBFD2 /* ComponentStepByStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */; };
 		B7ED18DE2AF91F7A00AE5333 /* RegisterDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */; };
 /* End PBXBuildFile section */
@@ -142,6 +149,8 @@
 		0D25C6A62AE7FDF500B7977C /* Coleta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Coleta.json; sourceTree = "<group>"; };
 		0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginView.swift; sourceTree = "<group>"; };
 		0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryHistoryView.swift; sourceTree = "<group>"; };
+		0DE0AE292B0394AB006D3D93 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		490800492AFD09F000D2FF4E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4908004B2AFD179D00D2FF4E /* Deleite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Deleite.entitlements; sourceTree = "<group>"; };
 		4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
@@ -167,7 +176,6 @@
 		49518BF12AE6A3B600BDFFA0 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
 		49518BF22AE6A3B600BDFFA0 /* SF-Pro-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Thin.otf"; sourceTree = "<group>"; };
 		49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSectionView.swift; sourceTree = "<group>"; };
-		49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingsUserView.swift; sourceTree = "<group>"; };
 		49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentDonationView.swift; sourceTree = "<group>"; };
 		497B43562AEC4F5C00B43467 /* ResumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeView.swift; sourceTree = "<group>"; };
 		497B43582AEC590A00B43467 /* ComponentscircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentscircleView.swift; sourceTree = "<group>"; };
@@ -179,8 +187,14 @@
 		49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostloginView.swift; sourceTree = "<group>"; };
 		49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialClearView.swift; sourceTree = "<group>"; };
 		49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTutorialClear.swift; sourceTree = "<group>"; };
+		B7135FE72B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientPersonalRegistrationView.swift; sourceTree = "<group>"; };
+		B7135FE92B04366400FAE522 /* RecipientRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientRegistrationView.swift; sourceTree = "<group>"; };
+		B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButoonScheduling.swift; sourceTree = "<group>"; };
 		B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentButtonSavedView.swift; sourceTree = "<group>"; };
 		B757D5002AE855BF003F984D /* ContainerOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOptionView.swift; sourceTree = "<group>"; };
+		B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDatesView.swift; sourceTree = "<group>"; };
+		B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRegistrationConfirmationView.swift; sourceTree = "<group>"; };
+		B79ED6782AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponetButtonConfirmRegistreView.swift; sourceTree = "<group>"; };
 		B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentStepByStepView.swift; sourceTree = "<group>"; };
 		B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDonationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +231,9 @@
 		0D25C6802AE6E26900B7977C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */,
+				B79ED6782AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift */,
+				B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */,
 				49518C002AE721A300BDFFA0 /* ComponentDonationView.swift */,
 				49518BFC2AE6A89D00BDFFA0 /* ComponentSectionView.swift */,
 				49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */,
@@ -227,8 +244,10 @@
 				0D185AF92AEFCBDF00FF30AF /* ComponentTextField.swift */,
 				4945ADFF2AF92B5A00021E54 /* ButtonView.swift */,
 				49874B8B2AFA750E0041DDA0 /* ButtonNextView.swift */,
+				B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */,
 				49874B932AFA9D970041DDA0 /* ComponentBottomless.swift */,
 				49874B8D2AFA76AB0041DDA0 /* ComponentTextView.swift */,
+				0DE0AE292B0394AB006D3D93 /* History.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -329,16 +348,18 @@
 			children = (
 				0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */,
 				0D185AFB2AF11F6100FF30AF /* RegistrationWhatsView.swift */,
-				49518BFE2AE70C9D00BDFFA0 /* SchedulingsUserView.swift */,
-				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
-				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
-				B7E3ACA92AEC033C00ACBFD2 /* ComponentStepByStepView.swift */,
 				49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */,
-				B74356AA2AFA962A00DB48F6 /* ComponentButtonSavedView.swift */,
 				497B43562AEC4F5C00B43467 /* ResumeView.swift */,
 				49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */,
 				49874B8F2AFA87300041DDA0 /* TutorialMilkView.swift */,
 				49874B912AFA996A0041DDA0 /* TutorialStorageView.swift */,
+				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
+				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
+				B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */,
+				B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */,
+				B7135FE72B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift */,
+				B7135FE92B04366400FAE522 /* RecipientRegistrationView.swift */,
+				0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -566,8 +587,9 @@
 			files = (
 				0D25C6AF2AE7FDF500B7977C /* HomeButton.swift in Sources */,
 				0D25C6AB2AE7FDF500B7977C /* HomeImage.swift in Sources */,
-				49518BFF2AE70C9D00BDFFA0 /* SchedulingsUserView.swift in Sources */,
 				0D25C6AE2AE7FDF500B7977C /* MenuButtonArmazenamento.swift in Sources */,
+				B7135FEA2B04366400FAE522 /* RecipientRegistrationView.swift in Sources */,
+				B7135FE82B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift in Sources */,
 				0D25C6BF2AE7FDF500B7977C /* HomescreenView.swift in Sources */,
 				49BF71E82AF960CC00CEDBA9 /* ComponentTutorialClear.swift in Sources */,
 				0D25C6C22AE7FDF500B7977C /* QuestionsView.swift in Sources */,
@@ -576,6 +598,7 @@
 				0D25C6C12AE7FDF500B7977C /* SwiftUIView.swift in Sources */,
 				49BF71E62AF95EE000CEDBA9 /* TutorialClearView.swift in Sources */,
 				0D25C6B42AE7FDF500B7977C /* TutorialStorege.swift in Sources */,
+				B79ED6772AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift in Sources */,
 				0D25C6B32AE7FDF500B7977C /* SnapCarousel.swift in Sources */,
 				0D25C6B12AE7FDF500B7977C /* MixPanel.swift in Sources */,
 				0D25C6BB2AE7FDF500B7977C /* TutorialSanitation.swift in Sources */,
@@ -584,11 +607,13 @@
 				0D185AFA2AEFCBDF00FF30AF /* ComponentTextField.swift in Sources */,
 				B74356AB2AFA962A00DB48F6 /* ComponentButtonSavedView.swift in Sources */,
 				0D25C6B72AE7FDF500B7977C /* ConstructionLottieView.swift in Sources */,
+				B74338B52B02C12C00D47F4B /* ComponentButoonScheduling.swift in Sources */,
 				0D25C6BE2AE7FDF500B7977C /* LocationPreviewView.swift in Sources */,
 				0D25C6B92AE7FDF500B7977C /* LocationDetailView.swift in Sources */,
 				0D25C6B82AE7FDF500B7977C /* LocationsView.swift in Sources */,
 				49874B8C2AFA750E0041DDA0 /* ButtonNextView.swift in Sources */,
 				49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */,
+				0DE0AE2A2B0394AB006D3D93 /* History.swift in Sources */,
 				49874B942AFA9D970041DDA0 /* ComponentBottomless.swift in Sources */,
 				0D25C6BD2AE7FDF500B7977C /* AlertView.swift in Sources */,
 				0D25C6AA2AE7FDF500B7977C /* MenuButtonHigieneView.swift in Sources */,
@@ -598,10 +623,12 @@
 				B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */,
 				497B43592AEC590A00B43467 /* ComponentscircleView.swift in Sources */,
 				49BE7BCF2AE2DBD200C7BE91 /* PostloginView.swift in Sources */,
+				B79ED6792AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift in Sources */,
 				0D25C6C32AE7FDF500B7977C /* TutorialView.swift in Sources */,
 				0D40B7182AE69F2A00BE5034 /* NoLoginView.swift in Sources */,
 				0D25C6AC2AE7FDF500B7977C /* ButtonBackView.swift in Sources */,
 				0D25C6C42AE7FDF500B7977C /* ContentView.swift in Sources */,
+				0DE0AE282B02555F006D3D93 /* DeliveryHistoryView.swift in Sources */,
 				0D25C6B52AE7FDF500B7977C /* SchedulingView.swift in Sources */,
 				0D25C6A82AE7FDF500B7977C /* MenuButtonColeta.swift in Sources */,
 				0D185AF62AEC3C6B00FF30AF /* ComponentNoLogin.swift in Sources */,
@@ -619,6 +646,7 @@
 				49518BFD2AE6A89D00BDFFA0 /* ComponentSectionView.swift in Sources */,
 				B7ED18DE2AF91F7A00AE5333 /* RegisterDonationView.swift in Sources */,
 				0D25C6A72AE7FDF500B7977C /* LocationsDataService.swift in Sources */,
+				B79ED6752AFBB79800BEAC1D /* RegistrationDatesView.swift in Sources */,
 				0D25C6BC2AE7FDF500B7977C /* WebView.swift in Sources */,
 				4908004D2AFD1A5400D2FF4E /* CloudKitView.swift in Sources */,
 				49874B902AFA87300041DDA0 /* TutorialMilkView.swift in Sources */,
@@ -782,7 +810,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Deleite/Deleite.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2.0;
+				CURRENT_PROJECT_VERSION = 2.1.0;
 				DEVELOPMENT_TEAM = 3S22856DS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -800,7 +828,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.Deleite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -820,7 +848,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Deleite/Deleite.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2.0;
+				CURRENT_PROJECT_VERSION = 2.1.0;
 				DEVELOPMENT_TEAM = 3S22856DS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -838,7 +866,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.Deleite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

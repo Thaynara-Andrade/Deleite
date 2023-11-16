@@ -21,7 +21,7 @@ struct ComponentDonationView: View {
     }
     
     var body: some View {
-        NavigationLink(destination: ResumeView()){
+        NavigationLink(destination: ContainerOptionView()){
             ZStack {
                 VStack(alignment: .leading) {
                     

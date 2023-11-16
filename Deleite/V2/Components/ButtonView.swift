@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Mixpanel
 
 struct ButtonView: View {
     let Textbutton: String
@@ -24,6 +25,10 @@ struct ButtonView: View {
                     .bold()
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color("Text-Color"))
+                    .onAppear {
+                        Mixpanel.mainInstance().track(event: "Ver tutorial", properties:["ambiente": Env.string])
+                    }
+                
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 13)
@@ -33,8 +38,8 @@ struct ButtonView: View {
         }.padding(.top, 65)
         
         Button(action: {
-                            isPostLoginViewActive = true
-        }) {
+            isPostLoginViewActive = true })
+        {
             HStack(alignment: .center, spacing: 10) {
                 Text(Textbutton2)
                     .multilineTextAlignment(.center)
@@ -49,8 +54,11 @@ struct ButtonView: View {
                 RoundedRectangle(cornerRadius: 15)
                     .inset(by: 1.5)
                     .stroke(Color("Text-Color")))
+            .onAppear {
+                Mixpanel.mainInstance().track(event: "Ir para agendamento", properties:["ambiente": Env.string]) }
+            
         } .fullScreenCover(isPresented: $isPostLoginViewActive) {
-            PostloginView()
+            RegisterDonationView()
         }
     }
 }

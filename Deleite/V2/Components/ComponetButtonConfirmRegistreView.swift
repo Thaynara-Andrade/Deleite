@@ -1,23 +1,23 @@
 //
-//  ButtonSavedView.swift
+//  ComponetButtonConfirmRegistreView.swift
 //  Deleite
 //
-//  Created by Raina on 07/11/23.
+//  Created by Raina on 08/11/23.
 //
 
 import SwiftUI
 
-struct ButtonSavedView: View {
+struct ComponetButtonConfirmRegistreView: View {
     
-    @State var saveSchedule:Bool = false
+    @State var confirmAppointment:Bool = false
     
     var body: some View {
         HStack(){
             Button {
-                saveSchedule = true
+                confirmAppointment = true
             } label: {
                 HStack(alignment: .center, spacing: 10) {
-                    Text("Salvar")
+                    Text("Confirmar agendamento")
                         .font(
                         Font.custom("SF Pro Text", size: 17)
                         .weight(.semibold)
@@ -30,14 +30,14 @@ struct ButtonSavedView: View {
                 .frame(width: 326, alignment: .center)
                 .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                 .cornerRadius(15)
-            }
-            .sheet(isPresented: $saveSchedule, onDismiss: nil) {
-                ContainerOptionView()
+                .fullScreenCover(isPresented: $confirmAppointment) {
+                    ShowRegistrationConfirmationView()
+                }
             }
         }
     }
 }
 
 #Preview {
-    ButtonSavedView()
+    ComponetButtonConfirmRegistreView()
 }

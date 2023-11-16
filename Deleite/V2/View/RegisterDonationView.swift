@@ -9,8 +9,11 @@ import SwiftUI
 
 struct RegisterDonationView: View {
     
+    @Environment(\.dismiss) var dismiss
     @State var notifyMeAbout:Bool = false
     @State var NotifyMeAboutType:Bool = false
+    @State var shownextPageRegister:Bool = true
+    @State var showNextPageRegisterDate:Bool = false
     @State var name:String = ""
     @State var cep:String = ""
     
@@ -19,8 +22,9 @@ struct RegisterDonationView: View {
             Form{
                 Section(header: Text("Informações Pessoais")) {
                     TextField("Nome", text: $name)
+                    /* Isso mudar a cor da caixa de texto
+                     .listRowBackground(Color.red) */
                     TextField("CEP", text: $cep)
-                    
                 }
                 
                 Section(header: Text("Regional")) {
@@ -32,23 +36,40 @@ struct RegisterDonationView: View {
                     }
                 }
             }
+            /* Isso mudar a cor dae fundo no iOS 16
+            .scrollContentBackground(.hidden)
+            .background(.red) */
             .navigationTitle("Agendamento")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Cancelar") {
-                        print("Cancelar tapped!")
-                    }
-                }
-                ToolbarItem(placement: .navigationBarLeading){
-                    Button("Voltar") {
-                        print("Voltar tapped!")
+                        dismiss()
                     }
                 }
             }
+            .safeAreaInset(edge: .top, content: {
+                HStack{
+                    Text("Adicione seu \n endereço")
+                        .font(
+                            Font.custom("SFProRounded-Semibold", size: 34)
+                            .weight(.bold)
+                        )
+                        .multilineTextAlignment(.center)
+                }
+                .padding(.top, 12)
+            })
+            .safeAreaInset(edge: .top, content: {
+                HStack{
+                    Image("calendar-blue")
+                        .frame(width: 105, height: 105)
+                }
+                .padding(.top, 44)
+                .scaledToFit()
+            })
             .safeAreaInset(edge: .bottom, content: {
-                ButtonSavedView()
-                    .padding(.bottom, 54)
+                ComponentButtonSavedView()
+                    .padding(.bottom, 62)
             })
         }
     }
