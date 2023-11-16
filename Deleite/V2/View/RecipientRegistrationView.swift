@@ -61,11 +61,12 @@ struct RecipientRegistrationView: View {
                 .scaledToFit()
             })
             .safeAreaInset(edge: .bottom, content: {
-                Text("Texto explicando para a usuária o limite de dias que o leite pode ficar na geladeira.Texto explicando para a usuária.")
+                Text("o leite humano pode ser armazenado no congelador por até 15 dias após a primeira coleta.")
                     .font(Font.custom("SF Pro", size: 13))
                     .foregroundColor(Color.gray)
                     .frame(width: 303, alignment: .topLeading)
-                    .padding(.bottom, 200)
+                    .padding(.bottom, 180)
+                    .padding(.leading, -30)
             })
             .safeAreaInset(edge: .bottom, content: {
                 HStack(){
