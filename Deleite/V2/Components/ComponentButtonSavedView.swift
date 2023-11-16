@@ -32,7 +32,7 @@ struct ComponentButtonSavedView: View {
                 .cornerRadius(15)
             }
             .sheet(isPresented: $saveSchedule, onDismiss: nil) {
-                RegistrationDatesView()
+               // RegistrationDatesView()
             }
         }
     }

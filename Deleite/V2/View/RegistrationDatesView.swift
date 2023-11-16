@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RegistrationDatesView: View {
     
+    @Binding var openRegistrationSheet: Bool
+    
     @Environment(\.dismiss) var dismiss
     @State private var collectionDate = Date()
     let dateRange: ClosedRange<Date> = {
@@ -88,6 +90,6 @@ struct RegistrationDatesView: View {
 }
 
 #Preview {
-    RegistrationDatesView()
+    RegistrationDatesView(openRegistrationSheet: .constant(true))
     
 }

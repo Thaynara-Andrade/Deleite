@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RegisterDonationView: View {
     
+    @Binding var openRegistrationSheet: Bool
+    
     @Environment(\.dismiss) var dismiss
     @State var notifyMeAbout:Bool = false
     @State var NotifyMeAboutType:Bool = false
@@ -18,7 +20,6 @@ struct RegisterDonationView: View {
     @State var cep:String = ""
     
     var body: some View {
-        NavigationView{
             Form{
                 Section(header: Text("Informações Pessoais")) {
                     TextField("Nome", text: $name)
@@ -72,9 +73,10 @@ struct RegisterDonationView: View {
                     .padding(.bottom, 62)
             })
         }
-    }
 }
 
 #Preview {
-    RegisterDonationView()
+    NavigationView{
+        RegisterDonationView(openRegistrationSheet: .constant(true))
+    }
 }

@@ -35,7 +35,7 @@ struct ComponentBottomless: View {
                     .inset(by: 1.5)
                     .stroke(Color("Text-Color")))
         } .fullScreenCover(isPresented: $isPostLoginViewActive) {
-            RegisterDonationView()
+            //RegisterDonationView()
         }
     }
 }

@@ -32,7 +32,7 @@ struct ComponentButoonScheduling: View {
             .background(Color(red: 0.95, green: 0.87, blue: 0.62))
             .cornerRadius(15)
         } .fullScreenCover(isPresented: $isPostLoginViewActive) {
-            RegisterDonationView()
+            //RegisterDonationView()
         }
     }
 }
