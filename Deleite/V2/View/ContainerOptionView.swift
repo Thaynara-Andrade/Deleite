@@ -10,13 +10,14 @@ import SwiftUI
 
 struct ContainerOptionView: View {
     
-    @State var isShowTesteView: Bool = false
-    @State var showNextPageRegister = false
+    @State private var isShowTesteView: Bool = false
+    @State private var showNextPageRegister = false
+    @Binding var openRegistrationSheet: Bool
     
     //Sheet e buttons
-    @State var goToRegister: Bool = false
-    @State var goToRecipientRegister: Bool = false
-    @Binding var openRegistrationSheet: Bool
+    @State private var goToRegister: Bool = false
+    @State private var goToRecipientRegister: Bool = false
+
     
     var yellowBackground: String = "yellow-background-image"
     var bottleImage: String = "bottle-image"
@@ -75,29 +76,30 @@ struct ContainerOptionView: View {
                         }
                     }
                     
-                    Button {
-                        // NotHaveBottle = true
-                    } label: {
-                        Text("Não tenho frasco")
-                            .font(
-                                Font.custom("SF Pro Text", size: 17)
-                                    .weight(.semibold)
-                            )
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color("Text-Yellow"))
+                    VStack {
+                        NavigationLink(isActive: $goToRecipientRegister) {
+                            RecipientPersonalRegistrationView(openRegistrationSheet: $openRegistrationSheet)
+                        } label: {
+                            Text("Não tenho frasco")
+                                .font(
+                                    Font.custom("SF Pro Text", size: 17)
+                                        .weight(.semibold)
+                                )
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color("Text-Yellow"))
+                        }
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 13)
+                        .frame(width: 326, alignment: .center)
+                        .cornerRadius(15)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 15)
+                                .inset(by: 1.5)
+                                .stroke(Color("Button-Yellow"))
+                        )
                     }
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 13)
-                    .frame(width: 326, alignment: .center)
-                    .cornerRadius(15)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 15)
-                            .inset(by: 1.5)
-                            .stroke(Color("Button-Yellow"))
-                    )
                 }
             }
-            
         }
     }
 }
