@@ -13,26 +13,20 @@ struct ComponentBottomless: View {
     @Binding var openRegistrationSheet: Bool
     
     var body: some View {
-
+        
         HStack{
             NavigationLink(isActive: $isPostLoginViewActive) {
                 RegisterDonationView(openRegistrationSheet: $openRegistrationSheet)
             } label: {
-                HStack(alignment: .center, spacing: 10) {
-                    Text(Buttomless)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color("Text-Color"))
-                    
-                }
-                .padding(.horizontal, 20)
-                .padding(.vertical, 13)
-                .frame(width: 326, alignment: .center)
-                .cornerRadius(15)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 15)
-                        .inset(by: 1.5)
-                        .stroke(Color("Text-Color")))
+                Text(Buttomless)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
             }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 13)
+            .frame(width: 326, alignment: .center)
+            .background(Color(red: 0.95, green: 0.87, blue: 0.62))
+            .cornerRadius(15)
         }
     }
 }

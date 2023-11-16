@@ -29,6 +29,7 @@ struct TutorialStorageView: View {
                             .padding(.bottom, -20)
                         
                         ComponentBottomless(Buttomless: "Fazer agendamento", openRegistrationSheet: $openRegistrationSheet)
+                            .padding(.top, 250)
                         
                     }
                 }
