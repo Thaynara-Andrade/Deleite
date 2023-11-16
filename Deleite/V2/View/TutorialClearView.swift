@@ -18,7 +18,7 @@ struct TutorialClearView: View {
                         .foregroundColor(.black)
                     
                     VStack {
-                        ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Lave um frasco de vidro de boca larga com tampa de plástico (do tipo café solúvel), retirando o rótulo e o papel de dentro da tampa.kakakakakakkaakaka kkakaakakakkakaka", TutorialImage: Image("pote"))
+                        ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Lave um frasco de vidro com tampa de plástico (do tipo café solúvel), retirando o rótulo e o papel de dentro da tampa e enxague para a remoção de resíduos.", TutorialImage: Image("pote"))
                             .padding(.bottom, -20)
                         
                         ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "Após realizar o procedicmento, coloque o frasco e a tampa numa panela com água, cobrindo-os completamente. Ferva-os. Conte 15 minutos a partir do início da fervura.", TutorialImage: Image("Panela"))

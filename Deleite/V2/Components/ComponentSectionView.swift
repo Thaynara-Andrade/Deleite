@@ -25,8 +25,10 @@ struct ComponentSectionView: View {
         ZStack {
             Rectangle()
                 .frame(width: 356, height: 184)
-                .foregroundColor(Color("Rectangle-color"))
+                .foregroundColor(Color.white)
                 .cornerRadius(21.8898)
+                .shadow(radius: 10)
+                .opacity(0.5)
             VStack(alignment: .leading) {
             
                 Text(Logintitle)
@@ -66,8 +68,8 @@ struct ComponentSectionView: View {
                         .fontWeight(.semibold)
                         .frame(width: 280, height: 14)
                         .padding()
-                            .background(Color("yellow-color"))
-                            .foregroundColor(Color("icon-color"))
+                            .background(Color("icon-color"))
+                            .foregroundColor(Color.white)
                             .cornerRadius(15)
     
                 } 

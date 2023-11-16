@@ -8,18 +8,34 @@
 import SwiftUI
 
 struct PostloginView: View {
-    
+    @State private var showAlert = false
     var body: some View {
         NavigationView{
             ZStack(alignment: .topLeading) {
-                Color("Text-Color")
+                Color("Background-color")
                     .edgesIgnoringSafeArea(.all)
                 
-                Image(systemName: "questionmark.circle")
-                    .font(.system(size: 25))
-                    .foregroundColor(.white)
-                    .padding(.leading, 340)
-                    .padding(.top, 15)
+                Button(action: {
+                    self.showAlert = true
+                }) {
+                    Image(systemName: "questionmark.circle")
+                        .font(.system(size: 24))
+                        .foregroundColor(Color("icon-color"))
+                        .padding(.leading, 340)
+                        .padding(.top, 15)
+                } .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text("Ajuda"),
+                        message: Text("Para obter suporte, entre em \ncontato no botão abaixo"),
+                        primaryButton: .default(Text("Falar com Suporte"), action: {
+                            
+                            if let url = URL(string: "https://christianpaulo.com.br/deleite/") {
+                                UIApplication.shared.open(url)
+                            }
+                        }),
+                        secondaryButton: .cancel(Text("Cancelar"))
+                    )
+                }
                 
                 VStack(alignment: .leading) {
                     
@@ -33,15 +49,15 @@ struct PostloginView: View {
                     
                     Text("Seja bem vinda!")
                         .padding(.leading, 20)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                     HStack{
                         Text("Você está no")
                             .padding(.leading, 20)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                         
                         Text("MEAC")
                             .fontWeight(.bold)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                         
                         
                     }
@@ -52,13 +68,13 @@ struct PostloginView: View {
                                 Text("Agendamentos")
                                     .font(.system(size: 25))
                                     .fontWeight(.bold)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.black)
                                     .padding(.top)
                                     .padding(.bottom, 3)
                                 Text("Ver todos")
                                     .padding(.leading, 80)
                                     .padding(.bottom, -15)
-                                    .foregroundColor(Color(red: 0.78, green: 0.78, blue: 0.78))
+                                    .foregroundColor(.gray)
 
 
                             }
