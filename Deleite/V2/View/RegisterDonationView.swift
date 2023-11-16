@@ -16,14 +16,13 @@ struct RegisterDonationView: View {
     @State var NotifyMeAboutType:Bool = false
     @State var shownextPageRegister:Bool = true
     @State var name:String = ""
-    @State var cep:String = ""
+    @State private var cep:String = ""
     
     var body: some View {
         Form{
+            
             Section(header: Text("Informações Pessoais")) {
                 TextField("Nome", text: $name)
-                /* Isso mudar a cor da caixa de texto
-                 .listRowBackground(Color.red) */
                 TextField("CEP", text: $cep)
             }
             
@@ -36,9 +35,6 @@ struct RegisterDonationView: View {
                 }
             }
         }
-        /* Isso mudar a cor dae fundo no iOS 16
-         .scrollContentBackground(.hidden)
-         .background(.red) */
         .navigationTitle("Agendamento")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -86,9 +82,9 @@ struct RegisterDonationView: View {
                     .cornerRadius(15)
                     }
                 
-            }.padding(.top, 65)
+            }.padding(.bottom, 62)
         })
-        .padding(.bottom, 62)
+//        .background(Color(uiColor: .systemGray6))
     }
 }
 
