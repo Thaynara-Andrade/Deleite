@@ -32,6 +32,6 @@ struct ComponentBottomless: View {
 }
 
 #Preview {
-    ComponentBottomless(Buttomless: "IFazer agendamento", openRegistrationSheet: .constant(true))
+    ComponentBottomless(Buttomless: "Ir para agendamento", openRegistrationSheet: .constant(true))
 }
 

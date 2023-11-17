@@ -21,6 +21,8 @@ struct ResumeView: View {
                     Group{
                         VStack{
                             Text("Confira abaixo as poucas etapas que você \ndeve seguir para realizar sua doação de \nleite humano:")
+                                .foregroundColor(.black)
+                                .multilineTextAlignment(.leading)
                                 
                     } .padding(.leading, -25)
                     Rectangle()
@@ -50,18 +52,22 @@ struct ResumeView: View {
                     
                     VStack(alignment: .leading){
                         Text("Ver tutoriais")
+                            .foregroundColor(.black)
                             .bold()
                             .padding(.bottom,82)
                         
                         Text("Retirada do leite")
+                            .foregroundColor(.black)
                             .bold()
                             .padding(.bottom,82)
                         
                         Text("Agendamento")
+                            .foregroundColor(.black)
                             .bold()
                             .padding(.bottom,82)
                         
                         Text("Coleta realizada")
+                            .foregroundColor(.black)
                             .bold()
                             .padding(.bottom,50)
                         
@@ -85,7 +91,7 @@ struct ResumeView: View {
                                 .frame(width: 326, alignment: .center)
                                 .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                                 .cornerRadius(15)
-                            }.padding(.top, 65)
+                            }
                         }
                         
                         HStack{
@@ -123,7 +129,7 @@ struct ResumeView: View {
                 }
                 .padding(.leading,30)
                 .padding(.trailing,30)
-                .padding(.top, -60)
+                
             }
         }
         .navigationTitle("Resumo")

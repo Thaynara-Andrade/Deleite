@@ -49,7 +49,7 @@ struct ComponentTextField: View {
                                     .frame(width: 60, height: 55)
                                     .padding([.leading, .bottom], 0.0)
                                     .foregroundColor((Color.white))
-                                    .background(Color("icon-color"))
+                                    .background(Color("Text-Color"))
                                     .cornerRadius(14.0)
                                 
                             }
