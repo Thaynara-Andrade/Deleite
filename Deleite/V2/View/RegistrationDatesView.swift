@@ -45,7 +45,7 @@ struct RegistrationDatesView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Cancelar") {
-                        dismiss()
+                        openRegistrationSheet = false
                     }
                 }
             }

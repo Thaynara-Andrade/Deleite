@@ -41,7 +41,7 @@ struct RecipientPersonalRegistrationView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Cancelar") {
-                    dismiss()
+                    openRegistrationSheet = false
                 }
             }
         }

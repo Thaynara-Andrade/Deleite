@@ -56,7 +56,7 @@ struct ComponentDonationView: View {
                     .padding(.leading, 210)
             }
             .sheet(isPresented: $selectContainerOption, onDismiss: nil) {
-                ContainerOptionView(openRegistrationSheet: .constant(true))
+                ContainerOptionView(openRegistrationSheet: $selectContainerOption)
             }
         }
     }
