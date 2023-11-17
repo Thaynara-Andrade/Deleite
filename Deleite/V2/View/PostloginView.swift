@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PostloginView: View {
     @State private var showAlert = false
+    @State var openRegistrationSheet = false
+    
     var body: some View {
         NavigationView{
             ZStack(alignment: .topLeading) {

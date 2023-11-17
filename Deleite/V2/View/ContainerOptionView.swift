@@ -76,6 +76,13 @@ struct ContainerOptionView: View {
                                 .inset(by: 1.5)
                                 .stroke(Color("icon-color"))
                         )
+                        .toolbar {
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button("Cancelar") {
+                                    openRegistrationSheet = false
+                                }
+                            }
+                        }
                     }
                 }
             }

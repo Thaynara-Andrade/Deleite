@@ -116,6 +116,15 @@ struct ResumeView: View {
                                 }
                             })
                         }
+                        .navigationTitle("Resumo")
+                        .navigationBarTitleDisplayMode(.inline)
+                        .toolbar {
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button("Cancelar") {
+                                    openRegistrationSheet = false
+                                }
+                            }
+                        }
                     }
                 }
                 .padding(.leading,30)
