@@ -20,7 +20,6 @@ struct ComponentTextField: View {
             TextField("Digite o código", text: $password)
                 .textFieldStyle(PlainTextFieldStyle())
                 .padding(.leading)
-                .foregroundColor(Color.black)
                 .focused($passwordIsFocused)
                 .background(
                     Rectangle()

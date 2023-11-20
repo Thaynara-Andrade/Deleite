@@ -76,6 +76,9 @@
 		49874B902AFA87300041DDA0 /* TutorialMilkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49874B8F2AFA87300041DDA0 /* TutorialMilkView.swift */; };
 		49874B922AFA996A0041DDA0 /* TutorialStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49874B912AFA996A0041DDA0 /* TutorialStorageView.swift */; };
 		49874B942AFA9D970041DDA0 /* ComponentBottomless.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49874B932AFA9D970041DDA0 /* ComponentBottomless.swift */; };
+		498CEEAB2B0BA4920002D52D /* CloudKitUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CEEAA2B0BA4920002D52D /* CloudKitUtility.swift */; };
+		498CEEAD2B0BD9B50002D52D /* Agendamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CEEAC2B0BD9B50002D52D /* Agendamento.swift */; };
+		498CEEAF2B0BE58D0002D52D /* SchedulingModelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CEEAE2B0BE58D0002D52D /* SchedulingModelListView.swift */; };
 		49BE7BCD2AE2C33D00C7BE91 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 49BE7BCC2AE2C33D00C7BE91 /* Mixpanel */; };
 		49BE7BCF2AE2DBD200C7BE91 /* PostloginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */; };
 		49BF71E62AF95EE000CEDBA9 /* TutorialClearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */; };
@@ -184,6 +187,9 @@
 		49874B8F2AFA87300041DDA0 /* TutorialMilkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialMilkView.swift; sourceTree = "<group>"; };
 		49874B912AFA996A0041DDA0 /* TutorialStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStorageView.swift; sourceTree = "<group>"; };
 		49874B932AFA9D970041DDA0 /* ComponentBottomless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentBottomless.swift; sourceTree = "<group>"; };
+		498CEEAA2B0BA4920002D52D /* CloudKitUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUtility.swift; sourceTree = "<group>"; };
+		498CEEAC2B0BD9B50002D52D /* Agendamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agendamento.swift; sourceTree = "<group>"; };
+		498CEEAE2B0BE58D0002D52D /* SchedulingModelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingModelListView.swift; sourceTree = "<group>"; };
 		49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostloginView.swift; sourceTree = "<group>"; };
 		49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialClearView.swift; sourceTree = "<group>"; };
 		49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTutorialClear.swift; sourceTree = "<group>"; };
@@ -337,6 +343,7 @@
 				0D25C6802AE6E26900B7977C /* Components */,
 				49518BE22AE6990B00BDFFA0 /* Resource */,
 				490800492AFD09F000D2FF4E /* Model.swift */,
+				498CEEAA2B0BA4920002D52D /* CloudKitUtility.swift */,
 				4908004E2AFE6E4000D2FF4E /* CloudKitCRUDIView.swift */,
 				4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */,
 			);
@@ -355,6 +362,7 @@
 				49874B912AFA996A0041DDA0 /* TutorialStorageView.swift */,
 				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
 				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
+				498CEEAE2B0BE58D0002D52D /* SchedulingModelListView.swift */,
 				B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */,
 				B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */,
 				B7135FE72B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift */,
@@ -393,6 +401,7 @@
 				0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */,
 				49518BE52AE69AC000BDFFA0 /* Info.plist */,
 				49507FE92AAF49470002CB6A /* DeleiteApp.swift */,
+				498CEEAC2B0BD9B50002D52D /* Agendamento.swift */,
 				0D4155C72AE2BEF100FA074B /* V1 */,
 				0D4155C82AE2BF4D00FA074B /* V2 */,
 			);
@@ -626,6 +635,7 @@
 				B757D5012AE855BF003F984D /* ContainerOptionView.swift in Sources */,
 				497B43592AEC590A00B43467 /* ComponentscircleView.swift in Sources */,
 				49BE7BCF2AE2DBD200C7BE91 /* PostloginView.swift in Sources */,
+				498CEEAB2B0BA4920002D52D /* CloudKitUtility.swift in Sources */,
 				B79ED6792AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift in Sources */,
 				0D25C6C32AE7FDF500B7977C /* TutorialView.swift in Sources */,
 				0D40B7182AE69F2A00BE5034 /* NoLoginView.swift in Sources */,
@@ -647,10 +657,12 @@
 				0D185AFC2AF11F6100FF30AF /* RegistrationWhatsView.swift in Sources */,
 				B7E3ACAA2AEC033C00ACBFD2 /* ComponentStepByStepView.swift in Sources */,
 				49518BFD2AE6A89D00BDFFA0 /* ComponentSectionView.swift in Sources */,
+				498CEEAD2B0BD9B50002D52D /* Agendamento.swift in Sources */,
 				B7ED18DE2AF91F7A00AE5333 /* RegisterDonationView.swift in Sources */,
 				0D25C6A72AE7FDF500B7977C /* LocationsDataService.swift in Sources */,
 				B79ED6752AFBB79800BEAC1D /* RegistrationDatesView.swift in Sources */,
 				0D25C6BC2AE7FDF500B7977C /* WebView.swift in Sources */,
+				498CEEAF2B0BE58D0002D52D /* SchedulingModelListView.swift in Sources */,
 				49FAA6D32B06B3550039B915 /* SucessLottieView.swift in Sources */,
 				4908004D2AFD1A5400D2FF4E /* CloudKitView.swift in Sources */,
 				49874B902AFA87300041DDA0 /* TutorialMilkView.swift in Sources */,
@@ -814,7 +826,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Deleite/Deleite.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.1.0;
+				CURRENT_PROJECT_VERSION = 2.3.0;
 				DEVELOPMENT_TEAM = 3S22856DS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -832,7 +844,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.Deleite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -852,7 +864,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Deleite/Deleite.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.1.0;
+				CURRENT_PROJECT_VERSION = 2.3.0;
 				DEVELOPMENT_TEAM = 3S22856DS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -870,7 +882,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swift.Deleite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

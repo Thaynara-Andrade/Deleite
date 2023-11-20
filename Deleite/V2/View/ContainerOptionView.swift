@@ -24,7 +24,7 @@ struct ContainerOptionView: View {
     var body: some View {
         NavigationView{
             ZStack{
-                Color("Background-color")
+                Color("")
                     .edgesIgnoringSafeArea(.all)
                 
                 ScrollView{

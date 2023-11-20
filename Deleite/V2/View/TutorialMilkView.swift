@@ -20,7 +20,6 @@ struct TutorialMilkView: View {
                     Text("Esta é a forma correta para realizar a retirada de leite:")
                         .multilineTextAlignment(.leading)
                         .padding(.bottom, -10)
-                        .foregroundColor(.black)
                     
                     VStack {
                         ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Escolha um local tranquilo e limpo. Prepare uma mesa com um pano limpo e evite conversas durante a retirada do leite, proporcionando assim um ambiente sereno e concentrado.", TutorialImage: Image("Sofa"))

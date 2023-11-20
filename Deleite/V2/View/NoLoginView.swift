@@ -14,8 +14,8 @@ struct NoLoginView: View {
         NavigationView{
             
             ZStack(alignment: .topLeading) {
-                Color("Background-color")
-                    .edgesIgnoringSafeArea(.all)
+//                Color("Background-color")
+//                    .edgesIgnoringSafeArea(.all)
                 ScrollView {
                     VStack(alignment: .leading) {
                         HStack {
@@ -57,18 +57,18 @@ struct NoLoginView: View {
                                 Text("Caso já")
                                     .padding(.leading, -100)
                                     .padding(.leading, 75)
-                                    .foregroundColor(.black)
+                                    
                                 
                                 Text("possua cadastro,")
                                     .bold()
                                     .padding(.leading, -100)
                                     .padding(.leading, 50)
-                                    .foregroundColor(.black)
+                                    
                                 
                                 Text("digite o código: ")
                                     .padding(.leading, -100)
                                     .padding(.leading, 95)
-                                    .foregroundColor(.black)
+                                    
                             }
                             
                             ComponentTextField()
@@ -77,7 +77,6 @@ struct NoLoginView: View {
                                 .font(.system(size: 25))
                             
                                 .fontWeight(.bold)
-                                .foregroundColor(.black)
                                 .padding(.leading, -160)
                                 .padding(.top)
                                 .padding(.bottom, 3)

@@ -19,7 +19,6 @@ struct TutorialClearView: View {
                     Text("Esta é a forma correta da higienização antes da coleta do leite")
                         .multilineTextAlignment(.leading)
                         .padding(.bottom, -10)
-                        .foregroundColor(.black)
                     VStack {
                         ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Lave um frasco de vidro com tampa de plástico (do tipo café solúvel), retirando o rótulo e o papel de dentro da tampa e enxague para a remoção de resíduos.", TutorialImage: Image("pote"))
                             .padding(.bottom, -20)

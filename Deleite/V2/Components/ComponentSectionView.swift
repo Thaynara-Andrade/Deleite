@@ -29,9 +29,10 @@ struct ComponentSectionView: View {
             Rectangle()
                 .frame(width: 356, height: 184)
                 .foregroundColor(Color.white)
+                .background(.white)
                 .cornerRadius(21.8898)
                 .shadow(radius: 3)
-                .opacity(0.5)
+
             
             Image("pote")
                 .resizable()

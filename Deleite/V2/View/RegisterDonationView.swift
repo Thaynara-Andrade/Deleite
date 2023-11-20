@@ -9,29 +9,42 @@ import SwiftUI
 
 struct RegisterDonationView: View {
     
+    @State private var newScheduling = SchedulingModel()
+    
     @Binding var openRegistrationSheet: Bool
     
     @Environment(\.dismiss) var dismiss
-    @State var notifyMeAbout:Bool = false
-    @State var NotifyMeAboutType:Bool = false
+//    @State var notifyMeAbout:Bool = false
+//    @State var NotifyMeAboutType:Bool = false
     @State var shownextPageRegister:Bool = true
+
+    @AppStorage("motherName") var motherName: String = ""
     @State var name:String = ""
-    @State private var cep:String = ""
+    @AppStorage("cep") private var cep:String = ""
+    @AppStorage("regional") var regional: Int = 0
     
     var body: some View {
         Form{
             
             Section(header: Text("Informações Pessoais")) {
-                TextField("Nome", text: $name)
+                if motherName.isEmpty {
+                    TextField("Nome", text: $name)
+                        .multilineTextAlignment(.leading)
+                } else {
+                    Text(motherName)
+                        .multilineTextAlignment(.leading)
+                }
                 TextField("CEP", text: $cep)
+                    .multilineTextAlignment(.leading)
             }
+            .padding(.leading)
             
             Section(header: Text("Regional")) {
-                Picker("Selecione a Regional", selection: $notifyMeAbout) {
-                    Text("Regional 1").tag(NotifyMeAboutType)
-                    Text("Regional 2").tag(NotifyMeAboutType)
-                    Text("Regional 3").tag(NotifyMeAboutType)
-                    Text("Regional 4").tag(NotifyMeAboutType)
+                Picker("Selecione a Regional", selection: $regional) {
+                    Text("Regional 1").tag(0)
+                    Text("Regional 2").tag(1)
+                    Text("Regional 3").tag(2)
+                    Text("Regional 4").tag(3)
                 }
             }
         }
@@ -47,10 +60,8 @@ struct RegisterDonationView: View {
         .safeAreaInset(edge: .top, content: {
             HStack{
                 Text("Adicione seu \n endereço")
-                    .font(
-                        Font.custom("SFProRounded-Semibold", size: 34)
-                            .weight(.bold)
-                    )
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                     .multilineTextAlignment(.center)
             }
             .padding(.top, 12)
@@ -65,7 +76,7 @@ struct RegisterDonationView: View {
         })
         .safeAreaInset(edge: .bottom, content: {
             HStack{
-                NavigationLink(destination: RegistrationDatesView(openRegistrationSheet: $openRegistrationSheet)) {
+                NavigationLink(destination: RegistrationDatesView(newScheduling: $newScheduling, openRegistrationSheet: $openRegistrationSheet)) {
                     HStack(alignment: .center, spacing: 10) {
                         Text("Salvar")
                             .font(
@@ -84,6 +95,15 @@ struct RegisterDonationView: View {
                 
             }.padding(.bottom, 62)
         })
+        .onDisappear {
+            if !name.isEmpty {
+                newScheduling.motherName = name
+            } else {
+                newScheduling.motherName = motherName
+            }
+            newScheduling.cep = cep
+            newScheduling.regional = "Regional \(regional+1)"
+        }
 //        .background(Color(uiColor: .systemGray6))
     }
 }

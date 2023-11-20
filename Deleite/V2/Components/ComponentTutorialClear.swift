@@ -37,7 +37,6 @@ struct ComponentTutorialClear: View {
                         Font.custom("SFProRounded-Semibold", size: 23)
                     )
                     .multilineTextAlignment(.leading)
-                    .foregroundColor(.black)
                     .padding(.bottom, -2)
                 
                 Text(Tutorialdescription)
@@ -45,7 +44,7 @@ struct ComponentTutorialClear: View {
                         Font.custom("SFProRounded-Medium", size: 17)
                     )
                     .multilineTextAlignment(.leading)
-                    .foregroundColor(.black)
+                    
                     
                 
             }
