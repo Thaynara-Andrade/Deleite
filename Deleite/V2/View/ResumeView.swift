@@ -21,7 +21,6 @@ struct ResumeView: View {
                     Group{
                         VStack{
                             Text("Confira abaixo as poucas etapas que você \ndeve seguir para realizar sua doação de \nleite humano:")
-                                .foregroundColor(.black)
                                 .multilineTextAlignment(.leading)
                                 
                     } .padding(.leading, -25)
@@ -52,22 +51,18 @@ struct ResumeView: View {
                     
                     VStack(alignment: .leading){
                         Text("Ver tutoriais")
-                            .foregroundColor(.black)
                             .bold()
                             .padding(.bottom,82)
                         
                         Text("Retirada do leite")
-                            .foregroundColor(.black)
                             .bold()
                             .padding(.bottom,82)
                         
                         Text("Agendamento")
-                            .foregroundColor(.black)
                             .bold()
                             .padding(.bottom,82)
                         
                         Text("Coleta realizada")
-                            .foregroundColor(.black)
                             .bold()
                             .padding(.bottom,50)
                         

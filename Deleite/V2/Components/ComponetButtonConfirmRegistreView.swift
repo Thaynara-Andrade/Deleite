@@ -6,14 +6,24 @@
 //
 
 import SwiftUI
+import Nuvem
+import CloudKit
 
 struct ComponetButtonConfirmRegistreView: View {
+    
+    @AppStorage("motherName") var motherName: String = ""
+    
+    @Binding var newScheduling: SchedulingModel
     
     @State var confirmAppointment:Bool = false
     
     var body: some View {
         HStack(){
             Button {
+                Task {
+                    try await newScheduling.save(on: CKContainer.default().publicCloudDatabase)
+                    motherName = newScheduling.motherName
+                }
                 confirmAppointment = true
             } label: {
                 HStack(alignment: .center, spacing: 10) {
@@ -38,6 +48,6 @@ struct ComponetButtonConfirmRegistreView: View {
     }
 }
 
-#Preview {
-    ComponetButtonConfirmRegistreView()
-}
+//#Preview {
+//    ComponetButtonConfirmRegistreView()
+//}

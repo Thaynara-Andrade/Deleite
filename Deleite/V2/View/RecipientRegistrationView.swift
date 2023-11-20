@@ -40,11 +40,8 @@ struct RecipientRegistrationView: View {
         .safeAreaInset(edge: .top, content: {
             HStack{
                 Text("Qual a data de\nretirada do leite?")
-                    .font(
-                        Font.custom("SFProRounded-Semibold", size: 34)
-                            .weight(.bold)
-                    )
-                    .multilineTextAlignment(.center)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)                    .multilineTextAlignment(.center)
             }
             .padding(.top, 1)
         })
@@ -57,11 +54,11 @@ struct RecipientRegistrationView: View {
             .scaledToFit()
         })
         .safeAreaInset(edge: .bottom, content: {
-            Text("o leite humano pode ser armazenado no congelador por até 15 dias após a primeira coleta.")
+            Text("O leite humano pode ser armazenado no congelador por até 15 dias após a primeira coleta.")
                 .font(Font.custom("SF Pro", size: 13))
                 .foregroundColor(Color.gray)
                 .frame(width: 303, alignment: .topLeading)
-                .padding(.bottom, 180)
+                .padding(.bottom, 230)
                 .padding(.leading, -30)
         })
         .safeAreaInset(edge: .bottom, content: {

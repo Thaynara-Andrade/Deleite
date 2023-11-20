@@ -20,7 +20,6 @@ struct TutorialStorageView: View {
                     Text("Esta é a forma correta de armazenamento do leite materno:")
                         .multilineTextAlignment(.leading)
                         .padding(.bottom, -10)
-                        .foregroundColor(.black)
                     
                     VStack {
                         ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Após a retirada do leite materno, coloque o frasco no freezer ou congelador, garantindo que seja armazenado em recipientes adequados e devidamente etiquetado.", TutorialImage: Image("Rotulo"))

@@ -25,7 +25,9 @@ struct RecipientPersonalRegistrationView: View {
         Form{
             Section(header: Text("Informações Pessoais")) {
                 TextField("Nome", text: $name)
+                    .multilineTextAlignment(.leading)
                 TextField("CEP", text: $cep)
+                    .multilineTextAlignment(.leading)
             }
             Section(header: Text("Regional")) {
                 Picker("Selecione a Regional", selection: $RecipientRegional) {
@@ -48,10 +50,8 @@ struct RecipientPersonalRegistrationView: View {
         .safeAreaInset(edge: .top, content: {
             HStack{
                 Text("Adicione seu \n endereço")
-                    .font(
-                        Font.custom("SFProRounded-Semibold", size: 34)
-                            .weight(.bold)
-                    )
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                     .multilineTextAlignment(.center)
             }
             .padding(.top, 12)

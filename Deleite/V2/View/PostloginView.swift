@@ -14,8 +14,8 @@ struct PostloginView: View {
     var body: some View {
         NavigationView{
             ZStack(alignment: .topLeading) {
-                Color("Background-color")
-                    .edgesIgnoringSafeArea(.all)
+               Color("")
+                 .edgesIgnoringSafeArea(.all)
                 
                 Button(action: {
                     self.showAlert = true
@@ -51,15 +51,15 @@ struct PostloginView: View {
                     
                     Text("Seja bem vinda!")
                         .padding(.leading, 20)
-                        .foregroundColor(.black)
+                        
                     HStack{
                         Text("Você está no")
                             .padding(.leading, 20)
-                            .foregroundColor(.black)
+                            
                         
                         Text("MEAC")
                             .fontWeight(.bold)
-                            .foregroundColor(.black)
+                            
                         
                         
                     }
@@ -70,7 +70,6 @@ struct PostloginView: View {
                                 Text("Agendamentos")
                                     .font(.system(size: 25))
                                     .fontWeight(.bold)
-                                    .foregroundColor(.black)
                                     .padding(.top)
                                     .padding(.bottom, 10)
                                 Text("Ver todos")
@@ -80,7 +79,8 @@ struct PostloginView: View {
 
 
                             }
-                        ComponentSectionView(Logintitle: "Entrega do kit", LoginDate: "27 de fevereiro", LoginTurno: "Manhã", LoginImage: Image("pote"))
+//                        ComponentSectionView(Logintitle: "Entrega do kit", LoginDate: "27 de fevereiro", LoginTurno: "Manhã", LoginImage: Image("pote"))
+                            SchedulingModelListView()
                     }.padding()
                     
                 }

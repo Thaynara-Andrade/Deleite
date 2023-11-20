@@ -13,18 +13,21 @@ class CloudKitCrud: ObservableObject {
     @Published var text: String = ""
     @Published var fruits: [String] = []
     
+    init(){
+        fetchItems()
+    }
+    
     func addButtonPressed(){
         guard !text.isEmpty else { return }
         addItem(name: text)
     }
     
     private func addItem(name: String){
-        let  newFruit = CKRecord(recordType: "Frutas")
+        let  newFruit = CKRecord(recordType: "Fruits")
         newFruit["name"] = name
         saveItem(record: newFruit)
-        
-        
     }
+    
     private func saveItem(record: CKRecord){
         CKContainer.default().publicCloudDatabase.save(record) { returnedRecord, returnedError in
             print("Record: \(returnedRecord)")
@@ -97,8 +100,11 @@ struct CloudKitCRUDIView: View {
                 header
                 textfield
                 Buttonadd
+                
                 List {
-                    Text("Hi")
+                    ForEach(viewmodel.fruits, id: \.self) {
+                        Text($0)
+                    }
                 } .listStyle(PlainListStyle())
                 
             } .padding()

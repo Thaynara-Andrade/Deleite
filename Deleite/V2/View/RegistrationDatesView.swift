@@ -9,17 +9,29 @@ import SwiftUI
 
 struct RegistrationDatesView: View {
     
+    @Binding var newScheduling: SchedulingModel
+    
     @Binding var openRegistrationSheet: Bool
     
     @Environment(\.dismiss) var dismiss
-    @State private var collectionDate = Date()
+    
+    // TODO: MUDAR esses didSets pra ser salvo no newScheduling via onDissapear, e ver ele salvando no cloudkit
+    @State private var collectionDate = Date() {
+        didSet {
+            newScheduling.collectDate = collectionDate
+        }
+    }
     let dateRange: ClosedRange<Date> = {
         let calendar = Calendar.current
         let endDate = Date.now.advanced(by: (60 * 60 * 24) * 14)
         return Date.now...endDate
     }()
     
-    @State private var milkPickupDate = Date()
+    @State private var milkPickupDate = Date() {
+        didSet {
+            newScheduling.milkPickupDate = milkPickupDate
+        }
+    }
     let dateRangemilk: ClosedRange<Date> = {
         let calendar = Calendar.current
         let startDate = Date.now.advanced(by: -(60 * 60 * 24) * 14)
@@ -52,10 +64,8 @@ struct RegistrationDatesView: View {
             .safeAreaInset(edge: .top, content: {
                 HStack{
                     Text("Qual a data de\nretirada do leite?")
-                        .font(
-                            Font.custom("SFProRounded-Semibold", size: 34)
-                            .weight(.bold)
-                        )
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                 }
                 .padding(.top, 1)
@@ -76,13 +86,13 @@ struct RegistrationDatesView: View {
                     .padding(.bottom, 140)
             })
             .safeAreaInset(edge: .bottom, content: {
-                ComponetButtonConfirmRegistreView()
+                ComponetButtonConfirmRegistreView(newScheduling: $newScheduling)
                     .padding(.bottom, 54)
             })
     }
 }
 
-#Preview {
-    RegistrationDatesView(openRegistrationSheet: .constant(true))
-    
-}
+//#Preview {
+//    RegistrationDatesView(openRegistrationSheet: .constant(true))
+//    
+//}
