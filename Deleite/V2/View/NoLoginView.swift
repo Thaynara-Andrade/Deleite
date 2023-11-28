@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct NoLoginView: View {
-    
+    @State private var showAlert = false
     var body: some View {
-       
+        
         NavigationView{
             
             ZStack(alignment: .topLeading) {
-                Color("Text-Color")
-                    .edgesIgnoringSafeArea(.all)
-                
+//                Color("Background-color")
+//                    .edgesIgnoringSafeArea(.all)
                 ScrollView {
                     VStack(alignment: .leading) {
                         HStack {
@@ -24,35 +23,60 @@ struct NoLoginView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 110)
-                                .padding(.leading, 20)
+                                .padding(.leading, 25)
                                 .padding(.bottom, 5)
                                 .padding(.top)
-                            
-                            Image(systemName: "info.circle")
-                                .font(.system(size: 25))
-                                .foregroundColor(.white)
-                                .padding(.leading, 200)
+                            Button(action: {
+                                self.showAlert = true
+                            }) {
+                                Image(systemName: "questionmark.circle")
+                                    .font(.system(size: 24))
+                                    .foregroundColor(Color("icon-color"))
+                                    .padding(.leading, 195)
+                                    .padding(.top, 15)
+                            } .alert(isPresented: $showAlert) {
+                                Alert(
+                                    title: Text("Ajuda"),
+                                    message: Text("Para obter suporte, entre \nem contato no botão abaixo"),
+                                    primaryButton: .default(Text("Falar com Suporte"), action: {
+                                        
+                                        if let url = URL(string: "https://christianpaulo.com.br/deleite/") {
+                                            UIApplication.shared.open(url)
+                                        }
+                                    }),
+                                    secondaryButton: .cancel(Text("Cancelar"))
+                                )
+                            }
                         }
-//                        
-//                        Text("Seja bem vinda!")
-//                            .padding(.leading, 20)
-//                            .foregroundColor(.white)
                         
                         VStack{
-                            ComponentNoLoginView(Logintitle: "Seja \nDoadora", Loginname: "Faça seu cadastro aqui", LoginImage: Image("peito1"))
+                            ComponentNoLoginView(Logintitle: "Seja \nDoadora", Loginname: "Faça seu cadastro aqui e \nreceba um código para login", LoginImage: Image("Peito"))
                                 .padding(.bottom, 30)
-                            
-                            Text("Já tem cadastro? Digite seu código aqui.")
-                                .padding(.leading, -100)
-                                .padding(.leading, 60)
-                                .foregroundColor(.white)
+                            HStack {
+                                
+                                Text("Caso já")
+                                    .padding(.leading, -100)
+                                    .padding(.leading, 75)
+                                    
+                                
+                                Text("possua cadastro,")
+                                    .bold()
+                                    .padding(.leading, -100)
+                                    .padding(.leading, 50)
+                                    
+                                
+                                Text("digite o código: ")
+                                    .padding(.leading, -100)
+                                    .padding(.leading, 95)
+                                    
+                            }
                             
                             ComponentTextField()
                             
                             Text("Agendamentos")
                                 .font(.system(size: 25))
-                                .fontWeight(.heavy)
-                                .foregroundColor(.white)
+                            
+                                .fontWeight(.bold)
                                 .padding(.leading, -160)
                                 .padding(.top)
                                 .padding(.bottom, 3)
@@ -73,6 +97,6 @@ struct NoLoginView: View {
         }
     }
 }
-        #Preview {
-            NoLoginView()
-        }
+#Preview {
+    NoLoginView()
+}

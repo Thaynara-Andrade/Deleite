@@ -10,6 +10,8 @@ import Mixpanel
 
 struct ComponentDonationView: View {
     
+    @State private var selectContainerOption: Bool = false
+    
     let Logintitle: String
     let Loginname: String
     let LoginImage: Image
@@ -21,10 +23,11 @@ struct ComponentDonationView: View {
     }
     
     var body: some View {
-        NavigationLink(destination: ContainerOptionView()){
-            ZStack {
+        Button {
+            selectContainerOption = true
+        } label: {
+            ZStack{
                 VStack(alignment: .leading) {
-                    
                     Text(Logintitle)
                         .font(
                             Font.custom("SFProRounded-Black", size: 30)
@@ -33,7 +36,9 @@ struct ComponentDonationView: View {
                         .padding(.top, -5)
                         .padding(.bottom, 1)
                         .padding(.leading, -75)
-                        .foregroundColor(Color("icon-color"))
+                        .foregroundColor(Color.white)
+
+
                     Text(Loginname)
                         .multilineTextAlignment(.leading)
                         .padding(.leading, -75)
@@ -41,21 +46,25 @@ struct ComponentDonationView: View {
                         .font(
                             Font.custom("SFProRounded-Medium", size: 17)
                         )
-                        .foregroundColor(Color("icon-color"))
+                        .foregroundColor(Color.white)
+
+
+                        
                     
                 } .frame(width: 356, height: 180)
-                    .background(Color("Rectangle-color"))
+                    .background(Color("Text-Color"))
                     .cornerRadius(23)
                 
                 LoginImage
                     .resizable()
                     .frame(width: 146, height: 110)
                     .padding(.leading, 210)
-                
+            }
+            .sheet(isPresented: $selectContainerOption, onDismiss: nil) {
+                ContainerOptionView(openRegistrationSheet: $selectContainerOption)
             }
         }
     }
-    
 }
 
 #Preview {

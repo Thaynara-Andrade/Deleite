@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct TutorialClearView: View {
+    
+    @State var openRegistrationSheet: Bool
+    
     var body: some View {
         
         ZStack {
             ScrollView{
                 Group{
                     Text("Esta é a forma correta da higienização antes da coleta do leite")
+                        .multilineTextAlignment(.leading)
                         .padding(.bottom, -10)
-                        .foregroundColor(.black)
-                    
                     VStack {
-                        ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Lave um frasco de vidro de boca larga com tampa de plástico (do tipo café solúvel), retirando o rótulo e o papel de dentro da tampa.kakakakakakkaakaka kkakaakakakkakaka", TutorialImage: Image("pote"))
+                        ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Lave um frasco de vidro com tampa de plástico (do tipo café solúvel), retirando o rótulo e o papel de dentro da tampa e enxague para a remoção de resíduos.", TutorialImage: Image("pote"))
                             .padding(.bottom, -20)
                         
                         ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "Após realizar o procedicmento, coloque o frasco e a tampa numa panela com água, cobrindo-os completamente. Ferva-os. Conte 15 minutos a partir do início da fervura.", TutorialImage: Image("Panela"))
@@ -27,12 +29,12 @@ struct TutorialClearView: View {
                         ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Agora é necessário , escorrer o frasco e a tampa com a abertura voltada para baixo, sobre um pano limpo, até secar. Feche o frasco sem tocar na parte interna da tampa. ", TutorialImage: Image("Mao"))
                             .padding(.bottom, -20)
                         
-                        NavigationLink(destination: TutorialMilkView()){
+                        NavigationLink(destination: TutorialMilkView(openRegistrationSheet: .random())){
                             ButtonNextView(ButtonNext: "Próximo tutorial")
                                 .padding(.top, 40)
                             
                         }
-                        ComponentBottomless(Buttomless: "Ir para agendamentos")
+                        ComponentBottomless(Buttomless: "Fazer agendamento", openRegistrationSheet: $openRegistrationSheet)
                         
                     }
                 }.navigationTitle("Higienização")
@@ -43,5 +45,5 @@ struct TutorialClearView: View {
 
 
 #Preview {
-    TutorialClearView()
+    TutorialClearView(openRegistrationSheet: .random())
 }

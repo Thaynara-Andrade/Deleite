@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Mixpanel
+import CloudKit
+import Nuvem
 
 enum Env {
     static let string: String = "dev"
@@ -26,12 +28,41 @@ struct DeleiteApp: App {
         Post(postImagem: "mama")
     ]
     
+    let database = CKContainer.default().publicCloudDatabase
+    
     var body: some Scene {
         WindowGroup {
-            NoLoginView()
-                .environmentObject(vm)
+           // CloudKitCRUDIView()
+           NoLoginView()
+               .environmentObject(vm)
                 .onAppear {
                     Mixpanel.mainInstance().track(event: "Entrou no App", properties: ["ambiente": Env.string])
+                    
+                    // MARK: Hello Nuvem
+//                    Task {
+//                        var newMother = Mother(name: "Joana", cep: "12345-123")
+//                        try await newMother.save(on: database)
+//                        
+//                        var new = Scheduling()
+//                        new.mother = newMother
+//                        new.collectDate = Date.now.advanced(by: 60*60*24*2)
+//                        new.milkDate = Date.now
+//                        new.regional = "Regional 4"
+//                        try await new.save(on: database)
+                        
+//                        let mothers: [Mother] = try await Mother
+//                            .query(on: database)
+//                            .all()
+//                        
+//                        for mother in mothers {
+//                            print(mother.id)
+//                            print(mother.creationDate!)
+//                            print(mother.modificationDate!)
+//                            print(mother.name)
+//                            print(mother.cep)
+//                            print("---")
+//                        }
+//                    }
                 }
         }
     }

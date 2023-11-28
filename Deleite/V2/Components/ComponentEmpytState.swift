@@ -21,14 +21,14 @@ struct ComponentEmpytState: View {
         VStack{
             LoginImage
                 .font(.system(size:60))
-                .foregroundColor(Color("Buttonvariable-Color"))
+                .foregroundColor(Color.gray.opacity(0.3))
             
             Text(Loginname)
                 .padding(.bottom, -5)
                 .font(
                     Font.custom("SFProRounded-Medium", size: 17)
                 )
-                .foregroundColor(Color("Buttonvariable-Color"))
+                .foregroundColor(Color.gray.opacity(0.5))
         }
     }
 }

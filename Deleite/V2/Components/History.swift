@@ -63,7 +63,6 @@ struct History: View {
                 
                 Text(historyTitle4)
                     .font(.title3)
-                    .foregroundColor(.black)
             }
             .padding(.leading, -140)
             .padding(.top, 110)

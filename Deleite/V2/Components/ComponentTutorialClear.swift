@@ -26,7 +26,7 @@ struct ComponentTutorialClear: View {
                     .foregroundColor(Color("Button-Yellow"))
                 TutorialImage
                     .resizable()
-                    .frame(width: 25, height: 35)
+                    .frame(width: 25, height: 30)
                     
             }.padding(.top,-45)
             
@@ -37,7 +37,6 @@ struct ComponentTutorialClear: View {
                         Font.custom("SFProRounded-Semibold", size: 23)
                     )
                     .multilineTextAlignment(.leading)
-                    .foregroundColor(.black)
                     .padding(.bottom, -2)
                 
                 Text(Tutorialdescription)
@@ -45,7 +44,7 @@ struct ComponentTutorialClear: View {
                         Font.custom("SFProRounded-Medium", size: 17)
                     )
                     .multilineTextAlignment(.leading)
-                    .foregroundColor(.black)
+                    
                     
                 
             }
