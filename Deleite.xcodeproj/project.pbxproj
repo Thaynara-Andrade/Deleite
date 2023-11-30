@@ -43,9 +43,14 @@
 		0D25C6C42AE7FDF500B7977C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D25C6A52AE7FDF500B7977C /* ContentView.swift */; };
 		0D25C6C52AE7FDF500B7977C /* Coleta.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D25C6A62AE7FDF500B7977C /* Coleta.json */; };
 		0D40B7182AE69F2A00BE5034 /* NoLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */; };
+		0DC5D7672B176B2000792088 /* CardRealizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5D7662B176B2000792088 /* CardRealizada.swift */; };
+		0DC5D7692B17749900792088 /* CardAgendadoPote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5D7682B17749900792088 /* CardAgendadoPote.swift */; };
+		0DC5D76B2B18C17F00792088 /* CardAgendadoLeite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5D76A2B18C17F00792088 /* CardAgendadoLeite.swift */; };
+		0DC5D76D2B18CD1100792088 /* CardAgendaPote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5D76C2B18CD1100792088 /* CardAgendaPote.swift */; };
+		0DC5D76F2B18CD2D00792088 /* CardAgendaLeite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5D76E2B18CD2D00792088 /* CardAgendaLeite.swift */; };
+		0DC5D7712B18D17E00792088 /* CardExpirado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5D7702B18D17E00792088 /* CardExpirado.swift */; };
 		0DDBAD0D2ABC776200C1EFFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */; };
-		0DE0AE282B02555F006D3D93 /* DeliveryHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */; };
-		0DE0AE2A2B0394AB006D3D93 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE292B0394AB006D3D93 /* History.swift */; };
+		0DE0AE2A2B0394AB006D3D93 /* CardNãoRealizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE292B0394AB006D3D93 /* CardNãoRealizada.swift */; };
 		490800482AFD09D100D2FF4E /* Nuvem in Frameworks */ = {isa = PBXBuildFile; productRef = 490800472AFD09D100D2FF4E /* Nuvem */; };
 		4908004A2AFD09F000D2FF4E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490800492AFD09F000D2FF4E /* Model.swift */; };
 		4908004D2AFD1A5400D2FF4E /* CloudKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */; };
@@ -151,9 +156,14 @@
 		0D25C6A52AE7FDF500B7977C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D25C6A62AE7FDF500B7977C /* Coleta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Coleta.json; sourceTree = "<group>"; };
 		0D40B7172AE69F2A00BE5034 /* NoLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginView.swift; sourceTree = "<group>"; };
+		0DC5D7662B176B2000792088 /* CardRealizada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRealizada.swift; sourceTree = "<group>"; };
+		0DC5D7682B17749900792088 /* CardAgendadoPote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAgendadoPote.swift; sourceTree = "<group>"; };
+		0DC5D76A2B18C17F00792088 /* CardAgendadoLeite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAgendadoLeite.swift; sourceTree = "<group>"; };
+		0DC5D76C2B18CD1100792088 /* CardAgendaPote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAgendaPote.swift; sourceTree = "<group>"; };
+		0DC5D76E2B18CD2D00792088 /* CardAgendaLeite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAgendaLeite.swift; sourceTree = "<group>"; };
+		0DC5D7702B18D17E00792088 /* CardExpirado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardExpirado.swift; sourceTree = "<group>"; };
 		0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryHistoryView.swift; sourceTree = "<group>"; };
-		0DE0AE292B0394AB006D3D93 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		0DE0AE292B0394AB006D3D93 /* CardNãoRealizada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardNãoRealizada.swift"; sourceTree = "<group>"; };
 		490800492AFD09F000D2FF4E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4908004B2AFD179D00D2FF4E /* Deleite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Deleite.entitlements; sourceTree = "<group>"; };
 		4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
@@ -253,7 +263,13 @@
 				B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */,
 				49874B932AFA9D970041DDA0 /* ComponentBottomless.swift */,
 				49874B8D2AFA76AB0041DDA0 /* ComponentTextView.swift */,
-				0DE0AE292B0394AB006D3D93 /* History.swift */,
+				0DC5D7662B176B2000792088 /* CardRealizada.swift */,
+				0DE0AE292B0394AB006D3D93 /* CardNãoRealizada.swift */,
+				0DC5D7702B18D17E00792088 /* CardExpirado.swift */,
+				0DC5D7682B17749900792088 /* CardAgendadoPote.swift */,
+				0DC5D76A2B18C17F00792088 /* CardAgendadoLeite.swift */,
+				0DC5D76C2B18CD1100792088 /* CardAgendaPote.swift */,
+				0DC5D76E2B18CD2D00792088 /* CardAgendaLeite.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -367,7 +383,6 @@
 				B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */,
 				B7135FE72B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift */,
 				B7135FE92B04366400FAE522 /* RecipientRegistrationView.swift */,
-				0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */,
 				49FAA6D02B06B31F0039B915 /* MyFileLottieView.swift */,
 				49FAA6D22B06B3550039B915 /* SucessLottieView.swift */,
 			);
@@ -598,16 +613,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC5D76D2B18CD1100792088 /* CardAgendaPote.swift in Sources */,
 				0D25C6AF2AE7FDF500B7977C /* HomeButton.swift in Sources */,
 				0D25C6AB2AE7FDF500B7977C /* HomeImage.swift in Sources */,
 				0D25C6AE2AE7FDF500B7977C /* MenuButtonArmazenamento.swift in Sources */,
 				B7135FEA2B04366400FAE522 /* RecipientRegistrationView.swift in Sources */,
 				B7135FE82B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift in Sources */,
 				0D25C6BF2AE7FDF500B7977C /* HomescreenView.swift in Sources */,
+				0DC5D7692B17749900792088 /* CardAgendadoPote.swift in Sources */,
 				49FAA6D12B06B31F0039B915 /* MyFileLottieView.swift in Sources */,
 				49BF71E82AF960CC00CEDBA9 /* ComponentTutorialClear.swift in Sources */,
 				0D25C6C22AE7FDF500B7977C /* QuestionsView.swift in Sources */,
+				0DC5D76B2B18C17F00792088 /* CardAgendadoLeite.swift in Sources */,
 				4908004A2AFD09F000D2FF4E /* Model.swift in Sources */,
+				0DC5D76F2B18CD2D00792088 /* CardAgendaLeite.swift in Sources */,
 				4945AE002AF92B5A00021E54 /* ButtonView.swift in Sources */,
 				0D25C6C12AE7FDF500B7977C /* SwiftUIView.swift in Sources */,
 				49BF71E62AF95EE000CEDBA9 /* TutorialClearView.swift in Sources */,
@@ -626,7 +645,7 @@
 				0D25C6B82AE7FDF500B7977C /* LocationsView.swift in Sources */,
 				49874B8C2AFA750E0041DDA0 /* ButtonNextView.swift in Sources */,
 				49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */,
-				0DE0AE2A2B0394AB006D3D93 /* History.swift in Sources */,
+				0DE0AE2A2B0394AB006D3D93 /* CardNãoRealizada.swift in Sources */,
 				49874B942AFA9D970041DDA0 /* ComponentBottomless.swift in Sources */,
 				0D25C6BD2AE7FDF500B7977C /* AlertView.swift in Sources */,
 				0D25C6AA2AE7FDF500B7977C /* MenuButtonHigieneView.swift in Sources */,
@@ -641,7 +660,6 @@
 				0D40B7182AE69F2A00BE5034 /* NoLoginView.swift in Sources */,
 				0D25C6AC2AE7FDF500B7977C /* ButtonBackView.swift in Sources */,
 				0D25C6C42AE7FDF500B7977C /* ContentView.swift in Sources */,
-				0DE0AE282B02555F006D3D93 /* DeliveryHistoryView.swift in Sources */,
 				0D25C6B52AE7FDF500B7977C /* SchedulingView.swift in Sources */,
 				0D25C6A82AE7FDF500B7977C /* MenuButtonColeta.swift in Sources */,
 				0D185AF62AEC3C6B00FF30AF /* ComponentNoLogin.swift in Sources */,
@@ -658,7 +676,9 @@
 				B7E3ACAA2AEC033C00ACBFD2 /* ComponentStepByStepView.swift in Sources */,
 				49518BFD2AE6A89D00BDFFA0 /* ComponentSectionView.swift in Sources */,
 				498CEEAD2B0BD9B50002D52D /* Agendamento.swift in Sources */,
+				0DC5D7712B18D17E00792088 /* CardExpirado.swift in Sources */,
 				B7ED18DE2AF91F7A00AE5333 /* RegisterDonationView.swift in Sources */,
+				0DC5D7672B176B2000792088 /* CardRealizada.swift in Sources */,
 				0D25C6A72AE7FDF500B7977C /* LocationsDataService.swift in Sources */,
 				B79ED6752AFBB79800BEAC1D /* RegistrationDatesView.swift in Sources */,
 				0D25C6BC2AE7FDF500B7977C /* WebView.swift in Sources */,
