@@ -30,8 +30,10 @@ struct RegisterDonationView: View {
                     Image("calendar-blue")
                         .frame(width: 105, height: 105)
                 }
-                .padding(.leading, 100)
-            ){}
+                .padding(.leading, 109)
+                
+            ){}.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+            
             
             Section(footer:
                 HStack(alignment: .center){
@@ -40,21 +42,20 @@ struct RegisterDonationView: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                 }
-                .padding(.leading, 50)
-            ){}
+                .padding(.leading, 59)
+            ){}.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
             
             Section() {
                 if motherName.isEmpty {
                     TextField("Nome", text: $name)
-                        .multilineTextAlignment(.leading)
+                       .multilineTextAlignment(.leading)
                 } else {
                     Text(motherName)
                         .multilineTextAlignment(.leading)
                 }
                 TextField("CEP", text: $cep)
                     .multilineTextAlignment(.leading)
-            }
-            .padding(.leading)
+            }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
             
             Section() {
                 Picker("Selecione a Regional", selection: $regional) {
@@ -63,7 +64,7 @@ struct RegisterDonationView: View {
                     Text("Regional 3").tag(2)
                     Text("Regional 4").tag(3)
                 }
-            }
+            }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
             
             //            Section {
             //                Button("Salvar") {
@@ -101,7 +102,7 @@ struct RegisterDonationView: View {
                     }
                 )
             }
-            ) {}
+            ) {}.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
         }
         .navigationTitle("Agendamento")
         .navigationBarTitleDisplayMode(.inline)
