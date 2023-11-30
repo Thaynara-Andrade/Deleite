@@ -32,7 +32,7 @@ struct RegisterDonationView: View {
                 }
                 .padding(.leading, 109)
                 
-            ){}.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+            ){}
             
             
             Section(footer:
@@ -43,7 +43,7 @@ struct RegisterDonationView: View {
                         .multilineTextAlignment(.center)
                 }
                 .padding(.leading, 59)
-            ){}.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+            ){}
             
             Section() {
                 if motherName.isEmpty {
@@ -55,7 +55,7 @@ struct RegisterDonationView: View {
                 }
                 TextField("CEP", text: $cep)
                     .multilineTextAlignment(.leading)
-            }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+            }
             
             Section() {
                 Picker("Selecione a Regional", selection: $regional) {
@@ -64,7 +64,7 @@ struct RegisterDonationView: View {
                     Text("Regional 3").tag(2)
                     Text("Regional 4").tag(3)
                 }
-            }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+            }
             
             //            Section {
             //                Button("Salvar") {
@@ -98,11 +98,12 @@ struct RegisterDonationView: View {
                         .frame(width: 326, alignment: .center)
                         .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                         .cornerRadius(15)
-                        .padding(.bottom, 62)
+                        
                     }
                 )
             }
-            ) {}.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+            .padding(.top, 100)
+            ) {}
         }
         .navigationTitle("Agendamento")
         .navigationBarTitleDisplayMode(.inline)
