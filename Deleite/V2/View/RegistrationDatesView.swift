@@ -42,7 +42,7 @@ struct RegistrationDatesView: View {
     
     var body: some View {
             Form{
-                Section {
+                Section(footer: Text("O leite humano pode ser armazenado no congelador por até 15 dias após a primeira coleta.")){
                     DatePicker("Data da Retirada do Leite",
                                selection: $milkPickupDate,
                                in: dateRangemilk,
@@ -77,13 +77,6 @@ struct RegistrationDatesView: View {
                 }
                 .padding(.top, 44)
                 .scaledToFit()
-            })
-            .safeAreaInset(edge: .bottom, content: {
-                Text("Texto explicando para a usuária o limite de dias que o leite pode ficar na geladeira.Texto explicando para a usuária.")
-                    .font(Font.custom("SF Pro", size: 13))
-                    .foregroundColor(Color.gray)
-                    .frame(width: 303, alignment: .topLeading)
-                    .padding(.bottom, 140)
             })
             .safeAreaInset(edge: .bottom, content: {
                 ComponetButtonConfirmRegistreView(newScheduling: $newScheduling)
