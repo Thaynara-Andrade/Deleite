@@ -30,8 +30,8 @@ class CloudKitCrud: ObservableObject {
     
     private func saveItem(record: CKRecord){
         CKContainer.default().publicCloudDatabase.save(record) { returnedRecord, returnedError in
-            print("Record: \(returnedRecord)")
-            print("Record: \(returnedError)")
+            print("Record: \(String(describing: returnedRecord))")
+            print("Record: \(String(describing: returnedError))")
             
             DispatchQueue.main.async {
                 self.text = ""

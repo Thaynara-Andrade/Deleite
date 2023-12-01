@@ -14,8 +14,6 @@ struct PostloginView: View {
     var body: some View {
         NavigationView{
             ZStack(alignment: .topLeading) {
-               Color("")
-                 .edgesIgnoringSafeArea(.all)
                 
                 Button(action: {
                     self.showAlert = true
@@ -45,18 +43,16 @@ struct PostloginView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 110)
-                        .padding(.leading, 20)
-                        .padding(.bottom, 5)
+                        .padding(.leading)
                         .padding(.top)
                     
                     Text("Seja bem vinda!")
-                        .padding(.leading, 20)
+                        .padding(.leading)
                         
                     HStack{
                         Text("Você está no")
-                            .padding(.leading, 20)
+                            .padding(.leading)
                             
-                        
                         Text("MEAC")
                             .fontWeight(.bold)
                             
@@ -64,23 +60,27 @@ struct PostloginView: View {
                         
                     }
                     
-                        VStack{
+                        VStack {
                                 ComponentDonationView(Logintitle: "Fazer \ndoação", Loginname: "Agende o recebimento \ndo seu potinho ou a melhor \ndata para fazer a coleta do leite", LoginImage: Image("Doar"))
-                            HStack{
+                            HStack (spacing: 73) {
                                 Text("Agendamentos")
                                     .font(.system(size: 25))
                                     .fontWeight(.bold)
+                                    .padding(.leading)
                                     .padding(.top)
-                                    .padding(.bottom, 10)
+                                    
+                                
                                 Text("Ver todos")
-                                    .padding(.leading, 80)
-                                    .padding(.bottom, -15)
+                                    .padding(.trailing)
+                                    .padding(.top)
                                     .foregroundColor(.gray)
-
-
+                                
                             }
-//                        ComponentSectionView(Logintitle: "Entrega do kit", LoginDate: "27 de fevereiro", LoginTurno: "Manhã", LoginImage: Image("pote"))
-                            SchedulingModelListView()
+                            
+                            VStack (alignment: .center){
+                                ModelScheduling()
+                                    
+                            }
                     }.padding()
                     
                 }
