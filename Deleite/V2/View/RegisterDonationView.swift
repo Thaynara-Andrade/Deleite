@@ -65,18 +65,7 @@ struct RegisterDonationView: View {
                     Text("Regional 4").tag(3)
                 }
             }
-            
-            //            Section {
-            //                Button("Salvar") {
-            //                    print("Thank you!")
-            //                }
-            //                .multilineTextAlignment(.center)
-            //                .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
-            //                .disabled(shownextPageRegister == false)
-            //            }
-            //            .frame(width: 326, height: 48 ,alignment: .center)
-            //            .background(Color(red: 0.95, green: 0.87, blue: 0.62))
-            //            .cornerRadius(15)
+        
             
             Section(footer:
                         HStack {
@@ -114,24 +103,7 @@ struct RegisterDonationView: View {
                 }
             }
         }
-        //        .safeAreaInset(edge: .top, content: {
-        //            HStack{
-        //                Text("Adicione seu \n endereço")
-        //                    .font(.largeTitle)
-        //                    .fontWeight(.bold)
-        //                    .multilineTextAlignment(.center)
-        //            }
-        //            .padding(.top, 12)
-        //        })
-        //        .safeAreaInset(edge: .top, content: {
-        //            HStack{
-        //                Image("calendar-blue")
-        //                    .frame(width: 105, height: 105)
-        //            }
-        //            .padding(.top, 44)
-        //            .scaledToFit()
-        //        })
-        
+    
         .onDisappear {
             if !name.isEmpty {
                 newScheduling.motherName = name
