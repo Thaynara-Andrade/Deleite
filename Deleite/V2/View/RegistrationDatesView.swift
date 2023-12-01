@@ -21,7 +21,7 @@ struct RegistrationDatesView: View {
         let endDate = Date.now.advanced(by: (60 * 60 * 24) * 14)
         return Date.now...endDate
     }()
-        
+    
     @AppStorage("milkPickupDate") var appStorageMilkPickupDate: String = ""
     
     let dateRangemilk: ClosedRange<Date> = {
@@ -39,8 +39,27 @@ struct RegistrationDatesView: View {
     @State var showRegistrationConfirmation: Bool = false
     
     var body: some View {
-        Form {
-            Section {
+        
+        Form{
+            Section(footer:
+                        HStack(alignment: .center){
+                Image("bottle-blue")
+                    .frame(width: 105, height: 105)
+            }
+                .padding(.leading, 121)
+                    
+            ){}
+            Section(footer:
+                        HStack(alignment: .center){
+                Text("Qual a data de \n retirada do leite?")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+            }
+                .padding(.leading, 31)
+            ){}
+            
+            Section(footer: Text("O leite humano pode ser armazenado no congelador por até 15 dias após a primeira coleta.")){
                 DatePicker("Data da Retirada do Leite",
                            selection: $newScheduling.milkPickupDate,
                            in: dateRangemilk,
@@ -48,7 +67,12 @@ struct RegistrationDatesView: View {
                 )
                 DatePicker("Data para Coleta", selection: $newScheduling.collectDate,
                            in: dateRange, displayedComponents: .date)
+                
             }
+            Section(footer:
+                        ComponetButtonConfirmRegistreView(newScheduling: $newScheduling)
+                .padding(.top, 125)
+            ){}
         }
         .navigationTitle("Agendamento")
         .navigationBarTitleDisplayMode(.inline)
@@ -57,43 +81,13 @@ struct RegistrationDatesView: View {
                 Button("Cancelar") {
                     openRegistrationSheet = false
                 }
+                .onAppear {}
+                
             }
-        }
-        .safeAreaInset(edge: .top, content: {
-            HStack{
-                Text("Qual a data de\nretirada do leite?")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-            }
-            .padding(.top, 1)
-        })
-        .safeAreaInset(edge: .top, content: {
-            HStack{
-                Image("bottle-blue")
-                    .frame(width: 105, height: 105)
-            }
-            .padding(.top, 44)
-            .scaledToFit()
-        })
-        .safeAreaInset(edge: .bottom, content: {
-            Text("Texto explicando para a usuária o limite de dias que o leite pode ficar na geladeira.Texto explicando para a usuária.")
-                .font(Font.custom("SF Pro", size: 13))
-                .foregroundColor(Color.gray)
-                .frame(width: 303, alignment: .topLeading)
-                .padding(.bottom, 140)
-        })
-        .safeAreaInset(edge: .bottom, content: {
-            ComponetButtonConfirmRegistreView(newScheduling: $newScheduling)
-                .padding(.bottom, 54)
-        })
-        .onAppear {
             
         }
     }
-    
 }
-
 //#Preview {
 //    RegistrationDatesView(openRegistrationSheet: .constant(true))
 //

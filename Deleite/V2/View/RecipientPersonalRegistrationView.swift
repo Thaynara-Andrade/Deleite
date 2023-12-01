@@ -23,13 +23,34 @@ struct RecipientPersonalRegistrationView: View {
     
     var body: some View {
         Form{
-            Section(header: Text("Informações Pessoais")) {
+            
+            Section(footer:
+                        HStack(alignment: .center){
+                Image("calendar-blue")
+                    .frame(width: 105, height: 105)
+            }
+                .padding(.leading, 109)
+                    
+            ){}
+            
+            
+            Section(footer:
+                        HStack(alignment: .center){
+                Text("Adicione seu \n endereço")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+            }
+                .padding(.leading, 59)
+            ){}
+            
+            Section() {
                 TextField("Nome", text: $name)
                     .multilineTextAlignment(.leading)
                 TextField("CEP", text: $cep)
                     .multilineTextAlignment(.leading)
             }
-            Section(header: Text("Regional")) {
+            Section() {
                 Picker("Selecione a Regional", selection: $RecipientRegional) {
                     Text("Regional 1").tag(regionOne)
                     Text("Regional 2").tag(regionTwo)
@@ -37,35 +58,9 @@ struct RecipientPersonalRegistrationView: View {
                     Text("Regional 4").tag(regionFour)
                 }
             }
-        }
-        .navigationTitle("Agendamento")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button("Cancelar") {
-                    openRegistrationSheet = false
-                }
-            }
-        }
-        .safeAreaInset(edge: .top, content: {
-            HStack{
-                Text("Adicione seu \n endereço")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-            }
-            .padding(.top, 12)
-        })
-        .safeAreaInset(edge: .top, content: {
-            HStack{
-                Image("calendar-blue")
-                    .frame(width: 105, height: 105)
-            }
-            .padding(.top, 44)
-            .scaledToFit()
-        })
-        .safeAreaInset(edge: .bottom, content: {
-            VStack {
+            
+            Section(footer:
+                        VStack {
                 NavigationLink(isActive: $SaveRecordWithoutContainer) {
                     RecipientRegistrationView(openRegistrationSheet: $openRegistrationSheet)
                 } label: {
@@ -85,8 +80,18 @@ struct RecipientPersonalRegistrationView: View {
                     .cornerRadius(15)
                 }
             }
-            .padding(.bottom, 62)
-        })
+                .padding(.top, 100)
+            ) {}
+        }
+        .navigationTitle("Agendamento")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button("Cancelar") {
+                    openRegistrationSheet = false
+                }
+            }
+        }
     }
     
 }

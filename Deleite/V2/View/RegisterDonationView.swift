@@ -14,10 +14,10 @@ struct RegisterDonationView: View {
     @Binding var openRegistrationSheet: Bool
     
     @Environment(\.dismiss) var dismiss
-//    @State var notifyMeAbout:Bool = false
-//    @State var NotifyMeAboutType:Bool = false
+    //    @State var notifyMeAbout:Bool = false
+    //    @State var NotifyMeAboutType:Bool = false
     @State var shownextPageRegister:Bool = true
-
+    
     @AppStorage("motherName") var motherName: String = ""
     @State var name:String = ""
     @AppStorage("cep") private var cep:String = ""
@@ -25,11 +25,30 @@ struct RegisterDonationView: View {
     
     var body: some View {
         Form{
+            Section(footer:
+                HStack(alignment: .center){
+                    Image("calendar-blue")
+                        .frame(width: 105, height: 105)
+                }
+                .padding(.leading, 109)
+                
+            ){}
             
-            Section(header: Text("Informações Pessoais")) {
+            
+            Section(footer:
+                HStack(alignment: .center){
+                    Text("Adicione seu \n endereço")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                }
+                .padding(.leading, 59)
+            ){}
+            
+            Section() {
                 if motherName.isEmpty {
                     TextField("Nome", text: $name)
-                        .multilineTextAlignment(.leading)
+                       .multilineTextAlignment(.leading)
                 } else {
                     Text(motherName)
                         .multilineTextAlignment(.leading)
@@ -37,9 +56,8 @@ struct RegisterDonationView: View {
                 TextField("CEP", text: $cep)
                     .multilineTextAlignment(.leading)
             }
-            .padding(.leading)
             
-            Section(header: Text("Regional")) {
+            Section() {
                 Picker("Selecione a Regional", selection: $regional) {
                     Text("Regional 1").tag(0)
                     Text("Regional 2").tag(1)
@@ -47,6 +65,34 @@ struct RegisterDonationView: View {
                     Text("Regional 4").tag(3)
                 }
             }
+        
+            
+            Section(footer:
+                        HStack {
+                //Spacer()
+                NavigationLink(
+                    destination: RegistrationDatesView(newScheduling: $newScheduling, openRegistrationSheet: $openRegistrationSheet),
+                    label: {
+                        HStack(alignment: .center, spacing: 10) {
+                            Text("Salvar")
+                                .font(
+                                    Font.custom("SF Pro Text", size: 17)
+                                        .weight(.semibold)
+                                )
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
+                        }
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 13)
+                        .frame(width: 326, alignment: .center)
+                        .background(Color(red: 0.95, green: 0.87, blue: 0.62))
+                        .cornerRadius(15)
+                        
+                    }
+                )
+            }
+            .padding(.top, 100)
+            ) {}
         }
         .navigationTitle("Agendamento")
         .navigationBarTitleDisplayMode(.inline)
@@ -57,44 +103,7 @@ struct RegisterDonationView: View {
                 }
             }
         }
-        .safeAreaInset(edge: .top, content: {
-            HStack{
-                Text("Adicione seu \n endereço")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-            }
-            .padding(.top, 12)
-        })
-        .safeAreaInset(edge: .top, content: {
-            HStack{
-                Image("calendar-blue")
-                    .frame(width: 105, height: 105)
-            }
-            .padding(.top, 44)
-            .scaledToFit()
-        })
-        .safeAreaInset(edge: .bottom, content: {
-            HStack{
-                NavigationLink(destination: RegistrationDatesView(newScheduling: $newScheduling, openRegistrationSheet: $openRegistrationSheet)) {
-                    HStack(alignment: .center, spacing: 10) {
-                        Text("Salvar")
-                            .font(
-                                Font.custom("SF Pro Text", size: 17)
-                                    .weight(.semibold)
-                            )
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
-                    }
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 13)
-                    .frame(width: 326, alignment: .center)
-                    .background(Color(red: 0.95, green: 0.87, blue: 0.62))
-                    .cornerRadius(15)
-                    }
-                
-            }.padding(.bottom, 62)
-        })
+    
         .onDisappear {
             if !name.isEmpty {
                 newScheduling.motherName = name
@@ -104,10 +113,8 @@ struct RegisterDonationView: View {
             newScheduling.cep = cep
             newScheduling.regional = "Regional \(regional+1)"
         }
-//        .background(Color(uiColor: .systemGray6))
     }
 }
-
 
 
 #Preview {
