@@ -30,8 +30,6 @@ struct ComponentBottomless: View {
                                 .inset(by: 1.5)
                                 .stroke(Color("Text-Color")))
             }
-//            .padding(.horizontal, 20)
-//            .padding(.vertical, 13)
             .frame(width: 326, alignment: .center)
             .cornerRadius(15)
             

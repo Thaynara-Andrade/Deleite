@@ -1,36 +1,35 @@
 //
-//  SchedulingModelListView.swift
+//  SchedulingListView.swift
 //  Deleite
 //
-//  Created by Thaynara da Silva Andrade on 20/11/23.
+//  Created by Thaynara da Silva Andrade on 29/11/23.
 //
 
-
-// MARK: Gabi fez explicando. Precisa modificar.
-
 import SwiftUI
-import CloudKit
 import Nuvem
+import CloudKit
 
-struct SchedulingModelListView: View {
+struct SchedulingListView: View {
+   @State var schedulings: [SchedulingModel] = []
     
-    @State var schedulings: [SchedulingModel] = []
-    
-    // TODO: Pegar do UserDefaults o nome completo da mãe
-    @AppStorage("motherName") var motherName: String = ""
-    
+    @AppStorage("collectDate") var collectDate: String = ""
     let database = CKContainer.default().publicCloudDatabase
     
-    // TODO: Mostrar todos os field dos records nessa List
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd 'de' MMMM 'de' yyyy"
+        return formatter
+    }()
+    var formattedCollectDate: String {
+        return dateFormatter.string(from: dateFormatter.date(from: collectDate) ?? Date())
+    }
     var body: some View {
         ZStack {
             Color(uiColor: .white)
             ScrollView {
                 ForEach(schedulings) { scheduling in
                     VStack(alignment: .leading) {
-                        Text(scheduling.motherName)
-                        Text(scheduling.cep)
-                        Text(scheduling.regional)
+                        Text(dateFormatter.string(from: scheduling.collectDate))
                         Button {
                             Task {
                                 do {
@@ -69,14 +68,14 @@ struct SchedulingModelListView: View {
         do {
             schedulings = try await SchedulingModel
                 .query(on: database)
-                .filter(\.$motherName == motherName)
+                .filter(\.$collectDate == dateFormatter.date(from: collectDate) ?? Date())
                 .all()
         } catch {
             print(error)
         }
     }
 }
-
+ 
 #Preview {
-    SchedulingModelListView()
+    SchedulingListView()
 }

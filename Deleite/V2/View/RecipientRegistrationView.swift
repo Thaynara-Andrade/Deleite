@@ -23,10 +23,56 @@ struct RecipientRegistrationView: View {
     
     var body: some View {
         Form{
+            Section(footer:
+                HStack(alignment: .center){
+                    Image("bottle-blue")
+                        .frame(width: 105, height: 105)
+                }
+                .padding(.leading, 121)
+                
+            ){}
+            Section(footer:
+                HStack(alignment: .center){
+                    Text("Qual a data de \n retirada do leite?")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                }
+                .padding(.leading, 31)
+            ){}
+        
             Section {
                 DatePicker("Data para coleta", selection: $collectionDateRecipient,
                            in: dateRange, displayedComponents: .date)
             }
+            
+            Section(footer:
+                        HStack(){
+                            Button {
+                                confirmAppointmentRecipient = true
+                            } label: {
+                                HStack(alignment: .center, spacing: 10) {
+                                    Text("Confirmar agendamento")
+                                        .font(
+                                            Font.custom("SF Pro Text", size: 17)
+                                                .weight(.semibold)
+                                        )
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
+                                }
+                                .padding(.horizontal, 20)
+                                .padding(.vertical, 13)
+                                .frame(width: 326, alignment: .center)
+                                .background(Color(red: 0.95, green: 0.87, blue: 0.62))
+                                .cornerRadius(15)
+                                .fullScreenCover(isPresented: $confirmAppointmentRecipient) {
+                                    SucessLottieView(openRegistrationSheet: $openRegistrationSheet)
+                                }
+                            }
+                        }
+                .padding(.top, 220)
+            ) {}
+            
             .navigationTitle("Agendamento")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -37,56 +83,6 @@ struct RecipientRegistrationView: View {
                 }
             }
         }
-        .safeAreaInset(edge: .top, content: {
-            HStack{
-                Text("Qual a data de\nretirada do leite?")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)                    .multilineTextAlignment(.center)
-            }
-            .padding(.top, 1)
-        })
-        .safeAreaInset(edge: .top, content: {
-            HStack{
-                Image("bottle-blue")
-                    .frame(width: 105, height: 105)
-            }
-            .padding(.top, 44)
-            .scaledToFit()
-        })
-        .safeAreaInset(edge: .bottom, content: {
-            Text("O leite humano pode ser armazenado no congelador por até 15 dias após a primeira coleta.")
-                .font(Font.custom("SF Pro", size: 13))
-                .foregroundColor(Color.gray)
-                .frame(width: 303, alignment: .topLeading)
-                .padding(.bottom, 230)
-                .padding(.leading, -30)
-        })
-        .safeAreaInset(edge: .bottom, content: {
-            HStack(){
-                Button {
-                    confirmAppointmentRecipient = true
-                } label: {
-                    HStack(alignment: .center, spacing: 10) {
-                        Text("Confirmar agendamento")
-                            .font(
-                                Font.custom("SF Pro Text", size: 17)
-                                    .weight(.semibold)
-                            )
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
-                    }
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 13)
-                    .frame(width: 326, alignment: .center)
-                    .background(Color(red: 0.95, green: 0.87, blue: 0.62))
-                    .cornerRadius(15)
-                    .fullScreenCover(isPresented: $confirmAppointmentRecipient) {
-                        SucessLottieView(openRegistrationSheet: $openRegistrationSheet)
-                    }
-                }
-            }
-            .padding(.bottom, 54)
-        })
     }
 }
 
