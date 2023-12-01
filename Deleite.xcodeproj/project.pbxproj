@@ -50,6 +50,9 @@
 		0DC5D76F2B18CD2D00792088 /* CardAgendaLeite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5D76E2B18CD2D00792088 /* CardAgendaLeite.swift */; };
 		0DC5D7712B18D17E00792088 /* CardExpirado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5D7702B18D17E00792088 /* CardExpirado.swift */; };
 		0DDBAD0D2ABC776200C1EFFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */; };
+		0DE0AE282B02555F006D3D93 /* DeliveryHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */; };
+		0DE0AE2A2B0394AB006D3D93 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE292B0394AB006D3D93 /* History.swift */; };
+		4901F1152B14D24700FD8DFF /* ModelScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901F1142B14D24700FD8DFF /* ModelScheduling.swift */; };
 		0DE0AE2A2B0394AB006D3D93 /* CardNãoRealizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE292B0394AB006D3D93 /* CardNãoRealizada.swift */; };
 		490800482AFD09D100D2FF4E /* Nuvem in Frameworks */ = {isa = PBXBuildFile; productRef = 490800472AFD09D100D2FF4E /* Nuvem */; };
 		4908004A2AFD09F000D2FF4E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490800492AFD09F000D2FF4E /* Model.swift */; };
@@ -84,6 +87,7 @@
 		498CEEAB2B0BA4920002D52D /* CloudKitUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CEEAA2B0BA4920002D52D /* CloudKitUtility.swift */; };
 		498CEEAD2B0BD9B50002D52D /* Agendamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CEEAC2B0BD9B50002D52D /* Agendamento.swift */; };
 		498CEEAF2B0BE58D0002D52D /* SchedulingModelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CEEAE2B0BE58D0002D52D /* SchedulingModelListView.swift */; };
+		49A8357E2B176AB900C793B0 /* SchedulingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8357D2B176AB900C793B0 /* SchedulingListView.swift */; };
 		49BE7BCD2AE2C33D00C7BE91 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 49BE7BCC2AE2C33D00C7BE91 /* Mixpanel */; };
 		49BE7BCF2AE2DBD200C7BE91 /* PostloginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */; };
 		49BF71E62AF95EE000CEDBA9 /* TutorialClearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */; };
@@ -163,6 +167,9 @@
 		0DC5D76E2B18CD2D00792088 /* CardAgendaLeite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAgendaLeite.swift; sourceTree = "<group>"; };
 		0DC5D7702B18D17E00792088 /* CardExpirado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardExpirado.swift; sourceTree = "<group>"; };
 		0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryHistoryView.swift; sourceTree = "<group>"; };
+		0DE0AE292B0394AB006D3D93 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		4901F1142B14D24700FD8DFF /* ModelScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelScheduling.swift; sourceTree = "<group>"; };
 		0DE0AE292B0394AB006D3D93 /* CardNãoRealizada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardNãoRealizada.swift"; sourceTree = "<group>"; };
 		490800492AFD09F000D2FF4E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4908004B2AFD179D00D2FF4E /* Deleite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Deleite.entitlements; sourceTree = "<group>"; };
@@ -200,6 +207,7 @@
 		498CEEAA2B0BA4920002D52D /* CloudKitUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUtility.swift; sourceTree = "<group>"; };
 		498CEEAC2B0BD9B50002D52D /* Agendamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agendamento.swift; sourceTree = "<group>"; };
 		498CEEAE2B0BE58D0002D52D /* SchedulingModelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingModelListView.swift; sourceTree = "<group>"; };
+		49A8357D2B176AB900C793B0 /* SchedulingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingListView.swift; sourceTree = "<group>"; };
 		49BE7BCE2AE2DBD200C7BE91 /* PostloginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostloginView.swift; sourceTree = "<group>"; };
 		49BF71E52AF95EE000CEDBA9 /* TutorialClearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialClearView.swift; sourceTree = "<group>"; };
 		49BF71E72AF960CC00CEDBA9 /* ComponentTutorialClear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTutorialClear.swift; sourceTree = "<group>"; };
@@ -378,13 +386,15 @@
 				49874B912AFA996A0041DDA0 /* TutorialStorageView.swift */,
 				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
 				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
-				498CEEAE2B0BE58D0002D52D /* SchedulingModelListView.swift */,
-				B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */,
 				B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */,
 				B7135FE72B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift */,
 				B7135FE92B04366400FAE522 /* RecipientRegistrationView.swift */,
 				49FAA6D02B06B31F0039B915 /* MyFileLottieView.swift */,
 				49FAA6D22B06B3550039B915 /* SucessLottieView.swift */,
+				B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */,
+				4901F1142B14D24700FD8DFF /* ModelScheduling.swift */,
+				498CEEAE2B0BE58D0002D52D /* SchedulingModelListView.swift */,
+				49A8357D2B176AB900C793B0 /* SchedulingListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -629,6 +639,7 @@
 				0DC5D76F2B18CD2D00792088 /* CardAgendaLeite.swift in Sources */,
 				4945AE002AF92B5A00021E54 /* ButtonView.swift in Sources */,
 				0D25C6C12AE7FDF500B7977C /* SwiftUIView.swift in Sources */,
+				49A8357E2B176AB900C793B0 /* SchedulingListView.swift in Sources */,
 				49BF71E62AF95EE000CEDBA9 /* TutorialClearView.swift in Sources */,
 				0D25C6B42AE7FDF500B7977C /* TutorialStorege.swift in Sources */,
 				B79ED6772AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift in Sources */,
@@ -641,6 +652,7 @@
 				0D25C6B72AE7FDF500B7977C /* ConstructionLottieView.swift in Sources */,
 				B74338B52B02C12C00D47F4B /* ComponentButoonScheduling.swift in Sources */,
 				0D25C6BE2AE7FDF500B7977C /* LocationPreviewView.swift in Sources */,
+				4901F1152B14D24700FD8DFF /* ModelScheduling.swift in Sources */,
 				0D25C6B92AE7FDF500B7977C /* LocationDetailView.swift in Sources */,
 				0D25C6B82AE7FDF500B7977C /* LocationsView.swift in Sources */,
 				49874B8C2AFA750E0041DDA0 /* ButtonNextView.swift in Sources */,

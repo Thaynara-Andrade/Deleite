@@ -24,9 +24,9 @@ struct SchedulingModel: CKModel {
     @CKField("regional")
     var regional: String
     
-    @CKField("milkPickupDate")
+    @CKField("milkPickupDate", default: Date())
     var milkPickupDate: Date
     
-    @CKField("collectDate")
+    @CKField("collectDate", default: Date())
     var collectDate: Date // data de retirada do leite pela mae
 }

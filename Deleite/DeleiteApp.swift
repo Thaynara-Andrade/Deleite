@@ -32,7 +32,6 @@ struct DeleiteApp: App {
     
     var body: some Scene {
         WindowGroup {
-           // CloudKitCRUDIView()
            NoLoginView()
                .environmentObject(vm)
                 .onAppear {

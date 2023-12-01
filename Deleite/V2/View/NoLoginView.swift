@@ -14,8 +14,6 @@ struct NoLoginView: View {
         NavigationView{
             
             ZStack(alignment: .topLeading) {
-//                Color("Background-color")
-//                    .edgesIgnoringSafeArea(.all)
                 ScrollView {
                     VStack(alignment: .leading) {
                         HStack {
@@ -73,19 +71,19 @@ struct NoLoginView: View {
                             
                             ComponentTextField()
                             
-                            Text("Agendamentos")
-                                .font(.system(size: 25))
-                            
-                                .fontWeight(.bold)
-                                .padding(.leading, -160)
-                                .padding(.top)
-                                .padding(.bottom, 3)
-                            
-                            VStack (alignment: .center){
-                                ComponentEmpytState(LoginImage:
-                                                        Image(systemName: "calendar.badge.plus"), Loginname: "Ainda não há agendamentos")
-                                .frame(height: 180)
-                            }
+//                            Text("Agendamentos")
+//                                .font(.system(size: 25))
+//                            
+//                                .fontWeight(.bold)
+//                                .padding(.leading, -160)
+//                                .padding(.top)
+//                                .padding(.bottom, 3)
+//                            
+//                            VStack (alignment: .center){
+//                                ComponentEmpytState(LoginImage:
+//                                                        Image(systemName: "calendar.badge.plus"), Loginname: "Ainda não há agendamentos")
+//                                .frame(height: 180)
+//                            }
                         }
                         .padding()
                     }

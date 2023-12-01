@@ -12,6 +12,7 @@ import CloudKit
 struct ComponetButtonConfirmRegistreView: View {
     
     @AppStorage("motherName") var motherName: String = ""
+    @AppStorage("motherDate") var motherDate: String = ""
     
     @Binding var newScheduling: SchedulingModel
     
@@ -21,10 +22,11 @@ struct ComponetButtonConfirmRegistreView: View {
         HStack(){
             Button {
                 Task {
+                    newScheduling.milkPickupDate = newScheduling.milkPickupDate // FIX NUVEM BUG
                     try await newScheduling.save(on: CKContainer.default().publicCloudDatabase)
                     motherName = newScheduling.motherName
+                    confirmAppointment = true
                 }
-                confirmAppointment = true
             } label: {
                 HStack(alignment: .center, spacing: 10) {
                     Text("Confirmar agendamento")
