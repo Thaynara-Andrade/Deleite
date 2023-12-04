@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardNãoRealizada: View {
+struct CardNaoRealizada: View {
     
     let cardTitle: String
     let cardTitle2: String
@@ -66,5 +66,5 @@ struct CardNãoRealizada: View {
 }
 
 #Preview {
-    CardNãoRealizada(cardTitle: "Coleta de Leite Materno", cardTitle2 :"21 de abril de 2023", cardTitle3: "Manhã", cardTitle4: "Status: Não Realizada", cardImage: Image(systemName: "x.circle.fill"))
+    CardNaoRealizada(cardTitle: "Coleta de Leite Materno", cardTitle2 :"21 de abril de 2023", cardTitle3: "Manhã", cardTitle4: "Status: Não Realizada", cardImage: Image(systemName: "x.circle.fill"))
 }
