@@ -28,7 +28,9 @@ struct RegisterDonationView: View {
             Section(footer:
                 HStack(alignment: .center){
                     Image("calendar-blue")
-                        .frame(width: 105, height: 105)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 105, height: 105)
                 }
                 .padding(.leading, 109)
                 
@@ -40,6 +42,7 @@ struct RegisterDonationView: View {
                     Text("Adicione seu \n endereço")
                         .font(.largeTitle)
                         .fontWeight(.bold)
+                        .foregroundColor(Color.black)
                         .multilineTextAlignment(.center)
                 }
                 .padding(.leading, 59)
@@ -58,7 +61,7 @@ struct RegisterDonationView: View {
             }
             
             Section() {
-                Picker("Selecione a Regional", selection: $regional) {
+                Picker("Selecione Regional", selection: $regional) {
                     Text("Regional 1").tag(0)
                     Text("Regional 2").tag(1)
                     Text("Regional 3").tag(2)
@@ -74,7 +77,7 @@ struct RegisterDonationView: View {
                     destination: RegistrationDatesView(newScheduling: $newScheduling, openRegistrationSheet: $openRegistrationSheet),
                     label: {
                         HStack(alignment: .center, spacing: 10) {
-                            Text("Salvar")
+                            Text("Seguinte")
                                 .font(
                                     Font.custom("SF Pro Text", size: 17)
                                         .weight(.semibold)

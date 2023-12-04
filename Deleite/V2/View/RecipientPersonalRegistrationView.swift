@@ -27,6 +27,8 @@ struct RecipientPersonalRegistrationView: View {
             Section(footer:
                         HStack(alignment: .center){
                 Image("calendar-blue")
+                    .resizable()
+                    .scaledToFit()
                     .frame(width: 105, height: 105)
             }
                 .padding(.leading, 109)
@@ -39,6 +41,7 @@ struct RecipientPersonalRegistrationView: View {
                 Text("Adicione seu \n endereço")
                     .font(.largeTitle)
                     .fontWeight(.bold)
+                    .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
             }
                 .padding(.leading, 59)

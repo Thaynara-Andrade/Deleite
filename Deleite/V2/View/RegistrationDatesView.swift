@@ -44,9 +44,11 @@ struct RegistrationDatesView: View {
             Section(footer:
                         HStack(alignment: .center){
                 Image("bottle-blue")
+                    .resizable()
+                    .scaledToFill()
                     .frame(width: 105, height: 105)
             }
-                .padding(.leading, 121)
+                .padding(.leading, 101)
                     
             ){}
             Section(footer:
@@ -54,9 +56,10 @@ struct RegistrationDatesView: View {
                 Text("Qual a data de \n retirada do leite?")
                     .font(.largeTitle)
                     .fontWeight(.bold)
+                    .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
             }
-                .padding(.leading, 31)
+                .padding(.leading, 11)
             ){}
             
             Section(footer: Text("O leite humano pode ser armazenado no congelador por até 15 dias após a primeira coleta.")){
@@ -86,6 +89,7 @@ struct RegistrationDatesView: View {
             }
             
         }
+        .border(Color.red)
     }
 }
 //#Preview {

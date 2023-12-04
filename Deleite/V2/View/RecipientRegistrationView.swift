@@ -26,7 +26,9 @@ struct RecipientRegistrationView: View {
             Section(footer:
                 HStack(alignment: .center){
                     Image("bottle-blue")
-                        .frame(width: 105, height: 105)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 105, height: 105)
                 }
                 .padding(.leading, 121)
                 
@@ -36,6 +38,7 @@ struct RecipientRegistrationView: View {
                     Text("Qual a data de \n retirada do leite?")
                         .font(.largeTitle)
                         .fontWeight(.bold)
+                        .foregroundColor(Color.black)
                         .multilineTextAlignment(.center)
                 }
                 .padding(.leading, 31)
