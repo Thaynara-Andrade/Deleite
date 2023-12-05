@@ -76,7 +76,8 @@ struct RegistrationDatesView: View {
             }
             Section(footer:
                         ComponetButtonConfirmRegistreView(newScheduling: $newScheduling)
-                .padding(.top, 125)
+                .padding(.top, 150)
+                .border(Color.red)
             ){}
         }
         .navigationTitle("Agendamento")

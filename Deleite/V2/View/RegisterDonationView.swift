@@ -78,10 +78,7 @@ struct RegisterDonationView: View {
                     label: {
                         HStack(alignment: .center, spacing: 10) {
                             Text("Seguinte")
-                                .font(
-                                    Font.custom("SF Pro Text", size: 17)
-                                        .weight(.semibold)
-                                )
+                                .fontWeight(.semibold)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
                         }
@@ -94,7 +91,8 @@ struct RegisterDonationView: View {
                     }
                 )
             }
-            .padding(.top, 125)
+                .padding(.top, 105)
+                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
             ) {}
         }
         .navigationTitle("Agendamento")
