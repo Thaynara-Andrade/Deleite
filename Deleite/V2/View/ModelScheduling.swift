@@ -15,6 +15,7 @@ struct ModelScheduling: View {
     @State var schedulings: [SchedulingModel] = []
     
     @AppStorage("collectDate") var collectDate: String = ""
+    @AppStorage("motherName") var motherName: String = ""
     
     let database = CKContainer.default().publicCloudDatabase
     @State private var exibirSheet = false
@@ -110,6 +111,7 @@ struct ModelScheduling: View {
         do {
             schedulings = try await SchedulingModel
                 .query(on: database)
+                .filter(\.$motherName == motherName)
                 .all()
         } catch {
             print(error)
