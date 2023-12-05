@@ -50,10 +50,8 @@
 		0DC5D76F2B18CD2D00792088 /* CardAgendaLeite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5D76E2B18CD2D00792088 /* CardAgendaLeite.swift */; };
 		0DC5D7712B18D17E00792088 /* CardExpirado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5D7702B18D17E00792088 /* CardExpirado.swift */; };
 		0DDBAD0D2ABC776200C1EFFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */; };
-		0DE0AE282B02555F006D3D93 /* DeliveryHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */; };
-		0DE0AE2A2B0394AB006D3D93 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE292B0394AB006D3D93 /* History.swift */; };
-		4901F1152B14D24700FD8DFF /* ModelScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901F1142B14D24700FD8DFF /* ModelScheduling.swift */; };
 		0DE0AE2A2B0394AB006D3D93 /* CardNaoRealizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE292B0394AB006D3D93 /* CardNaoRealizada.swift */; };
+		4901F1152B14D24700FD8DFF /* ModelScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901F1142B14D24700FD8DFF /* ModelScheduling.swift */; };
 		490800482AFD09D100D2FF4E /* Nuvem in Frameworks */ = {isa = PBXBuildFile; productRef = 490800472AFD09D100D2FF4E /* Nuvem */; };
 		4908004A2AFD09F000D2FF4E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490800492AFD09F000D2FF4E /* Model.swift */; };
 		4908004D2AFD1A5400D2FF4E /* CloudKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */; };
@@ -167,10 +165,8 @@
 		0DC5D76E2B18CD2D00792088 /* CardAgendaLeite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAgendaLeite.swift; sourceTree = "<group>"; };
 		0DC5D7702B18D17E00792088 /* CardExpirado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardExpirado.swift; sourceTree = "<group>"; };
 		0DDBAD0C2ABC776200C1EFFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryHistoryView.swift; sourceTree = "<group>"; };
-		0DE0AE292B0394AB006D3D93 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		0DE0AE292B0394AB006D3D93 /* CardNaoRealizada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNaoRealizada.swift; sourceTree = "<group>"; };
 		4901F1142B14D24700FD8DFF /* ModelScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelScheduling.swift; sourceTree = "<group>"; };
-		0DE0AE292B0394AB006D3D93 /* CardNaoRealizada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardNaoRealizada.swift"; sourceTree = "<group>"; };
 		490800492AFD09F000D2FF4E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4908004B2AFD179D00D2FF4E /* Deleite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Deleite.entitlements; sourceTree = "<group>"; };
 		4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
@@ -385,12 +381,12 @@
 				49874B8F2AFA87300041DDA0 /* TutorialMilkView.swift */,
 				49874B912AFA996A0041DDA0 /* TutorialStorageView.swift */,
 				B757D5002AE855BF003F984D /* ContainerOptionView.swift */,
-				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
 				B79ED6762AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift */,
 				B7135FE72B042F1F00FAE522 /* RecipientPersonalRegistrationView.swift */,
 				B7135FE92B04366400FAE522 /* RecipientRegistrationView.swift */,
 				49FAA6D02B06B31F0039B915 /* MyFileLottieView.swift */,
 				49FAA6D22B06B3550039B915 /* SucessLottieView.swift */,
+				B7ED18DD2AF91F7A00AE5333 /* RegisterDonationView.swift */,
 				B79ED6742AFBB79800BEAC1D /* RegistrationDatesView.swift */,
 				4901F1142B14D24700FD8DFF /* ModelScheduling.swift */,
 				498CEEAE2B0BE58D0002D52D /* SchedulingModelListView.swift */,

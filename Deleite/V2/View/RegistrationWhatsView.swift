@@ -19,7 +19,7 @@ struct RegistrationWhatsView: View {
                 
                 Text("Êba! Você veio!")
                     .font(Font.custom("SFProRounded-Black", size: 35))
-                    .foregroundStyle(Color("icon-color"))
+                    .foregroundColor(Color("icon-color"))
                     .padding(.leading, -80)
                     .padding(.top, 50)
                     .padding(.bottom, -10)

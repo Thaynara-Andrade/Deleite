@@ -54,7 +54,7 @@ struct CardRealizada: View {
                     
                     Text(cardTitle4)
                         .font(.system(size: 17))
-                        .foregroundStyle(Color.gray)
+                        .foregroundColor(Color.gray)
                 }
             }
             .padding(.leading, 19)

@@ -11,7 +11,7 @@ import Lottie
 struct MyFileLottieView: UIViewRepresentable {
     let animationName: String
     var loopMode: LottieLoopMode = .playOnce
-    var contentMode: UIView.ContentMode = .scaleAspectFit // Add this line
+    var contentMode: UIView.ContentMode = .scaleAspectFit
 
     func makeUIView(context: Context) -> UIView {
         let view = UIView()

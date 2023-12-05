@@ -39,7 +39,7 @@ struct TutorialMilkView: View {
                         ComponentBottomless(Buttomless: "Fazer agendamento", openRegistrationSheet: $openRegistrationSheet)
                         
                     }
-                }.navigationTitle("Retirada de Leite")
+                }.navigationTitle("Tutorial")
             }
         }
     }
