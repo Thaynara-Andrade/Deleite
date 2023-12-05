@@ -31,8 +31,7 @@ struct RecipientPersonalRegistrationView: View {
                     .scaledToFit()
                     .frame(width: 105, height: 105)
             }
-                .padding(.leading, 109)
-                    
+            .padding(.leading, 104)
             ){}
             
             
@@ -44,7 +43,7 @@ struct RecipientPersonalRegistrationView: View {
                     .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
             }
-                .padding(.leading, 59)
+            .padding(.leading,44)
             ){}
             
             Section() {
@@ -68,11 +67,8 @@ struct RecipientPersonalRegistrationView: View {
                     RecipientRegistrationView(openRegistrationSheet: $openRegistrationSheet)
                 } label: {
                     HStack(alignment: .center, spacing: 10) {
-                        Text("Salvar")
-                            .font(
-                                Font.custom("SF Pro Text", size: 17)
-                                    .weight(.semibold)
-                            )
+                        Text("Seguinte")
+                            .fontWeight(.semibold)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
                     }

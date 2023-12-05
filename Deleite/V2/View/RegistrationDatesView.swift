@@ -77,7 +77,6 @@ struct RegistrationDatesView: View {
             Section(footer:
                         ComponetButtonConfirmRegistreView(newScheduling: $newScheduling)
                 .padding(.top, 150)
-                .border(Color.red)
             ){}
         }
         .navigationTitle("Agendamento")
@@ -92,7 +91,6 @@ struct RegistrationDatesView: View {
             }
             
         }
-        .border(Color.red)
     }
 }
 //#Preview {

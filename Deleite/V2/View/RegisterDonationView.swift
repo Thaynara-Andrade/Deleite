@@ -87,12 +87,10 @@ struct RegisterDonationView: View {
                         .frame(width: 326, alignment: .center)
                         .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                         .cornerRadius(15)
-                        
                     }
                 )
             }
                 .padding(.top, 105)
-                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
             ) {}
         }
         .navigationTitle("Agendamento")
