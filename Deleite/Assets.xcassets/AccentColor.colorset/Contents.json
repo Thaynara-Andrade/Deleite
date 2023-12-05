@@ -2,6 +2,10 @@
   "colors" : [
     {
       "color" : {
+<<<<<<< HEAD
+        "platform" : "universal",
+        "reference" : "systemBlueColor"
+=======
         "platform" : "ios",
         "reference" : "darkTextColor"
       },
@@ -30,6 +34,7 @@
       "color" : {
         "platform" : "osx",
         "reference" : "textColor"
+>>>>>>> Develop
       },
       "idiom" : "universal"
     },
