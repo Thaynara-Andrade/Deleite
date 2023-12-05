@@ -53,7 +53,7 @@
 		0DE0AE282B02555F006D3D93 /* DeliveryHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */; };
 		0DE0AE2A2B0394AB006D3D93 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE292B0394AB006D3D93 /* History.swift */; };
 		4901F1152B14D24700FD8DFF /* ModelScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901F1142B14D24700FD8DFF /* ModelScheduling.swift */; };
-		0DE0AE2A2B0394AB006D3D93 /* CardNãoRealizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE292B0394AB006D3D93 /* CardNãoRealizada.swift */; };
+		0DE0AE2A2B0394AB006D3D93 /* CardNaoRealizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0AE292B0394AB006D3D93 /* CardNaoRealizada.swift */; };
 		490800482AFD09D100D2FF4E /* Nuvem in Frameworks */ = {isa = PBXBuildFile; productRef = 490800472AFD09D100D2FF4E /* Nuvem */; };
 		4908004A2AFD09F000D2FF4E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490800492AFD09F000D2FF4E /* Model.swift */; };
 		4908004D2AFD1A5400D2FF4E /* CloudKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */; };
@@ -170,7 +170,7 @@
 		0DE0AE272B02555F006D3D93 /* DeliveryHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryHistoryView.swift; sourceTree = "<group>"; };
 		0DE0AE292B0394AB006D3D93 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		4901F1142B14D24700FD8DFF /* ModelScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelScheduling.swift; sourceTree = "<group>"; };
-		0DE0AE292B0394AB006D3D93 /* CardNãoRealizada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardNãoRealizada.swift"; sourceTree = "<group>"; };
+		0DE0AE292B0394AB006D3D93 /* CardNaoRealizada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardNaoRealizada.swift"; sourceTree = "<group>"; };
 		490800492AFD09F000D2FF4E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4908004B2AFD179D00D2FF4E /* Deleite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Deleite.entitlements; sourceTree = "<group>"; };
 		4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 				49874B932AFA9D970041DDA0 /* ComponentBottomless.swift */,
 				49874B8D2AFA76AB0041DDA0 /* ComponentTextView.swift */,
 				0DC5D7662B176B2000792088 /* CardRealizada.swift */,
-				0DE0AE292B0394AB006D3D93 /* CardNãoRealizada.swift */,
+				0DE0AE292B0394AB006D3D93 /* CardNaoRealizada.swift */,
 				0DC5D7702B18D17E00792088 /* CardExpirado.swift */,
 				0DC5D7682B17749900792088 /* CardAgendadoPote.swift */,
 				0DC5D76A2B18C17F00792088 /* CardAgendadoLeite.swift */,
@@ -657,7 +657,7 @@
 				0D25C6B82AE7FDF500B7977C /* LocationsView.swift in Sources */,
 				49874B8C2AFA750E0041DDA0 /* ButtonNextView.swift in Sources */,
 				49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */,
-				0DE0AE2A2B0394AB006D3D93 /* CardNãoRealizada.swift in Sources */,
+				0DE0AE2A2B0394AB006D3D93 /* CardNaoRealizada.swift in Sources */,
 				49874B942AFA9D970041DDA0 /* ComponentBottomless.swift in Sources */,
 				0D25C6BD2AE7FDF500B7977C /* AlertView.swift in Sources */,
 				0D25C6AA2AE7FDF500B7977C /* MenuButtonHigieneView.swift in Sources */,
