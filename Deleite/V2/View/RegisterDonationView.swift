@@ -59,11 +59,16 @@ struct RegisterDonationView: View {
                 }
                 TextField("CEP", text: $cep)
                     .multilineTextAlignment(.leading)
-                    .keyboardType(.numberPad) // Define o teclado para aceitar apenas números
+                    .keyboardType(.numberPad)
                     .onReceive(Just(cep)) { newNumber in
                         let filtered = newNumber.filter { "0123456789".contains($0) }
                         if filtered != newNumber {
                             self.cep = filtered
+                        }
+                        
+                        // Ensure that cep contains only 6 digits
+                        if cep.count > 6 {
+                            cep = String(cep.prefix(6))
                         }
                     }
             }
