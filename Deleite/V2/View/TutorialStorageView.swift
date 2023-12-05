@@ -34,7 +34,7 @@ struct TutorialStorageView: View {
                     }
                 }
             }
-        }.navigationTitle("Armazenamento")
+        }.navigationTitle("Tutorial")
     }
 }
 

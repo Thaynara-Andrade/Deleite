@@ -61,7 +61,6 @@ struct ContainerOptionView: View {
                         } label: {
                             Text("Não tenho frasco")
                                 .font(.headline)
-                                .fontWeight(.bold)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color("icon-color"))
                         }

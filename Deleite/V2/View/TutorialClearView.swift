@@ -16,6 +16,10 @@ struct TutorialClearView: View {
         ZStack {
             ScrollView{
                 Group{
+                    Text("Higienização")
+                        .font(Font.custom("SFProRounded-Black", size: 35))
+                        .foregroundColor(Color("Variable-color"))
+                    
                     Text("Esta é a forma correta da higienização antes da coleta do leite")
                         .multilineTextAlignment(.leading)
                         .padding(.bottom, -10)
@@ -26,7 +30,7 @@ struct TutorialClearView: View {
                         ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "Após realizar o procedicmento, coloque o frasco e a tampa numa panela com água, cobrindo-os completamente. Ferva-os. Conte 15 minutos a partir do início da fervura.", TutorialImage: Image("Panela"))
                             .padding(.bottom, -20)
                         
-                        ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Agora é necessário , escorrer o frasco e a tampa com a abertura voltada para baixo, sobre um pano limpo, até secar. Feche o frasco sem tocar na parte interna da tampa. ", TutorialImage: Image("Mao"))
+                        ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Agora é necessário, escorrer o frasco e a tampa com a abertura voltada para baixo, sobre um pano limpo, até secar. Feche o frasco sem tocar na parte interna da tampa.", TutorialImage: Image("Mao"))
                             .padding(.bottom, -20)
                         
                         NavigationLink(destination: TutorialMilkView(openRegistrationSheet: .random())){
@@ -37,7 +41,7 @@ struct TutorialClearView: View {
                         ComponentBottomless(Buttomless: "Fazer agendamento", openRegistrationSheet: $openRegistrationSheet)
                         
                     }
-                }.navigationTitle("Higienização")
+                }.navigationTitle("Tutorial")
             }
         }
     }

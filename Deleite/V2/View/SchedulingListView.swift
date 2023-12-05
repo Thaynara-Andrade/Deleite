@@ -44,7 +44,7 @@ struct SchedulingListView: View {
                                 .frame(maxWidth: .infinity)
                                 .padding()
                                 .background(.blue)
-                                .foregroundStyle(.white)
+                                .foregroundColor(.white)
                         }
                     }
                     .padding()
