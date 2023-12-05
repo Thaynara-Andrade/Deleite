@@ -95,11 +95,13 @@ struct ModelScheduling: View {
                 
             }
             
-            ComponentEmpytState(
-                LoginImage: Image(systemName: "calendar.badge.plus"),
-                Loginname: "Ainda não há agendamentos"
-            )
-            .opacity(schedulings.isEmpty ? 1 : 0)
+                Spacer(minLength: 130)
+                ComponentEmpytState(
+                    LoginImage: Image(systemName: "calendar.badge.plus"),
+                    Loginname: "Sem agendamentos\nativos no momento"
+                )
+                .opacity(schedulings.isEmpty ? 1 : 0)
+            
         }
         .task {
             await loadSchedulings()
