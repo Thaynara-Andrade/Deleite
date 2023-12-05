@@ -32,7 +32,7 @@ struct RegisterDonationView: View {
                     .scaledToFit()
                     .frame(width: 105, height: 105)
                 }
-                .padding(.leading, 109)
+                .padding(.leading, 104)
                 
             ){}
             
@@ -45,7 +45,7 @@ struct RegisterDonationView: View {
                         .foregroundColor(Color.black)
                         .multilineTextAlignment(.center)
                 }
-                .padding(.leading, 59)
+                .padding(.leading, 54)
             ){}
             
             Section() {
@@ -94,7 +94,7 @@ struct RegisterDonationView: View {
                     }
                 )
             }
-            .padding(.top, 100)
+            .padding(.top, 125)
             ) {}
         }
         .navigationTitle("Agendamento")
