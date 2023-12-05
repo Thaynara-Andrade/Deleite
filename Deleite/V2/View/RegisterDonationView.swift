@@ -20,11 +20,12 @@ struct RegisterDonationView: View {
     @State var shownextPageRegister:Bool = true
     
     @AppStorage("motherName") var motherName: String = ""
-    @State var name:String = ""
+    @State var name: String = ""
     @AppStorage("cep") private var cep:String = ""
     @AppStorage("regional") var regional: Int = 0
     
     var body: some View {
+        
         Form{
             Section(footer:
                 HStack(alignment: .center){
@@ -51,7 +52,7 @@ struct RegisterDonationView: View {
             
             Section() {
                 if motherName.isEmpty {
-                    TextField("Nome", text: $name)
+                    TextField("Nome completo", text: $name)
                        .multilineTextAlignment(.leading)
                 } else {
                     Text(motherName)
@@ -85,7 +86,7 @@ struct RegisterDonationView: View {
             
             Section(footer:
                         HStack {
-                //Spacer()
+                
                 NavigationLink(
                     destination: RegistrationDatesView(newScheduling: $newScheduling, openRegistrationSheet: $openRegistrationSheet),
                     label: {
