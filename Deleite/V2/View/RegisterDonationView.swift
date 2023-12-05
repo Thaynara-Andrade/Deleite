@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct RegisterDonationView: View {
     
@@ -58,6 +59,13 @@ struct RegisterDonationView: View {
                 }
                 TextField("CEP", text: $cep)
                     .multilineTextAlignment(.leading)
+                    .keyboardType(.numberPad) // Define o teclado para aceitar apenas números
+                    .onReceive(Just(cep)) { newNumber in
+                        let filtered = newNumber.filter { "0123456789".contains($0) }
+                        if filtered != newNumber {
+                            self.cep = filtered
+                        }
+                    }
             }
             
             Section() {

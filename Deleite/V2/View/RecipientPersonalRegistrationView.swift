@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct RecipientPersonalRegistrationView: View {
     
@@ -31,7 +32,7 @@ struct RecipientPersonalRegistrationView: View {
                     .scaledToFit()
                     .frame(width: 105, height: 105)
             }
-            .padding(.leading, 104)
+                .padding(.leading, 104)
             ){}
             
             
@@ -43,7 +44,7 @@ struct RecipientPersonalRegistrationView: View {
                     .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
             }
-            .padding(.leading,44)
+                .padding(.leading,44)
             ){}
             
             Section() {
@@ -51,6 +52,13 @@ struct RecipientPersonalRegistrationView: View {
                     .multilineTextAlignment(.leading)
                 TextField("CEP", text: $cep)
                     .multilineTextAlignment(.leading)
+                    .keyboardType(.numberPad) // Define o teclado para aceitar apenas números
+                    .onReceive(Just(cep)) { newNumber in
+                        let filtered = newNumber.filter { "0123456789".contains($0) }
+                        if filtered != newNumber {
+                            self.cep = filtered
+                        }
+                    }
             }
             Section() {
                 Picker("Selecione a Regional", selection: $RecipientRegional) {
