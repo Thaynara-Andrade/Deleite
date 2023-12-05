@@ -1,40 +1,10 @@
+
 {
   "colors" : [
     {
       "color" : {
-<<<<<<< HEAD
         "platform" : "universal",
         "reference" : "systemBlueColor"
-=======
-        "platform" : "ios",
-        "reference" : "darkTextColor"
-      },
-      "idiom" : "universal"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "light"
-        }
-      ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "darkTextColor"
-      },
-      "idiom" : "universal"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "platform" : "osx",
-        "reference" : "textColor"
->>>>>>> Develop
       },
       "idiom" : "universal"
     },
