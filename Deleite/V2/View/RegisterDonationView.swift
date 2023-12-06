@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct RegisterDonationView: View {
     
@@ -29,9 +30,11 @@ struct RegisterDonationView: View {
             Section(footer:
                 HStack(alignment: .center){
                     Image("calendar-blue")
-                        .frame(width: 105, height: 105)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 105, height: 105)
                 }
-                .padding(.leading, 109)
+                .padding(.leading, 104)
                 
             ){}
             
@@ -41,9 +44,10 @@ struct RegisterDonationView: View {
                     Text("Adicione seu \n endereço")
                         .font(.largeTitle)
                         .fontWeight(.bold)
+                        .foregroundColor(Color.black)
                         .multilineTextAlignment(.center)
                 }
-                .padding(.leading, 59)
+                .padding(.leading, 54)
             ){}
             
             Section() {
@@ -56,10 +60,22 @@ struct RegisterDonationView: View {
                 }
                 TextField("CEP", text: $cep)
                     .multilineTextAlignment(.leading)
+                    .keyboardType(.numberPad)
+                    .onReceive(Just(cep)) { newNumber in
+                        let filtered = newNumber.filter { "0123456789".contains($0) }
+                        if filtered != newNumber {
+                            self.cep = filtered
+                        }
+                        
+                        // Ensure that cep contains only 6 digits
+                        if cep.count > 8 {
+                            cep = String(cep.prefix(8))
+                        }
+                    }
             }
             
             Section() {
-                Picker("Selecione a Regional", selection: $regional) {
+                Picker("Selecione Regional", selection: $regional) {
                     Text("Regional 1").tag(0)
                     Text("Regional 2").tag(1)
                     Text("Regional 3").tag(2)
@@ -75,11 +91,8 @@ struct RegisterDonationView: View {
                     destination: RegistrationDatesView(newScheduling: $newScheduling, openRegistrationSheet: $openRegistrationSheet),
                     label: {
                         HStack(alignment: .center, spacing: 10) {
-                            Text("Salvar")
-                                .font(
-                                    Font.custom("SF Pro Text", size: 17)
-                                        .weight(.semibold)
-                                )
+                            Text("Seguinte")
+                                .fontWeight(.semibold)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
                         }
@@ -88,11 +101,10 @@ struct RegisterDonationView: View {
                         .frame(width: 326, alignment: .center)
                         .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                         .cornerRadius(15)
-                        
                     }
                 )
             }
-            .padding(.top, 100)
+                .padding(.top, 105)
             ) {}
         }
         .navigationTitle("Agendamento")
