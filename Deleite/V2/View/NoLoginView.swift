@@ -35,7 +35,7 @@ struct NoLoginView: View {
                             } .alert(isPresented: $showAlert) {
                                 Alert(
                                     title: Text("Ajuda"),
-                                    message: Text("Para obter suporte, entre \nem contato no botão abaixo"),
+                                    message: Text("Precisando de ajuda? \nClique no botão abaixo \ne fale com a gente."),
                                     primaryButton: .default(Text("Falar com Suporte"), action: {
                                         
                                         if let url = URL(string: "https://christianpaulo.com.br/deleite/") {
