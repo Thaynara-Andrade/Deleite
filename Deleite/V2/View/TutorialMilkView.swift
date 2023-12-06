@@ -14,26 +14,31 @@ struct TutorialMilkView: View {
     var body: some View {
         
         ZStack {
-
+            
             ScrollView{
                 Group{
-                    Text("Esta é a forma correta para realizar a retirada de leite:")
-                        .multilineTextAlignment(.leading)
-                        .padding(.bottom, -10)
+                    VStack(alignment: .leading, spacing: 10){
+                        Text("Retirada de leite")
+                            .font(Font.custom("SFProRounded-Heavy", size: 35))
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(Color("icon-color"))
+                        
+                        Text("Esta é a forma correta para realizar a retirada de leite:")
+                            .multilineTextAlignment(.leading)
+                        
+                    } .padding(.bottom, -10)
                     
-                    VStack {
-                        ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Escolha um local tranquilo e limpo. Prepare uma mesa com um pano limpo e evite conversas durante a retirada do leite, proporcionando assim um ambiente sereno e concentrado.", TutorialImage: Image("Sofa"))
-                            .padding(.bottom, -20)
+                    VStack (spacing: -40){
+                        ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription:"Escolha um ambiente tranquilo e limpo. Prepare uma mesa com um pano limpo. Evite conversar durante a retirada do leite.", TutorialImage: Image("Sofa"))
                         
-                        ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "Massageie a mama em círculos, do mamilo para o corpo, com o polegar acima da auréola, promovendo uma técnica suave para estimular a produção de leite de forma confortável.", TutorialImage: Image("peito1"))
-                            .padding(.bottom, -20)
+                        ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "Massageie a mama em círculos, do mamilo para o corpo, com o polegar acima da auréola, para estimular a produção de leite.", TutorialImage: Image("peito1"))
                         
-                        ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Extraia o leite com a mão em C. Descarte os primeiros jatos  e despeje no frasco o leite retirado. Após isso feche, rotule com os dados e congele no freezer.", TutorialImage: Image("Rotulo"))
-                            .padding(.bottom, -20)
+                        ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Extraia o leite com a mão em C. Descarte os primeiros jatos. Despeje no frasco, feche, rotule com nome e data, e congele.", TutorialImage: Image("Rotulo"))
                         
+                    }
+                    VStack{
                         NavigationLink(destination: TutorialStorageView(openRegistrationSheet: openRegistrationSheet)){
                             ButtonNextView(ButtonNext: "Próximo tutorial")
-                                .padding(.top, 40)
                             
                         }
                         ComponentBottomless(Buttomless: "Fazer agendamento", openRegistrationSheet: $openRegistrationSheet)
