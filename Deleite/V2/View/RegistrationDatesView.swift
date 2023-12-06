@@ -44,23 +44,28 @@ struct RegistrationDatesView: View {
             Section(footer:
                         HStack(alignment: .center){
                 Image("bottle-blue")
-                    .frame(width: 105, height: 105)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 77, height: 102)
             }
-                .padding(.leading, 121)
+            .padding(.leading, 116)
                     
             ){}
             Section(footer:
                         HStack(alignment: .center){
-                Text("Qual a data de \n retirada do leite?")
+                Text("Escolha a data de \ncada ação")
                     .font(.largeTitle)
                     .fontWeight(.bold)
+                    .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
             }
-                .padding(.leading, 31)
+            .padding(.leading, 17)
+                    
             ){}
             
-            Section(footer: Text("O leite humano pode ser armazenado no congelador por até 15 dias após a primeira coleta.")){
-                DatePicker("Data da Retirada do Leite",
+            Section(footer:Text("O leite humano pode ser armazenado no congelador por até 15 dias após a primeira coleta.")
+                .multilineTextAlignment(.leading)){
+                DatePicker("Retirada do Leite",
                            selection: $newScheduling.milkPickupDate,
                            in: dateRangemilk,
                            displayedComponents: .date
@@ -71,7 +76,7 @@ struct RegistrationDatesView: View {
             }
             Section(footer:
                         ComponetButtonConfirmRegistreView(newScheduling: $newScheduling)
-                .padding(.top, 125)
+                .padding(.top, 150)
             ){}
         }
         .navigationTitle("Agendamento")

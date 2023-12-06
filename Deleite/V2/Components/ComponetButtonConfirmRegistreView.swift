@@ -30,10 +30,7 @@ struct ComponetButtonConfirmRegistreView: View {
             } label: {
                 HStack(alignment: .center, spacing: 10) {
                     Text("Confirmar agendamento")
-                        .font(
-                        Font.custom("SF Pro Text", size: 17)
-                        .weight(.semibold)
-                        )
+                        .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
                 }

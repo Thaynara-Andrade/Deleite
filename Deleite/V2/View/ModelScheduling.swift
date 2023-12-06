@@ -4,6 +4,7 @@
 //
 //  Created by Thaynara da Silva Andrade on 27/11/23.
 //
+
 import SwiftUI
 import CloudKit
 import Nuvem
@@ -14,6 +15,7 @@ struct ModelScheduling: View {
     @State var schedulings: [SchedulingModel] = []
     
     @AppStorage("collectDate") var collectDate: String = ""
+    @AppStorage("motherName") var motherName: String = ""
     
     let database = CKContainer.default().publicCloudDatabase
     @State private var exibirSheet = false
@@ -26,80 +28,80 @@ struct ModelScheduling: View {
     }()
     
     var body: some View {
-        ZStack {
-            
-            ScrollView {
+        VStack {
+            ForEach(schedulings) { scheduling in
+                VStack(alignment: .leading) {
+                    
+                    Text("Coleta de Leite Materno")
+                        .font(
+                            Font.custom("SFProRounded-Black", size: 22)
+                        )
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(Color("Text-Color"))
+                        .padding(1)
+                    
+                    
+                    
+                    Text(dateFormatter.string(from: scheduling.collectDate))
+                        .font(.system(size: 17))
+                        .padding(1)
+                    
+                    
+                    HStack{
+                        Image(systemName: "clock.fill")
+                        Text ("Solicitação Agendada")
+                            .font(.system(size: 17))
+                    }
+                    
+                    Button(action: {
+                        exibirSheet.toggle()
+                    }) {
+                        Text("Como foi a coleta?")
+                            .fontWeight(.semibold)
+                            .frame(width: 280, height: 14)
+                            .padding()
+                            .background(Color("Button-Yellow"))
+                            .foregroundColor(Color("Text-Color"))
+                            .cornerRadius(15)
+                    }
+                    .padding(.top)
+                    
+                } .padding()
                 
-                ForEach(schedulings) { scheduling in
-                    
-                    VStack(alignment: .leading) {
+                    .sheet(isPresented: $exibirSheet) {
+                        VStack {
+                            Text("A coleta foi entregue?")
+                                .fontWeight(.semibold)
+                                .padding()
                             
-                            Text("Coleta de Leite Materno")
-                                .font(
-                                    Font.custom("SFProRounded-Black", size: 22)
-                                )
-                                .multilineTextAlignment(.leading)
-                                .foregroundColor(Color("Text-Color"))
-                            Spacer(minLength: 5)
-                            
-                            Text(dateFormatter.string(from: scheduling.collectDate))
-                                .font(.system(size: 17))
-                            
-                            Spacer(minLength: 5)
-                            HStack{
-                                Image(systemName: "clock.fill")
-                                Text ("Solicitação Agendada")
-                                    .font(.system(size: 17))
-                            }
-                            
-                            Button(action: {
-                                exibirSheet.toggle()
-                            }) {
-                                Text("Como foi a coleta?")
-                                    .fontWeight(.semibold)
-                                    .frame(width: 280, height: 14)
-                                    .padding()
-                                    .background(Color("Button-Yellow"))
-                                    .foregroundColor(Color("Text-Color"))
-                                    .cornerRadius(15)
-                            }
-                            .padding(.top)
-                            
-                        }
-                    
-                        .sheet(isPresented: $exibirSheet) {
-                            VStack {
-                                Text("A coleta foi entregue?")
-                                    .fontWeight(.semibold)
-                                    .padding()
-                                
-                                HStack {
-                                    Button("Sim"){
-                                        respostaEntrega = true
-                                        exibirSheet.toggle()
-                                        // Faça o que precisa ser feito quando a resposta for "Sim"
-                                    }
-                                    .padding()
-                                    
-                                    Button("Não") {
-                                        respostaEntrega = false
-                                        exibirSheet.toggle()
-                                        // Faça o que precisa ser feito quando a resposta for "Não"
-                                    }
-                                    .padding()
+                            HStack {
+                                Button("Sim"){
+                                    respostaEntrega = true
+                                    exibirSheet.toggle()
+                                    // Ação quando a resposta for "Sim"
                                 }
+                                .padding()
+                                
+                                Button("Não") {
+                                    respostaEntrega = false
+                                    exibirSheet.toggle()
+                                    // Ação quando quando a resposta for "Não"
+                                }
+                                .padding()
                             }
                         }
-                        .padding()
-                        Divider()
-
-                }
+                    }
+                Divider()
+                
             }
-            ComponentEmpytState(
-                LoginImage: Image(systemName: "calendar.badge.plus"),
-                Loginname: "Ainda não há agendamentos"
-            )
-            .opacity(schedulings.isEmpty ? 1 : 0)
+            
+                Spacer(minLength: 130)
+                ComponentEmpytState(
+                    LoginImage: Image(systemName: "calendar.badge.plus"),
+                    Loginname: "Sem agendamentos\nativos no momento"
+                )
+                .opacity(schedulings.isEmpty ? 1 : 0)
+            
         }
         .task {
             await loadSchedulings()
@@ -111,6 +113,7 @@ struct ModelScheduling: View {
         do {
             schedulings = try await SchedulingModel
                 .query(on: database)
+                .filter(\.$motherName == motherName)
                 .all()
         } catch {
             print(error)

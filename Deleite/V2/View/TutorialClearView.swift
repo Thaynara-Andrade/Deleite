@@ -16,28 +16,38 @@ struct TutorialClearView: View {
         ZStack {
             ScrollView{
                 Group{
-                    Text("Esta é a forma correta da higienização antes da coleta do leite")
-                        .multilineTextAlignment(.leading)
-                        .padding(.bottom, -10)
+                    VStack (alignment: .leading){
+                        Text("Higienização")
+                            .font(Font.custom("SFProRounded-Heavy", size: 35))
+                            .multilineTextAlignment(.leading)
+                            .padding(.leading)
+                            .foregroundColor(Color("icon-color"))
+                        
+                        Text("Esta é a forma correta da higienização antes da coleta do leite")
+                            .multilineTextAlignment(.leading)
+                            .padding(.leading)
+                    }
+                    
+    
                     VStack {
                         ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Lave um frasco de vidro com tampa de plástico (do tipo café solúvel), retirando o rótulo e o papel de dentro da tampa e enxague para a remoção de resíduos.", TutorialImage: Image("pote"))
                             .padding(.bottom, -20)
                         
-                        ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "Após realizar o procedicmento, coloque o frasco e a tampa numa panela com água, cobrindo-os completamente. Ferva-os. Conte 15 minutos a partir do início da fervura.", TutorialImage: Image("Panela"))
+                        ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "Coloque os itens em uma panela com água, cobrindo-os completamente. Ferva-os. 15 min após a fervura, desligue  o fogo e retire o pote e a tampa da água.", TutorialImage: Image("Panela"))
                             .padding(.bottom, -20)
                         
-                        ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Agora é necessário , escorrer o frasco e a tampa com a abertura voltada para baixo, sobre um pano limpo, até secar. Feche o frasco sem tocar na parte interna da tampa. ", TutorialImage: Image("Mao"))
+                        ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Espere esfriar, seque, feche o frasco sem tocar na parte interna da tampa. Agora cubra os cabelos e use máscara para retirar o leite.", TutorialImage: Image("Mao"))
                             .padding(.bottom, -20)
                         
                         NavigationLink(destination: TutorialMilkView(openRegistrationSheet: .random())){
                             ButtonNextView(ButtonNext: "Próximo tutorial")
-                                .padding(.top, 40)
+                                .padding(.top, 30)
                             
                         }
                         ComponentBottomless(Buttomless: "Fazer agendamento", openRegistrationSheet: $openRegistrationSheet)
                         
                     }
-                }.navigationTitle("Higienização")
+                }.navigationTitle("Tutorial")
             }
         }
     }

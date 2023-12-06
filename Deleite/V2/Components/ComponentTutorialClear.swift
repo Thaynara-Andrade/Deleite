@@ -48,7 +48,8 @@ struct ComponentTutorialClear: View {
                     
                 
             }
-        } .frame(width: 360, height: 160)
+        } .frame(width: 360, height: 180)
+            .frame(maxWidth: .infinity)
             .background(.clear)
     }
 }
