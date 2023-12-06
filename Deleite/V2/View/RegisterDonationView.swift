@@ -11,6 +11,7 @@ import Combine
 struct RegisterDonationView: View {
     
     @State private var newScheduling = SchedulingModel()
+    @State private var SaveRecordWithoutContainer:Bool = false
     
     @Binding var openRegistrationSheet: Bool
     
@@ -23,37 +24,38 @@ struct RegisterDonationView: View {
     @State var name: String = ""
     @AppStorage("cep") private var cep:String = ""
     @AppStorage("regional") var regional: Int = 0
+    @State private var showAlert = false
     
     var body: some View {
         
         Form{
             Section(footer:
-                HStack(alignment: .center){
-                    Image("calendar-blue")
+                        HStack(alignment: .center){
+                Image("calendar-blue")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 105, height: 105)
-                }
+            }
                 .padding(.leading, 104)
-                
+                    
             ){}
             
             
             Section(footer:
-                HStack(alignment: .center){
-                    Text("Adicione seu \n endereço")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.black)
-                        .multilineTextAlignment(.center)
-                }
+                        HStack(alignment: .center){
+                Text("Adicione seu \n endereço")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+            }
                 .padding(.leading, 54)
             ){}
             
             Section() {
                 if motherName.isEmpty {
                     TextField("Nome completo", text: $name)
-                       .multilineTextAlignment(.leading)
+                        .multilineTextAlignment(.leading)
                 } else {
                     Text(motherName)
                         .multilineTextAlignment(.leading)
@@ -82,28 +84,34 @@ struct RegisterDonationView: View {
                     Text("Regional 4").tag(3)
                 }
             }
-        
             
-            Section(footer:
-                        HStack {
-                
-                NavigationLink(
-                    destination: RegistrationDatesView(newScheduling: $newScheduling, openRegistrationSheet: $openRegistrationSheet),
-                    label: {
-                        HStack(alignment: .center, spacing: 10) {
-                            Text("Seguinte")
-                                .fontWeight(.semibold)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
-                        }
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 13)
-                        .frame(width: 326, alignment: .center)
-                        .background(Color(red: 0.95, green: 0.87, blue: 0.62))
-                        .cornerRadius(15)
+            Section(footer: VStack {
+                NavigationLink(destination: RegistrationDatesView(newScheduling: $newScheduling, openRegistrationSheet: $openRegistrationSheet), isActive: $SaveRecordWithoutContainer) {
+                    EmptyView()
+                }
+                Button(action: {
+                    if isValidForm() {
+                        SaveRecordWithoutContainer = true
+                    } else {
+                        showAlert = true
                     }
-                )
+                }) {
+                    HStack(alignment: .center, spacing: 10) {
+                        Text("Seguinte")
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color(red: 0.1, green: 0.48, blue: 0.55))
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 13)
+                    .frame(width: 326, alignment: .center)
+                    .background(Color(red: 0.95, green: 0.87, blue: 0.62))
+                    .cornerRadius(15)
+                }
             }
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("Campos de nome, CEP ou regional não preenchidos"), message: Text("Por favor, preencha todos os campos obrigatórios."), dismissButton: .default(Text("OK")))
+                }
                 .padding(.top, 105)
             ) {}
         }
@@ -116,20 +124,14 @@ struct RegisterDonationView: View {
                 }
             }
         }
-    
-        .onDisappear {
-            if !name.isEmpty {
-                newScheduling.motherName = name
-            } else {
-                newScheduling.motherName = motherName
-            }
-            newScheduling.cep = cep
-            newScheduling.regional = "Regional \(regional+1)"
-        }
+    }
+    private func isValidForm() -> Bool {
+        // Adicione lógica de validação aqui
+        return (!name.isEmpty || !motherName.isEmpty) && !cep.isEmpty
+        
     }
 }
 
-
 #Preview {
-        RegisterDonationView(openRegistrationSheet: .constant(true))
+    RegisterDonationView(openRegistrationSheet: .constant(true))
 }

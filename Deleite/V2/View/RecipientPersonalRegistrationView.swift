@@ -21,6 +21,8 @@ struct RecipientPersonalRegistrationView: View {
     @State private var regionTwo:Bool = false
     @State private var regionThree:Bool = false
     @State private var regionFour:Bool = false
+    @State private var showAlert: Bool = false
+    
     
     var body: some View {
         Form{
@@ -73,12 +75,18 @@ struct RecipientPersonalRegistrationView: View {
                     Text("Regional 4").tag(regionFour)
                 }
             }
+            Section(footer: VStack {
+                NavigationLink(destination: RecipientRegistrationView(openRegistrationSheet: $openRegistrationSheet), isActive: $SaveRecordWithoutContainer) {
+                    EmptyView()
+                }
             
-            Section(footer:
-                        VStack {
-                NavigationLink(isActive: $SaveRecordWithoutContainer) {
-                    RecipientRegistrationView(openRegistrationSheet: $openRegistrationSheet)
-                } label: {
+                Button(action: {
+                    if isValidForm() {
+                        SaveRecordWithoutContainer = true
+                    } else {
+                        showAlert = true
+                    }
+                }) {
                     HStack(alignment: .center, spacing: 10) {
                         Text("Seguinte")
                             .fontWeight(.semibold)
@@ -92,6 +100,9 @@ struct RecipientPersonalRegistrationView: View {
                     .cornerRadius(15)
                 }
             }
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("Campos de nome, CEP ou regional não preenchidos"), message: Text("Por favor, preencha todos os campos obrigatórios."), dismissButton: .default(Text("OK")))
+                }
                 .padding(.top, 100)
             ) {}
         }
@@ -105,7 +116,10 @@ struct RecipientPersonalRegistrationView: View {
             }
         }
     }
-    
+    private func isValidForm() -> Bool {
+        // Adicione lógica de validação aqui
+        return !name.isEmpty && !cep.isEmpty
+    }
 }
 
 #Preview {
