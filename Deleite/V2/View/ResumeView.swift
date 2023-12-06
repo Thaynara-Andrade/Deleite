@@ -136,6 +136,8 @@ struct ResumeView: View {
         .navigationBarTitleDisplayMode(.large)
     }
 }
+
+
 #Preview {
     ResumeView(openRegistrationSheet: .constant(true))
 }
