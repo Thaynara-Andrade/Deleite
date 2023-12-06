@@ -48,47 +48,34 @@ struct NoLoginView: View {
                         }
                         
                         VStack{
-                            ComponentNoLoginView(Logintitle: "Seja \nDoadora", Loginname: "Faça seu cadastro aqui e \nreceba um código para login", LoginImage: Image("Peito"))
+                            ComponentNoLoginView(Logintitle: "Seja \nDoadora", Loginname: "Cadastre-se e receba seu \ncódigo de acesso", LoginImage: Image("Peito"))
                                 .padding(.bottom, 30)
                             HStack {
                                 
                                 Text("Caso já")
                                     .padding(.leading, -100)
                                     .padding(.leading, 75)
-                                    
                                 
-                                Text("possua cadastro,")
+                                
+                                Text("possua seu código,")
                                     .bold()
                                     .padding(.leading, -100)
                                     .padding(.leading, 50)
-                                    
                                 
-                                Text("digite o código: ")
+                                
+                                Text("digite abaixo: ")
                                     .padding(.leading, -100)
                                     .padding(.leading, 95)
-                                    
+                                
                             }
                             
                             ComponentTextField()
+                                .padding(.top, -180)
                             
-//                            Text("Agendamentos")
-//                                .font(.system(size: 25))
-//                            
-//                                .fontWeight(.bold)
-//                                .padding(.leading, -160)
-//                                .padding(.top)
-//                                .padding(.bottom, 3)
-//                            
-//                            VStack (alignment: .center){
-//                                ComponentEmpytState(LoginImage:
-//                                                        Image(systemName: "calendar.badge.plus"), Loginname: "Ainda não há agendamentos")
-//                                .frame(height: 180)
-//                            }
                         }
                         .padding()
                     }
                 }
-                
             }
             
             .ignoresSafeArea(.keyboard, edges: .bottom)
