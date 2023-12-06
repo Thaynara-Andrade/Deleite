@@ -16,20 +16,21 @@ struct ComponentTextField: View {
     var body: some View {
         
         HStack{
-            
-            TextField("Digite o código", text: $password)
-                .textFieldStyle(PlainTextFieldStyle())
-                .padding(.leading)
-                .focused($passwordIsFocused)
-                .background(
-                    Rectangle()
-                        .frame(width: 350, height: 55)
-                        .foregroundColor(Color.gray.opacity(0.2))
-                        .cornerRadius(14.0)
-                )
-                .padding()
-                .textFieldStyle(.roundedBorder)
-                .overlay(
+            VStack{
+                TextField("Digite o código", text: $password)
+                    .textFieldStyle(PlainTextFieldStyle())
+                    .padding(.leading)
+                    .focused($passwordIsFocused)
+                    .background(
+                        Rectangle()
+                            .frame(width: 350, height: 55)
+                            .foregroundColor(Color.gray.opacity(0.2))
+                            .cornerRadius(15)
+                    )
+                    .padding()
+                    .textFieldStyle(.roundedBorder)
+                
+                VStack {
                     Button(action: {
                         if (password == "001") {
                             isLogged = true
@@ -38,38 +39,32 @@ struct ComponentTextField: View {
                         }
                         passwordIsFocused = false
                     }) {
-                        HStack {
-                            VStack {
-                                Rectangle()
-                                Image("seta")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 12)
-                                    .frame(width: 60, height: 55)
-                                    .padding([.leading, .bottom], 0.0)
-                                    .foregroundColor((Color.white))
-                                    .background(Color("Text-Color"))
-                                    .cornerRadius(14.0)
-                                
-                            }
-                        }
-                    }
-                        .alert(isPresented: $showErrorMessage) {
-                            Alert(title: Text("Erro"), message: Text("Por favor, tente novamente."), dismissButton: .default(Text("Ok")))
-                        }
-                        .fullScreenCover(isPresented: $isLogged) {
-                            PostloginView()
-                        }
-                        .padding(.leading, 290)
-                        .padding(.top, -8)
                         
-                    
-                )
+                        Text("Entrar")
+                            .fontWeight(.semibold)
+                            .frame(width: 280, height: 14)
+                            .padding()
+                            .background(Color("Text-Color"))
+                            .foregroundColor(Color.white)
+                            .cornerRadius(15)
+                            .padding(.top, 25)
+                    }
+                }
+            }
         }
-    
+        
+        .padding(.top, 180)
+        .alert(isPresented: $showErrorMessage) {
+            Alert(title: Text("Erro"), message: Text("Por favor, tente novamente."), dismissButton: .default(Text("Ok")))
+        }
+        
+        .fullScreenCover(isPresented: $isLogged) {
+            PostloginView()
+        }
         
     }
 }
+
 
 #Preview {
     ComponentTextField()

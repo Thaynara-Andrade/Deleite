@@ -81,6 +81,15 @@ struct ContainerOptionView: View {
                             }
                         }
                     }
+                    .navigationTitle("Agendamento")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+//                            Button("Voltar") {
+//                                openRegistrationSheet = false
+//                            }
+                        }
+                    }
                 }
             }
         }

@@ -70,8 +70,8 @@ struct RegisterDonationView: View {
                         }
                         
                         // Ensure that cep contains only 6 digits
-                        if cep.count > 6 {
-                            cep = String(cep.prefix(6))
+                        if cep.count > 8 {
+                            cep = String(cep.prefix(8))
                         }
                     }
             }

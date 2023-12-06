@@ -17,15 +17,15 @@ struct RegistrationWhatsView: View {
             
             VStack(alignment: .center) {
                 
-                Text("Êba! Você veio!")
+                Text("Seja doadora!")
                     .font(Font.custom("SFProRounded-Black", size: 35))
-                    .foregroundColor(Color("icon-color"))
-                    .padding(.leading, -80)
+                    .foregroundStyle(Color("icon-color"))
+                    .padding(.leading, -110)
                     .padding(.top, 50)
                     .padding(.bottom, -10)
                   
                 Text("Estamos muito felizes por ter você \naqui com a gente. Um tempinho que você dedica para doar um pouco do seu leite pode mudar a vida inteira de um bebê!")
-                    .font(.bold(.title3)())
+
                     .padding()
                 
                 Image(systemName: "person.bubble")
@@ -34,9 +34,9 @@ struct RegistrationWhatsView: View {
                     .padding()
                     
                 
-                Text("Ao clicar no botão a baixo você será direciona ao WhatsApp do Banco de Leite Humano, tá? E seu cadastro será realizado por lá.")
+                Text("Ao clicar no botão a baixo você será direciona ao WhatsApp do Banco de Leite Humano, tá? E seu cadastro será realizado.")
                     .multilineTextAlignment(.leading)
-                    .font(.bold(.title3)())
+
                     .padding()
                 
                 Button(action: {
