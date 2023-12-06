@@ -19,7 +19,12 @@ struct ResumeView: View {
 
                 ScrollView (.vertical){
                     Group{
-                        VStack{
+                        VStack(alignment: .leading, spacing: 10){
+                            Text("Resumo")
+                                .font(Font.custom("SFProRounded-Heavy", size: 35))
+                                .multilineTextAlignment(.leading)
+                                .foregroundColor(Color("icon-color"))
+                            
                             Text("Confira abaixo as poucas etapas que você \ndeve seguir para realizar sua doação de \nleite humano:")
                                 .multilineTextAlignment(.leading)
                                 
