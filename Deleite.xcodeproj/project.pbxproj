@@ -365,10 +365,7 @@
 				0D4155CA2AE2BFE900FA074B /* View */,
 				0D25C6802AE6E26900B7977C /* Components */,
 				49518BE22AE6990B00BDFFA0 /* Resource */,
-				490800492AFD09F000D2FF4E /* Model.swift */,
-				498CEEAA2B0BA4920002D52D /* CloudKitUtility.swift */,
-				4908004E2AFE6E4000D2FF4E /* CloudKitCRUDIView.swift */,
-				4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */,
+				49961ADF2B20ED0300D02602 /* CloudKit */,
 			);
 			path = V2;
 			sourceTree = "<group>";
@@ -466,6 +463,17 @@
 				49518BE32AE69A6A00BDFFA0 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		49961ADF2B20ED0300D02602 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				490800492AFD09F000D2FF4E /* Model.swift */,
+				4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */,
+				4908004E2AFE6E4000D2FF4E /* CloudKitCRUDIView.swift */,
+				498CEEAA2B0BA4920002D52D /* CloudKitUtility.swift */,
+			);
+			path = CloudKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

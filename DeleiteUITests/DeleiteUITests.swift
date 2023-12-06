@@ -3,7 +3,6 @@
 //  DeleiteUITests
 //
 //  Created by Thaynara da Silva Andrade on 11/09/23.
-//
 
 import XCTest
 
