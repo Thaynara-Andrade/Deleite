@@ -40,7 +40,7 @@ struct ComponetButtonConfirmRegistreView: View {
                 .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                 .cornerRadius(15)
                 .fullScreenCover(isPresented: $confirmAppointment) {
-                   SucessLottieView(openRegistrationSheet: .constant(true))
+                    SucessLottieView(openRegistrationSheet: .constant(true))
                 }
             }
         }
