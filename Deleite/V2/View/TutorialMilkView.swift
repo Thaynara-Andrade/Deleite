@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TutorialMilkView: View {
     
-    @State var openRegistrationSheet: Bool
+    @Binding var openRegistrationSheet: Bool
     
     var body: some View {
         
@@ -37,14 +37,21 @@ struct TutorialMilkView: View {
                         
                     }
                     VStack{
-                        NavigationLink(destination: TutorialStorageView(openRegistrationSheet: openRegistrationSheet)){
+                        NavigationLink(destination: TutorialStorageView(openRegistrationSheet: $openRegistrationSheet)){
                             ButtonNextView(ButtonNext: "Próximo tutorial")
                             
+                        }
+                        .toolbar {
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button("Cancelar") {
+                                    openRegistrationSheet = false
+                                }
+                            }
                         }
                         ComponentBottomless(Buttomless: "Fazer agendamento", openRegistrationSheet: $openRegistrationSheet)
                         
                     }
-                }.navigationTitle("Tutorial")
+                }.navigationTitle("Retirada de Leite")
             }
         }
     }
@@ -52,5 +59,5 @@ struct TutorialMilkView: View {
 
 
 #Preview {
-    TutorialMilkView(openRegistrationSheet: .random())
+    TutorialMilkView(openRegistrationSheet: .constant(true))
 }
