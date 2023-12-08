@@ -70,37 +70,53 @@ struct ModelScheduling: View {
                 
                     .sheet(isPresented: $exibirSheet) {
                         VStack {
-                            Text("A coleta foi entregue?")
-                                .fontWeight(.semibold)
+                            Text("Sua solicitação foi atendida?")
+                                .fontWeight(.bold)
                                 .padding()
                             
-                            HStack {
-                                Button("Sim"){
+                            VStack {
+                                Button(action: {
                                     respostaEntrega = true
                                     exibirSheet.toggle()
                                     // Ação quando a resposta for "Sim"
+                                }) {
+                                    Text("Sim, foi atendida")
+                                        .fontWeight(.semibold)
+                                        .frame(width: 330, height: 50)
+                                        .background(Color("Button-Yellow"))
+                                        .cornerRadius(20)
+                                        .foregroundColor(.black)
                                 }
-                                .padding()
+                                .multilineTextAlignment(.center)
                                 
-                                Button("Não") {
+                                Button(action: {
                                     respostaEntrega = false
                                     exibirSheet.toggle()
-                                    // Ação quando quando a resposta for "Não"
+                                    // Ação quando a resposta for "Não"
+                                }) {
+                                    Text("Não, não recebi a visita")
+                                        .fontWeight(.semibold)
+                                        .frame(width: 330, height: 50)
+                                        .background(Color("Gray"))
+                                        .cornerRadius(20)
+                                        .foregroundColor(.black)
                                 }
-                                .padding()
                             }
                         }
                     }
+                
+                
+                
                 Divider()
                 
             }
             
-                Spacer(minLength: 130)
-                ComponentEmpytState(
-                    LoginImage: Image(systemName: "calendar.badge.plus"),
-                    Loginname: "Sem agendamentos\nativos no momento"
-                )
-                .opacity(schedulings.isEmpty ? 1 : 0)
+            Spacer(minLength: 130)
+            ComponentEmpytState(
+                LoginImage: Image(systemName: "calendar.badge.plus"),
+                Loginname: "Sem agendamentos\nativos no momento"
+            )
+            .opacity(schedulings.isEmpty ? 1 : 0)
             
         }
         .task {
