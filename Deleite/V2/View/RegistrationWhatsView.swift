@@ -12,24 +12,20 @@ struct RegistrationWhatsView: View {
     var body: some View {
        
         ZStack{
-            Color("Background-color")
-                .edgesIgnoringSafeArea(.all)
-            
             VStack(alignment: .center) {
                 
                 Text("Seja doadora!")
                     .font(Font.custom("SFProRounded-Black", size: 35))
                     .foregroundStyle(Color("icon-color"))
                     .padding(.leading, -110)
-                    .padding(.top, 50)
-                    .padding(.bottom, -10)
+                    .padding(.bottom, 05)
                   
                 Text("Estamos muito felizes por ter você \naqui com a gente. Um tempinho que você dedica para doar um pouco do seu leite pode mudar a vida inteira de um bebê!")
 
                     .padding()
                 
-                Image(systemName: "person.bubble")
-                    .font(.system(size: 140))
+                Image(systemName: "person.line.dotted.person.fill")
+                    .font(.system(size: 120))
                     .foregroundColor(Color("Buttonvariable-Color"))
                     .padding()
                     
@@ -45,7 +41,7 @@ struct RegistrationWhatsView: View {
                     }
                 }) {
                         
-                    Text("Realizar Cadastro")
+                    Text("Cadastre-se")
                         .fontWeight(.semibold)
                         .frame(width: 326, alignment: .center)
                         .padding()
@@ -54,13 +50,14 @@ struct RegistrationWhatsView: View {
                             .cornerRadius(15)
     
                 }
-                .padding(.top)
-                .padding(.bottom,-30)
+                .padding(.top, 20)
+                .padding(.bottom, -20)
                 
                 
                 
             }
-        } .padding(.top, -100)
+        } 
+        .padding(.top, -200)
     }
 }
     
