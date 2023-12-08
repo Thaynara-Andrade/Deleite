@@ -9,36 +9,48 @@ import SwiftUI
 
 struct TutorialStorageView: View {
     
-    @State var openRegistrationSheet: Bool
+    @Binding var openRegistrationSheet: Bool
     
     var body: some View {
         
         ZStack {
             ScrollView{
                 Group{
+                    VStack(alignment: .leading, spacing: 10){
+                        Text("Armazenamento")
+                            .font(Font.custom("SFProRounded-Heavy", size: 35))
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(Color("icon-color"))
+                        
+                    } .padding(.bottom, -10)
                     
-                    Text("Esta é a forma correta de armazenamento do leite materno:")
-                        .multilineTextAlignment(.leading)
-                        .padding(.bottom, -10)
+                    VStack(spacing: -40){
+                        ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Após a retirada do leite, coloque o frasco no freezer e certifique que esteja bem tampado e devidamente etiquetado.", TutorialImage: Image("Ice"))
+                        
+                        ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "O leite materno deve ser transportado a um Banco de Leite Humano antes do seu vencimento (até 15 dias após a primeira coleta).", TutorialImage: Image("Telefone"))
+                    }
                     
                     VStack {
-                        ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription: "Após a retirada do leite materno, coloque o frasco no freezer ou congelador, garantindo que seja armazenado em recipientes adequados e devidamente etiquetado.", TutorialImage: Image("Rotulo"))
-                            .padding(.bottom, -20)
-                        
-                        ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "O leite materno deve ser transportado a um Banco de Leite Humano antes do seu vencimento, Que é até 15 dias após a primeira coleta.", TutorialImage: Image("Telefone"))
-                            .padding(.bottom, -20)
-                        
-                        ComponentBottomless(Buttomless: "Fazer agendamento", openRegistrationSheet: $openRegistrationSheet)
-                            .padding(.top, 250)
+                        ButtonView(ButtonView: "Agendar envio do leite", openRegistrationSheet: $openRegistrationSheet)
+                            .padding(.top, 150)
                         
                     }
                 }
             }
-        }.navigationTitle("Tutorial")
+        }
+        .navigationTitle("Armazenamento")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button("Cancelar") {
+                    openRegistrationSheet = false
+                    print("Botão Cancelar pressionado")
+                }
+            }
+        }
     }
 }
 
 
 #Preview {
-    TutorialStorageView(openRegistrationSheet: .random())
+    TutorialStorageView(openRegistrationSheet: .constant(true))
 }

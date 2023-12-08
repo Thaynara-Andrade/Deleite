@@ -10,6 +10,7 @@ import Mixpanel
 
 struct ResumeView: View {
     @State private var isPostLoginViewActive = false
+    @State private var isPostLoginViewActive1 = false
     @Binding var openRegistrationSheet: Bool
     
     
@@ -19,7 +20,12 @@ struct ResumeView: View {
 
                 ScrollView (.vertical){
                     Group{
-                        VStack{
+                        VStack(alignment: .leading, spacing: 10){
+                            Text("Resumo")
+                                .font(Font.custom("SFProRounded-Heavy", size: 35))
+                                .multilineTextAlignment(.leading)
+                                .foregroundColor(Color("icon-color"))
+                            
                             Text("Confira abaixo as poucas etapas que você \ndeve seguir para realizar sua doação de \nleite humano:")
                                 .multilineTextAlignment(.leading)
                                 
@@ -70,7 +76,9 @@ struct ResumeView: View {
                     
                     VStack (alignment: .center){
                         HStack{
-                            NavigationLink(destination: TutorialClearView(openRegistrationSheet: openRegistrationSheet)) {
+                            NavigationLink(isActive: $isPostLoginViewActive1, destination: {
+                                TutorialClearView(openRegistrationSheet: $openRegistrationSheet)
+                                }, label: {
                                 HStack(alignment: .center, spacing: 10) {
                                     Text("Ver tutoriais")
                                         .bold()
@@ -86,7 +94,7 @@ struct ResumeView: View {
                                 .frame(width: 326, alignment: .center)
                                 .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                                 .cornerRadius(15)
-                            }
+                            })
                         }
                         
                         HStack{
@@ -131,6 +139,8 @@ struct ResumeView: View {
         .navigationBarTitleDisplayMode(.large)
     }
 }
+
+
 #Preview {
     ResumeView(openRegistrationSheet: .constant(true))
 }
