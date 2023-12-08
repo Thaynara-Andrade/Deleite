@@ -10,6 +10,7 @@ import Mixpanel
 
 struct ResumeView: View {
     @State private var isPostLoginViewActive = false
+    @State private var isPostLoginViewActive1 = false
     @Binding var openRegistrationSheet: Bool
     
     
@@ -75,7 +76,9 @@ struct ResumeView: View {
                     
                     VStack (alignment: .center){
                         HStack{
-                            NavigationLink(destination: TutorialClearView(openRegistrationSheet: openRegistrationSheet)) {
+                            NavigationLink(isActive: $isPostLoginViewActive1, destination: {
+                                TutorialClearView(openRegistrationSheet: $openRegistrationSheet)
+                                }, label: {
                                 HStack(alignment: .center, spacing: 10) {
                                     Text("Ver tutoriais")
                                         .bold()
@@ -91,7 +94,7 @@ struct ResumeView: View {
                                 .frame(width: 326, alignment: .center)
                                 .background(Color(red: 0.95, green: 0.87, blue: 0.62))
                                 .cornerRadius(15)
-                            }
+                            })
                         }
                         
                         HStack{
