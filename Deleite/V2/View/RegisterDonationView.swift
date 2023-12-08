@@ -16,8 +16,7 @@ struct RegisterDonationView: View {
     @Binding var openRegistrationSheet: Bool
     
     @Environment(\.dismiss) var dismiss
-    //    @State var notifyMeAbout:Bool = false
-    //    @State var NotifyMeAboutType:Bool = false
+
     @State var shownextPageRegister:Bool = true
     
     @AppStorage("motherName") var motherName: String = ""
