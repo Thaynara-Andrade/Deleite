@@ -9,20 +9,19 @@ import SwiftUI
 import Combine
 
 struct RecipientPersonalRegistrationView: View {
-    
+    @State private var newScheduling = SchedulingModel()
     @State private var SaveRecordWithoutContainer:Bool = false
     @Binding var openRegistrationSheet: Bool
     
     @Environment(\.dismiss) var dismiss
-    @State private var name:String = ""
-    @State private var cep:String = ""
-    @State private var RecipientRegional:Bool = false
-    @State private var regionOne:Bool = false
-    @State private var regionTwo:Bool = false
-    @State private var regionThree:Bool = false
-    @State private var regionFour:Bool = false
-    @State private var showAlert: Bool = false
     
+    @State var shownextPageRegister:Bool = true
+    
+    @AppStorage("motherName") var motherName: String = ""
+    @State var name: String = ""
+    @AppStorage("cep") private var cep:String = ""
+    @AppStorage("regional") var regional: Int = 0
+    @State private var showAlert = false
     
     var body: some View {
         Form{
@@ -50,8 +49,13 @@ struct RecipientPersonalRegistrationView: View {
             ){}
             
             Section() {
-                TextField("Nome", text: $name)
-                    .multilineTextAlignment(.leading)
+                if motherName.isEmpty {
+                    TextField("Nome completo", text: $name)
+                        .multilineTextAlignment(.leading)
+                } else {
+                    Text(motherName)
+                        .multilineTextAlignment(.leading)
+                }
                 TextField("CEP", text: $cep)
                     .multilineTextAlignment(.leading)
                     .keyboardType(.numberPad)
@@ -68,15 +72,15 @@ struct RecipientPersonalRegistrationView: View {
                     }
             }
             Section() {
-                Picker("Selecione a Regional", selection: $RecipientRegional) {
-                    Text("Regional 1").tag(regionOne)
-                    Text("Regional 2").tag(regionTwo)
-                    Text("Regional 3").tag(regionThree)
-                    Text("Regional 4").tag(regionFour)
+                Picker("Selecione Regional", selection: $regional) {
+                    Text("Regional 1").tag(0)
+                    Text("Regional 2").tag(1)
+                    Text("Regional 3").tag(2)
+                    Text("Regional 4").tag(3)
                 }
             }
             Section(footer: VStack {
-                NavigationLink(destination: RecipientRegistrationView(openRegistrationSheet: $openRegistrationSheet), isActive: $SaveRecordWithoutContainer) {
+                NavigationLink(destination: RecipientRegistrationView(newScheduling: $newScheduling, openRegistrationSheet: $openRegistrationSheet), isActive: $SaveRecordWithoutContainer) {
                     EmptyView()
                 }
             
@@ -118,7 +122,7 @@ struct RecipientPersonalRegistrationView: View {
     }
     private func isValidForm() -> Bool {
         // Adicione lógica de validação aqui
-        return !name.isEmpty && !cep.isEmpty
+        return (!name.isEmpty || !motherName.isEmpty)  && !cep.isEmpty
     }
 }
 
