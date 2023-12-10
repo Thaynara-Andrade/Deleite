@@ -1,15 +1,15 @@
 //
-//  ComponetButtonConfirmRegistreView.swift
+//  ComponentDateRecipient.swift
 //  Deleite
 //
-//  Created by Raina on 08/11/23.
+//  Created by Thaynara da Silva Andrade on 08/12/23.
 //
 
 import SwiftUI
 import Nuvem
 import CloudKit
 
-struct ComponetButtonConfirmRegistreView: View {
+struct ComponentDateRecipient: View {
     
     @AppStorage("motherName") var motherName: String = ""
     @AppStorage("motherDate") var motherDate: String = ""
@@ -22,8 +22,7 @@ struct ComponetButtonConfirmRegistreView: View {
         HStack(){
             Button {
                 Task {
-    
-                    newScheduling.milkPickupDate = newScheduling.milkPickupDate // FIX NUVEM BUG
+                    newScheduling.collectDate = newScheduling.collectDate // FIX NUVEM BUG
                     newScheduling.motherName = motherName // FIX NUVEM BUG
                     try await newScheduling.save(on: CKContainer.default().publicCloudDatabase)
                     confirmAppointment = true
@@ -47,7 +46,6 @@ struct ComponetButtonConfirmRegistreView: View {
         }
     }
 }
-
 //#Preview {
-//    ComponetButtonConfirmRegistreView()
+//    ComponentDateRecipient(newScheduling: $newScheduling)
 //}
