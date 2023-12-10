@@ -39,6 +39,7 @@ struct TutorialStorageView: View {
             }
         }
         .navigationTitle("Armazenamento")
+        .navigationBarTitleDisplayMode(.large)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Cancelar") {

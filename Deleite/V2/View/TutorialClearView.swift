@@ -51,7 +51,9 @@ struct TutorialClearView: View {
                         ComponentBottomless(Buttomless: "Fazer agendamento", openRegistrationSheet: $openRegistrationSheet)
                         
                     }
-                }.navigationTitle("Higienização")
+                }
+                .navigationTitle("Higienização")
+                .navigationBarTitleDisplayMode(.large)
             }
         }
     }
