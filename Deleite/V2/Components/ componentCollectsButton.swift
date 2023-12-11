@@ -21,6 +21,7 @@ struct _componentCollectsButton: View {
                 .fontWeight(.bold)
             
             Text("Obrigada pela sua contribuição com o Banco de leite Humano. Você é especial para nós!")
+                .foregroundColor(Color("Text"))
                 .multilineTextAlignment(.center)
                 .frame(width: 330, alignment: .center)
                 
