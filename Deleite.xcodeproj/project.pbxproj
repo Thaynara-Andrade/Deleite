@@ -56,6 +56,9 @@
 		4908004A2AFD09F000D2FF4E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490800492AFD09F000D2FF4E /* Model.swift */; };
 		4908004D2AFD1A5400D2FF4E /* CloudKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */; };
 		4908004F2AFE6E4000D2FF4E /* CloudKitCRUDIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908004E2AFE6E4000D2FF4E /* CloudKitCRUDIView.swift */; };
+		490EC34C2B273EB600437F2C /* ComponentRescheduleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490EC34B2B273EB600437F2C /* ComponentRescheduleRequest.swift */; };
+		490EC34E2B2746D000437F2C /* ComponentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490EC34D2B2746D000437F2C /* ComponentRequest.swift */; };
+		490EC3502B274F4500437F2C /*  componentCollectsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490EC34F2B274F4500437F2C /*  componentCollectsButton.swift */; };
 		491854E82AD42E6F00319702 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 491854E72AD42E6F00319702 /* Lottie */; };
 		4945AE002AF92B5A00021E54 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945ADFF2AF92B5A00021E54 /* ButtonView.swift */; };
 		49507FEA2AAF49470002CB6A /* DeleiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49507FE92AAF49470002CB6A /* DeleiteApp.swift */; };
@@ -173,6 +176,9 @@
 		4908004B2AFD179D00D2FF4E /* Deleite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Deleite.entitlements; sourceTree = "<group>"; };
 		4908004C2AFD1A5400D2FF4E /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
 		4908004E2AFE6E4000D2FF4E /* CloudKitCRUDIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCRUDIView.swift; sourceTree = "<group>"; };
+		490EC34B2B273EB600437F2C /* ComponentRescheduleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentRescheduleRequest.swift; sourceTree = "<group>"; };
+		490EC34D2B2746D000437F2C /* ComponentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentRequest.swift; sourceTree = "<group>"; };
+		490EC34F2B274F4500437F2C /*  componentCollectsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " componentCollectsButton.swift"; sourceTree = "<group>"; };
 		4945ADFF2AF92B5A00021E54 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		49507FE62AAF49470002CB6A /* Deleite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deleite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49507FE92AAF49470002CB6A /* DeleiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleiteApp.swift; sourceTree = "<group>"; };
@@ -257,6 +263,9 @@
 		0D25C6802AE6E26900B7977C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				490EC34F2B274F4500437F2C /*  componentCollectsButton.swift */,
+				490EC34B2B273EB600437F2C /* ComponentRescheduleRequest.swift */,
+				490EC34D2B2746D000437F2C /* ComponentRequest.swift */,
 				49967FCC2B1F72B200A63FE1 /* ComponentAlert.swift */,
 				49823D5E2B235CE400E2C119 /* ComponentDateRecipient.swift */,
 				B79ED6782AFBC03F00BEAC1D /* ComponetButtonConfirmRegistreView.swift */,
@@ -651,6 +660,7 @@
 				0D25C6C12AE7FDF500B7977C /* SwiftUIView.swift in Sources */,
 				49A8357E2B176AB900C793B0 /* SchedulingListView.swift in Sources */,
 				49BF71E62AF95EE000CEDBA9 /* TutorialClearView.swift in Sources */,
+				490EC34C2B273EB600437F2C /* ComponentRescheduleRequest.swift in Sources */,
 				0D25C6B42AE7FDF500B7977C /* TutorialStorege.swift in Sources */,
 				B79ED6772AFBBF6D00BEAC1D /* ShowRegistrationConfirmationView.swift in Sources */,
 				0D25C6B32AE7FDF500B7977C /* SnapCarousel.swift in Sources */,
@@ -697,7 +707,9 @@
 				0D185AFC2AF11F6100FF30AF /* RegistrationWhatsView.swift in Sources */,
 				49967FCD2B1F72B200A63FE1 /* ComponentAlert.swift in Sources */,
 				B7E3ACAA2AEC033C00ACBFD2 /* ComponentStepByStepView.swift in Sources */,
+				490EC3502B274F4500437F2C /*  componentCollectsButton.swift in Sources */,
 				49518BFD2AE6A89D00BDFFA0 /* ComponentSectionView.swift in Sources */,
+				490EC34E2B2746D000437F2C /* ComponentRequest.swift in Sources */,
 				498CEEAD2B0BD9B50002D52D /* Agendamento.swift in Sources */,
 				0DC5D7712B18D17E00792088 /* CardExpirado.swift in Sources */,
 				B7ED18DE2AF91F7A00AE5333 /* RegisterDonationView.swift in Sources */,
@@ -883,7 +895,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -921,7 +933,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
