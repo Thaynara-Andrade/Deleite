@@ -17,25 +17,22 @@ struct TutorialMilkView: View {
             
             ScrollView{
                 Group{
-                    VStack(alignment: .leading, spacing: 10){
-                        Text("Retirada de leite")
-                            .font(Font.custom("SFProRounded-Heavy", size: 35))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(Color("icon-color"))
-                        
+                    VStack(alignment: .leading){
                         Text("Esta é a forma correta para realizar a retirada de leite:")
                             .multilineTextAlignment(.leading)
+                            .foregroundColor(Color("Text"))
                         
-                    } .padding(.bottom, -10)
+                    } .padding(.bottom, -8)
                     
-                    VStack (spacing: -40){
+                    VStack (spacing: -50){
                         ComponentTutorialClear(Tutorialtitle:"Primeiro passo", Tutorialdescription:"Escolha um ambiente tranquilo e limpo. Prepare uma mesa com um pano limpo. Evite conversar durante a retirada do leite.", TutorialImage: Image("Sofa"))
                         
                         ComponentTutorialClear(Tutorialtitle:"Segundo passo", Tutorialdescription: "Massageie a mama em círculos, do mamilo para o corpo, com o polegar acima da auréola, para estimular a produção de leite.", TutorialImage: Image("peito1"))
                         
                         ComponentTutorialClear(Tutorialtitle:"Terceiro passo", Tutorialdescription: "Extraia o leite com a mão em C. Descarte os primeiros jatos. Despeje no frasco, feche, rotule com nome e data, e congele.", TutorialImage: Image("Rotulo"))
                         
-                    }
+                    } .foregroundColor(Color("Text"))
+                    
                     VStack{
                         NavigationLink(destination: TutorialStorageView(openRegistrationSheet: $openRegistrationSheet)){
                             ButtonNextView(ButtonNext: "Próximo tutorial")
