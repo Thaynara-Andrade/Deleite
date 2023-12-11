@@ -60,8 +60,7 @@ struct ComponentRescheduleRequest: View {
                         .foregroundColor(.black)
                 }
             }
-            
-        
+            .navigationBarBackButtonHidden(true)
     }
 }
 
