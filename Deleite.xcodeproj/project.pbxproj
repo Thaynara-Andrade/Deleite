@@ -263,6 +263,7 @@
 		0D25C6802AE6E26900B7977C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0DC5D7662B176B2000792088 /* CardRealizada.swift */,
 				490EC34F2B274F4500437F2C /*  componentCollectsButton.swift */,
 				490EC34B2B273EB600437F2C /* ComponentRescheduleRequest.swift */,
 				490EC34D2B2746D000437F2C /* ComponentRequest.swift */,
@@ -282,7 +283,6 @@
 				B74338B42B02C12C00D47F4B /* ComponentButoonScheduling.swift */,
 				49874B932AFA9D970041DDA0 /* ComponentBottomless.swift */,
 				49874B8D2AFA76AB0041DDA0 /* ComponentTextView.swift */,
-				0DC5D7662B176B2000792088 /* CardRealizada.swift */,
 				0DE0AE292B0394AB006D3D93 /* CardNaoRealizada.swift */,
 				0DC5D7702B18D17E00792088 /* CardExpirado.swift */,
 				0DC5D7682B17749900792088 /* CardAgendadoPote.swift */,

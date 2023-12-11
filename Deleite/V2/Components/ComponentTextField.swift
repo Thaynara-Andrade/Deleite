@@ -42,12 +42,11 @@ struct ComponentTextField: View {
                         
                         Text("Entrar")
                             .fontWeight(.semibold)
-                            .frame(width: 280, height: 14)
-                            .padding()
+                            .frame(width: 350, height: 50)
                             .background(Color("Text-Color"))
                             .foregroundColor(Color.white)
                             .cornerRadius(15)
-                            .padding(.top, 25)
+                            .padding(.top, 15)
                     }
                 }
             }

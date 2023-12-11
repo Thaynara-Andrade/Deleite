@@ -47,26 +47,27 @@ struct PostloginView: View {
                         }
                     }
                     .padding(.trailing, 190)
-                    
-                    ComponentDonationView(Logintitle: "Fazer \ndoação", Loginname: "Agende aqui o melhor \ndia para sua doação", LoginImage: Image("Doar"))
-                    
-                    
-                    HStack (spacing: 100) {
-                        Text(" Agendamentos")
+                    VStack{
+                        ComponentDonationView(Logintitle: "Fazer \ndoação", Loginname: "Agende aqui o melhor \ndia para sua doação", LoginImage: Image("Doar"))
+                        
+                        Text("Agendamentos")
+                            .multilineTextAlignment(.leading)
                             .font(.system(size: 25))
                             .fontWeight(.bold)
+                            .padding(.leading, -150)
                             .padding(.top)
                             .foregroundColor(Color("Text"))
-                        
-                        NavigationLink(destination: ComponentTextView()) {
-                            Text("Histórico")
-                                .padding(.top)
-                                .foregroundColor(.gray)
-                        }
+                            .border(.black)
                     }
+                        
+//                        NavigationLink(destination: ComponentTextView()) {
+//                            Text("Histórico")
+//                                .padding(.top)
+//                                .foregroundColor(.gray)
+//                        }
                     
                     VStack{
-                        ModelScheduling()
+                        ModelScheduling( openRegistrationSheet: $openRegistrationSheet)
                     }
                 }
             }

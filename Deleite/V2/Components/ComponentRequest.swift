@@ -22,6 +22,8 @@ struct ComponentRequest: View {
     @State private var nextSheet2: Bool = false
     @State private var noAcceptedRequest: Bool = false
     
+    @Binding var openRegistrationSheet: Bool
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -54,7 +56,7 @@ struct ComponentRequest: View {
 
                 
                         NavigationLink(
-                            destination: ComponentRescheduleRequest(noAcceptedRequest: $noAcceptedRequest),
+                            destination: ComponentRescheduleRequest(openRegistrationSheet: $openRegistrationSheet, noAcceptedRequest: $noAcceptedRequest),
                             isActive: $nextSheet2
                         ) {
                             EmptyView()
@@ -80,7 +82,7 @@ struct ComponentRequest: View {
         }
     }
 
-
-#Preview {
-    ComponentRequest()
-}
+//
+//#Preview {
+//    ComponentRequest()
+//}
