@@ -56,7 +56,7 @@ struct RegistrationDatesView: View {
                 Text("Escolha a data de \ncada ação")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color("Text"))
                     .multilineTextAlignment(.center)
             }
             .padding(.leading, 17)

@@ -40,16 +40,17 @@ struct ModelScheduling: View {
                         .foregroundColor(Color("Text-Color"))
                         .padding(1)
                     
-                    
-                    
                     Text(dateFormatter.string(from: scheduling.collectDate))
+                        .foregroundColor(Color("Text"))
                         .font(.system(size: 17))
                         .padding(1)
                     
-                    
                     HStack{
                         Image(systemName: "clock.fill")
+                            .foregroundColor(Color("Text"))
+                        
                         Text ("Solicitação Agendada")
+                            .foregroundColor(Color("Text"))
                             .font(.system(size: 17))
                     }
                     

@@ -15,21 +15,19 @@ struct ResumeView: View {
     
     
     var body: some View {
-
-            ZStack(alignment: .leading) {
-
-                ScrollView (.vertical){
-                    Group{
-                        VStack(alignment: .leading, spacing: 10){
-                            Text("Resumo")
-                                .font(Font.custom("SFProRounded-Heavy", size: 35))
-                                .multilineTextAlignment(.leading)
-                                .foregroundColor(Color("icon-color"))
-                            
-                            Text("Confira abaixo as poucas etapas que você \ndeve seguir para realizar sua doação de \nleite humano:")
-                                .multilineTextAlignment(.leading)
-                                
+        
+        ZStack(alignment: .leading) {
+            
+            ScrollView (.vertical){
+                Group{
+                    VStack(alignment: .leading, spacing: 10){
+                        Text("Confira abaixo as poucas etapas que você \ndeve seguir para realizar sua doação de \nleite humano:")
+                            .multilineTextAlignment(.leading)
+                        
                     } .padding(.leading, -25)
+                        .foregroundColor(Color("Text"))
+                    
+                    
                     Rectangle()
                         .frame(width: 5, height: 350)
                         .padding(.leading, -140)
@@ -54,6 +52,7 @@ struct ResumeView: View {
                         
                     }.padding(.leading,-172)
                         .padding(.top,-350)
+                        .foregroundColor(Color("Text"))
                     
                     VStack(alignment: .leading){
                         Text("Ver tutoriais")
@@ -73,19 +72,20 @@ struct ResumeView: View {
                             .padding(.bottom,50)
                         
                     } .padding(.top, -380)
+                        .foregroundColor(Color("Text"))
                     
                     VStack (alignment: .center){
                         HStack{
                             NavigationLink(isActive: $isPostLoginViewActive1, destination: {
                                 TutorialClearView(openRegistrationSheet: $openRegistrationSheet)
-                                }, label: {
+                            }, label: {
                                 HStack(alignment: .center, spacing: 10) {
                                     Text("Ver tutoriais")
                                         .bold()
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(Color("Text-Color"))
                                         .onAppear {
-                                                 Mixpanel.mainInstance().track(event: "Ver tutorial", properties:["ambiente": Env.string])
+                                            Mixpanel.mainInstance().track(event: "Ver tutorial", properties:["ambiente": Env.string])
                                         }
                                     
                                 }
@@ -118,16 +118,14 @@ struct ResumeView: View {
                                         }
                                 }
                             })
-                        }
-                        .navigationTitle("Resumo")
-                        .navigationBarTitleDisplayMode(.inline)
-                        .toolbar {
-                            ToolbarItem(placement: .navigationBarTrailing) {
-                                Button("Cancelar") {
-                                    openRegistrationSheet = false
+                        } .foregroundColor(Color("Text"))
+                            .toolbar {
+                                ToolbarItem(placement: .navigationBarTrailing) {
+                                    Button("Cancelar") {
+                                        openRegistrationSheet = false
+                                    }
                                 }
                             }
-                        }
                     }
                 }
                 .padding(.leading,30)
