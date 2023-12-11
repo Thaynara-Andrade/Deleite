@@ -18,8 +18,12 @@ struct ModelScheduling: View {
     @AppStorage("motherName") var motherName: String = ""
     
     let database = CKContainer.default().publicCloudDatabase
-    @State private var exibirSheet = false
+    @State private var exibirSheet2 = false
     @State private var respostaEntrega: Bool? = nil
+    
+    @State private var nextSheet: Bool = false
+    @State private var acceptedRequest: Bool = false
+    @State private var showComponentRequestSheet = false
     
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -27,6 +31,7 @@ struct ModelScheduling: View {
         return formatter
     }()
     
+
     var body: some View {
         VStack {
             ForEach(schedulings) { scheduling in
@@ -53,60 +58,24 @@ struct ModelScheduling: View {
                             .foregroundColor(Color("Text"))
                             .font(.system(size: 17))
                     }
-                    
-                    Button(action: {
-                        exibirSheet.toggle()
-                    }) {
-                        Text("Como foi a coleta?")
-                            .fontWeight(.semibold)
+                    VStack{
+                        Button("Como foi a coleta?") {
+                            exibirSheet2.toggle()
+                            
+                        } .fontWeight(.semibold)
                             .frame(width: 280, height: 14)
                             .padding()
                             .background(Color("Button-Yellow"))
                             .foregroundColor(Color("Text-Color"))
                             .cornerRadius(15)
-                    }
-                    .padding(.top)
+                        
+                        
+                    }.sheet(isPresented: $exibirSheet2){
+                        ComponentRequest()
+                            .presentationDetents([.large, .medium, .fraction(0.75)])
                     
-                } .padding()
-                
-                    .sheet(isPresented: $exibirSheet) {
-                        VStack {
-                            Text("Sua solicitação foi atendida?")
-                                .fontWeight(.bold)
-                                .padding()
-                            
-                            VStack {
-                                Button(action: {
-                                    respostaEntrega = true
-                                    exibirSheet.toggle()
-                                    // Ação quando a resposta for "Sim"
-                                }) {
-                                    Text("Sim, foi atendida")
-                                        .fontWeight(.semibold)
-                                        .frame(width: 330, height: 50)
-                                        .background(Color("Button-Yellow"))
-                                        .cornerRadius(20)
-                                        .foregroundColor(.black)
-                                }
-                                .multilineTextAlignment(.center)
-                                
-                                Button(action: {
-                                    respostaEntrega = false
-                                    exibirSheet.toggle()
-                                    // Ação quando a resposta for "Não"
-                                }) {
-                                    Text("Não, não recebi a visita")
-                                        .fontWeight(.semibold)
-                                        .frame(width: 330, height: 50)
-                                        .background(Color("Gray"))
-                                        .cornerRadius(20)
-                                        .foregroundColor(.black)
-                                }
-                            }
-                        }
                     }
-                
-                
+                }
                 
                 Divider()
                 
