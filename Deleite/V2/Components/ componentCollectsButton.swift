@@ -31,6 +31,7 @@ struct _componentCollectsButton: View {
                 .foregroundColor(Color("Buttonvariable-Color"))
             
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
