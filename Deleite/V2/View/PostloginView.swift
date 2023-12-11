@@ -32,14 +32,17 @@ struct PostloginView: View {
                     VStack(alignment: .leading){
                         Text("Seja bem vinda!")
                             .multilineTextAlignment(.leading)
+                            .foregroundColor(Color("Text"))
                         
                         HStack{
                             Text("Você está no")
                                 .multilineTextAlignment(.leading)
+                                .foregroundColor(Color("Text"))
                             
                             Text("MEAC")
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.leading)
+                                .foregroundColor(Color("Text"))
                             
                         }
                     }
@@ -53,6 +56,7 @@ struct PostloginView: View {
                             .font(.system(size: 25))
                             .fontWeight(.bold)
                             .padding(.top)
+                            .foregroundColor(Color("Text"))
                         
                         NavigationLink(destination: ComponentTextView()) {
                             Text("Histórico")

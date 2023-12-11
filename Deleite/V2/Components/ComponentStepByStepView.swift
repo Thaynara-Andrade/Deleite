@@ -28,6 +28,8 @@ struct StepByStepView: View {
                 VStack(alignment: .leading){
                     HStack{
                         Text("Para armazenar o leite, use")
+                            .foregroundColor(Color("Text"))
+                        
                         Text("frascos")
                             .font(.subheadline)
                             .fontWeight(.bold)
@@ -43,6 +45,7 @@ struct StepByStepView: View {
                             .foregroundColor(Color("icon-color"))
                         
                         Text("como potes de café")
+                            .foregroundColor(Color("Text"))
                         
                     }.padding(.leading, -49)
                 }
@@ -51,6 +54,7 @@ struct StepByStepView: View {
                 VStack(alignment: .leading){
                     HStack{
                         Text("solúvel e maionese.")
+                            .foregroundColor(Color("Text"))
                         
                     }
                 }.padding(.leading, -127)
@@ -76,6 +80,7 @@ struct StepByStepView: View {
                 VStack(alignment: .leading){
                     HStack{
                         Text("Certifique-se de que a tampa seja")
+                            .foregroundColor(Color("Text"))
                         
                         Text("de")
                             .font(.subheadline)
@@ -96,6 +101,7 @@ struct StepByStepView: View {
                             )
                         
                         Text("para evitar")
+                            .foregroundColor(Color("Text"))
                         
                     }
                 }
@@ -103,6 +109,7 @@ struct StepByStepView: View {
                 
                 HStack{
                     Text("vazamentos.")
+                        .foregroundColor(Color("Text"))
                     
                 }
                 .padding(.leading, -141)
@@ -135,7 +142,7 @@ struct StepByStepView: View {
                             .foregroundColor(Color("icon-color"))
                         
                         Text(" porém")
-                        
+                            .foregroundColor(Color("Text"))
                             .padding(.leading, -13)
                     }
                 }
@@ -143,6 +150,7 @@ struct StepByStepView: View {
                 VStack(alignment: .leading){
                     HStack{
                         Text("ainda será necessário seguir as")
+                            .foregroundColor(Color("Text"))
                         
                     }.padding(.leading, -1)
                 }
@@ -150,8 +158,9 @@ struct StepByStepView: View {
                 VStack(alignment: .leading){
                     HStack{
                         Text("instruções de esterilização.")
-                        
+                            .foregroundColor(Color("Text"))
                             .multilineTextAlignment(.leading)
+                        
                     }.padding(.leading, -35)
                 }
             }

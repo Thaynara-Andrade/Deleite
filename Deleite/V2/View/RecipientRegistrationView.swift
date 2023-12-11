@@ -58,7 +58,7 @@ struct RecipientRegistrationView: View {
                 Text("Qual a data de \n retirada do leite?")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color("Text"))
                     .multilineTextAlignment(.center)
             }
             .padding(.leading, 30)

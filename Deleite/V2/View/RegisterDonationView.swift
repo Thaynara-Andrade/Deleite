@@ -45,7 +45,7 @@ struct RegisterDonationView: View {
                 Text("Adicione seu \n endereço")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color("Text"))
                     .multilineTextAlignment(.center)
             }
                 .padding(.leading, 54)
