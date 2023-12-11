@@ -13,8 +13,10 @@ struct ComponentRescheduleRequest: View {
     @State private var respostaEntrega3: Bool? = nil
     @State private var isContainerOptionViewPresented = false
     
-    @Binding var openRegistrationSheet: Bool
+    @State private var respostaEntrega4 = false
     
+    @Binding var openRegistrationSheet: Bool
+    @State private var apresentarPostloginView = false
 
     @Binding var noAcceptedRequest: Bool
     
@@ -56,9 +58,9 @@ struct ComponentRescheduleRequest: View {
                 
                 
                 Button(action: {
-                    respostaEntrega3 = false
-                   // isPresented.toggle()
-                    // Ação quando a resposta for "Não"
+                    respostaEntrega4 = false
+                    apresentarPostloginView.toggle()
+                
                 }) {
                     Text("Não, farei depois")
                         .fontWeight(.semibold)
@@ -67,6 +69,9 @@ struct ComponentRescheduleRequest: View {
                         .cornerRadius(20)
                         .foregroundColor(.black)
                 }
+                .fullScreenCover(isPresented: $apresentarPostloginView, content: {
+                        PostloginView()
+                    })
             }
             .navigationBarBackButtonHidden(true)
     }

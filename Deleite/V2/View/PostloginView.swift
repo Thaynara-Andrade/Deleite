@@ -57,7 +57,6 @@ struct PostloginView: View {
                             .padding(.leading, -150)
                             .padding(.top)
                             .foregroundColor(Color("Text"))
-                            .border(.black)
                     }
                         
 //                        NavigationLink(destination: ComponentTextView()) {
