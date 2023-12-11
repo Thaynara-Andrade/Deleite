@@ -69,16 +69,12 @@ struct ModelScheduling: View {
                             .foregroundColor(Color("Text-Color"))
                             .cornerRadius(15)
                         
-                        
                     }.sheet(isPresented: $exibirSheet2){
                         ComponentRequest()
                             .presentationDetents([.large, .medium, .fraction(0.75)])
-                    
                     }
                 }
-                
                 Divider()
-                
             }
             
             Spacer(minLength: 130)
@@ -94,7 +90,6 @@ struct ModelScheduling: View {
         }
     }
     
-    
     func loadSchedulings() async {
         do {
             schedulings = try await SchedulingModel
@@ -105,12 +100,7 @@ struct ModelScheduling: View {
             print(error)
         }
     }
-    
-    
 }
-
-
-
 #Preview {
     ModelScheduling()
 }
